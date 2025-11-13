@@ -1,0 +1,762 @@
+[2025-11-10T05:57:22.783Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T05:57:22.926Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T05:57:55.790Z] [32MINFO[39M: 📥 [2025-11-10T05:57:55.790Z] OPTIONS /api/categories
+[2025-11-10T05:57:55.797Z] [32MINFO[39M: 📥 [2025-11-10T05:57:55.797Z] OPTIONS /api/count/webview
+[2025-11-10T05:57:55.799Z] [32MINFO[39M: 📥 [2025-11-10T05:57:55.799Z] OPTIONS /api/categories
+[2025-11-10T05:57:55.800Z] [32MINFO[39M: 📥 [2025-11-10T05:57:55.800Z] OPTIONS /api/count/webview
+[2025-11-10T05:57:55.804Z] [32MINFO[39M: 📥 [2025-11-10T05:57:55.804Z] GET /api/categories
+[2025-11-10T05:57:55.811Z] [32MINFO[39M: 📥 [2025-11-10T05:57:55.811Z] GET /api/count/webview
+[2025-11-10T05:57:55.842Z] [32MINFO[39M: 📥 [2025-11-10T05:57:55.842Z] GET /api/count/webview
+[2025-11-10T05:57:55.846Z] [32MINFO[39M: 📥 [2025-11-10T05:57:55.846Z] GET /api/categories
+[2025-11-10T05:58:10.737Z] [32MINFO[39M: 📥 [2025-11-10T05:58:10.737Z] OPTIONS /api/categories
+[2025-11-10T05:58:10.739Z] [32MINFO[39M: 📥 [2025-11-10T05:58:10.739Z] OPTIONS /api/count/webview
+[2025-11-10T05:58:10.739Z] [32MINFO[39M: 📥 [2025-11-10T05:58:10.739Z] OPTIONS /api/count/webview
+[2025-11-10T05:58:10.740Z] [32MINFO[39M: 📥 [2025-11-10T05:58:10.740Z] OPTIONS /api/categories
+[2025-11-10T05:58:10.765Z] [32MINFO[39M: 📥 [2025-11-10T05:58:10.765Z] GET /api/categories
+[2025-11-10T05:58:10.766Z] [32MINFO[39M: 📥 [2025-11-10T05:58:10.766Z] GET /api/count/webview
+[2025-11-10T05:58:10.790Z] [32MINFO[39M: 📥 [2025-11-10T05:58:10.790Z] GET /api/count/webview
+[2025-11-10T05:58:10.792Z] [32MINFO[39M: 📥 [2025-11-10T05:58:10.792Z] GET /api/categories
+[2025-11-10T05:58:36.358Z] [32MINFO[39M: 📥 [2025-11-10T05:58:36.357Z] OPTIONS /api/businesses/user
+[2025-11-10T05:58:36.359Z] [32MINFO[39M: 📥 [2025-11-10T05:58:36.359Z] OPTIONS /api/businesses/user
+[2025-11-10T05:58:36.389Z] [32MINFO[39M: 📥 [2025-11-10T05:58:36.389Z] GET /api/businesses/user
+[2025-11-10T05:58:36.398Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-10T05:58:36.405Z] [32MINFO[39M: [object Object]
+[2025-11-10T05:58:36.410Z] [32MINFO[39M: Image rows: 
+[2025-11-10T05:58:36.410Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-10T05:58:36.419Z] [32MINFO[39M: 📥 [2025-11-10T05:58:36.419Z] GET /api/businesses/user
+[2025-11-10T05:58:36.422Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-10T05:58:36.423Z] [32MINFO[39M: [object Object]
+[2025-11-10T05:58:36.424Z] [32MINFO[39M: Image rows: 
+[2025-11-10T05:58:36.424Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-10T06:12:35.491Z] [32MINFO[39M: 📥 [2025-11-10T06:12:35.491Z] OPTIONS /api/count/webview
+[2025-11-10T06:12:35.492Z] [32MINFO[39M: 📥 [2025-11-10T06:12:35.492Z] OPTIONS /api/businesses/user
+[2025-11-10T06:12:35.493Z] [32MINFO[39M: 📥 [2025-11-10T06:12:35.493Z] OPTIONS /api/count/webview
+[2025-11-10T06:12:35.494Z] [32MINFO[39M: 📥 [2025-11-10T06:12:35.494Z] OPTIONS /api/businesses/user
+[2025-11-10T06:12:35.503Z] [32MINFO[39M: 📥 [2025-11-10T06:12:35.503Z] GET /api/count/webview
+[2025-11-10T06:12:35.505Z] [32MINFO[39M: 📥 [2025-11-10T06:12:35.505Z] GET /api/businesses/user
+[2025-11-10T06:12:35.514Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-10T06:12:35.517Z] [32MINFO[39M: [object Object]
+[2025-11-10T06:12:35.523Z] [32MINFO[39M: Image rows: 
+[2025-11-10T06:12:35.523Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-10T06:12:35.596Z] [32MINFO[39M: 📥 [2025-11-10T06:12:35.596Z] GET /api/businesses/user
+[2025-11-10T06:12:35.598Z] [32MINFO[39M: 📥 [2025-11-10T06:12:35.598Z] GET /api/count/webview
+[2025-11-10T06:12:35.601Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-10T06:12:35.603Z] [32MINFO[39M: [object Object]
+[2025-11-10T06:12:35.604Z] [32MINFO[39M: Image rows: 
+[2025-11-10T06:12:35.605Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-10T06:15:08.144Z] [32MINFO[39M: 📥 [2025-11-10T06:15:08.144Z] OPTIONS /api/businesses/user
+[2025-11-10T06:15:08.145Z] [32MINFO[39M: 📥 [2025-11-10T06:15:08.145Z] OPTIONS /api/businesses/user
+[2025-11-10T06:15:08.153Z] [32MINFO[39M: 📥 [2025-11-10T06:15:08.153Z] OPTIONS /api/count/webview
+[2025-11-10T06:15:08.153Z] [32MINFO[39M: 📥 [2025-11-10T06:15:08.153Z] OPTIONS /api/count/webview
+[2025-11-10T06:15:08.155Z] [32MINFO[39M: 📥 [2025-11-10T06:15:08.155Z] GET /api/businesses/user
+[2025-11-10T06:15:08.159Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-10T06:15:08.161Z] [32MINFO[39M: [object Object]
+[2025-11-10T06:15:08.162Z] [32MINFO[39M: 📥 [2025-11-10T06:15:08.162Z] GET /api/count/webview
+[2025-11-10T06:15:08.163Z] [32MINFO[39M: Image rows: 
+[2025-11-10T06:15:08.163Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-10T06:15:08.173Z] [32MINFO[39M: 📥 [2025-11-10T06:15:08.173Z] GET /api/count/webview
+[2025-11-10T06:15:08.175Z] [32MINFO[39M: 📥 [2025-11-10T06:15:08.175Z] GET /api/businesses/user
+[2025-11-10T06:15:08.181Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-10T06:15:08.185Z] [32MINFO[39M: [object Object]
+[2025-11-10T06:15:08.187Z] [32MINFO[39M: Image rows: 
+[2025-11-10T06:15:08.187Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-10T06:16:44.741Z] [32MINFO[39M: 📥 [2025-11-10T06:16:44.741Z] OPTIONS /api/businesses?category=business&subcategory=12
+[2025-11-10T06:16:44.742Z] [32MINFO[39M: 📥 [2025-11-10T06:16:44.742Z] OPTIONS /api/businesses?category=business&subcategory=12
+[2025-11-10T06:16:44.779Z] [32MINFO[39M: 📥 [2025-11-10T06:16:44.779Z] GET /api/businesses?category=business&subcategory=12
+[2025-11-10T06:16:44.860Z] [32MINFO[39M: 📥 [2025-11-10T06:16:44.860Z] GET /api/businesses?category=business&subcategory=12
+[2025-11-10T06:16:47.193Z] [32MINFO[39M: 📥 [2025-11-10T06:16:47.193Z] OPTIONS /api/businesses/user
+[2025-11-10T06:16:47.194Z] [32MINFO[39M: 📥 [2025-11-10T06:16:47.194Z] OPTIONS /api/businesses/user
+[2025-11-10T06:16:47.334Z] [32MINFO[39M: 📥 [2025-11-10T06:16:47.334Z] GET /api/businesses/user
+[2025-11-10T06:16:47.337Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-10T06:16:47.338Z] [32MINFO[39M: [object Object]
+[2025-11-10T06:16:47.339Z] [32MINFO[39M: Image rows: 
+[2025-11-10T06:16:47.339Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-10T06:16:47.374Z] [32MINFO[39M: 📥 [2025-11-10T06:16:47.374Z] GET /api/businesses/user
+[2025-11-10T06:16:47.376Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-10T06:16:47.378Z] [32MINFO[39M: [object Object]
+[2025-11-10T06:16:47.379Z] [32MINFO[39M: Image rows: 
+[2025-11-10T06:16:47.379Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-10T06:20:48.323Z] [32MINFO[39M: 📥 [2025-11-10T06:20:48.323Z] OPTIONS /api/categories
+[2025-11-10T06:20:48.324Z] [32MINFO[39M: 📥 [2025-11-10T06:20:48.324Z] OPTIONS /api/categories
+[2025-11-10T06:20:48.333Z] [32MINFO[39M: 📥 [2025-11-10T06:20:48.333Z] GET /api/categories
+[2025-11-10T06:20:48.346Z] [32MINFO[39M: 📥 [2025-11-10T06:20:48.346Z] GET /api/categories
+[2025-11-10T06:20:57.493Z] [32MINFO[39M: 📥 [2025-11-10T06:20:57.493Z] OPTIONS /api/businesses?category=clothing&subcategory=womens-wear
+[2025-11-10T06:20:57.494Z] [32MINFO[39M: 📥 [2025-11-10T06:20:57.494Z] OPTIONS /api/businesses?category=clothing&subcategory=womens-wear
+[2025-11-10T06:20:57.529Z] [32MINFO[39M: 📥 [2025-11-10T06:20:57.529Z] GET /api/businesses?category=clothing&subcategory=womens-wear
+[2025-11-10T06:20:57.729Z] [32MINFO[39M: 📥 [2025-11-10T06:20:57.729Z] GET /api/businesses?category=clothing&subcategory=womens-wear
+[2025-11-10T06:21:06.822Z] [32MINFO[39M: 📥 [2025-11-10T06:21:06.822Z] OPTIONS /api/count/webview
+[2025-11-10T06:21:06.824Z] [32MINFO[39M: 📥 [2025-11-10T06:21:06.824Z] OPTIONS /api/count/webview
+[2025-11-10T06:21:06.825Z] [32MINFO[39M: 📥 [2025-11-10T06:21:06.825Z] OPTIONS /api/businesses?category=clothing&subcategory=womens-wear
+[2025-11-10T06:21:06.826Z] [32MINFO[39M: 📥 [2025-11-10T06:21:06.826Z] OPTIONS /api/businesses?category=clothing&subcategory=womens-wear
+[2025-11-10T06:21:06.832Z] [32MINFO[39M: 📥 [2025-11-10T06:21:06.832Z] GET /api/count/webview
+[2025-11-10T06:21:06.839Z] [32MINFO[39M: 📥 [2025-11-10T06:21:06.839Z] GET /api/businesses?category=clothing&subcategory=womens-wear
+[2025-11-10T06:21:06.841Z] [32MINFO[39M: 📥 [2025-11-10T06:21:06.841Z] GET /api/count/webview
+[2025-11-10T06:21:06.857Z] [32MINFO[39M: 📥 [2025-11-10T06:21:06.857Z] GET /api/businesses?category=clothing&subcategory=womens-wear
+[2025-11-10T06:26:03.202Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T06:26:03.223Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T06:26:10.104Z] [32MINFO[39M: 📥 [2025-11-10T06:26:10.104Z] OPTIONS /api/businesses?category=clothing&subcategory=designer-studios
+[2025-11-10T06:26:10.303Z] [32MINFO[39M: 📥 [2025-11-10T06:26:10.303Z] OPTIONS /api/businesses?category=clothing&subcategory=designer-studios
+[2025-11-10T06:26:10.305Z] [32MINFO[39M: 📥 [2025-11-10T06:26:10.305Z] GET /api/businesses?category=clothing&subcategory=designer-studios
+[2025-11-10T06:26:10.500Z] [32MINFO[39M: 📥 [2025-11-10T06:26:10.500Z] GET /api/businesses?category=clothing&subcategory=designer-studios
+[2025-11-10T06:27:26.861Z] [32MINFO[39M: 📥 [2025-11-10T06:27:26.861Z] OPTIONS /api/count/webview
+[2025-11-10T06:27:26.863Z] [32MINFO[39M: 📥 [2025-11-10T06:27:26.863Z] OPTIONS /api/businesses?category=clothing&subcategory=designer-studios
+[2025-11-10T06:27:26.864Z] [32MINFO[39M: 📥 [2025-11-10T06:27:26.864Z] OPTIONS /api/count/webview
+[2025-11-10T06:27:26.866Z] [32MINFO[39M: 📥 [2025-11-10T06:27:26.866Z] OPTIONS /api/businesses?category=clothing&subcategory=designer-studios
+[2025-11-10T06:27:26.908Z] [32MINFO[39M: 📥 [2025-11-10T06:27:26.908Z] GET /api/businesses?category=clothing&subcategory=designer-studios
+[2025-11-10T06:27:26.911Z] [32MINFO[39M: 📥 [2025-11-10T06:27:26.911Z] GET /api/count/webview
+[2025-11-10T06:27:26.917Z] [32MINFO[39M: 📥 [2025-11-10T06:27:26.917Z] GET /api/businesses?category=clothing&subcategory=designer-studios
+[2025-11-10T06:27:27.008Z] [32MINFO[39M: 📥 [2025-11-10T06:27:27.007Z] GET /api/count/webview
+[2025-11-10T06:30:17.303Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T06:30:17.321Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T06:30:22.373Z] [32MINFO[39M: 📥 [2025-11-10T06:30:22.373Z] OPTIONS /api/count/webview
+[2025-11-10T06:30:22.378Z] [32MINFO[39M: 📥 [2025-11-10T06:30:22.378Z] OPTIONS /api/businesses?category=clothing&subcategory=designer-studios
+[2025-11-10T06:30:22.379Z] [32MINFO[39M: 📥 [2025-11-10T06:30:22.379Z] OPTIONS /api/count/webview
+[2025-11-10T06:30:22.381Z] [32MINFO[39M: 📥 [2025-11-10T06:30:22.381Z] OPTIONS /api/businesses?category=clothing&subcategory=designer-studios
+[2025-11-10T06:30:22.413Z] [32MINFO[39M: 📥 [2025-11-10T06:30:22.413Z] GET /api/count/webview
+[2025-11-10T06:30:22.420Z] [32MINFO[39M: 📥 [2025-11-10T06:30:22.420Z] GET /api/businesses?category=clothing&subcategory=designer-studios
+[2025-11-10T06:30:22.449Z] [32MINFO[39M: 📥 [2025-11-10T06:30:22.449Z] GET /api/businesses?category=clothing&subcategory=designer-studios
+[2025-11-10T06:30:22.453Z] [32MINFO[39M: 📥 [2025-11-10T06:30:22.453Z] GET /api/count/webview
+[2025-11-10T06:31:25.756Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T06:31:25.773Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T06:31:29.739Z] [32MINFO[39M: 📥 [2025-11-10T06:31:29.739Z] OPTIONS /api/count/webview
+[2025-11-10T06:31:29.759Z] [32MINFO[39M: 📥 [2025-11-10T06:31:29.759Z] OPTIONS /api/businesses?category=clothing&subcategory=designer-studios
+[2025-11-10T06:31:29.761Z] [32MINFO[39M: 📥 [2025-11-10T06:31:29.761Z] OPTIONS /api/count/webview
+[2025-11-10T06:31:29.762Z] [32MINFO[39M: 📥 [2025-11-10T06:31:29.762Z] OPTIONS /api/businesses?category=clothing&subcategory=designer-studios
+[2025-11-10T06:31:29.769Z] [32MINFO[39M: 📥 [2025-11-10T06:31:29.769Z] GET /api/count/webview
+[2025-11-10T06:31:29.783Z] [32MINFO[39M: 📥 [2025-11-10T06:31:29.782Z] GET /api/businesses?category=clothing&subcategory=designer-studios
+[2025-11-10T06:31:29.801Z] [32MINFO[39M: 📥 [2025-11-10T06:31:29.800Z] GET /api/businesses?category=clothing&subcategory=designer-studios
+[2025-11-10T06:31:29.803Z] [32MINFO[39M: 📥 [2025-11-10T06:31:29.803Z] GET /api/count/webview
+[2025-11-10T06:36:03.562Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T06:36:03.588Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T06:36:26.055Z] [32MINFO[39M: 📥 [2025-11-10T06:36:26.055Z] OPTIONS /api/businesses?category=clothing&subcategory=designer-studios
+[2025-11-10T06:36:26.059Z] [32MINFO[39M: 📥 [2025-11-10T06:36:26.059Z] OPTIONS /api/businesses?category=clothing&subcategory=designer-studios
+[2025-11-10T06:36:26.447Z] [32MINFO[39M: 📥 [2025-11-10T06:36:26.447Z] GET /api/businesses?category=clothing&subcategory=designer-studios
+[2025-11-10T06:36:26.466Z] [32MINFO[39M: 📥 [2025-11-10T06:36:26.466Z] GET /api/businesses?category=clothing&subcategory=designer-studios
+[2025-11-10T06:37:34.795Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T06:37:34.811Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T06:37:40.786Z] [32MINFO[39M: 📥 [2025-11-10T06:37:40.786Z] OPTIONS /api/businesses?category=clothing&subcategory=womens-wear
+[2025-11-10T06:37:40.789Z] [32MINFO[39M: 📥 [2025-11-10T06:37:40.789Z] OPTIONS /api/businesses?category=clothing&subcategory=womens-wear
+[2025-11-10T06:37:40.795Z] [32MINFO[39M: 📥 [2025-11-10T06:37:40.795Z] GET /api/businesses?category=clothing&subcategory=womens-wear
+[2025-11-10T06:37:40.856Z] [31MERROR[39M: Error fetching businesses: Error: Table 'dev_mazhiMumbai.category' doesn't exist
+[2025-11-10T06:37:40.867Z] [32MINFO[39M: 📥 [2025-11-10T06:37:40.867Z] GET /api/businesses?category=clothing&subcategory=womens-wear
+[2025-11-10T06:37:40.873Z] [31MERROR[39M: Error fetching businesses: Error: Table 'dev_mazhiMumbai.category' doesn't exist
+[2025-11-10T06:39:28.001Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T06:39:28.021Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T06:39:36.196Z] [32MINFO[39M: 📥 [2025-11-10T06:39:36.196Z] OPTIONS /api/businesses?category=clothing&subcategory=ethnic-wear
+[2025-11-10T06:39:36.200Z] [32MINFO[39M: 📥 [2025-11-10T06:39:36.200Z] OPTIONS /api/businesses?category=clothing&subcategory=ethnic-wear
+[2025-11-10T06:39:36.290Z] [32MINFO[39M: 📥 [2025-11-10T06:39:36.289Z] GET /api/businesses?category=clothing&subcategory=ethnic-wear
+[2025-11-10T06:39:36.328Z] [31MERROR[39M: Error fetching businesses: Error: Table 'dev_mazhiMumbai.category' doesn't exist
+[2025-11-10T06:39:36.496Z] [32MINFO[39M: 📥 [2025-11-10T06:39:36.496Z] GET /api/businesses?category=clothing&subcategory=ethnic-wear
+[2025-11-10T06:39:36.500Z] [31MERROR[39M: Error fetching businesses: Error: Table 'dev_mazhiMumbai.category' doesn't exist
+[2025-11-10T06:42:00.143Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T06:42:00.179Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T06:42:06.100Z] [32MINFO[39M: 📥 [2025-11-10T06:42:06.100Z] OPTIONS /api/businesses?category=clothing&subcategory=ethnic-wear
+[2025-11-10T06:42:06.104Z] [32MINFO[39M: 📥 [2025-11-10T06:42:06.104Z] OPTIONS /api/count/webview
+[2025-11-10T06:42:06.107Z] [32MINFO[39M: 📥 [2025-11-10T06:42:06.107Z] OPTIONS /api/count/webview
+[2025-11-10T06:42:06.108Z] [32MINFO[39M: 📥 [2025-11-10T06:42:06.108Z] OPTIONS /api/businesses?category=clothing&subcategory=ethnic-wear
+[2025-11-10T06:42:06.183Z] [32MINFO[39M: 📥 [2025-11-10T06:42:06.183Z] GET /api/count/webview
+[2025-11-10T06:42:06.190Z] [32MINFO[39M: 📥 [2025-11-10T06:42:06.190Z] GET /api/businesses?category=clothing&subcategory=ethnic-wear
+[2025-11-10T06:42:06.215Z] [31MERROR[39M: Error fetching businesses: ReferenceError: categoryslug is not defined
+[2025-11-10T06:42:06.300Z] [32MINFO[39M: 📥 [2025-11-10T06:42:06.300Z] GET /api/businesses?category=clothing&subcategory=ethnic-wear
+[2025-11-10T06:42:06.303Z] [32MINFO[39M: 📥 [2025-11-10T06:42:06.303Z] GET /api/count/webview
+[2025-11-10T06:42:06.307Z] [31MERROR[39M: Error fetching businesses: ReferenceError: categoryslug is not defined
+[2025-11-10T06:43:23.694Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T06:43:23.709Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T06:43:27.185Z] [32MINFO[39M: 📥 [2025-11-10T06:43:27.185Z] OPTIONS /api/businesses?category=clothing&subcategory=ethnic-wear
+[2025-11-10T06:43:27.189Z] [32MINFO[39M: 📥 [2025-11-10T06:43:27.189Z] OPTIONS /api/count/webview
+[2025-11-10T06:43:27.191Z] [32MINFO[39M: 📥 [2025-11-10T06:43:27.190Z] OPTIONS /api/count/webview
+[2025-11-10T06:43:27.192Z] [32MINFO[39M: 📥 [2025-11-10T06:43:27.192Z] OPTIONS /api/businesses?category=clothing&subcategory=ethnic-wear
+[2025-11-10T06:43:27.209Z] [32MINFO[39M: 📥 [2025-11-10T06:43:27.209Z] GET /api/count/webview
+[2025-11-10T06:43:27.218Z] [32MINFO[39M: 📥 [2025-11-10T06:43:27.218Z] GET /api/businesses?category=clothing&subcategory=ethnic-wear
+[2025-11-10T06:43:27.244Z] [32MINFO[39M: 📥 [2025-11-10T06:43:27.244Z] GET /api/count/webview
+[2025-11-10T06:43:27.246Z] [32MINFO[39M: 📥 [2025-11-10T06:43:27.246Z] GET /api/businesses?category=clothing&subcategory=ethnic-wear
+[2025-11-10T06:45:53.514Z] [32MINFO[39M: 📥 [2025-11-10T06:45:53.514Z] OPTIONS /api/count/webview
+[2025-11-10T06:45:53.516Z] [32MINFO[39M: 📥 [2025-11-10T06:45:53.516Z] OPTIONS /api/count/webview
+[2025-11-10T06:45:53.527Z] [32MINFO[39M: 📥 [2025-11-10T06:45:53.527Z] GET /api/count/webview
+[2025-11-10T06:45:53.540Z] [32MINFO[39M: 📥 [2025-11-10T06:45:53.540Z] GET /api/count/webview
+[2025-11-10T06:48:51.977Z] [32MINFO[39M: 📥 [2025-11-10T06:48:51.977Z] OPTIONS /api/count/webview
+[2025-11-10T06:48:51.979Z] [32MINFO[39M: 📥 [2025-11-10T06:48:51.979Z] OPTIONS /api/count/webview
+[2025-11-10T06:48:51.989Z] [32MINFO[39M: 📥 [2025-11-10T06:48:51.989Z] GET /api/count/webview
+[2025-11-10T06:48:52.014Z] [32MINFO[39M: 📥 [2025-11-10T06:48:52.014Z] GET /api/count/webview
+[2025-11-10T06:49:04.481Z] [32MINFO[39M: 📥 [2025-11-10T06:49:04.481Z] OPTIONS /api/count/webview
+[2025-11-10T06:49:04.482Z] [32MINFO[39M: 📥 [2025-11-10T06:49:04.482Z] OPTIONS /api/count/webview
+[2025-11-10T06:49:04.539Z] [32MINFO[39M: 📥 [2025-11-10T06:49:04.539Z] GET /api/count/webview
+[2025-11-10T06:49:04.549Z] [32MINFO[39M: 📥 [2025-11-10T06:49:04.549Z] GET /api/count/webview
+[2025-11-10T06:51:54.260Z] [32MINFO[39M: 📥 [2025-11-10T06:51:54.260Z] OPTIONS /api/categories
+[2025-11-10T06:51:54.261Z] [32MINFO[39M: 📥 [2025-11-10T06:51:54.261Z] OPTIONS /api/categories
+[2025-11-10T06:51:54.270Z] [32MINFO[39M: 📥 [2025-11-10T06:51:54.270Z] GET /api/categories
+[2025-11-10T06:51:54.293Z] [32MINFO[39M: 📥 [2025-11-10T06:51:54.293Z] GET /api/categories
+[2025-11-10T06:54:07.454Z] [32MINFO[39M: 📥 [2025-11-10T06:54:07.454Z] OPTIONS /api/categories
+[2025-11-10T06:54:07.455Z] [32MINFO[39M: 📥 [2025-11-10T06:54:07.455Z] OPTIONS /api/categories
+[2025-11-10T06:54:07.463Z] [32MINFO[39M: 📥 [2025-11-10T06:54:07.463Z] GET /api/categories
+[2025-11-10T06:54:07.474Z] [32MINFO[39M: 📥 [2025-11-10T06:54:07.474Z] GET /api/categories
+[2025-11-10T06:54:13.266Z] [32MINFO[39M: 📥 [2025-11-10T06:54:13.266Z] OPTIONS /api/categories
+[2025-11-10T06:54:13.266Z] [32MINFO[39M: 📥 [2025-11-10T06:54:13.266Z] OPTIONS /api/categories
+[2025-11-10T06:54:13.344Z] [32MINFO[39M: 📥 [2025-11-10T06:54:13.344Z] GET /api/categories
+[2025-11-10T06:54:13.426Z] [32MINFO[39M: 📥 [2025-11-10T06:54:13.426Z] GET /api/categories
+[2025-11-10T06:55:14.188Z] [32MINFO[39M: 📥 [2025-11-10T06:55:14.188Z] OPTIONS /api/businesses
+[2025-11-10T06:55:14.210Z] [32MINFO[39M: 📥 [2025-11-10T06:55:14.210Z] POST /api/businesses
+[2025-11-10T06:55:14.218Z] [32MINFO[39M: Creating business...
+[2025-11-10T06:55:14.221Z] [32MINFO[39M: [object Object]
+[2025-11-10T06:55:14.221Z] [32MINFO[39M: Final Data to Insert into DB: 4,Testinggg,1,229,400708,business,Near Cnc web world,,nerul,8451060827,,testingg@gmail.com,resto,,"",testinggg-nerul,,
+[2025-11-10T06:55:31.787Z] [32MINFO[39M: 📥 [2025-11-10T06:55:31.787Z] OPTIONS /api/businesses/user
+[2025-11-10T06:55:31.788Z] [32MINFO[39M: 📥 [2025-11-10T06:55:31.788Z] OPTIONS /api/businesses/user
+[2025-11-10T06:55:32.003Z] [32MINFO[39M: 📥 [2025-11-10T06:55:32.003Z] GET /api/businesses/user
+[2025-11-10T06:55:32.007Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-10T06:55:32.009Z] [32MINFO[39M: [object Object]
+[2025-11-10T06:55:32.011Z] [32MINFO[39M: Image rows: 
+[2025-11-10T06:55:32.011Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-10T06:55:32.021Z] [32MINFO[39M: 📥 [2025-11-10T06:55:32.021Z] GET /api/businesses/user
+[2025-11-10T06:55:32.024Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-10T06:55:32.026Z] [32MINFO[39M: [object Object]
+[2025-11-10T06:55:32.027Z] [32MINFO[39M: Image rows: 
+[2025-11-10T06:55:32.028Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-10T06:55:39.563Z] [32MINFO[39M: 📥 [2025-11-10T06:55:39.563Z] OPTIONS /api/businesses/user
+[2025-11-10T06:55:39.564Z] [32MINFO[39M: 📥 [2025-11-10T06:55:39.564Z] OPTIONS /api/businesses/user
+[2025-11-10T06:55:39.574Z] [32MINFO[39M: 📥 [2025-11-10T06:55:39.574Z] GET /api/businesses/user
+[2025-11-10T06:55:39.576Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-10T06:55:39.578Z] [32MINFO[39M: [object Object]
+[2025-11-10T06:55:39.578Z] [32MINFO[39M: Image rows: 
+[2025-11-10T06:55:39.579Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-10T06:55:39.589Z] [32MINFO[39M: 📥 [2025-11-10T06:55:39.589Z] GET /api/businesses/user
+[2025-11-10T06:55:39.591Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-10T06:55:39.592Z] [32MINFO[39M: [object Object]
+[2025-11-10T06:55:39.593Z] [32MINFO[39M: Image rows: 
+[2025-11-10T06:55:39.593Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-10T06:56:23.016Z] [32MINFO[39M: 📥 [2025-11-10T06:56:23.016Z] OPTIONS /api/count/webview
+[2025-11-10T06:56:23.016Z] [32MINFO[39M: 📥 [2025-11-10T06:56:23.016Z] OPTIONS /api/count/webview
+[2025-11-10T06:56:23.017Z] [32MINFO[39M: 📥 [2025-11-10T06:56:23.017Z] OPTIONS /api/businesses/user
+[2025-11-10T06:56:23.018Z] [32MINFO[39M: 📥 [2025-11-10T06:56:23.018Z] OPTIONS /api/businesses/user
+[2025-11-10T06:56:23.024Z] [32MINFO[39M: 📥 [2025-11-10T06:56:23.024Z] GET /api/count/webview
+[2025-11-10T06:56:23.026Z] [32MINFO[39M: 📥 [2025-11-10T06:56:23.026Z] GET /api/businesses/user
+[2025-11-10T06:56:23.031Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-10T06:56:23.033Z] [32MINFO[39M: [object Object]
+[2025-11-10T06:56:23.034Z] [32MINFO[39M: 📥 [2025-11-10T06:56:23.034Z] GET /api/count/webview
+[2025-11-10T06:56:23.035Z] [32MINFO[39M: Image rows: 
+[2025-11-10T06:56:23.035Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-10T06:56:23.040Z] [32MINFO[39M: 📥 [2025-11-10T06:56:23.040Z] GET /api/businesses/user
+[2025-11-10T06:56:23.043Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-10T06:56:23.044Z] [32MINFO[39M: [object Object]
+[2025-11-10T06:56:23.045Z] [32MINFO[39M: Image rows: 
+[2025-11-10T06:56:23.045Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-10T06:56:23.604Z] [32MINFO[39M: 📥 [2025-11-10T06:56:23.603Z] GET /api/count/webview
+[2025-11-10T06:56:23.663Z] [32MINFO[39M: 📥 [2025-11-10T06:56:23.663Z] GET /api/businesses/user
+[2025-11-10T06:56:23.666Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-10T06:56:23.668Z] [32MINFO[39M: [object Object]
+[2025-11-10T06:56:23.670Z] [32MINFO[39M: Image rows: 
+[2025-11-10T06:56:23.670Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-10T06:56:23.684Z] [32MINFO[39M: 📥 [2025-11-10T06:56:23.684Z] GET /api/count/webview
+[2025-11-10T06:56:23.693Z] [32MINFO[39M: 📥 [2025-11-10T06:56:23.693Z] GET /api/businesses/user
+[2025-11-10T06:56:23.695Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-10T06:56:23.696Z] [32MINFO[39M: [object Object]
+[2025-11-10T06:56:23.697Z] [32MINFO[39M: Image rows: 
+[2025-11-10T06:56:23.697Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-10T06:56:35.699Z] [32MINFO[39M: 📥 [2025-11-10T06:56:35.699Z] OPTIONS /api/count/webview
+[2025-11-10T06:56:35.700Z] [32MINFO[39M: 📥 [2025-11-10T06:56:35.700Z] OPTIONS /api/count/webview
+[2025-11-10T06:56:35.700Z] [32MINFO[39M: 📥 [2025-11-10T06:56:35.700Z] OPTIONS /api/businesses/user
+[2025-11-10T06:56:35.704Z] [32MINFO[39M: 📥 [2025-11-10T06:56:35.704Z] OPTIONS /api/businesses/user
+[2025-11-10T06:56:35.709Z] [32MINFO[39M: 📥 [2025-11-10T06:56:35.709Z] GET /api/count/webview
+[2025-11-10T06:56:35.714Z] [32MINFO[39M: 📥 [2025-11-10T06:56:35.714Z] GET /api/businesses/user
+[2025-11-10T06:56:35.719Z] [32MINFO[39M: 📥 [2025-11-10T06:56:35.719Z] GET /api/count/webview
+[2025-11-10T06:56:35.721Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-10T06:56:35.725Z] [32MINFO[39M: [object Object]
+[2025-11-10T06:56:35.727Z] [32MINFO[39M: Image rows: 
+[2025-11-10T06:56:35.728Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-10T06:56:35.734Z] [32MINFO[39M: 📥 [2025-11-10T06:56:35.734Z] GET /api/businesses/user
+[2025-11-10T06:56:35.740Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-10T06:56:35.742Z] [32MINFO[39M: [object Object]
+[2025-11-10T06:56:35.743Z] [32MINFO[39M: Image rows: 
+[2025-11-10T06:56:35.743Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-10T06:57:07.783Z] [32MINFO[39M: 📥 [2025-11-10T06:57:07.783Z] OPTIONS /api/count/webview
+[2025-11-10T06:57:07.784Z] [32MINFO[39M: 📥 [2025-11-10T06:57:07.784Z] OPTIONS /api/count/webview
+[2025-11-10T06:57:07.785Z] [32MINFO[39M: 📥 [2025-11-10T06:57:07.785Z] OPTIONS /api/businesses/businesses/s/undefined
+[2025-11-10T06:57:07.786Z] [32MINFO[39M: 📥 [2025-11-10T06:57:07.786Z] OPTIONS /api/businesses/businesses/s/undefined
+[2025-11-10T06:57:07.797Z] [32MINFO[39M: 📥 [2025-11-10T06:57:07.797Z] GET /api/businesses/businesses/s/undefined
+[2025-11-10T06:57:07.799Z] [32MINFO[39M: 📥 [2025-11-10T06:57:07.799Z] GET /api/count/webview
+[2025-11-10T06:57:07.803Z] [32MINFO[39M: 📥 [2025-11-10T06:57:07.803Z] GET /api/businesses/businesses/s/undefined
+[2025-11-10T06:57:07.808Z] [32MINFO[39M: 📥 [2025-11-10T06:57:07.808Z] GET /api/count/webview
+[2025-11-10T06:57:35.036Z] [32MINFO[39M: 📥 [2025-11-10T06:57:35.036Z] OPTIONS /api/count/webview
+[2025-11-10T06:57:35.037Z] [32MINFO[39M: 📥 [2025-11-10T06:57:35.037Z] OPTIONS /api/businesses/s/undefined
+[2025-11-10T06:57:35.039Z] [32MINFO[39M: 📥 [2025-11-10T06:57:35.039Z] OPTIONS /api/count/webview
+[2025-11-10T06:57:35.040Z] [32MINFO[39M: 📥 [2025-11-10T06:57:35.040Z] OPTIONS /api/businesses/s/undefined
+[2025-11-10T06:57:35.214Z] [32MINFO[39M: 📥 [2025-11-10T06:57:35.214Z] GET /api/count/webview
+[2025-11-10T06:57:35.215Z] [32MINFO[39M: 📥 [2025-11-10T06:57:35.215Z] GET /api/businesses/s/undefined
+[2025-11-10T06:57:35.216Z] [32MINFO[39M: Received request for business with slug: undefined
+[2025-11-10T06:57:35.390Z] [32MINFO[39M: 📥 [2025-11-10T06:57:35.390Z] GET /api/businesses/s/undefined
+[2025-11-10T06:57:35.391Z] [32MINFO[39M: Received request for business with slug: undefined
+[2025-11-10T06:57:35.391Z] [32MINFO[39M: 📥 [2025-11-10T06:57:35.391Z] GET /api/count/webview
+[2025-11-10T06:57:52.498Z] [32MINFO[39M: 📥 [2025-11-10T06:57:52.498Z] OPTIONS /api/count/webview
+[2025-11-10T06:57:52.499Z] [32MINFO[39M: 📥 [2025-11-10T06:57:52.499Z] OPTIONS /api/businesses/s/undefined
+[2025-11-10T06:57:52.499Z] [32MINFO[39M: 📥 [2025-11-10T06:57:52.499Z] OPTIONS /api/count/webview
+[2025-11-10T06:57:52.500Z] [32MINFO[39M: 📥 [2025-11-10T06:57:52.500Z] OPTIONS /api/businesses/s/undefined
+[2025-11-10T06:57:52.509Z] [32MINFO[39M: 📥 [2025-11-10T06:57:52.509Z] GET /api/count/webview
+[2025-11-10T06:57:52.510Z] [32MINFO[39M: 📥 [2025-11-10T06:57:52.510Z] GET /api/businesses/s/undefined
+[2025-11-10T06:57:52.511Z] [32MINFO[39M: Received request for business with slug: undefined
+[2025-11-10T06:57:52.517Z] [32MINFO[39M: 📥 [2025-11-10T06:57:52.517Z] GET /api/count/webview
+[2025-11-10T06:57:52.518Z] [32MINFO[39M: 📥 [2025-11-10T06:57:52.518Z] GET /api/businesses/s/undefined
+[2025-11-10T06:57:52.519Z] [32MINFO[39M: Received request for business with slug: undefined
+[2025-11-10T06:57:59.259Z] [32MINFO[39M: 📥 [2025-11-10T06:57:59.259Z] OPTIONS /api/count/webview
+[2025-11-10T06:57:59.262Z] [32MINFO[39M: 📥 [2025-11-10T06:57:59.262Z] OPTIONS /api/count/webview
+[2025-11-10T06:57:59.269Z] [32MINFO[39M: 📥 [2025-11-10T06:57:59.269Z] GET /api/count/webview
+[2025-11-10T06:57:59.298Z] [32MINFO[39M: 📥 [2025-11-10T06:57:59.298Z] GET /api/count/webview
+[2025-11-10T06:59:28.226Z] [32MINFO[39M: 📥 [2025-11-10T06:59:28.226Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T06:59:28.226Z] [32MINFO[39M: 📥 [2025-11-10T06:59:28.226Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T06:59:28.234Z] [32MINFO[39M: 📥 [2025-11-10T06:59:28.234Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T06:59:28.335Z] [32MINFO[39M: 📥 [2025-11-10T06:59:28.335Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T06:59:36.743Z] [32MINFO[39M: 📥 [2025-11-10T06:59:36.743Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T06:59:36.744Z] [32MINFO[39M: 📥 [2025-11-10T06:59:36.744Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T06:59:36.757Z] [32MINFO[39M: 📥 [2025-11-10T06:59:36.757Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T06:59:36.773Z] [32MINFO[39M: 📥 [2025-11-10T06:59:36.773Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:04:20.748Z] [32MINFO[39M: 📥 [2025-11-10T07:04:20.748Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:04:20.749Z] [32MINFO[39M: 📥 [2025-11-10T07:04:20.749Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:04:20.765Z] [32MINFO[39M: 📥 [2025-11-10T07:04:20.765Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:04:20.777Z] [32MINFO[39M: 📥 [2025-11-10T07:04:20.777Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:09:13.964Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T07:09:13.986Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T07:09:22.448Z] [32MINFO[39M: 📥 [2025-11-10T07:09:22.448Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:09:22.452Z] [32MINFO[39M: 📥 [2025-11-10T07:09:22.452Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:09:22.470Z] [32MINFO[39M: 📥 [2025-11-10T07:09:22.470Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:09:22.574Z] [32MINFO[39M: 📥 [2025-11-10T07:09:22.573Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:10:53.784Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T07:10:53.800Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T07:10:56.591Z] [32MINFO[39M: 📥 [2025-11-10T07:10:56.591Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:10:56.598Z] [32MINFO[39M: 📥 [2025-11-10T07:10:56.598Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:10:56.606Z] [32MINFO[39M: 📥 [2025-11-10T07:10:56.606Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:10:56.649Z] [32MINFO[39M: 📥 [2025-11-10T07:10:56.649Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:11:28.398Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T07:11:28.415Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T07:11:31.544Z] [32MINFO[39M: 📥 [2025-11-10T07:11:31.544Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:11:31.549Z] [32MINFO[39M: 📥 [2025-11-10T07:11:31.549Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:11:31.565Z] [32MINFO[39M: 📥 [2025-11-10T07:11:31.565Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:11:31.602Z] [32MINFO[39M: 
+[2025-11-10T07:11:31.623Z] [32MINFO[39M: 📥 [2025-11-10T07:11:31.623Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:11:31.630Z] [32MINFO[39M: 
+[2025-11-10T07:12:29.222Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T07:12:29.238Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T07:12:44.331Z] [32MINFO[39M: 📥 [2025-11-10T07:12:44.331Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:12:44.336Z] [32MINFO[39M: 📥 [2025-11-10T07:12:44.336Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:12:44.533Z] [32MINFO[39M: 📥 [2025-11-10T07:12:44.533Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:12:44.581Z] [32MINFO[39M: 📥 [2025-11-10T07:12:44.581Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:17:06.272Z] [32MINFO[39M: 📥 [2025-11-10T07:17:06.272Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:17:06.273Z] [32MINFO[39M: 📥 [2025-11-10T07:17:06.273Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:17:06.376Z] [32MINFO[39M: 📥 [2025-11-10T07:17:06.376Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:17:06.455Z] [32MINFO[39M: 📥 [2025-11-10T07:17:06.455Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:18:23.825Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T07:18:23.844Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T07:18:27.274Z] [32MINFO[39M: 📥 [2025-11-10T07:18:27.274Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:18:27.307Z] [32MINFO[39M: 📥 [2025-11-10T07:18:27.307Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:18:27.492Z] [32MINFO[39M: 📥 [2025-11-10T07:18:27.492Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:18:27.649Z] [32MINFO[39M: 📥 [2025-11-10T07:18:27.648Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:18:40.423Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T07:18:40.443Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T07:18:43.407Z] [32MINFO[39M: 📥 [2025-11-10T07:18:43.407Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:18:43.410Z] [32MINFO[39M: 📥 [2025-11-10T07:18:43.410Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:18:43.437Z] [32MINFO[39M: 📥 [2025-11-10T07:18:43.437Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:18:43.464Z] [32MINFO[39M: 
+[2025-11-10T07:18:43.491Z] [32MINFO[39M: 📥 [2025-11-10T07:18:43.491Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:18:43.496Z] [32MINFO[39M: 
+[2025-11-10T07:20:03.817Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T07:20:03.977Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T07:20:06.373Z] [32MINFO[39M: 📥 [2025-11-10T07:20:06.373Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:20:06.377Z] [32MINFO[39M: 📥 [2025-11-10T07:20:06.377Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:20:06.497Z] [32MINFO[39M: 📥 [2025-11-10T07:20:06.497Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:20:06.541Z] [32MINFO[39M: 📥 [2025-11-10T07:20:06.541Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:20:07.785Z] [32MINFO[39M: 📥 [2025-11-10T07:20:07.785Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:20:07.787Z] [31MERROR[39M: Error validating token: Error: Authorization token missing or invalid
+[2025-11-10T07:20:38.744Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T07:20:38.760Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T07:20:42.486Z] [32MINFO[39M: 📥 [2025-11-10T07:20:42.486Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:20:42.491Z] [32MINFO[39M: 📥 [2025-11-10T07:20:42.491Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:20:42.560Z] [32MINFO[39M: 📥 [2025-11-10T07:20:42.560Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:20:43.227Z] [32MINFO[39M: 📥 [2025-11-10T07:20:43.227Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:20:49.388Z] [32MINFO[39M: 📥 [2025-11-10T07:20:49.388Z] GET /api/count/webview
+[2025-11-10T07:20:49.390Z] [32MINFO[39M: 📥 [2025-11-10T07:20:49.390Z] GET /api/categories
+[2025-11-10T07:20:49.689Z] [32MINFO[39M: 📥 [2025-11-10T07:20:49.689Z] GET /api/count/webview
+[2025-11-10T07:20:49.706Z] [32MINFO[39M: 📥 [2025-11-10T07:20:49.706Z] GET /api/categories
+[2025-11-10T07:20:56.827Z] [32MINFO[39M: 📥 [2025-11-10T07:20:56.827Z] OPTIONS /api/otp/send
+[2025-11-10T07:20:57.081Z] [32MINFO[39M: 📥 [2025-11-10T07:20:57.081Z] POST /api/otp/send
+[2025-11-10T07:20:57.083Z] [32MINFO[39M: Received from frontend: [object Object]
+[2025-11-10T07:20:57.083Z] [32MINFO[39M: Generated OTP for 8451060827: 883060
+[2025-11-10T07:21:03.552Z] [32MINFO[39M: 📥 [2025-11-10T07:21:03.552Z] OPTIONS /api/otp/verify
+[2025-11-10T07:21:03.704Z] [32MINFO[39M: 📥 [2025-11-10T07:21:03.704Z] POST /api/otp/verify
+[2025-11-10T07:21:03.706Z] [32MINFO[39M: Received in verifyOTP: [object Object]
+[2025-11-10T07:21:09.955Z] [32MINFO[39M: 📥 [2025-11-10T07:21:09.955Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:21:09.956Z] [32MINFO[39M: 📥 [2025-11-10T07:21:09.956Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:21:09.971Z] [32MINFO[39M: 📥 [2025-11-10T07:21:09.971Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:21:10.006Z] [32MINFO[39M: 📥 [2025-11-10T07:21:10.006Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:23:33.325Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T07:23:33.339Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T07:23:38.353Z] [32MINFO[39M: 📥 [2025-11-10T07:23:38.353Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:23:38.358Z] [32MINFO[39M: 📥 [2025-11-10T07:23:38.358Z] OPTIONS /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:23:38.859Z] [32MINFO[39M: 📥 [2025-11-10T07:23:38.859Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:23:38.882Z] [32MINFO[39M: 
+[2025-11-10T07:23:38.971Z] [32MINFO[39M: 📥 [2025-11-10T07:23:38.971Z] GET /api/businesses/businesses?isVerified=false/&page=1&limit=10
+[2025-11-10T07:23:38.976Z] [32MINFO[39M: 
+[2025-11-10T07:28:52.731Z] [32MINFO[39M: 📥 [2025-11-10T07:28:52.731Z] OPTIONS /api/businesses/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:28:52.776Z] [32MINFO[39M: 📥 [2025-11-10T07:28:52.776Z] OPTIONS /api/businesses/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:28:52.790Z] [32MINFO[39M: 📥 [2025-11-10T07:28:52.790Z] GET /api/businesses/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:28:52.796Z] [32MINFO[39M: 
+[2025-11-10T07:28:52.833Z] [32MINFO[39M: 📥 [2025-11-10T07:28:52.833Z] GET /api/businesses/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:28:52.839Z] [32MINFO[39M: 
+[2025-11-10T07:29:20.144Z] [32MINFO[39M: 📥 [2025-11-10T07:29:20.144Z] OPTIONS /api/businesses/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:29:20.148Z] [32MINFO[39M: 📥 [2025-11-10T07:29:20.148Z] OPTIONS /api/businesses/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:29:20.234Z] [32MINFO[39M: 📥 [2025-11-10T07:29:20.234Z] GET /api/businesses/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:29:20.239Z] [32MINFO[39M: 
+[2025-11-10T07:29:20.247Z] [32MINFO[39M: 📥 [2025-11-10T07:29:20.246Z] GET /api/businesses/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:29:20.251Z] [32MINFO[39M: 
+[2025-11-10T07:29:39.227Z] [32MINFO[39M: 📥 [2025-11-10T07:29:39.227Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:29:39.228Z] [32MINFO[39M: 📥 [2025-11-10T07:29:39.228Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:29:39.235Z] [32MINFO[39M: 📥 [2025-11-10T07:29:39.235Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:29:39.240Z] [31MERROR[39M: Error fetching businesses: Error: Unknown column 'b.isVerified' in 'where clause'
+[2025-11-10T07:29:39.248Z] [32MINFO[39M: 📥 [2025-11-10T07:29:39.248Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:29:39.251Z] [31MERROR[39M: Error fetching businesses: Error: Unknown column 'b.isVerified' in 'where clause'
+[2025-11-10T07:31:05.012Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T07:31:05.030Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T07:31:09.917Z] [32MINFO[39M: 📥 [2025-11-10T07:31:09.917Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:31:09.923Z] [32MINFO[39M: 📥 [2025-11-10T07:31:09.922Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:31:09.927Z] [32MINFO[39M: 📥 [2025-11-10T07:31:09.927Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:31:10.118Z] [32MINFO[39M: 📥 [2025-11-10T07:31:10.118Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:31:35.930Z] [32MINFO[39M: 📥 [2025-11-10T07:31:35.930Z] OPTIONS /api/businesses/businesses/verify/28
+[2025-11-10T07:31:35.937Z] [32MINFO[39M: 📥 [2025-11-10T07:31:35.937Z] PUT /api/businesses/businesses/verify/28
+[2025-11-10T07:31:58.174Z] [32MINFO[39M: 📥 [2025-11-10T07:31:58.174Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:31:58.175Z] [32MINFO[39M: 📥 [2025-11-10T07:31:58.175Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:31:58.184Z] [32MINFO[39M: 📥 [2025-11-10T07:31:58.184Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:31:58.200Z] [32MINFO[39M: 📥 [2025-11-10T07:31:58.200Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:32:07.734Z] [32MINFO[39M: 📥 [2025-11-10T07:32:07.734Z] OPTIONS /api/businesses/businesses/verify/19
+[2025-11-10T07:32:07.896Z] [32MINFO[39M: 📥 [2025-11-10T07:32:07.896Z] PUT /api/businesses/businesses/verify/19
+[2025-11-10T07:35:15.052Z] [32MINFO[39M: 📥 [2025-11-10T07:35:15.052Z] OPTIONS /api/businesses?isVerified=true&page=1&limit=10
+[2025-11-10T07:35:15.053Z] [32MINFO[39M: 📥 [2025-11-10T07:35:15.053Z] OPTIONS /api/businesses?isVerified=true&page=1&limit=10
+[2025-11-10T07:35:15.074Z] [32MINFO[39M: 📥 [2025-11-10T07:35:15.074Z] GET /api/businesses?isVerified=true&page=1&limit=10
+[2025-11-10T07:35:15.095Z] [32MINFO[39M: 📥 [2025-11-10T07:35:15.095Z] GET /api/businesses?isVerified=true&page=1&limit=10
+[2025-11-10T07:35:34.344Z] [32MINFO[39M: 📥 [2025-11-10T07:35:34.344Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:35:34.346Z] [32MINFO[39M: 📥 [2025-11-10T07:35:34.346Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:35:34.351Z] [32MINFO[39M: 📥 [2025-11-10T07:35:34.351Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:35:34.398Z] [32MINFO[39M: 📥 [2025-11-10T07:35:34.398Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:35:49.234Z] [32MINFO[39M: 📥 [2025-11-10T07:35:49.234Z] OPTIONS /api/businesses/businesses/verify/17
+[2025-11-10T07:35:49.247Z] [32MINFO[39M: 📥 [2025-11-10T07:35:49.247Z] PUT /api/businesses/businesses/verify/17
+[2025-11-10T07:45:22.857Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T07:45:22.872Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T07:45:30.191Z] [32MINFO[39M: 📥 [2025-11-10T07:45:30.191Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:45:30.194Z] [32MINFO[39M: 📥 [2025-11-10T07:45:30.194Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:45:30.206Z] [32MINFO[39M: 📥 [2025-11-10T07:45:30.206Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:45:30.211Z] [31MERROR[39M: Error fetching businesses: ReferenceError: Cannot access 'countQuery' before initialization
+[2025-11-10T07:45:30.220Z] [32MINFO[39M: 📥 [2025-11-10T07:45:30.220Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T07:45:30.222Z] [31MERROR[39M: Error fetching businesses: ReferenceError: Cannot access 'countQuery' before initialization
+[2025-11-10T07:45:44.281Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T07:45:44.297Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T07:45:56.847Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T07:45:56.861Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T08:47:47.201Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T08:47:47.240Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T09:48:38.985Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T09:48:39.011Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T09:54:09.986Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T09:54:10.004Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T09:54:46.975Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T09:54:46.992Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T10:27:00.907Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T10:27:00.923Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T10:45:59.122Z] [32MINFO[39M:  Server running on port  http://localhost:5004
+[2025-11-10T10:45:59.137Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:00:48.734Z] [32MINFO[39M:  Server running on port  http://localhost:5005
+[2025-11-10T11:00:48.750Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:06:22.594Z] [32MINFO[39M:  Server running on port  http://localhost:5005
+[2025-11-10T11:06:22.611Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:07:03.008Z] [32MINFO[39M:  Server running on port  http://localhost:5005
+[2025-11-10T11:07:03.109Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:07:25.382Z] [32MINFO[39M:  Server running on port  http://localhost:5005
+[2025-11-10T11:07:25.399Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:07:36.917Z] [32MINFO[39M:  Server running on port  http://localhost:5005
+[2025-11-10T11:07:36.934Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:09:46.954Z] [32MINFO[39M:  Server running on port  http://localhost:5005
+[2025-11-10T11:09:46.970Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:12:45.965Z] [32MINFO[39M:  Server running on port  http://localhost:5005
+[2025-11-10T11:12:45.982Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:13:32.671Z] [32MINFO[39M:  Server running on port  http://localhost:5005
+[2025-11-10T11:13:32.685Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:13:47.636Z] [32MINFO[39M:  Server running on port  http://localhost:5005
+[2025-11-10T11:13:47.651Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:15:07.849Z] [32MINFO[39M:  Server running on port  http://localhost:5005
+[2025-11-10T11:15:07.880Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:15:12.320Z] [32MINFO[39M:  Server running on port  http://localhost:5005
+[2025-11-10T11:15:12.344Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:15:22.244Z] [32MINFO[39M:  Server running on port  http://localhost:5005
+[2025-11-10T11:15:22.261Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:16:27.849Z] [32MINFO[39M:  Server running on port  http://localhost:5005
+[2025-11-10T11:16:27.867Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:16:51.709Z] [32MINFO[39M:  Server running on port  http://localhost:5005
+[2025-11-10T11:16:51.724Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:16:53.435Z] [32MINFO[39M:  Server running on port  http://localhost:5005
+[2025-11-10T11:16:53.451Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:17:17.584Z] [32MINFO[39M:  Server running on port  http://localhost:5005
+[2025-11-10T11:17:17.603Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:17:26.684Z] [32MINFO[39M:  Server running on port  http://localhost:5005
+[2025-11-10T11:17:26.701Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:17:39.511Z] [32MINFO[39M:  Server running on port  http://localhost:5005
+[2025-11-10T11:17:39.527Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:20:18.186Z] [32MINFO[39M:  Server running on port  http://localhost:5005
+[2025-11-10T11:20:18.220Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:20:28.943Z] [32MINFO[39M:  Server running on port  http://localhost:5005
+[2025-11-10T11:20:28.958Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:20:33.398Z] [32MINFO[39M:  Server running on port  http://localhost:5005
+[2025-11-10T11:20:33.412Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:27:44.091Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:27:44.104Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:27:49.063Z] [32MINFO[39M: 📥 [2025-11-10T11:27:49.063Z] GET /sdf
+[2025-11-10T11:28:17.016Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:28:17.032Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:28:44.224Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:28:44.239Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:30:36.098Z] [32MINFO[39M: 📥 [2025-11-10T11:30:36.098Z] GET /api/count/webview
+[2025-11-10T11:33:35.228Z] [32MINFO[39M: 📥 [2025-11-10T11:33:35.228Z] OPTIONS /api/categories
+[2025-11-10T11:33:35.244Z] [32MINFO[39M: 📥 [2025-11-10T11:33:35.244Z] GET /api/categories
+[2025-11-10T11:34:07.676Z] [32MINFO[39M: 📥 [2025-11-10T11:34:07.676Z] OPTIONS /api/count/webview
+[2025-11-10T11:34:07.677Z] [32MINFO[39M: 📥 [2025-11-10T11:34:07.677Z] OPTIONS /api/count/webview
+[2025-11-10T11:34:07.687Z] [32MINFO[39M: 📥 [2025-11-10T11:34:07.687Z] GET /api/count/webview
+[2025-11-10T11:34:07.702Z] [32MINFO[39M: 📥 [2025-11-10T11:34:07.702Z] GET /api/count/webview
+[2025-11-10T11:34:38.640Z] [32MINFO[39M: 📥 [2025-11-10T11:34:38.640Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:34:38.642Z] [32MINFO[39M: 📥 [2025-11-10T11:34:38.642Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:34:38.646Z] [32MINFO[39M: 📥 [2025-11-10T11:34:38.646Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:34:38.663Z] [32MINFO[39M: 📥 [2025-11-10T11:34:38.663Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:35:18.122Z] [32MINFO[39M: 📥 [2025-11-10T11:35:18.122Z] OPTIONS /api/businesses?isVerified=true&page=1&limit=10
+[2025-11-10T11:35:18.124Z] [32MINFO[39M: 📥 [2025-11-10T11:35:18.124Z] OPTIONS /api/businesses?isVerified=true&page=1&limit=10
+[2025-11-10T11:35:18.135Z] [32MINFO[39M: 📥 [2025-11-10T11:35:18.134Z] GET /api/businesses?isVerified=true&page=1&limit=10
+[2025-11-10T11:35:18.199Z] [32MINFO[39M: 📥 [2025-11-10T11:35:18.199Z] GET /api/businesses?isVerified=true&page=1&limit=10
+[2025-11-10T11:35:24.393Z] [32MINFO[39M: 📥 [2025-11-10T11:35:24.393Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:35:24.395Z] [32MINFO[39M: 📥 [2025-11-10T11:35:24.395Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:35:24.571Z] [32MINFO[39M: 📥 [2025-11-10T11:35:24.571Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:35:24.584Z] [32MINFO[39M: 📥 [2025-11-10T11:35:24.584Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:36:13.196Z] [32MINFO[39M: 📥 [2025-11-10T11:36:13.196Z] OPTIONS /api/businesses?isVerified=true&page=1&limit=10
+[2025-11-10T11:36:13.321Z] [32MINFO[39M: 📥 [2025-11-10T11:36:13.321Z] OPTIONS /api/businesses?isVerified=true&page=1&limit=10
+[2025-11-10T11:36:13.323Z] [32MINFO[39M: 📥 [2025-11-10T11:36:13.323Z] GET /api/businesses?isVerified=true&page=1&limit=10
+[2025-11-10T11:36:13.528Z] [32MINFO[39M: 📥 [2025-11-10T11:36:13.528Z] GET /api/businesses?isVerified=true&page=1&limit=10
+[2025-11-10T11:36:51.416Z] [32MINFO[39M: 📥 [2025-11-10T11:36:51.416Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:36:51.417Z] [32MINFO[39M: 📥 [2025-11-10T11:36:51.417Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:36:51.827Z] [32MINFO[39M: 📥 [2025-11-10T11:36:51.827Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:36:52.049Z] [32MINFO[39M: 📥 [2025-11-10T11:36:52.049Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:38:09.339Z] [32MINFO[39M: 📥 [2025-11-10T11:38:09.339Z] OPTIONS /api/businesses/undefined
+[2025-11-10T11:38:09.368Z] [32MINFO[39M: 📥 [2025-11-10T11:38:09.368Z] PUT /api/businesses/undefined
+[2025-11-10T11:38:09.379Z] [32MINFO[39M: 4
+[2025-11-10T11:38:09.380Z] [32MINFO[39M: Business ID: undefined
+[2025-11-10T11:38:09.380Z] [32MINFO[39M: Current User ID: 4
+[2025-11-10T11:38:09.380Z] [32MINFO[39M: User Role: admin
+[2025-11-10T11:38:09.380Z] [32MINFO[39M: User: [object Object]
+[2025-11-10T11:38:09.380Z] [32MINFO[39M: Request Body: [object Object]
+[2025-11-10T11:38:09.385Z] [31MERROR[39M: Update business error: ReferenceError: isAdminOrSubadmin is not defined
+[2025-11-10T11:39:44.003Z] [32MINFO[39M: 📥 [2025-11-10T11:39:44.003Z] OPTIONS /api/businesses/undefined
+[2025-11-10T11:39:44.011Z] [32MINFO[39M: 📥 [2025-11-10T11:39:44.010Z] PUT /api/businesses/undefined
+[2025-11-10T11:39:44.014Z] [32MINFO[39M: 4
+[2025-11-10T11:39:44.014Z] [32MINFO[39M: Business ID: undefined
+[2025-11-10T11:39:44.014Z] [32MINFO[39M: Current User ID: 4
+[2025-11-10T11:39:44.015Z] [32MINFO[39M: User Role: admin
+[2025-11-10T11:39:44.015Z] [32MINFO[39M: User: [object Object]
+[2025-11-10T11:39:44.015Z] [32MINFO[39M: Request Body: [object Object]
+[2025-11-10T11:39:44.017Z] [31MERROR[39M: Update business error: ReferenceError: isAdminOrSubadmin is not defined
+[2025-11-10T11:40:23.380Z] [32MINFO[39M: 📥 [2025-11-10T11:40:23.380Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:40:23.382Z] [32MINFO[39M: 📥 [2025-11-10T11:40:23.382Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:40:23.455Z] [32MINFO[39M: 📥 [2025-11-10T11:40:23.455Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:40:23.501Z] [32MINFO[39M: 📥 [2025-11-10T11:40:23.501Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:40:40.901Z] [32MINFO[39M: 📥 [2025-11-10T11:40:40.901Z] OPTIONS /api/businesses/undefined
+[2025-11-10T11:40:40.909Z] [32MINFO[39M: 📥 [2025-11-10T11:40:40.909Z] PUT /api/businesses/undefined
+[2025-11-10T11:40:40.913Z] [32MINFO[39M: 4
+[2025-11-10T11:40:40.913Z] [32MINFO[39M: Business ID: undefined
+[2025-11-10T11:40:40.913Z] [32MINFO[39M: Current User ID: 4
+[2025-11-10T11:40:40.913Z] [32MINFO[39M: User Role: admin
+[2025-11-10T11:40:40.914Z] [32MINFO[39M: User: [object Object]
+[2025-11-10T11:40:40.914Z] [32MINFO[39M: Request Body: [object Object]
+[2025-11-10T11:40:40.916Z] [31MERROR[39M: Update business error: ReferenceError: isAdminOrSubadmin is not defined
+[2025-11-10T11:41:43.129Z] [32MINFO[39M: 📥 [2025-11-10T11:41:43.129Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:41:43.130Z] [32MINFO[39M: 📥 [2025-11-10T11:41:43.130Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:41:43.266Z] [32MINFO[39M: 📥 [2025-11-10T11:41:43.265Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:41:43.284Z] [32MINFO[39M: 📥 [2025-11-10T11:41:43.284Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:41:44.256Z] [32MINFO[39M: 📥 [2025-11-10T11:41:44.256Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:41:44.377Z] [32MINFO[39M: 📥 [2025-11-10T11:41:44.377Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:42:20.043Z] [32MINFO[39M: 📥 [2025-11-10T11:42:20.043Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:42:20.045Z] [32MINFO[39M: 📥 [2025-11-10T11:42:20.045Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:42:20.081Z] [32MINFO[39M: 📥 [2025-11-10T11:42:20.081Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:42:20.100Z] [32MINFO[39M: 📥 [2025-11-10T11:42:20.100Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:43:12.708Z] [32MINFO[39M: 📥 [2025-11-10T11:43:12.708Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:43:12.979Z] [32MINFO[39M: 📥 [2025-11-10T11:43:12.979Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:43:12.981Z] [32MINFO[39M: 📥 [2025-11-10T11:43:12.981Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:43:13.031Z] [32MINFO[39M: 📥 [2025-11-10T11:43:13.031Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:43:42.486Z] [32MINFO[39M: 📥 [2025-11-10T11:43:42.486Z] OPTIONS /api/businesses/undefined
+[2025-11-10T11:43:42.495Z] [32MINFO[39M: 📥 [2025-11-10T11:43:42.495Z] PUT /api/businesses/undefined
+[2025-11-10T11:43:42.499Z] [32MINFO[39M: 4
+[2025-11-10T11:43:42.499Z] [32MINFO[39M: Business ID: undefined
+[2025-11-10T11:43:42.499Z] [32MINFO[39M: Current User ID: 4
+[2025-11-10T11:43:42.499Z] [32MINFO[39M: User Role: admin
+[2025-11-10T11:43:42.499Z] [32MINFO[39M: User: [object Object]
+[2025-11-10T11:43:42.499Z] [32MINFO[39M: Request Body: [object Object]
+[2025-11-10T11:43:42.502Z] [31MERROR[39M: Update business error: ReferenceError: isAdminOrSubadmin is not defined
+[2025-11-10T11:44:18.875Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:44:18.889Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:46:31.588Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:46:31.603Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:47:04.544Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:47:04.566Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:47:06.332Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:47:06.352Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:47:31.793Z] [32MINFO[39M: 📥 [2025-11-10T11:47:31.793Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:47:31.801Z] [32MINFO[39M: 📥 [2025-11-10T11:47:31.801Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:47:31.809Z] [32MINFO[39M: 📥 [2025-11-10T11:47:31.809Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:47:31.844Z] [32MINFO[39M: 📥 [2025-11-10T11:47:31.844Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:47:40.181Z] [32MINFO[39M: 📥 [2025-11-10T11:47:40.181Z] OPTIONS /api/businesses/undefined
+[2025-11-10T11:47:40.199Z] [32MINFO[39M: 📥 [2025-11-10T11:47:40.199Z] PUT /api/businesses/undefined
+[2025-11-10T11:47:40.208Z] [32MINFO[39M: 4
+[2025-11-10T11:47:40.209Z] [32MINFO[39M: Business ID: undefined
+[2025-11-10T11:47:40.209Z] [32MINFO[39M: Current User ID: 4
+[2025-11-10T11:47:40.210Z] [32MINFO[39M: User Role: admin
+[2025-11-10T11:47:40.210Z] [32MINFO[39M: User: [object Object]
+[2025-11-10T11:47:40.210Z] [32MINFO[39M: Request Body: [object Object]
+[2025-11-10T11:47:40.224Z] [31MERROR[39M: Update business error: ReferenceError: isAdminOrSubadmin is not defined
+[2025-11-10T11:48:08.073Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:48:08.089Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:50:03.353Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:50:03.381Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:50:09.392Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:50:09.408Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:51:04.405Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:51:04.422Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:51:06.982Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:51:07.001Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:51:28.764Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:51:28.779Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:51:39.278Z] [32MINFO[39M: 📥 [2025-11-10T11:51:39.277Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:51:39.283Z] [32MINFO[39M: 📥 [2025-11-10T11:51:39.283Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:51:39.578Z] [32MINFO[39M: 📥 [2025-11-10T11:51:39.578Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:51:40.618Z] [32MINFO[39M: 📥 [2025-11-10T11:51:40.618Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:51:48.482Z] [32MINFO[39M: 📥 [2025-11-10T11:51:48.482Z] OPTIONS /api/businesses/undefined
+[2025-11-10T11:51:48.654Z] [32MINFO[39M: 📥 [2025-11-10T11:51:48.654Z] PUT /api/businesses/undefined
+[2025-11-10T11:51:48.663Z] [32MINFO[39M: 4
+[2025-11-10T11:51:48.665Z] [32MINFO[39M: Business ID: undefined
+[2025-11-10T11:51:48.667Z] [32MINFO[39M: Current User ID: 4
+[2025-11-10T11:51:48.667Z] [32MINFO[39M: User Role: admin
+[2025-11-10T11:51:48.667Z] [32MINFO[39M: User: [object Object]
+[2025-11-10T11:51:48.668Z] [32MINFO[39M: Request Body: [object Object]
+[2025-11-10T11:51:48.674Z] [31MERROR[39M: Update business error: ReferenceError: isAdminOrSubadmin is not defined
+[2025-11-10T11:52:05.090Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:52:05.106Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:52:07.380Z] [32MINFO[39M: 📥 [2025-11-10T11:52:07.380Z] OPTIONS /api/businesses/undefined
+[2025-11-10T11:52:07.402Z] [32MINFO[39M: 📥 [2025-11-10T11:52:07.402Z] PUT /api/businesses/undefined
+[2025-11-10T11:52:07.421Z] [32MINFO[39M: 4
+[2025-11-10T11:52:07.421Z] [32MINFO[39M: Business ID: undefined
+[2025-11-10T11:52:07.422Z] [32MINFO[39M: Current User ID: 4
+[2025-11-10T11:52:07.422Z] [32MINFO[39M: User Role: admin
+[2025-11-10T11:52:07.423Z] [32MINFO[39M: User: [object Object]
+[2025-11-10T11:52:07.423Z] [32MINFO[39M: Request Body: [object Object]
+[2025-11-10T11:52:07.432Z] [32MINFO[39M:  admin is updating the business directly...
+[2025-11-10T11:52:07.433Z] [32MINFO[39M: admin is updating the business directly...
+[2025-11-10T11:52:07.442Z] [31MERROR[39M: Update business error: Error: Truncated incorrect DOUBLE value: 'undefined'
+[2025-11-10T11:52:20.669Z] [32MINFO[39M: 📥 [2025-11-10T11:52:20.669Z] OPTIONS /api/businesses/undefined
+[2025-11-10T11:52:20.811Z] [32MINFO[39M: 📥 [2025-11-10T11:52:20.810Z] PUT /api/businesses/undefined
+[2025-11-10T11:52:20.815Z] [32MINFO[39M: 4
+[2025-11-10T11:52:20.815Z] [32MINFO[39M: Business ID: undefined
+[2025-11-10T11:52:20.815Z] [32MINFO[39M: Current User ID: 4
+[2025-11-10T11:52:20.815Z] [32MINFO[39M: User Role: admin
+[2025-11-10T11:52:20.815Z] [32MINFO[39M: User: [object Object]
+[2025-11-10T11:52:20.815Z] [32MINFO[39M: Request Body: [object Object]
+[2025-11-10T11:52:20.822Z] [32MINFO[39M:  admin is updating the business directly...
+[2025-11-10T11:52:20.822Z] [32MINFO[39M: admin is updating the business directly...
+[2025-11-10T11:52:20.826Z] [31MERROR[39M: Update business error: Error: Truncated incorrect DOUBLE value: 'undefined'
+[2025-11-10T11:52:44.327Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:52:44.341Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:53:17.030Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:53:17.045Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:53:21.385Z] [32MINFO[39M: 📥 [2025-11-10T11:53:21.385Z] OPTIONS /api/businesses/undefined
+[2025-11-10T11:53:21.404Z] [32MINFO[39M: 📥 [2025-11-10T11:53:21.404Z] PUT /api/businesses/undefined
+[2025-11-10T11:53:21.421Z] [32MINFO[39M: 4
+[2025-11-10T11:53:21.422Z] [32MINFO[39M: Business ID: undefined
+[2025-11-10T11:53:21.422Z] [32MINFO[39M: Current User ID: 4
+[2025-11-10T11:53:21.422Z] [32MINFO[39M: User Role: admin
+[2025-11-10T11:53:21.422Z] [32MINFO[39M: User: [object Object]
+[2025-11-10T11:53:21.423Z] [32MINFO[39M: Request Body: [object Object]
+[2025-11-10T11:53:21.433Z] [32MINFO[39M:  admin is updating the business directly...
+[2025-11-10T11:53:21.437Z] [31MERROR[39M: Update business error: Error: Truncated incorrect DOUBLE value: 'undefined'
+[2025-11-10T11:55:23.232Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:55:23.256Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:55:24.502Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:55:24.518Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:55:49.750Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:55:49.767Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:55:58.914Z] [32MINFO[39M: 📥 [2025-11-10T11:55:58.914Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:55:58.920Z] [32MINFO[39M: 📥 [2025-11-10T11:55:58.920Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:55:58.952Z] [32MINFO[39M: 📥 [2025-11-10T11:55:58.949Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:55:58.995Z] [32MINFO[39M: 📥 [2025-11-10T11:55:58.995Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:56:07.822Z] [32MINFO[39M: 📥 [2025-11-10T11:56:07.822Z] OPTIONS /api/businesses/undefined
+[2025-11-10T11:56:07.843Z] [32MINFO[39M: 📥 [2025-11-10T11:56:07.843Z] PUT /api/businesses/undefined
+[2025-11-10T11:56:07.851Z] [32MINFO[39M: 4
+[2025-11-10T11:56:07.853Z] [32MINFO[39M: Business ID: undefined
+[2025-11-10T11:56:07.853Z] [32MINFO[39M: Current User ID: 4
+[2025-11-10T11:56:07.853Z] [32MINFO[39M: User Role: admin
+[2025-11-10T11:56:07.853Z] [32MINFO[39M: User: [object Object]
+[2025-11-10T11:56:07.853Z] [32MINFO[39M: Request Body: [object Object]
+[2025-11-10T11:56:07.856Z] [32MINFO[39M:  admin is updating the business directly...
+[2025-11-10T11:56:07.861Z] [31MERROR[39M: Update business error: Error: Truncated incorrect DOUBLE value: 'undefined'
+[2025-11-10T11:56:29.592Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:56:29.609Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:56:31.166Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:56:31.181Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:56:48.754Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:56:48.777Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:56:50.401Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:56:50.429Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:57:00.070Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:57:00.098Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:57:04.152Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:57:04.174Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:57:07.570Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:57:07.586Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:57:12.654Z] [32MINFO[39M: 📥 [2025-11-10T11:57:12.654Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:57:12.660Z] [32MINFO[39M: 📥 [2025-11-10T11:57:12.660Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:57:12.669Z] [32MINFO[39M: 📥 [2025-11-10T11:57:12.669Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:57:12.695Z] [32MINFO[39M: 📥 [2025-11-10T11:57:12.695Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:57:22.479Z] [32MINFO[39M: 📥 [2025-11-10T11:57:22.479Z] OPTIONS /api/businesses/undefined
+[2025-11-10T11:57:22.529Z] [32MINFO[39M: 📥 [2025-11-10T11:57:22.528Z] PUT /api/businesses/undefined
+[2025-11-10T11:57:22.538Z] [32MINFO[39M: 4
+[2025-11-10T11:57:22.539Z] [32MINFO[39M: Business ID: undefined
+[2025-11-10T11:57:22.539Z] [32MINFO[39M: Current User ID: 4
+[2025-11-10T11:57:22.539Z] [32MINFO[39M: User Role: admin
+[2025-11-10T11:57:22.539Z] [32MINFO[39M: User: [object Object]
+[2025-11-10T11:57:22.539Z] [31MERROR[39M: Update business error: ReferenceError: Cannot access 'category_id' before initialization
+[2025-11-10T11:57:42.204Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:57:42.219Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:58:19.240Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:58:19.254Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:58:31.432Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:58:31.446Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:58:36.305Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:58:36.321Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:58:39.492Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:58:39.508Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:58:46.109Z] [32MINFO[39M: 📥 [2025-11-10T11:58:46.109Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:58:46.120Z] [32MINFO[39M: 📥 [2025-11-10T11:58:46.120Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:58:46.131Z] [32MINFO[39M: 📥 [2025-11-10T11:58:46.131Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:58:46.294Z] [32MINFO[39M: 📥 [2025-11-10T11:58:46.294Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-10T11:58:52.758Z] [32MINFO[39M: 📥 [2025-11-10T11:58:52.758Z] OPTIONS /api/businesses/undefined
+[2025-11-10T11:58:52.783Z] [32MINFO[39M: 📥 [2025-11-10T11:58:52.783Z] PUT /api/businesses/undefined
+[2025-11-10T11:58:52.791Z] [32MINFO[39M: 4
+[2025-11-10T11:58:52.792Z] [32MINFO[39M: Business ID: undefined
+[2025-11-10T11:58:52.792Z] [32MINFO[39M: Current User ID: 4
+[2025-11-10T11:58:52.793Z] [32MINFO[39M: User Role: admin
+[2025-11-10T11:58:52.793Z] [32MINFO[39M: User: [object Object]
+[2025-11-10T11:58:52.793Z] [32MINFO[39M: Request Body: [object Object]
+[2025-11-10T11:58:52.802Z] [32MINFO[39M:  admin is updating the business directly...
+[2025-11-10T11:58:52.807Z] [31MERROR[39M: Update business error: Error: Truncated incorrect DOUBLE value: 'undefined'
+[2025-11-10T11:59:23.334Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:59:23.350Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:59:32.877Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:59:32.892Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:59:34.886Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:59:34.902Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:59:36.799Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:59:36.815Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T11:59:40.781Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T11:59:40.798Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T12:06:47.288Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T12:06:47.304Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T12:56:54.731Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T12:56:54.750Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T12:56:58.078Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T12:56:58.103Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-10T12:57:03.488Z] [32MINFO[39M:  Server running on port  http://localhost:5006
+[2025-11-10T12:57:03.515Z] [32MINFO[39M: MySQL Database Connected

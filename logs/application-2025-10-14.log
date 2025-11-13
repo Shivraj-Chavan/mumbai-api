@@ -1,0 +1,256 @@
+[2025-10-14T06:24:25.586Z] [32MINFO[39M:  Server running on port  http://localhost:5002
+[2025-10-14T06:24:25.656Z] [32MINFO[39M: MySQL Database Connected
+[2025-10-14T06:25:20.249Z] [32MINFO[39M: 📥 [2025-10-14T06:25:20.249Z] GET /api/count/webview
+[2025-10-14T06:38:22.081Z] [32MINFO[39M: 📥 [2025-10-14T06:38:22.081Z] GET /api/count/webview
+[2025-10-14T06:38:31.438Z] [32MINFO[39M: 📥 [2025-10-14T06:38:31.438Z] GET /api/users?page=1&limit=10&search=
+[2025-10-14T06:38:31.441Z] [32MINFO[39M: Controller: getAllUsers called
+[2025-10-14T06:38:31.442Z] [32MINFO[39M: Final Query: SELECT * FROM users WHERE 1=1 LIMIT 10 OFFSET 0
+[2025-10-14T06:38:31.442Z] [32MINFO[39M: Query Params: 
+[2025-10-14T06:38:31.631Z] [32MINFO[39M: 📥 [2025-10-14T06:38:31.631Z] GET /api/users?page=1&limit=10&search=
+[2025-10-14T06:38:31.634Z] [32MINFO[39M: Controller: getAllUsers called
+[2025-10-14T06:38:31.635Z] [32MINFO[39M: Final Query: SELECT * FROM users WHERE 1=1 LIMIT 10 OFFSET 0
+[2025-10-14T06:38:31.635Z] [32MINFO[39M: Query Params: 
+[2025-10-14T06:38:50.169Z] [32MINFO[39M: 📥 [2025-10-14T06:38:50.169Z] GET /api/users?page=1&limit=10&search=
+[2025-10-14T06:38:50.171Z] [32MINFO[39M: Controller: getAllUsers called
+[2025-10-14T06:38:50.172Z] [32MINFO[39M: Final Query: SELECT * FROM users WHERE 1=1 LIMIT 10 OFFSET 0
+[2025-10-14T06:38:50.172Z] [32MINFO[39M: Query Params: 
+[2025-10-14T06:38:50.179Z] [32MINFO[39M: 📥 [2025-10-14T06:38:50.179Z] GET /api/users?page=1&limit=10&search=
+[2025-10-14T06:38:50.180Z] [32MINFO[39M: Controller: getAllUsers called
+[2025-10-14T06:38:50.180Z] [32MINFO[39M: Final Query: SELECT * FROM users WHERE 1=1 LIMIT 10 OFFSET 0
+[2025-10-14T06:38:50.180Z] [32MINFO[39M: Query Params: 
+[2025-10-14T06:39:10.557Z] [32MINFO[39M: 📥 [2025-10-14T06:39:10.557Z] GET /api/users
+[2025-10-14T06:39:10.558Z] [32MINFO[39M: Controller: getAllUsers called
+[2025-10-14T06:39:10.558Z] [32MINFO[39M: Final Query: SELECT * FROM users WHERE 1=1 LIMIT 10 OFFSET 0
+[2025-10-14T06:39:10.558Z] [32MINFO[39M: Query Params: 
+[2025-10-14T06:39:10.576Z] [32MINFO[39M: 📥 [2025-10-14T06:39:10.576Z] GET /api/users
+[2025-10-14T06:39:10.577Z] [32MINFO[39M: Controller: getAllUsers called
+[2025-10-14T06:39:10.577Z] [32MINFO[39M: Final Query: SELECT * FROM users WHERE 1=1 LIMIT 10 OFFSET 0
+[2025-10-14T06:39:10.577Z] [32MINFO[39M: Query Params: 
+[2025-10-14T06:39:14.027Z] [32MINFO[39M: 📥 [2025-10-14T06:39:14.027Z] GET /api/count/webview
+[2025-10-14T06:39:14.039Z] [32MINFO[39M: 📥 [2025-10-14T06:39:14.039Z] GET /api/count/webview
+[2025-10-14T06:39:16.076Z] [32MINFO[39M: 📥 [2025-10-14T06:39:16.076Z] GET /api/users
+[2025-10-14T06:39:16.077Z] [32MINFO[39M: Controller: getAllUsers called
+[2025-10-14T06:39:16.077Z] [32MINFO[39M: Final Query: SELECT * FROM users WHERE 1=1 LIMIT 10 OFFSET 0
+[2025-10-14T06:39:16.077Z] [32MINFO[39M: Query Params: 
+[2025-10-14T06:39:16.089Z] [32MINFO[39M: 📥 [2025-10-14T06:39:16.089Z] GET /api/users
+[2025-10-14T06:39:16.090Z] [32MINFO[39M: Controller: getAllUsers called
+[2025-10-14T06:39:16.090Z] [32MINFO[39M: Final Query: SELECT * FROM users WHERE 1=1 LIMIT 10 OFFSET 0
+[2025-10-14T06:39:16.090Z] [32MINFO[39M: Query Params: 
+[2025-10-14T06:39:22.932Z] [32MINFO[39M: 📥 [2025-10-14T06:39:22.932Z] GET /api/count/webview
+[2025-10-14T06:39:22.938Z] [32MINFO[39M: 📥 [2025-10-14T06:39:22.938Z] GET /api/count/webview
+[2025-10-14T06:39:24.881Z] [32MINFO[39M: 📥 [2025-10-14T06:39:24.881Z] GET /api/users
+[2025-10-14T06:39:24.881Z] [32MINFO[39M: Controller: getAllUsers called
+[2025-10-14T06:39:24.881Z] [32MINFO[39M: Final Query: SELECT * FROM users WHERE 1=1 LIMIT 10 OFFSET 0
+[2025-10-14T06:39:24.882Z] [32MINFO[39M: Query Params: 
+[2025-10-14T06:39:24.888Z] [32MINFO[39M: 📥 [2025-10-14T06:39:24.888Z] GET /api/users
+[2025-10-14T06:39:24.889Z] [32MINFO[39M: Controller: getAllUsers called
+[2025-10-14T06:39:24.889Z] [32MINFO[39M: Final Query: SELECT * FROM users WHERE 1=1 LIMIT 10 OFFSET 0
+[2025-10-14T06:39:24.889Z] [32MINFO[39M: Query Params: 
+[2025-10-14T06:39:29.210Z] [32MINFO[39M: 📥 [2025-10-14T06:39:29.210Z] GET /api/users?page=1&limit=10&search=
+[2025-10-14T06:39:29.211Z] [32MINFO[39M: Controller: getAllUsers called
+[2025-10-14T06:39:29.211Z] [32MINFO[39M: Final Query: SELECT * FROM users WHERE 1=1 LIMIT 10 OFFSET 0
+[2025-10-14T06:39:29.211Z] [32MINFO[39M: Query Params: 
+[2025-10-14T06:39:29.218Z] [32MINFO[39M: 📥 [2025-10-14T06:39:29.218Z] GET /api/users?page=1&limit=10&search=
+[2025-10-14T06:39:29.218Z] [32MINFO[39M: Controller: getAllUsers called
+[2025-10-14T06:39:29.218Z] [32MINFO[39M: Final Query: SELECT * FROM users WHERE 1=1 LIMIT 10 OFFSET 0
+[2025-10-14T06:39:29.218Z] [32MINFO[39M: Query Params: 
+[2025-10-14T08:45:23.565Z] [32MINFO[39M: 📥 [2025-10-14T08:45:23.555Z] GET /api/count/webview
+[2025-10-14T08:45:55.922Z] [32MINFO[39M: 📥 [2025-10-14T08:45:55.921Z] GET /api/count/webview
+[2025-10-14T08:52:38.906Z] [32MINFO[39M: 📥 [2025-10-14T08:52:38.906Z] GET /api/count/webview
+[2025-10-14T08:56:06.347Z] [32MINFO[39M: 📥 [2025-10-14T08:56:06.347Z] GET /api/count/webview
+[2025-10-14T08:56:17.638Z] [32MINFO[39M: 📥 [2025-10-14T08:56:17.638Z] GET /api/count/webview
+[2025-10-14T09:01:41.910Z] [32MINFO[39M: 📥 [2025-10-14T09:01:41.910Z] GET /api/count/webview
+[2025-10-14T09:02:38.692Z] [32MINFO[39M: 📥 [2025-10-14T09:02:38.692Z] GET /api/count/webview
+[2025-10-14T09:12:56.704Z] [32MINFO[39M: 📥 [2025-10-14T09:12:56.704Z] GET /api/count/webview
+[2025-10-14T09:13:48.489Z] [32MINFO[39M: 📥 [2025-10-14T09:13:48.489Z] GET /api/count/webview
+[2025-10-14T09:46:38.136Z] [32MINFO[39M: 📥 [2025-10-14T09:46:38.136Z] GET /api/count/webview
+[2025-10-14T09:51:53.409Z] [32MINFO[39M: 📥 [2025-10-14T09:51:53.409Z] GET /api/count/webview
+[2025-10-14T09:56:19.435Z] [32MINFO[39M: 📥 [2025-10-14T09:56:19.435Z] GET /api/count/webview
+[2025-10-14T09:56:37.909Z] [32MINFO[39M: 📥 [2025-10-14T09:56:37.909Z] GET /api/count/webview
+[2025-10-14T10:03:33.304Z] [32MINFO[39M:  Server running on port  http://localhost:5002
+[2025-10-14T10:03:33.331Z] [32MINFO[39M: MySQL Database Connected
+[2025-10-14T10:03:38.376Z] [32MINFO[39M: 📥 [2025-10-14T10:03:38.376Z] GET /api/count/webview
+[2025-10-14T10:10:00.802Z] [32MINFO[39M: 📥 [2025-10-14T10:10:00.802Z] GET /api/count/webview
+[2025-10-14T10:10:02.556Z] [32MINFO[39M: 📥 [2025-10-14T10:10:02.556Z] GET /api/count/webview
+[2025-10-14T10:13:24.648Z] [32MINFO[39M: 📥 [2025-10-14T10:13:24.648Z] GET /api/count/webview
+[2025-10-14T10:16:46.813Z] [32MINFO[39M: 📥 [2025-10-14T10:16:46.813Z] GET /api/count/webview
+[2025-10-14T10:16:48.549Z] [32MINFO[39M: 📥 [2025-10-14T10:16:48.549Z] GET /api/count/webview
+[2025-10-14T10:20:57.980Z] [32MINFO[39M: 📥 [2025-10-14T10:20:57.979Z] GET /api/count/webview
+[2025-10-14T10:20:59.516Z] [32MINFO[39M: 📥 [2025-10-14T10:20:59.516Z] GET /api/count/webview
+[2025-10-14T10:22:28.919Z] [32MINFO[39M: 📥 [2025-10-14T10:22:28.919Z] OPTIONS /api
+[2025-10-14T10:22:28.926Z] [32MINFO[39M: 📥 [2025-10-14T10:22:28.926Z] POST /api
+[2025-10-14T10:24:01.142Z] [32MINFO[39M:  Server running on port  http://localhost:5002
+[2025-10-14T10:24:01.166Z] [32MINFO[39M: MySQL Database Connected
+[2025-10-14T10:24:04.986Z] [32MINFO[39M: 📥 [2025-10-14T10:24:04.986Z] OPTIONS /api
+[2025-10-14T10:24:04.993Z] [32MINFO[39M: 📥 [2025-10-14T10:24:04.993Z] POST /api
+[2025-10-14T10:24:28.064Z] [32MINFO[39M: 📥 [2025-10-14T10:24:28.064Z] GET /api/count/webview
+[2025-10-14T10:25:39.598Z] [32MINFO[39M: 📥 [2025-10-14T10:25:39.598Z] OPTIONS /api
+[2025-10-14T10:25:39.605Z] [32MINFO[39M: 📥 [2025-10-14T10:25:39.605Z] POST /api
+[2025-10-14T10:28:08.074Z] [32MINFO[39M: 📥 [2025-10-14T10:28:08.074Z] GET /api/count/webview
+[2025-10-14T10:29:23.361Z] [32MINFO[39M: 📥 [2025-10-14T10:29:23.361Z] OPTIONS /api
+[2025-10-14T10:29:23.370Z] [32MINFO[39M: 📥 [2025-10-14T10:29:23.369Z] POST /api
+[2025-10-14T10:31:38.121Z] [32MINFO[39M: 📥 [2025-10-14T10:31:38.121Z] GET /api/count/webview
+[2025-10-14T10:32:57.002Z] [32MINFO[39M: 📥 [2025-10-14T10:32:57.001Z] OPTIONS /api/businesses/createBusiness
+[2025-10-14T10:32:57.007Z] [32MINFO[39M: 📥 [2025-10-14T10:32:57.007Z] POST /api/businesses/createBusiness
+[2025-10-14T10:33:38.944Z] [32MINFO[39M: 📥 [2025-10-14T10:33:38.944Z] OPTIONS /api/businesses/createBusiness
+[2025-10-14T10:33:38.953Z] [32MINFO[39M: 📥 [2025-10-14T10:33:38.953Z] POST /api/businesses/createBusiness
+[2025-10-14T10:33:46.355Z] [32MINFO[39M: 📥 [2025-10-14T10:33:46.355Z] GET /api/count/webview
+[2025-10-14T10:35:58.739Z] [32MINFO[39M: 📥 [2025-10-14T10:35:58.739Z] GET /api/count/webview
+[2025-10-14T10:43:23.679Z] [32MINFO[39M: 📥 [2025-10-14T10:43:23.679Z] GET /api/count/webview
+[2025-10-14T10:44:29.043Z] [32MINFO[39M: 📥 [2025-10-14T10:44:29.043Z] OPTIONS /api/businesses
+[2025-10-14T10:44:29.142Z] [32MINFO[39M: 📥 [2025-10-14T10:44:29.142Z] POST /api/businesses
+[2025-10-14T10:44:29.144Z] [31MERROR[39M: Error validating token: ReferenceError: decodeDataAndReturnUserData is not defined
+[2025-10-14T10:44:32.142Z] [32MINFO[39M: 📥 [2025-10-14T10:44:32.142Z] GET /api/count/webview
+[2025-10-14T10:47:13.090Z] [32MINFO[39M: 📥 [2025-10-14T10:47:13.090Z] OPTIONS /api/api/businesses/createBusiness
+[2025-10-14T10:47:13.163Z] [32MINFO[39M: 📥 [2025-10-14T10:47:13.163Z] POST /api/api/businesses/createBusiness
+[2025-10-14T10:47:34.425Z] [32MINFO[39M: 📥 [2025-10-14T10:47:34.425Z] OPTIONS /api/businesses/createBusiness
+[2025-10-14T10:47:34.733Z] [32MINFO[39M: 📥 [2025-10-14T10:47:34.733Z] POST /api/businesses/createBusiness
+[2025-10-14T10:58:21.851Z] [32MINFO[39M:  Server running on port  http://localhost:5002
+[2025-10-14T10:58:21.866Z] [32MINFO[39M: MySQL Database Connected
+[2025-10-14T10:58:29.611Z] [32MINFO[39M: 📥 [2025-10-14T10:58:29.611Z] GET /api/count/webview
+[2025-10-14T10:59:45.081Z] [32MINFO[39M: 📥 [2025-10-14T10:59:45.081Z] OPTIONS /api/businesses
+[2025-10-14T10:59:45.093Z] [32MINFO[39M: 📥 [2025-10-14T10:59:45.093Z] POST /api/businesses
+[2025-10-14T11:25:37.193Z] [32MINFO[39M: 📥 [2025-10-14T11:25:37.193Z] OPTIONS /api/businesses
+[2025-10-14T11:25:37.202Z] [32MINFO[39M: 📥 [2025-10-14T11:25:37.202Z] POST /api/businesses
+[2025-10-14T11:25:48.445Z] [32MINFO[39M: 📥 [2025-10-14T11:25:48.445Z] GET /api/count/webview
+[2025-10-14T11:26:36.087Z] [32MINFO[39M: 📥 [2025-10-14T11:26:36.087Z] OPTIONS /api/businesses/
+[2025-10-14T11:26:36.101Z] [32MINFO[39M: 📥 [2025-10-14T11:26:36.101Z] POST /api/businesses/
+[2025-10-14T11:49:42.750Z] [32MINFO[39M: 📥 [2025-10-14T11:49:42.750Z] OPTIONS /api/businesses
+[2025-10-14T11:49:42.800Z] [32MINFO[39M: 📥 [2025-10-14T11:49:42.800Z] POST /api/businesses
+[2025-10-14T11:51:40.742Z] [32MINFO[39M: 📥 [2025-10-14T11:51:40.742Z] GET /api/count/webview
+[2025-10-14T11:52:30.026Z] [32MINFO[39M: 📥 [2025-10-14T11:52:30.026Z] OPTIONS /api/businesses
+[2025-10-14T11:52:30.035Z] [32MINFO[39M: 📥 [2025-10-14T11:52:30.035Z] POST /api/businesses
+[2025-10-14T11:54:06.435Z] [32MINFO[39M: 📥 [2025-10-14T11:54:06.435Z] GET /api/count/webview
+[2025-10-14T11:54:06.447Z] [32MINFO[39M: 📥 [2025-10-14T11:54:06.447Z] GET /api/count/webview
+[2025-10-14T11:59:27.964Z] [32MINFO[39M:  Server running on port  http://localhost:5002
+[2025-10-14T11:59:27.977Z] [32MINFO[39M: MySQL Database Connected
+[2025-10-14T11:59:33.157Z] [32MINFO[39M: 📥 [2025-10-14T11:59:33.157Z] GET /api/count/webview
+[2025-10-14T12:00:31.129Z] [32MINFO[39M: 📥 [2025-10-14T12:00:31.129Z] OPTIONS /api/businesses
+[2025-10-14T12:00:31.139Z] [32MINFO[39M: 📥 [2025-10-14T12:00:31.139Z] POST /api/businesses
+[2025-10-14T12:00:31.148Z] [31MERROR[39M: Error validating token: Error: Authorization token missing or invalid
+[2025-10-14T12:00:33.479Z] [32MINFO[39M: 📥 [2025-10-14T12:00:33.479Z] GET /api/count/webview
+[2025-10-14T12:01:16.148Z] [32MINFO[39M: 📥 [2025-10-14T12:01:16.148Z] GET /api/count/webview
+[2025-10-14T12:02:16.958Z] [32MINFO[39M: 📥 [2025-10-14T12:02:16.958Z] OPTIONS /api/businesses
+[2025-10-14T12:02:16.964Z] [32MINFO[39M: 📥 [2025-10-14T12:02:16.964Z] POST /api/businesses
+[2025-10-14T12:02:16.967Z] [31MERROR[39M: Error validating token: Error: Authorization token missing or invalid
+[2025-10-14T12:02:19.717Z] [32MINFO[39M: 📥 [2025-10-14T12:02:19.717Z] GET /api/count/webview
+[2025-10-14T12:27:36.298Z] [32MINFO[39M: 📥 [2025-10-14T12:27:36.298Z] GET /api/count/webview
+[2025-10-14T12:28:42.817Z] [32MINFO[39M: 📥 [2025-10-14T12:28:42.817Z] OPTIONS /api/businesses
+[2025-10-14T12:28:42.827Z] [32MINFO[39M: 📥 [2025-10-14T12:28:42.827Z] POST /api/businesses
+[2025-10-14T12:28:42.829Z] [31MERROR[39M: Error validating token: Error: Authorization token missing or invalid
+[2025-10-14T12:28:47.294Z] [32MINFO[39M: 📥 [2025-10-14T12:28:47.294Z] GET /api/count/webview
+[2025-10-14T12:32:16.964Z] [32MINFO[39M: 📥 [2025-10-14T12:32:16.964Z] OPTIONS /api/businesses
+[2025-10-14T12:32:16.980Z] [32MINFO[39M: 📥 [2025-10-14T12:32:16.980Z] POST /api/businesses
+[2025-10-14T12:32:16.981Z] [31MERROR[39M: Error validating token: Error: Authorization token missing or invalid
+[2025-10-14T12:34:10.995Z] [32MINFO[39M: 📥 [2025-10-14T12:34:10.994Z] GET /api/count/webview
+[2025-10-14T12:35:38.239Z] [32MINFO[39M:  Server running on port  http://localhost:5002
+[2025-10-14T12:35:38.256Z] [32MINFO[39M: MySQL Database Connected
+[2025-10-14T12:36:03.551Z] [32MINFO[39M: 📥 [2025-10-14T12:36:03.551Z] OPTIONS /api/businesses
+[2025-10-14T12:36:03.561Z] [32MINFO[39M: 📥 [2025-10-14T12:36:03.561Z] POST /api/businesses
+[2025-10-14T12:36:03.572Z] [32MINFO[39M: Business Name: cnc
+[2025-10-14T12:36:03.573Z] [32MINFO[39M: Address: cnc
+[2025-10-14T12:36:03.573Z] [32MINFO[39M: Area: Near Park
+[2025-10-14T12:36:03.573Z] [32MINFO[39M: Pincode: 400706
+[2025-10-14T12:36:03.573Z] [32MINFO[39M: Landmark: 
+[2025-10-14T12:36:03.574Z] [32MINFO[39M: Category: 16
+[2025-10-14T12:36:03.574Z] [32MINFO[39M: Subcategory: 
+[2025-10-14T12:36:03.574Z] [32MINFO[39M: Business Description: 
+[2025-10-14T12:36:03.574Z] [32MINFO[39M: Phone Number: 8451060827
+[2025-10-14T12:36:03.574Z] [32MINFO[39M: WhatsApp Number: 
+[2025-10-14T12:36:03.575Z] [32MINFO[39M: Email: cnc@gmail.com
+[2025-10-14T12:36:03.575Z] [32MINFO[39M: Website: 
+[2025-10-14T12:36:03.575Z] [32MINFO[39M: Timing: {"monday":{"open":"09:00","close":"18:00","closed":false},"tuesday":{"open":"09:00","close":"18:00","closed":false},"wednesday":{"open":"09:00","close":"18:00","closed":false},"thursday":{"open":"09:00","close":"18:00","closed":false},"friday":{"open":"09:00","close":"18:00","closed":false},"saturday":{"open":"09:00","close":"18:00","closed":false},"sunday":{"open":"09:00","close":"18:00","closed":true}}
+[2025-10-14T12:36:03.575Z] [32MINFO[39M: GMap Location: {"lat":""}
+[2025-10-14T12:36:03.575Z] [31MERROR[39M: TypeError: Cannot read properties of undefined (reading 'map')
+[2025-10-14T12:42:48.543Z] [32MINFO[39M:  Server running on port  http://localhost:5002
+[2025-10-14T12:42:48.554Z] [32MINFO[39M: MySQL Database Connected
+[2025-10-14T12:42:56.038Z] [32MINFO[39M: 📥 [2025-10-14T12:42:56.038Z] GET /api/count/webview
+[2025-10-14T12:43:48.781Z] [32MINFO[39M: 📥 [2025-10-14T12:43:48.781Z] OPTIONS /api/businesses
+[2025-10-14T12:43:48.789Z] [32MINFO[39M: 📥 [2025-10-14T12:43:48.788Z] POST /api/businesses
+[2025-10-14T12:43:48.796Z] [32MINFO[39M: Business Name: cnc
+[2025-10-14T12:43:48.796Z] [32MINFO[39M: Address: nerul
+[2025-10-14T12:43:48.797Z] [32MINFO[39M: Area: nerul west
+[2025-10-14T12:43:48.797Z] [32MINFO[39M: Pincode: 400706
+[2025-10-14T12:43:48.797Z] [32MINFO[39M: Landmark: Near Station
+[2025-10-14T12:43:48.797Z] [32MINFO[39M: Category: 3
+[2025-10-14T12:43:48.798Z] [32MINFO[39M: Subcategory: 8
+[2025-10-14T12:43:48.798Z] [32MINFO[39M: Business Description: cnc web world training institute
+[2025-10-14T12:43:48.798Z] [32MINFO[39M: Phone Number: 8451060827
+[2025-10-14T12:43:48.798Z] [32MINFO[39M: WhatsApp Number: 
+[2025-10-14T12:43:48.798Z] [32MINFO[39M: Email: cnc@gmail.com
+[2025-10-14T12:43:48.798Z] [32MINFO[39M: Website: cnc.com
+[2025-10-14T12:43:48.798Z] [32MINFO[39M: Timing: {"monday":{"open":"09:00","close":"18:00","closed":false},"tuesday":{"open":"09:00","close":"18:00","closed":false},"wednesday":{"open":"09:00","close":"18:00","closed":false},"thursday":{"open":"09:00","close":"18:00","closed":false},"friday":{"open":"09:00","close":"18:00","closed":false},"saturday":{"open":"09:00","close":"18:00","closed":false},"sunday":{"open":"09:00","close":"18:00","closed":true}}
+[2025-10-14T12:43:48.799Z] [32MINFO[39M: GMap Location: {"lat":""}
+[2025-10-14T12:43:48.799Z] [32MINFO[39M: Uploaded Images: No images uploaded
+[2025-10-14T12:45:02.392Z] [32MINFO[39M: 📥 [2025-10-14T12:45:02.392Z] OPTIONS /api/businesses
+[2025-10-14T12:45:02.405Z] [32MINFO[39M: 📥 [2025-10-14T12:45:02.405Z] POST /api/businesses
+[2025-10-14T12:45:02.410Z] [32MINFO[39M: Business Name: cnc
+[2025-10-14T12:45:02.410Z] [32MINFO[39M: Address: nerul
+[2025-10-14T12:45:02.410Z] [32MINFO[39M: Area: nerul west
+[2025-10-14T12:45:02.417Z] [32MINFO[39M: Pincode: 400706
+[2025-10-14T12:45:02.417Z] [32MINFO[39M: Landmark: Near Station
+[2025-10-14T12:45:02.417Z] [32MINFO[39M: Category: 3
+[2025-10-14T12:45:02.417Z] [32MINFO[39M: Subcategory: 8
+[2025-10-14T12:45:02.417Z] [32MINFO[39M: Business Description: cnc web world training institute
+[2025-10-14T12:45:02.417Z] [32MINFO[39M: Phone Number: 8451060827
+[2025-10-14T12:45:02.417Z] [32MINFO[39M: WhatsApp Number: 
+[2025-10-14T12:45:02.417Z] [32MINFO[39M: Email: cnc@gmail.com
+[2025-10-14T12:45:02.417Z] [32MINFO[39M: Website: cnc.com
+[2025-10-14T12:45:02.417Z] [32MINFO[39M: Timing: {"monday":{"open":"09:00","close":"18:00","closed":false},"tuesday":{"open":"09:00","close":"18:00","closed":false},"wednesday":{"open":"09:00","close":"18:00","closed":false},"thursday":{"open":"09:00","close":"18:00","closed":false},"friday":{"open":"09:00","close":"18:00","closed":false},"saturday":{"open":"09:00","close":"18:00","closed":false},"sunday":{"open":"09:00","close":"18:00","closed":true}}
+[2025-10-14T12:45:02.421Z] [32MINFO[39M: GMap Location: {"lat":""}
+[2025-10-14T12:45:02.422Z] [32MINFO[39M: Uploaded Images: No images uploaded
+[2025-10-14T12:45:48.510Z] [32MINFO[39M: 📥 [2025-10-14T12:45:48.510Z] GET /api/count/webview
+[2025-10-14T12:47:36.412Z] [32MINFO[39M: 📥 [2025-10-14T12:47:36.412Z] OPTIONS /api/businesses
+[2025-10-14T12:47:36.418Z] [32MINFO[39M: 📥 [2025-10-14T12:47:36.418Z] POST /api/businesses
+[2025-10-14T12:47:36.419Z] [32MINFO[39M: Business Name: vortex
+[2025-10-14T12:47:36.420Z] [32MINFO[39M: Address: Andheri
+[2025-10-14T12:47:36.420Z] [32MINFO[39M: Area: Andheri East
+[2025-10-14T12:47:36.420Z] [32MINFO[39M: Pincode: 400706
+[2025-10-14T12:47:36.420Z] [32MINFO[39M: Landmark: Near Station
+[2025-10-14T12:47:36.420Z] [32MINFO[39M: Category: 3
+[2025-10-14T12:47:36.420Z] [32MINFO[39M: Subcategory: 7
+[2025-10-14T12:47:36.420Z] [32MINFO[39M: Business Description: Vortex pvt ltd
+[2025-10-14T12:47:36.420Z] [32MINFO[39M: Phone Number: 8451060827
+[2025-10-14T12:47:36.420Z] [32MINFO[39M: WhatsApp Number: 
+[2025-10-14T12:47:36.420Z] [32MINFO[39M: Email: vortex@gmail.com
+[2025-10-14T12:47:36.420Z] [32MINFO[39M: Website: vortex.com
+[2025-10-14T12:47:36.420Z] [32MINFO[39M: Timing: {"monday":{"open":"09:00","close":"18:00","closed":false},"tuesday":{"open":"09:00","close":"18:00","closed":false},"wednesday":{"open":"09:00","close":"18:00","closed":false},"thursday":{"open":"09:00","close":"18:00","closed":false},"friday":{"open":"09:00","close":"18:00","closed":false},"saturday":{"open":"09:00","close":"18:00","closed":false},"sunday":{"open":"09:00","close":"18:00","closed":true}}
+[2025-10-14T12:47:36.420Z] [32MINFO[39M: GMap Location: {"lat":""}
+[2025-10-14T12:47:36.421Z] [32MINFO[39M: Uploaded Images: No images uploaded
+[2025-10-14T12:49:45.442Z] [32MINFO[39M: 📥 [2025-10-14T12:49:45.442Z] GET /api/count/webview
+[2025-10-14T12:52:47.505Z] [32MINFO[39M: 📥 [2025-10-14T12:52:47.505Z] OPTIONS /api/businesses
+[2025-10-14T12:52:47.516Z] [32MINFO[39M: 📥 [2025-10-14T12:52:47.516Z] POST /api/businesses
+[2025-10-14T12:52:47.518Z] [32MINFO[39M: Business Name: academy
+[2025-10-14T12:52:47.518Z] [32MINFO[39M: Address: bandra
+[2025-10-14T12:52:47.518Z] [32MINFO[39M: Area: Near Station
+[2025-10-14T12:52:47.518Z] [32MINFO[39M: Pincode: 400706
+[2025-10-14T12:52:47.518Z] [32MINFO[39M: Landmark: 
+[2025-10-14T12:52:47.518Z] [32MINFO[39M: Category: 5
+[2025-10-14T12:52:47.518Z] [32MINFO[39M: Subcategory: 4
+[2025-10-14T12:52:47.518Z] [32MINFO[39M: Business Description: okk
+[2025-10-14T12:52:47.518Z] [32MINFO[39M: Phone Number: 8451060827
+[2025-10-14T12:52:47.518Z] [32MINFO[39M: WhatsApp Number: 
+[2025-10-14T12:52:47.518Z] [32MINFO[39M: Email: 
+[2025-10-14T12:52:47.520Z] [32MINFO[39M: Website: 
+[2025-10-14T12:52:47.520Z] [32MINFO[39M: Timing: {"monday":{"open":"09:00","close":"18:00","closed":false},"tuesday":{"open":"09:00","close":"18:00","closed":false},"wednesday":{"open":"09:00","close":"18:00","closed":false},"thursday":{"open":"09:00","close":"18:00","closed":false},"friday":{"open":"09:00","close":"18:00","closed":false},"saturday":{"open":"09:00","close":"18:00","closed":false},"sunday":{"open":"09:00","close":"18:00","closed":true}}
+[2025-10-14T12:52:47.520Z] [32MINFO[39M: GMap Location: {"lat":""}
+[2025-10-14T12:52:47.520Z] [32MINFO[39M: Uploaded Images: No images uploaded
+[2025-10-14T12:54:25.756Z] [32MINFO[39M: 📥 [2025-10-14T12:54:25.756Z] OPTIONS /api/businesses
+[2025-10-14T12:54:25.764Z] [32MINFO[39M: 📥 [2025-10-14T12:54:25.764Z] POST /api/businesses
+[2025-10-14T12:54:25.765Z] [32MINFO[39M: Business Name: academy
+[2025-10-14T12:54:25.765Z] [32MINFO[39M: Address: bandra
+[2025-10-14T12:54:25.765Z] [32MINFO[39M: Area: Near Station
+[2025-10-14T12:54:25.765Z] [32MINFO[39M: Pincode: 400706
+[2025-10-14T12:54:25.765Z] [32MINFO[39M: Landmark: 
+[2025-10-14T12:54:25.765Z] [32MINFO[39M: Category: 5
+[2025-10-14T12:54:25.765Z] [32MINFO[39M: Subcategory: 4
+[2025-10-14T12:54:25.765Z] [32MINFO[39M: Business Description: okk
+[2025-10-14T12:54:25.765Z] [32MINFO[39M: Phone Number: 8451060827
+[2025-10-14T12:54:25.765Z] [32MINFO[39M: WhatsApp Number: 
+[2025-10-14T12:54:25.765Z] [32MINFO[39M: Email: 
+[2025-10-14T12:54:25.765Z] [32MINFO[39M: Website: 
+[2025-10-14T12:54:25.765Z] [32MINFO[39M: Timing: {"monday":{"open":"09:00","close":"18:00","closed":false},"tuesday":{"open":"09:00","close":"18:00","closed":false},"wednesday":{"open":"09:00","close":"18:00","closed":false},"thursday":{"open":"09:00","close":"18:00","closed":false},"friday":{"open":"09:00","close":"18:00","closed":false},"saturday":{"open":"09:00","close":"18:00","closed":false},"sunday":{"open":"09:00","close":"18:00","closed":true}}
+[2025-10-14T12:54:25.766Z] [32MINFO[39M: GMap Location: {"lat":""}
+[2025-10-14T12:54:25.766Z] [32MINFO[39M: Uploaded Images: No images uploaded
+[2025-10-14T13:26:14.583Z] [32MINFO[39M: 📥 [2025-10-14T13:26:14.583Z] GET /api/count/webview
+[2025-10-14T13:26:41.786Z] [32MINFO[39M: 📥 [2025-10-14T13:26:41.785Z] GET /api/count/webview
