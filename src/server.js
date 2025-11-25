@@ -40,6 +40,38 @@ app.use((err, req, res, next) => {
   }
   next(err);
 });
+app.get("/uploads/:imageName", (req, res) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Cross-Origin-Resource-Policy", "cross-origin");
+
+  const imageName = req.params.imageName;
+  const imagePath = path.join(__dirname, "uploads/business_photos", imageName);
+
+  if (fs.existsSync(imagePath)) {
+    const ext = path.extname(imageName).toLowerCase();
+
+    switch (ext) {
+      case ".jpg":
+      case ".jpeg":
+        res.setHeader("Content-Type", "image/jpeg");
+        break;
+      case ".png":
+        res.setHeader("Content-Type", "image/png");
+        break;
+      case ".webp":
+        res.setHeader("Content-Type", "image/webp");
+        break;
+      default:
+        res.setHeader("Content-Type", "application/octet-stream");
+    }
+
+    return res.sendFile(imagePath);
+  } else {
+    console.log("❌ Image not found:", imagePath);
+    return res.status(404).json({ error: "Image not found" });
+  }
+});
+
 securityMiddlewares(app);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

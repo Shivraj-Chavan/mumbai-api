@@ -1,21 +1,13 @@
 import express from "express";
-import { createBusiness , getBusinesses, getBusinessByUserId, getBusinessById, updateBusiness, deleteBusiness, getBusinessBySlug, verifyBusiness, getPendingUpdates, approveUpdate, rejectUpdate} from "../controller/businessController.js";
+import { createBusiness , getBusinesses, getBusinessByUserId, getBusinessById, updateBusiness, deleteBusiness, getBusinessBySlug, verifyBusiness, getPendingUpdates, approveUpdate, rejectUpdate, incrementBusinessViewCount, getBusinessImages, uploadPhotosForBusiness, submitBusinessUpdate, uploadUpdatePhotos, getAdminActions} from "../controller/businessController.js";
 import { validateAdmin, validateUser } from "../middlewares/auth.js";
 import multer from "multer";
+import { upload } from "../middlewares/uploads.js";
+// import { dynamicPlanBasedUpload } from "../middlewares/uploadMiddleware.js";
 
 const router = express.Router();
 
-// Multer setup for photo uploads
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, "uploads/business_photos");
-  },
-  filename: function (req, file, cb) {
-    const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9);
-    cb(null, uniqueSuffix + "-" + file.originalname);
-  }
-});
-const upload = multer({ storage });
+;
 
 router.post("/", validateUser, upload.array("photos", 10), createBusiness);
 router.get("/", getBusinesses);
@@ -25,10 +17,21 @@ router.put("/:id",validateUser, updateBusiness);
 router.delete("/:id",validateUser,deleteBusiness);
 router.get("/s/:slug",getBusinessBySlug)
 router.put("/verify/:id", verifyBusiness);
+router.put('/:id/view', incrementBusinessViewCount);
+// router.get("/:id/photos", getBusinessImages); 
+// router.post("/:businessId/photos",dynamicPlanBasedUpload, uploadPhotosForBusiness);
+// router.delete('/:id/photos',deleteImages);
+
+
+ // owner submits edit
+router.put('/update/:id', validateUser, submitBusinessUpdate); //Owner submits business update
+// router.post('/update/:id/photos', dynamicPlanBasedUpload, uploadUpdatePhotos); // owner uploads photos
+
 
 // ADMIN routes
 router.get('/admin/pending', validateUser, validateAdmin, getPendingUpdates);
 router.put('/admin/approve/:id', validateUser, validateAdmin, approveUpdate);
 router.delete('/admin/reject/:id', validateUser, validateAdmin, rejectUpdate);
+router.get("/admin/actions",validateAdmin, getAdminActions);
 
 export default router;

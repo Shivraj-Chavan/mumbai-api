@@ -1,0 +1,2017 @@
+[2025-11-24T06:26:19.825Z] [32MINFO[39M:  Server running on port  http://localhost:5009
+[2025-11-24T06:26:19.852Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-24T06:26:42.502Z] [32MINFO[39M: 📥 [2025-11-24T06:26:42.502Z] OPTIONS /api/count/webview
+[2025-11-24T06:26:42.518Z] [32MINFO[39M: 📥 [2025-11-24T06:26:42.518Z] OPTIONS /api/categories
+[2025-11-24T06:26:42.520Z] [32MINFO[39M: 📥 [2025-11-24T06:26:42.520Z] OPTIONS /api/categories
+[2025-11-24T06:26:42.521Z] [32MINFO[39M: 📥 [2025-11-24T06:26:42.521Z] OPTIONS /api/count/webview
+[2025-11-24T06:26:42.620Z] [32MINFO[39M: 📥 [2025-11-24T06:26:42.620Z] GET /api/count/webview
+[2025-11-24T06:26:42.623Z] [32MINFO[39M: 📥 [2025-11-24T06:26:42.623Z] GET /api/categories
+[2025-11-24T06:26:42.776Z] [32MINFO[39M: 📥 [2025-11-24T06:26:42.776Z] GET /api/count/webview
+[2025-11-24T06:26:42.777Z] [32MINFO[39M: 📥 [2025-11-24T06:26:42.777Z] GET /api/categories
+[2025-11-24T06:26:47.750Z] [32MINFO[39M: 📥 [2025-11-24T06:26:47.750Z] OPTIONS /api/categories
+[2025-11-24T06:26:47.752Z] [32MINFO[39M: 📥 [2025-11-24T06:26:47.752Z] OPTIONS /api/count/webview
+[2025-11-24T06:26:47.896Z] [32MINFO[39M: 📥 [2025-11-24T06:26:47.896Z] OPTIONS /api/categories
+[2025-11-24T06:26:47.898Z] [32MINFO[39M: 📥 [2025-11-24T06:26:47.897Z] OPTIONS /api/count/webview
+[2025-11-24T06:32:50.637Z] [32MINFO[39M: 📥 [2025-11-24T06:32:50.637Z] OPTIONS /api/count/webview
+[2025-11-24T06:32:50.639Z] [32MINFO[39M: 📥 [2025-11-24T06:32:50.639Z] OPTIONS /api/categories
+[2025-11-24T06:32:50.640Z] [32MINFO[39M: 📥 [2025-11-24T06:32:50.640Z] OPTIONS /api/categories
+[2025-11-24T06:32:50.641Z] [32MINFO[39M: 📥 [2025-11-24T06:32:50.641Z] OPTIONS /api/count/webview
+[2025-11-24T06:32:50.646Z] [32MINFO[39M: 📥 [2025-11-24T06:32:50.646Z] GET /api/categories
+[2025-11-24T06:32:50.648Z] [32MINFO[39M: 📥 [2025-11-24T06:32:50.648Z] GET /api/count/webview
+[2025-11-24T06:32:50.661Z] [32MINFO[39M: 📥 [2025-11-24T06:32:50.661Z] GET /api/categories
+[2025-11-24T06:32:50.662Z] [32MINFO[39M: 📥 [2025-11-24T06:32:50.662Z] GET /api/count/webview
+[2025-11-24T06:32:54.738Z] [32MINFO[39M: 📥 [2025-11-24T06:32:54.738Z] OPTIONS /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T06:32:54.739Z] [32MINFO[39M: 📥 [2025-11-24T06:32:54.739Z] OPTIONS /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T06:32:54.905Z] [32MINFO[39M: 📥 [2025-11-24T06:32:54.905Z] GET /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T06:32:54.906Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"restaurant","subcategoryslug":"restaurant","page":1,"limit":10,"verified":1}
+[2025-11-24T06:32:55.006Z] [32MINFO[39M: 📥 [2025-11-24T06:32:55.006Z] GET /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T06:32:55.007Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"restaurant","subcategoryslug":"restaurant","page":1,"limit":10,"verified":1}
+[2025-11-24T06:32:58.756Z] [32MINFO[39M: 📥 [2025-11-24T06:32:58.756Z] OPTIONS /api/businesses?categoryslug=restaurant&subcategoryslug=continental-restaurant
+[2025-11-24T06:32:58.757Z] [32MINFO[39M: 📥 [2025-11-24T06:32:58.757Z] OPTIONS /api/businesses?categoryslug=restaurant&subcategoryslug=continental-restaurant
+[2025-11-24T06:32:58.764Z] [32MINFO[39M: 📥 [2025-11-24T06:32:58.764Z] GET /api/businesses?categoryslug=restaurant&subcategoryslug=continental-restaurant
+[2025-11-24T06:32:58.765Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"restaurant","subcategoryslug":"continental-restaurant","page":1,"limit":10,"verified":1}
+[2025-11-24T06:32:58.773Z] [32MINFO[39M: 📥 [2025-11-24T06:32:58.773Z] GET /api/businesses?categoryslug=restaurant&subcategoryslug=continental-restaurant
+[2025-11-24T06:32:58.774Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"restaurant","subcategoryslug":"continental-restaurant","page":1,"limit":10,"verified":1}
+[2025-11-24T06:33:01.057Z] [32MINFO[39M: 📥 [2025-11-24T06:33:01.057Z] OPTIONS /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T06:33:01.058Z] [32MINFO[39M: 📥 [2025-11-24T06:33:01.058Z] OPTIONS /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T06:33:01.070Z] [32MINFO[39M: 📥 [2025-11-24T06:33:01.070Z] GET /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T06:33:01.071Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"restaurant","subcategoryslug":"restaurant","page":1,"limit":10,"verified":1}
+[2025-11-24T06:33:01.083Z] [32MINFO[39M: 📥 [2025-11-24T06:33:01.083Z] GET /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T06:33:01.084Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"restaurant","subcategoryslug":"restaurant","page":1,"limit":10,"verified":1}
+[2025-11-24T06:33:01.919Z] [32MINFO[39M: 📥 [2025-11-24T06:33:01.919Z] OPTIONS /api/categories
+[2025-11-24T06:33:01.921Z] [32MINFO[39M: 📥 [2025-11-24T06:33:01.921Z] OPTIONS /api/categories
+[2025-11-24T06:33:02.077Z] [32MINFO[39M: 📥 [2025-11-24T06:33:02.077Z] GET /api/categories
+[2025-11-24T06:33:02.118Z] [32MINFO[39M: 📥 [2025-11-24T06:33:02.118Z] GET /api/categories
+[2025-11-24T06:34:51.179Z] [32MINFO[39M: 📥 [2025-11-24T06:34:51.179Z] OPTIONS /api/count/webview
+[2025-11-24T06:34:51.180Z] [32MINFO[39M: 📥 [2025-11-24T06:34:51.180Z] OPTIONS /api/categories
+[2025-11-24T06:34:51.181Z] [32MINFO[39M: 📥 [2025-11-24T06:34:51.181Z] OPTIONS /api/count/webview
+[2025-11-24T06:34:51.182Z] [32MINFO[39M: 📥 [2025-11-24T06:34:51.182Z] OPTIONS /api/categories
+[2025-11-24T06:34:51.202Z] [32MINFO[39M: 📥 [2025-11-24T06:34:51.202Z] GET /api/categories
+[2025-11-24T06:34:51.203Z] [32MINFO[39M: 📥 [2025-11-24T06:34:51.203Z] GET /api/count/webview
+[2025-11-24T06:34:51.252Z] [32MINFO[39M: 📥 [2025-11-24T06:34:51.252Z] GET /api/categories
+[2025-11-24T06:34:51.253Z] [32MINFO[39M: 📥 [2025-11-24T06:34:51.253Z] GET /api/count/webview
+[2025-11-24T06:34:56.794Z] [32MINFO[39M: 📥 [2025-11-24T06:34:56.794Z] OPTIONS /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T06:34:56.796Z] [32MINFO[39M: 📥 [2025-11-24T06:34:56.795Z] OPTIONS /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T06:34:56.808Z] [32MINFO[39M: 📥 [2025-11-24T06:34:56.808Z] GET /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T06:34:56.808Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"restaurant","subcategoryslug":"restaurant","page":1,"limit":10,"verified":1}
+[2025-11-24T06:34:56.823Z] [32MINFO[39M: 📥 [2025-11-24T06:34:56.823Z] GET /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T06:34:56.824Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"restaurant","subcategoryslug":"restaurant","page":1,"limit":10,"verified":1}
+[2025-11-24T06:37:38.397Z] [32MINFO[39M: 📥 [2025-11-24T06:37:38.397Z] OPTIONS /api/categories
+[2025-11-24T06:37:38.398Z] [32MINFO[39M: 📥 [2025-11-24T06:37:38.398Z] OPTIONS /api/categories
+[2025-11-24T06:37:38.414Z] [32MINFO[39M: 📥 [2025-11-24T06:37:38.414Z] GET /api/categories
+[2025-11-24T06:37:38.464Z] [32MINFO[39M: 📥 [2025-11-24T06:37:38.464Z] GET /api/categories
+[2025-11-24T06:37:40.641Z] [32MINFO[39M: 📥 [2025-11-24T06:37:40.641Z] OPTIONS /api/businesses?categoryslug=foods&subcategoryslug=cafes
+[2025-11-24T06:37:40.642Z] [32MINFO[39M: 📥 [2025-11-24T06:37:40.642Z] OPTIONS /api/businesses?categoryslug=foods&subcategoryslug=cafes
+[2025-11-24T06:37:40.674Z] [32MINFO[39M: 📥 [2025-11-24T06:37:40.674Z] GET /api/businesses?categoryslug=foods&subcategoryslug=cafes
+[2025-11-24T06:37:40.675Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"foods","subcategoryslug":"cafes","page":1,"limit":10,"verified":1}
+[2025-11-24T06:37:40.691Z] [32MINFO[39M: 📥 [2025-11-24T06:37:40.691Z] GET /api/businesses?categoryslug=foods&subcategoryslug=cafes
+[2025-11-24T06:37:40.692Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"foods","subcategoryslug":"cafes","page":1,"limit":10,"verified":1}
+[2025-11-24T06:37:45.013Z] [32MINFO[39M: 📥 [2025-11-24T06:37:45.013Z] OPTIONS /api/categories
+[2025-11-24T06:37:45.014Z] [32MINFO[39M: 📥 [2025-11-24T06:37:45.014Z] OPTIONS /api/categories
+[2025-11-24T06:37:45.080Z] [32MINFO[39M: 📥 [2025-11-24T06:37:45.080Z] GET /api/categories
+[2025-11-24T06:37:45.093Z] [32MINFO[39M: 📥 [2025-11-24T06:37:45.093Z] GET /api/categories
+[2025-11-24T06:37:47.202Z] [32MINFO[39M: 📥 [2025-11-24T06:37:47.202Z] OPTIONS /api/businesses?categoryslug=babies&subcategoryslug=baby-sitting
+[2025-11-24T06:37:47.203Z] [32MINFO[39M: 📥 [2025-11-24T06:37:47.203Z] OPTIONS /api/businesses?categoryslug=babies&subcategoryslug=baby-sitting
+[2025-11-24T06:37:47.301Z] [32MINFO[39M: 📥 [2025-11-24T06:37:47.301Z] GET /api/businesses?categoryslug=babies&subcategoryslug=baby-sitting
+[2025-11-24T06:37:47.301Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"babies","subcategoryslug":"baby-sitting","page":1,"limit":10,"verified":1}
+[2025-11-24T06:37:47.337Z] [32MINFO[39M: 📥 [2025-11-24T06:37:47.337Z] GET /api/businesses?categoryslug=babies&subcategoryslug=baby-sitting
+[2025-11-24T06:37:47.338Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"babies","subcategoryslug":"baby-sitting","page":1,"limit":10,"verified":1}
+[2025-11-24T06:37:50.143Z] [32MINFO[39M: 📥 [2025-11-24T06:37:50.143Z] OPTIONS /api/categories
+[2025-11-24T06:37:50.144Z] [32MINFO[39M: 📥 [2025-11-24T06:37:50.144Z] OPTIONS /api/categories
+[2025-11-24T06:37:50.256Z] [32MINFO[39M: 📥 [2025-11-24T06:37:50.256Z] GET /api/categories
+[2025-11-24T06:37:50.268Z] [32MINFO[39M: 📥 [2025-11-24T06:37:50.268Z] GET /api/categories
+[2025-11-24T06:37:52.157Z] [32MINFO[39M: 📥 [2025-11-24T06:37:52.157Z] OPTIONS /api/businesses?categoryslug=fashion-accessories&subcategoryslug=watch-watch-repair-shops
+[2025-11-24T06:37:52.158Z] [32MINFO[39M: 📥 [2025-11-24T06:37:52.158Z] OPTIONS /api/businesses?categoryslug=fashion-accessories&subcategoryslug=watch-watch-repair-shops
+[2025-11-24T06:37:52.263Z] [32MINFO[39M: 📥 [2025-11-24T06:37:52.263Z] GET /api/businesses?categoryslug=fashion-accessories&subcategoryslug=watch-watch-repair-shops
+[2025-11-24T06:37:52.263Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"fashion-accessories","subcategoryslug":"watch-watch-repair-shops","page":1,"limit":10,"verified":1}
+[2025-11-24T06:37:52.364Z] [32MINFO[39M: 📥 [2025-11-24T06:37:52.364Z] GET /api/businesses?categoryslug=fashion-accessories&subcategoryslug=watch-watch-repair-shops
+[2025-11-24T06:37:52.365Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"fashion-accessories","subcategoryslug":"watch-watch-repair-shops","page":1,"limit":10,"verified":1}
+[2025-11-24T06:37:56.297Z] [32MINFO[39M: 📥 [2025-11-24T06:37:56.297Z] OPTIONS /api/categories
+[2025-11-24T06:37:56.298Z] [32MINFO[39M: 📥 [2025-11-24T06:37:56.298Z] OPTIONS /api/categories
+[2025-11-24T06:37:56.313Z] [32MINFO[39M: 📥 [2025-11-24T06:37:56.313Z] GET /api/categories
+[2025-11-24T06:37:56.322Z] [32MINFO[39M: 📥 [2025-11-24T06:37:56.322Z] GET /api/categories
+[2025-11-24T06:37:58.593Z] [32MINFO[39M: 📥 [2025-11-24T06:37:58.593Z] OPTIONS /api/businesses?categoryslug=laundry-dry-cleanings&subcategoryslug=laundry
+[2025-11-24T06:37:58.594Z] [32MINFO[39M: 📥 [2025-11-24T06:37:58.594Z] OPTIONS /api/businesses?categoryslug=laundry-dry-cleanings&subcategoryslug=laundry
+[2025-11-24T06:37:58.647Z] [32MINFO[39M: 📥 [2025-11-24T06:37:58.647Z] GET /api/businesses?categoryslug=laundry-dry-cleanings&subcategoryslug=laundry
+[2025-11-24T06:37:58.648Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"laundry-dry-cleanings","subcategoryslug":"laundry","page":1,"limit":10,"verified":1}
+[2025-11-24T06:37:58.737Z] [32MINFO[39M: 📥 [2025-11-24T06:37:58.737Z] GET /api/businesses?categoryslug=laundry-dry-cleanings&subcategoryslug=laundry
+[2025-11-24T06:37:58.737Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"laundry-dry-cleanings","subcategoryslug":"laundry","page":1,"limit":10,"verified":1}
+[2025-11-24T06:38:04.247Z] [32MINFO[39M: 📥 [2025-11-24T06:38:04.246Z] OPTIONS /api/categories
+[2025-11-24T06:38:04.248Z] [32MINFO[39M: 📥 [2025-11-24T06:38:04.248Z] OPTIONS /api/categories
+[2025-11-24T06:38:04.256Z] [32MINFO[39M: 📥 [2025-11-24T06:38:04.256Z] GET /api/categories
+[2025-11-24T06:38:04.267Z] [32MINFO[39M: 📥 [2025-11-24T06:38:04.267Z] GET /api/categories
+[2025-11-24T06:38:07.118Z] [32MINFO[39M: 📥 [2025-11-24T06:38:07.118Z] OPTIONS /api/businesses?categoryslug=jewellery-stores&subcategoryslug=gold-jewellers
+[2025-11-24T06:38:07.120Z] [32MINFO[39M: 📥 [2025-11-24T06:38:07.120Z] OPTIONS /api/businesses?categoryslug=jewellery-stores&subcategoryslug=gold-jewellers
+[2025-11-24T06:38:07.283Z] [32MINFO[39M: 📥 [2025-11-24T06:38:07.283Z] GET /api/businesses?categoryslug=jewellery-stores&subcategoryslug=gold-jewellers
+[2025-11-24T06:38:07.283Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"jewellery-stores","subcategoryslug":"gold-jewellers","page":1,"limit":10,"verified":1}
+[2025-11-24T06:38:07.295Z] [32MINFO[39M: 📥 [2025-11-24T06:38:07.295Z] GET /api/businesses?categoryslug=jewellery-stores&subcategoryslug=gold-jewellers
+[2025-11-24T06:38:07.296Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"jewellery-stores","subcategoryslug":"gold-jewellers","page":1,"limit":10,"verified":1}
+[2025-11-24T06:38:11.052Z] [32MINFO[39M: 📥 [2025-11-24T06:38:11.052Z] OPTIONS /api/categories
+[2025-11-24T06:38:11.053Z] [32MINFO[39M: 📥 [2025-11-24T06:38:11.053Z] OPTIONS /api/categories
+[2025-11-24T06:38:11.275Z] [32MINFO[39M: 📥 [2025-11-24T06:38:11.275Z] GET /api/categories
+[2025-11-24T06:38:11.836Z] [32MINFO[39M: 📥 [2025-11-24T06:38:11.836Z] GET /api/categories
+[2025-11-24T06:38:15.702Z] [32MINFO[39M: 📥 [2025-11-24T06:38:15.702Z] OPTIONS /api/businesses?categoryslug=real-estate-rentals&subcategoryslug=real-estate-agents
+[2025-11-24T06:38:15.703Z] [32MINFO[39M: 📥 [2025-11-24T06:38:15.703Z] OPTIONS /api/businesses?categoryslug=real-estate-rentals&subcategoryslug=real-estate-agents
+[2025-11-24T06:38:15.717Z] [32MINFO[39M: 📥 [2025-11-24T06:38:15.717Z] GET /api/businesses?categoryslug=real-estate-rentals&subcategoryslug=real-estate-agents
+[2025-11-24T06:38:15.718Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"real-estate-rentals","subcategoryslug":"real-estate-agents","page":1,"limit":10,"verified":1}
+[2025-11-24T06:38:19.319Z] [32MINFO[39M: 📥 [2025-11-24T06:38:19.319Z] OPTIONS /api/categories
+[2025-11-24T06:38:19.406Z] [32MINFO[39M: 📥 [2025-11-24T06:38:19.406Z] OPTIONS /api/categories
+[2025-11-24T06:38:19.412Z] [32MINFO[39M: 📥 [2025-11-24T06:38:19.412Z] GET /api/categories
+[2025-11-24T06:38:19.413Z] [32MINFO[39M: 📥 [2025-11-24T06:38:19.413Z] GET /api/businesses?categoryslug=real-estate-rentals&subcategoryslug=real-estate-agents
+[2025-11-24T06:38:19.413Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"real-estate-rentals","subcategoryslug":"real-estate-agents","page":1,"limit":10,"verified":1}
+[2025-11-24T06:38:19.429Z] [32MINFO[39M: 📥 [2025-11-24T06:38:19.429Z] GET /api/categories
+[2025-11-24T06:38:23.274Z] [32MINFO[39M: 📥 [2025-11-24T06:38:23.274Z] OPTIONS /api/businesses?categoryslug=education-classes&subcategoryslug=schools
+[2025-11-24T06:38:23.275Z] [32MINFO[39M: 📥 [2025-11-24T06:38:23.275Z] OPTIONS /api/businesses?categoryslug=education-classes&subcategoryslug=schools
+[2025-11-24T06:38:23.493Z] [32MINFO[39M: 📥 [2025-11-24T06:38:23.493Z] GET /api/businesses?categoryslug=education-classes&subcategoryslug=schools
+[2025-11-24T06:38:23.494Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"education-classes","subcategoryslug":"schools","page":1,"limit":10,"verified":1}
+[2025-11-24T06:38:23.768Z] [32MINFO[39M: 📥 [2025-11-24T06:38:23.768Z] GET /api/businesses?categoryslug=education-classes&subcategoryslug=schools
+[2025-11-24T06:38:23.769Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"education-classes","subcategoryslug":"schools","page":1,"limit":10,"verified":1}
+[2025-11-24T06:38:28.305Z] [32MINFO[39M: 📥 [2025-11-24T06:38:28.305Z] OPTIONS /api/categories
+[2025-11-24T06:38:28.332Z] [32MINFO[39M: 📥 [2025-11-24T06:38:28.332Z] OPTIONS /api/categories
+[2025-11-24T06:38:28.335Z] [32MINFO[39M: 📥 [2025-11-24T06:38:28.335Z] GET /api/categories
+[2025-11-24T06:38:28.345Z] [32MINFO[39M: 📥 [2025-11-24T06:38:28.345Z] GET /api/categories
+[2025-11-24T06:38:31.227Z] [32MINFO[39M: 📥 [2025-11-24T06:38:31.227Z] OPTIONS /api/businesses?categoryslug=milk-dairy&subcategoryslug=milk-center
+[2025-11-24T06:38:31.229Z] [32MINFO[39M: 📥 [2025-11-24T06:38:31.229Z] OPTIONS /api/businesses?categoryslug=milk-dairy&subcategoryslug=milk-center
+[2025-11-24T06:38:31.246Z] [32MINFO[39M: 📥 [2025-11-24T06:38:31.246Z] GET /api/businesses?categoryslug=milk-dairy&subcategoryslug=milk-center
+[2025-11-24T06:38:31.247Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"milk-dairy","subcategoryslug":"milk-center","page":1,"limit":10,"verified":1}
+[2025-11-24T06:38:31.257Z] [32MINFO[39M: 📥 [2025-11-24T06:38:31.257Z] GET /api/businesses?categoryslug=milk-dairy&subcategoryslug=milk-center
+[2025-11-24T06:38:31.258Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"milk-dairy","subcategoryslug":"milk-center","page":1,"limit":10,"verified":1}
+[2025-11-24T06:38:35.319Z] [32MINFO[39M: 📥 [2025-11-24T06:38:35.319Z] OPTIONS /api/categories
+[2025-11-24T06:38:35.320Z] [32MINFO[39M: 📥 [2025-11-24T06:38:35.320Z] OPTIONS /api/categories
+[2025-11-24T06:38:35.384Z] [32MINFO[39M: 📥 [2025-11-24T06:38:35.384Z] GET /api/categories
+[2025-11-24T06:38:35.395Z] [32MINFO[39M: 📥 [2025-11-24T06:38:35.394Z] GET /api/categories
+[2025-11-24T06:38:39.566Z] [32MINFO[39M: 📥 [2025-11-24T06:38:39.566Z] OPTIONS /api/businesses?categoryslug=it-software-services&subcategoryslug=web-developer
+[2025-11-24T06:38:39.567Z] [32MINFO[39M: 📥 [2025-11-24T06:38:39.567Z] OPTIONS /api/businesses?categoryslug=it-software-services&subcategoryslug=web-developer
+[2025-11-24T06:38:39.683Z] [32MINFO[39M: 📥 [2025-11-24T06:38:39.683Z] GET /api/businesses?categoryslug=it-software-services&subcategoryslug=web-developer
+[2025-11-24T06:38:39.684Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"it-software-services","subcategoryslug":"web-developer","page":1,"limit":10,"verified":1}
+[2025-11-24T06:38:39.697Z] [32MINFO[39M: 📥 [2025-11-24T06:38:39.697Z] GET /api/businesses?categoryslug=it-software-services&subcategoryslug=web-developer
+[2025-11-24T06:38:39.698Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"it-software-services","subcategoryslug":"web-developer","page":1,"limit":10,"verified":1}
+[2025-11-24T06:38:43.724Z] [32MINFO[39M: 📥 [2025-11-24T06:38:43.724Z] OPTIONS /api/categories
+[2025-11-24T06:38:43.726Z] [32MINFO[39M: 📥 [2025-11-24T06:38:43.726Z] OPTIONS /api/categories
+[2025-11-24T06:38:43.733Z] [32MINFO[39M: 📥 [2025-11-24T06:38:43.733Z] GET /api/categories
+[2025-11-24T06:38:43.744Z] [32MINFO[39M: 📥 [2025-11-24T06:38:43.744Z] GET /api/categories
+[2025-11-24T06:38:46.511Z] [32MINFO[39M: 📥 [2025-11-24T06:38:46.511Z] OPTIONS /api/businesses?categoryslug=government-offices&subcategoryslug=adhar-help-centers
+[2025-11-24T06:38:46.512Z] [32MINFO[39M: 📥 [2025-11-24T06:38:46.512Z] OPTIONS /api/businesses?categoryslug=government-offices&subcategoryslug=adhar-help-centers
+[2025-11-24T06:38:46.697Z] [32MINFO[39M: 📥 [2025-11-24T06:38:46.697Z] GET /api/businesses?categoryslug=government-offices&subcategoryslug=adhar-help-centers
+[2025-11-24T06:38:46.699Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"government-offices","subcategoryslug":"adhar-help-centers","page":1,"limit":10,"verified":1}
+[2025-11-24T06:38:46.954Z] [32MINFO[39M: 📥 [2025-11-24T06:38:46.954Z] GET /api/businesses?categoryslug=government-offices&subcategoryslug=adhar-help-centers
+[2025-11-24T06:38:46.955Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"government-offices","subcategoryslug":"adhar-help-centers","page":1,"limit":10,"verified":1}
+[2025-11-24T06:38:50.296Z] [32MINFO[39M: 📥 [2025-11-24T06:38:50.296Z] OPTIONS /api/categories
+[2025-11-24T06:38:50.297Z] [32MINFO[39M: 📥 [2025-11-24T06:38:50.297Z] OPTIONS /api/categories
+[2025-11-24T06:38:50.306Z] [32MINFO[39M: 📥 [2025-11-24T06:38:50.306Z] GET /api/categories
+[2025-11-24T06:38:50.315Z] [32MINFO[39M: 📥 [2025-11-24T06:38:50.315Z] GET /api/categories
+[2025-11-24T06:38:55.936Z] [32MINFO[39M: 📥 [2025-11-24T06:38:55.936Z] OPTIONS /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:38:55.941Z] [32MINFO[39M: 📥 [2025-11-24T06:38:55.941Z] OPTIONS /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:38:55.956Z] [32MINFO[39M: 📥 [2025-11-24T06:38:55.956Z] GET /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:38:55.956Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"iron-steels","subcategoryslug":"sheet-and-pipes","page":1,"limit":10,"verified":1}
+[2025-11-24T06:38:55.965Z] [32MINFO[39M: 📥 [2025-11-24T06:38:55.965Z] GET /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:38:55.965Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"iron-steels","subcategoryslug":"sheet-and-pipes","page":1,"limit":10,"verified":1}
+[2025-11-24T06:39:07.191Z] [32MINFO[39M: 📥 [2025-11-24T06:39:07.191Z] OPTIONS /api/count/webview
+[2025-11-24T06:39:07.192Z] [32MINFO[39M: 📥 [2025-11-24T06:39:07.192Z] OPTIONS /api/businesses/s/arman-test-jogeshwari-west
+[2025-11-24T06:39:07.193Z] [32MINFO[39M: 📥 [2025-11-24T06:39:07.193Z] OPTIONS /api/count/webview
+[2025-11-24T06:39:07.193Z] [32MINFO[39M: 📥 [2025-11-24T06:39:07.193Z] OPTIONS /api/businesses/s/arman-test-jogeshwari-west
+[2025-11-24T06:39:07.201Z] [32MINFO[39M: 📥 [2025-11-24T06:39:07.201Z] GET /api/count/webview
+[2025-11-24T06:39:07.202Z] [32MINFO[39M: 📥 [2025-11-24T06:39:07.202Z] GET /api/businesses/s/arman-test-jogeshwari-west
+[2025-11-24T06:39:07.203Z] [32MINFO[39M: Received request for business with slug: arman-test-jogeshwari-west
+[2025-11-24T06:39:07.212Z] [32MINFO[39M: 📥 [2025-11-24T06:39:07.212Z] GET /api/count/webview
+[2025-11-24T06:39:07.217Z] [32MINFO[39M: 📥 [2025-11-24T06:39:07.217Z] GET /api/businesses/s/arman-test-jogeshwari-west
+[2025-11-24T06:39:07.218Z] [32MINFO[39M: Received request for business with slug: arman-test-jogeshwari-west
+[2025-11-24T06:39:07.303Z] [32MINFO[39M: 📥 [2025-11-24T06:39:07.303Z] OPTIONS /api/businesses/44/view
+[2025-11-24T06:39:07.368Z] [32MINFO[39M: 📥 [2025-11-24T06:39:07.368Z] PUT /api/businesses/44/view
+[2025-11-24T06:39:07.380Z] [32MINFO[39M: viewCount 2
+[2025-11-24T06:39:17.341Z] [32MINFO[39M: 📥 [2025-11-24T06:39:17.341Z] OPTIONS /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:39:17.342Z] [32MINFO[39M: 📥 [2025-11-24T06:39:17.342Z] OPTIONS /api/count/webview
+[2025-11-24T06:39:17.343Z] [32MINFO[39M: 📥 [2025-11-24T06:39:17.343Z] OPTIONS /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:39:17.344Z] [32MINFO[39M: 📥 [2025-11-24T06:39:17.344Z] OPTIONS /api/count/webview
+[2025-11-24T06:39:17.473Z] [32MINFO[39M: 📥 [2025-11-24T06:39:17.473Z] GET /api/count/webview
+[2025-11-24T06:39:17.475Z] [32MINFO[39M: 📥 [2025-11-24T06:39:17.475Z] GET /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:39:17.475Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"iron-steels","subcategoryslug":"sheet-and-pipes","page":1,"limit":10,"verified":1}
+[2025-11-24T06:39:17.483Z] [32MINFO[39M: 📥 [2025-11-24T06:39:17.483Z] GET /api/count/webview
+[2025-11-24T06:39:17.487Z] [32MINFO[39M: 📥 [2025-11-24T06:39:17.487Z] GET /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:39:17.488Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"iron-steels","subcategoryslug":"sheet-and-pipes","page":1,"limit":10,"verified":1}
+[2025-11-24T06:40:13.973Z] [32MINFO[39M: 📥 [2025-11-24T06:40:13.973Z] OPTIONS /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:40:13.974Z] [32MINFO[39M: 📥 [2025-11-24T06:40:13.974Z] OPTIONS /api/count/webview
+[2025-11-24T06:40:13.975Z] [32MINFO[39M: 📥 [2025-11-24T06:40:13.975Z] OPTIONS /api/count/webview
+[2025-11-24T06:40:13.975Z] [32MINFO[39M: 📥 [2025-11-24T06:40:13.975Z] OPTIONS /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:40:13.991Z] [32MINFO[39M: 📥 [2025-11-24T06:40:13.991Z] GET /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:40:13.991Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"iron-steels","subcategoryslug":"sheet-and-pipes","page":1,"limit":10,"verified":1}
+[2025-11-24T06:40:13.992Z] [32MINFO[39M: 📥 [2025-11-24T06:40:13.992Z] GET /api/count/webview
+[2025-11-24T06:40:14.004Z] [32MINFO[39M: 📥 [2025-11-24T06:40:14.004Z] GET /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:40:14.005Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"iron-steels","subcategoryslug":"sheet-and-pipes","page":1,"limit":10,"verified":1}
+[2025-11-24T06:40:14.005Z] [32MINFO[39M: 📥 [2025-11-24T06:40:14.005Z] GET /api/count/webview
+[2025-11-24T06:40:50.177Z] [32MINFO[39M: 📥 [2025-11-24T06:40:50.177Z] OPTIONS /api/count/webview
+[2025-11-24T06:40:50.178Z] [32MINFO[39M: 📥 [2025-11-24T06:40:50.178Z] OPTIONS /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:40:50.179Z] [32MINFO[39M: 📥 [2025-11-24T06:40:50.179Z] OPTIONS /api/count/webview
+[2025-11-24T06:40:50.180Z] [32MINFO[39M: 📥 [2025-11-24T06:40:50.180Z] OPTIONS /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:40:50.190Z] [32MINFO[39M: 📥 [2025-11-24T06:40:50.190Z] GET /api/count/webview
+[2025-11-24T06:40:50.194Z] [32MINFO[39M: 📥 [2025-11-24T06:40:50.194Z] GET /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:40:50.194Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"iron-steels","subcategoryslug":"sheet-and-pipes","page":1,"limit":10,"verified":1}
+[2025-11-24T06:40:50.206Z] [32MINFO[39M: 📥 [2025-11-24T06:40:50.206Z] GET /api/count/webview
+[2025-11-24T06:40:50.207Z] [32MINFO[39M: 📥 [2025-11-24T06:40:50.207Z] GET /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:40:50.207Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"iron-steels","subcategoryslug":"sheet-and-pipes","page":1,"limit":10,"verified":1}
+[2025-11-24T06:40:53.765Z] [32MINFO[39M: 📥 [2025-11-24T06:40:53.765Z] GET /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:40:53.766Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"iron-steels","subcategoryslug":"sheet-and-pipes","page":1,"limit":10,"verified":1}
+[2025-11-24T06:40:53.869Z] [32MINFO[39M: 📥 [2025-11-24T06:40:53.869Z] GET /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:40:53.870Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"iron-steels","subcategoryslug":"sheet-and-pipes","page":1,"limit":10,"verified":1}
+[2025-11-24T06:40:55.601Z] [32MINFO[39M: 📥 [2025-11-24T06:40:55.601Z] OPTIONS /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:40:55.608Z] [32MINFO[39M: 📥 [2025-11-24T06:40:55.608Z] GET /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:40:55.608Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"iron-steels","subcategoryslug":"sheet-and-pipes","page":1,"limit":10,"verified":1}
+[2025-11-24T06:40:55.609Z] [32MINFO[39M: 📥 [2025-11-24T06:40:55.609Z] OPTIONS /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:40:55.620Z] [32MINFO[39M: 📥 [2025-11-24T06:40:55.620Z] GET /api/businesses?categoryslug=iron-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:40:55.621Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"iron-steels","subcategoryslug":"sheet-and-pipes","page":1,"limit":10,"verified":1}
+[2025-11-24T06:41:01.802Z] [32MINFO[39M: 📥 [2025-11-24T06:41:01.802Z] OPTIONS /api/categories
+[2025-11-24T06:41:01.810Z] [32MINFO[39M: 📥 [2025-11-24T06:41:01.810Z] OPTIONS /api/categories
+[2025-11-24T06:41:01.823Z] [32MINFO[39M: 📥 [2025-11-24T06:41:01.823Z] GET /api/categories
+[2025-11-24T06:41:01.845Z] [32MINFO[39M: 📥 [2025-11-24T06:41:01.845Z] GET /api/categories
+[2025-11-24T06:41:07.404Z] [32MINFO[39M: 📥 [2025-11-24T06:41:07.404Z] OPTIONS /api/businesses?categoryslug=iron-and-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:41:07.406Z] [32MINFO[39M: 📥 [2025-11-24T06:41:07.406Z] OPTIONS /api/businesses?categoryslug=iron-and-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:41:07.465Z] [32MINFO[39M: 📥 [2025-11-24T06:41:07.465Z] GET /api/businesses?categoryslug=iron-and-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:41:07.466Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"iron-and-steels","subcategoryslug":"sheet-and-pipes","page":1,"limit":10,"verified":1}
+[2025-11-24T06:41:07.640Z] [32MINFO[39M: 📥 [2025-11-24T06:41:07.640Z] GET /api/businesses?categoryslug=iron-and-steels&subcategoryslug=sheet-and-pipes
+[2025-11-24T06:41:07.641Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"iron-and-steels","subcategoryslug":"sheet-and-pipes","page":1,"limit":10,"verified":1}
+[2025-11-24T06:41:13.289Z] [32MINFO[39M: 📥 [2025-11-24T06:41:13.289Z] OPTIONS /api/categories
+[2025-11-24T06:41:13.290Z] [32MINFO[39M: 📥 [2025-11-24T06:41:13.290Z] OPTIONS /api/categories
+[2025-11-24T06:41:13.296Z] [32MINFO[39M: 📥 [2025-11-24T06:41:13.296Z] GET /api/categories
+[2025-11-24T06:41:13.307Z] [32MINFO[39M: 📥 [2025-11-24T06:41:13.307Z] GET /api/categories
+[2025-11-24T06:41:17.559Z] [32MINFO[39M: 📥 [2025-11-24T06:41:17.559Z] OPTIONS /api/businesses?categoryslug=weight-scales&subcategoryslug=weight-scale-sellers
+[2025-11-24T06:41:17.560Z] [32MINFO[39M: 📥 [2025-11-24T06:41:17.560Z] OPTIONS /api/businesses?categoryslug=weight-scales&subcategoryslug=weight-scale-sellers
+[2025-11-24T06:41:17.585Z] [32MINFO[39M: 📥 [2025-11-24T06:41:17.585Z] GET /api/businesses?categoryslug=weight-scales&subcategoryslug=weight-scale-sellers
+[2025-11-24T06:41:17.585Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"weight-scales","subcategoryslug":"weight-scale-sellers","page":1,"limit":10,"verified":1}
+[2025-11-24T06:41:17.597Z] [32MINFO[39M: 📥 [2025-11-24T06:41:17.597Z] GET /api/businesses?categoryslug=weight-scales&subcategoryslug=weight-scale-sellers
+[2025-11-24T06:41:17.598Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"weight-scales","subcategoryslug":"weight-scale-sellers","page":1,"limit":10,"verified":1}
+[2025-11-24T06:41:20.623Z] [32MINFO[39M: 📥 [2025-11-24T06:41:20.623Z] OPTIONS /api/categories
+[2025-11-24T06:41:20.624Z] [32MINFO[39M: 📥 [2025-11-24T06:41:20.624Z] OPTIONS /api/categories
+[2025-11-24T06:41:20.663Z] [32MINFO[39M: 📥 [2025-11-24T06:41:20.663Z] GET /api/categories
+[2025-11-24T06:41:20.768Z] [32MINFO[39M: 📥 [2025-11-24T06:41:20.768Z] GET /api/categories
+[2025-11-24T06:41:23.318Z] [32MINFO[39M: 📥 [2025-11-24T06:41:23.318Z] OPTIONS /api/businesses?categoryslug=government-offices&subcategoryslug=adhar-help-centers
+[2025-11-24T06:41:23.319Z] [32MINFO[39M: 📥 [2025-11-24T06:41:23.319Z] OPTIONS /api/businesses?categoryslug=government-offices&subcategoryslug=adhar-help-centers
+[2025-11-24T06:41:23.428Z] [32MINFO[39M: 📥 [2025-11-24T06:41:23.428Z] GET /api/businesses?categoryslug=government-offices&subcategoryslug=adhar-help-centers
+[2025-11-24T06:41:23.429Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"government-offices","subcategoryslug":"adhar-help-centers","page":1,"limit":10,"verified":1}
+[2025-11-24T06:41:23.437Z] [32MINFO[39M: 📥 [2025-11-24T06:41:23.437Z] GET /api/businesses?categoryslug=government-offices&subcategoryslug=adhar-help-centers
+[2025-11-24T06:41:23.438Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"government-offices","subcategoryslug":"adhar-help-centers","page":1,"limit":10,"verified":1}
+[2025-11-24T06:41:26.429Z] [32MINFO[39M: 📥 [2025-11-24T06:41:26.429Z] OPTIONS /api/categories
+[2025-11-24T06:41:26.430Z] [32MINFO[39M: 📥 [2025-11-24T06:41:26.430Z] OPTIONS /api/categories
+[2025-11-24T06:41:26.722Z] [32MINFO[39M: 📥 [2025-11-24T06:41:26.722Z] GET /api/categories
+[2025-11-24T06:41:26.733Z] [32MINFO[39M: 📥 [2025-11-24T06:41:26.733Z] GET /api/categories
+[2025-11-24T06:41:32.429Z] [32MINFO[39M: 📥 [2025-11-24T06:41:32.429Z] OPTIONS /api/businesses?categoryslug=film-hub&subcategoryslug=flim-city
+[2025-11-24T06:41:32.430Z] [32MINFO[39M: 📥 [2025-11-24T06:41:32.430Z] OPTIONS /api/businesses?categoryslug=film-hub&subcategoryslug=flim-city
+[2025-11-24T06:41:32.439Z] [32MINFO[39M: 📥 [2025-11-24T06:41:32.439Z] GET /api/businesses?categoryslug=film-hub&subcategoryslug=flim-city
+[2025-11-24T06:41:32.439Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"film-hub","subcategoryslug":"flim-city","page":1,"limit":10,"verified":1}
+[2025-11-24T06:41:32.451Z] [32MINFO[39M: 📥 [2025-11-24T06:41:32.451Z] GET /api/businesses?categoryslug=film-hub&subcategoryslug=flim-city
+[2025-11-24T06:41:32.452Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"film-hub","subcategoryslug":"flim-city","page":1,"limit":10,"verified":1}
+[2025-11-24T06:41:35.013Z] [32MINFO[39M: 📥 [2025-11-24T06:41:35.013Z] OPTIONS /api/categories
+[2025-11-24T06:41:35.014Z] [32MINFO[39M: 📥 [2025-11-24T06:41:35.014Z] OPTIONS /api/categories
+[2025-11-24T06:41:35.093Z] [32MINFO[39M: 📥 [2025-11-24T06:41:35.093Z] GET /api/categories
+[2025-11-24T06:41:35.154Z] [32MINFO[39M: 📥 [2025-11-24T06:41:35.154Z] GET /api/categories
+[2025-11-24T06:41:39.660Z] [32MINFO[39M: 📥 [2025-11-24T06:41:39.660Z] OPTIONS /api/businesses?categoryslug=branded-outlets&subcategoryslug=clothing-store
+[2025-11-24T06:41:39.661Z] [32MINFO[39M: 📥 [2025-11-24T06:41:39.661Z] OPTIONS /api/businesses?categoryslug=branded-outlets&subcategoryslug=clothing-store
+[2025-11-24T06:41:39.850Z] [32MINFO[39M: 📥 [2025-11-24T06:41:39.850Z] GET /api/businesses?categoryslug=branded-outlets&subcategoryslug=clothing-store
+[2025-11-24T06:41:39.850Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"branded-outlets","subcategoryslug":"clothing-store","page":1,"limit":10,"verified":1}
+[2025-11-24T06:41:39.859Z] [32MINFO[39M: 📥 [2025-11-24T06:41:39.859Z] GET /api/businesses?categoryslug=branded-outlets&subcategoryslug=clothing-store
+[2025-11-24T06:41:39.859Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"branded-outlets","subcategoryslug":"clothing-store","page":1,"limit":10,"verified":1}
+[2025-11-24T06:41:44.735Z] [32MINFO[39M: 📥 [2025-11-24T06:41:44.735Z] OPTIONS /api/categories
+[2025-11-24T06:41:44.736Z] [32MINFO[39M: 📥 [2025-11-24T06:41:44.736Z] OPTIONS /api/categories
+[2025-11-24T06:41:44.743Z] [32MINFO[39M: 📥 [2025-11-24T06:41:44.743Z] GET /api/categories
+[2025-11-24T06:41:44.752Z] [32MINFO[39M: 📥 [2025-11-24T06:41:44.752Z] GET /api/categories
+[2025-11-24T06:41:50.822Z] [32MINFO[39M: 📥 [2025-11-24T06:41:50.822Z] OPTIONS /api/businesses?categoryslug=pan-shop-and-hookaah&subcategoryslug=pan-shop
+[2025-11-24T06:41:50.823Z] [32MINFO[39M: 📥 [2025-11-24T06:41:50.823Z] OPTIONS /api/businesses?categoryslug=pan-shop-and-hookaah&subcategoryslug=pan-shop
+[2025-11-24T06:41:50.831Z] [32MINFO[39M: 📥 [2025-11-24T06:41:50.831Z] GET /api/businesses?categoryslug=pan-shop-and-hookaah&subcategoryslug=pan-shop
+[2025-11-24T06:41:50.832Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"pan-shop-and-hookaah","subcategoryslug":"pan-shop","page":1,"limit":10,"verified":1}
+[2025-11-24T06:41:50.845Z] [32MINFO[39M: 📥 [2025-11-24T06:41:50.845Z] GET /api/businesses?categoryslug=pan-shop-and-hookaah&subcategoryslug=pan-shop
+[2025-11-24T06:41:50.846Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"pan-shop-and-hookaah","subcategoryslug":"pan-shop","page":1,"limit":10,"verified":1}
+[2025-11-24T06:42:38.701Z] [32MINFO[39M: 📥 [2025-11-24T06:42:38.701Z] OPTIONS /api/categories
+[2025-11-24T06:42:38.708Z] [32MINFO[39M: 📥 [2025-11-24T06:42:38.708Z] OPTIONS /api/categories
+[2025-11-24T06:42:38.724Z] [32MINFO[39M: 📥 [2025-11-24T06:42:38.724Z] GET /api/categories
+[2025-11-24T06:42:38.737Z] [32MINFO[39M: 📥 [2025-11-24T06:42:38.737Z] GET /api/categories
+[2025-11-24T06:42:43.538Z] [32MINFO[39M: 📥 [2025-11-24T06:42:43.538Z] OPTIONS /api/businesses?categoryslug=pan-shop-and-hookaah&subcategoryslug=pan-shop
+[2025-11-24T06:42:43.539Z] [32MINFO[39M: 📥 [2025-11-24T06:42:43.539Z] OPTIONS /api/businesses?categoryslug=pan-shop-and-hookaah&subcategoryslug=pan-shop
+[2025-11-24T06:42:43.561Z] [32MINFO[39M: 📥 [2025-11-24T06:42:43.561Z] GET /api/businesses?categoryslug=pan-shop-and-hookaah&subcategoryslug=pan-shop
+[2025-11-24T06:42:43.563Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"pan-shop-and-hookaah","subcategoryslug":"pan-shop","page":1,"limit":10,"verified":1}
+[2025-11-24T06:42:43.577Z] [32MINFO[39M: 📥 [2025-11-24T06:42:43.577Z] GET /api/businesses?categoryslug=pan-shop-and-hookaah&subcategoryslug=pan-shop
+[2025-11-24T06:42:43.578Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"pan-shop-and-hookaah","subcategoryslug":"pan-shop","page":1,"limit":10,"verified":1}
+[2025-11-24T06:42:46.793Z] [32MINFO[39M: 📥 [2025-11-24T06:42:46.793Z] OPTIONS /api/categories
+[2025-11-24T06:42:46.821Z] [32MINFO[39M: 📥 [2025-11-24T06:42:46.821Z] GET /api/categories
+[2025-11-24T06:42:47.017Z] [32MINFO[39M: 📥 [2025-11-24T06:42:47.017Z] OPTIONS /api/categories
+[2025-11-24T06:42:47.025Z] [32MINFO[39M: 📥 [2025-11-24T06:42:47.025Z] GET /api/categories
+[2025-11-24T06:42:53.717Z] [32MINFO[39M: 📥 [2025-11-24T06:42:53.717Z] OPTIONS /api/businesses?categoryslug=24-hrs-services&subcategoryslug=helpline-numbers
+[2025-11-24T06:42:53.718Z] [32MINFO[39M: 📥 [2025-11-24T06:42:53.718Z] OPTIONS /api/businesses?categoryslug=24-hrs-services&subcategoryslug=helpline-numbers
+[2025-11-24T06:42:53.738Z] [32MINFO[39M: 📥 [2025-11-24T06:42:53.738Z] GET /api/businesses?categoryslug=24-hrs-services&subcategoryslug=helpline-numbers
+[2025-11-24T06:42:53.739Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"24-hrs-services","subcategoryslug":"helpline-numbers","page":1,"limit":10,"verified":1}
+[2025-11-24T06:42:53.746Z] [32MINFO[39M: 📥 [2025-11-24T06:42:53.746Z] GET /api/businesses?categoryslug=24-hrs-services&subcategoryslug=helpline-numbers
+[2025-11-24T06:42:53.746Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"24-hrs-services","subcategoryslug":"helpline-numbers","page":1,"limit":10,"verified":1}
+[2025-11-24T06:43:30.297Z] [32MINFO[39M: 📥 [2025-11-24T06:43:30.296Z] OPTIONS /api/businesses?categoryslug=24-hrs-services&subcategoryslug=helpline-numbers
+[2025-11-24T06:43:30.299Z] [32MINFO[39M: 📥 [2025-11-24T06:43:30.299Z] OPTIONS /api/count/webview
+[2025-11-24T06:43:30.299Z] [32MINFO[39M: 📥 [2025-11-24T06:43:30.299Z] OPTIONS /api/count/webview
+[2025-11-24T06:43:30.300Z] [32MINFO[39M: 📥 [2025-11-24T06:43:30.300Z] OPTIONS /api/businesses?categoryslug=24-hrs-services&subcategoryslug=helpline-numbers
+[2025-11-24T06:43:30.305Z] [32MINFO[39M: 📥 [2025-11-24T06:43:30.305Z] GET /api/businesses?categoryslug=24-hrs-services&subcategoryslug=helpline-numbers
+[2025-11-24T06:43:30.305Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"24-hrs-services","subcategoryslug":"helpline-numbers","page":1,"limit":10,"verified":1}
+[2025-11-24T06:43:30.313Z] [32MINFO[39M: 📥 [2025-11-24T06:43:30.313Z] GET /api/count/webview
+[2025-11-24T06:43:30.314Z] [32MINFO[39M: 📥 [2025-11-24T06:43:30.314Z] GET /api/businesses?categoryslug=24-hrs-services&subcategoryslug=helpline-numbers
+[2025-11-24T06:43:30.315Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"24-hrs-services","subcategoryslug":"helpline-numbers","page":1,"limit":10,"verified":1}
+[2025-11-24T06:43:30.326Z] [32MINFO[39M: 📥 [2025-11-24T06:43:30.326Z] GET /api/count/webview
+[2025-11-24T06:43:33.019Z] [32MINFO[39M: 📥 [2025-11-24T06:43:33.019Z] OPTIONS /api/categories
+[2025-11-24T06:43:33.019Z] [32MINFO[39M: 📥 [2025-11-24T06:43:33.019Z] OPTIONS /api/categories
+[2025-11-24T06:43:33.118Z] [32MINFO[39M: 📥 [2025-11-24T06:43:33.118Z] GET /api/categories
+[2025-11-24T06:43:33.131Z] [32MINFO[39M: 📥 [2025-11-24T06:43:33.131Z] GET /api/categories
+[2025-11-24T06:43:39.455Z] [32MINFO[39M: 📥 [2025-11-24T06:43:39.455Z] OPTIONS /api/businesses?categoryslug=business-parks&subcategoryslug=business-parks
+[2025-11-24T06:43:39.456Z] [32MINFO[39M: 📥 [2025-11-24T06:43:39.456Z] OPTIONS /api/businesses?categoryslug=business-parks&subcategoryslug=business-parks
+[2025-11-24T06:43:39.470Z] [32MINFO[39M: 📥 [2025-11-24T06:43:39.470Z] GET /api/businesses?categoryslug=business-parks&subcategoryslug=business-parks
+[2025-11-24T06:43:39.470Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"business-parks","subcategoryslug":"business-parks","page":1,"limit":10,"verified":1}
+[2025-11-24T06:43:39.478Z] [32MINFO[39M: 📥 [2025-11-24T06:43:39.478Z] GET /api/businesses?categoryslug=business-parks&subcategoryslug=business-parks
+[2025-11-24T06:43:39.479Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"business-parks","subcategoryslug":"business-parks","page":1,"limit":10,"verified":1}
+[2025-11-24T06:43:42.694Z] [32MINFO[39M: 📥 [2025-11-24T06:43:42.694Z] OPTIONS /api/categories
+[2025-11-24T06:43:42.695Z] [32MINFO[39M: 📥 [2025-11-24T06:43:42.695Z] OPTIONS /api/categories
+[2025-11-24T06:43:42.808Z] [32MINFO[39M: 📥 [2025-11-24T06:43:42.808Z] GET /api/categories
+[2025-11-24T06:43:42.858Z] [32MINFO[39M: 📥 [2025-11-24T06:43:42.858Z] GET /api/categories
+[2025-11-24T06:43:51.044Z] [32MINFO[39M: 📥 [2025-11-24T06:43:51.044Z] OPTIONS /api/businesses?categoryslug=real-estate-rentals&subcategoryslug=real-estate-agents
+[2025-11-24T06:43:51.045Z] [32MINFO[39M: 📥 [2025-11-24T06:43:51.045Z] OPTIONS /api/businesses?categoryslug=real-estate-rentals&subcategoryslug=real-estate-agents
+[2025-11-24T06:43:51.057Z] [32MINFO[39M: 📥 [2025-11-24T06:43:51.057Z] GET /api/businesses?categoryslug=real-estate-rentals&subcategoryslug=real-estate-agents
+[2025-11-24T06:43:51.057Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"real-estate-rentals","subcategoryslug":"real-estate-agents","page":1,"limit":10,"verified":1}
+[2025-11-24T06:43:51.287Z] [32MINFO[39M: 📥 [2025-11-24T06:43:51.287Z] GET /api/businesses?categoryslug=real-estate-rentals&subcategoryslug=real-estate-agents
+[2025-11-24T06:43:51.288Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"real-estate-rentals","subcategoryslug":"real-estate-agents","page":1,"limit":10,"verified":1}
+[2025-11-24T06:43:53.649Z] [32MINFO[39M: 📥 [2025-11-24T06:43:53.649Z] OPTIONS /api/categories
+[2025-11-24T06:43:53.650Z] [32MINFO[39M: 📥 [2025-11-24T06:43:53.650Z] OPTIONS /api/categories
+[2025-11-24T06:43:53.656Z] [32MINFO[39M: 📥 [2025-11-24T06:43:53.656Z] GET /api/categories
+[2025-11-24T06:43:53.667Z] [32MINFO[39M: 📥 [2025-11-24T06:43:53.667Z] GET /api/categories
+[2025-11-24T06:57:44.694Z] [32MINFO[39M: 📥 [2025-11-24T06:57:44.694Z] OPTIONS /api/businesses?categoryslug=real-estate-rentals&subcategoryslug=real-estate-agents
+[2025-11-24T06:57:44.695Z] [32MINFO[39M: 📥 [2025-11-24T06:57:44.695Z] OPTIONS /api/businesses?categoryslug=real-estate-rentals&subcategoryslug=real-estate-agents
+[2025-11-24T06:57:44.709Z] [32MINFO[39M: 📥 [2025-11-24T06:57:44.709Z] GET /api/businesses?categoryslug=real-estate-rentals&subcategoryslug=real-estate-agents
+[2025-11-24T06:57:44.709Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"real-estate-rentals","subcategoryslug":"real-estate-agents","page":1,"limit":10,"verified":1}
+[2025-11-24T06:57:44.718Z] [32MINFO[39M: 📥 [2025-11-24T06:57:44.717Z] GET /api/businesses?categoryslug=real-estate-rentals&subcategoryslug=real-estate-agents
+[2025-11-24T06:57:44.718Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"real-estate-rentals","subcategoryslug":"real-estate-agents","page":1,"limit":10,"verified":1}
+[2025-11-24T06:57:47.991Z] [32MINFO[39M: 📥 [2025-11-24T06:57:47.991Z] OPTIONS /api/categories
+[2025-11-24T06:57:47.992Z] [32MINFO[39M: 📥 [2025-11-24T06:57:47.992Z] OPTIONS /api/categories
+[2025-11-24T06:57:48.024Z] [32MINFO[39M: 📥 [2025-11-24T06:57:48.024Z] GET /api/categories
+[2025-11-24T06:57:48.040Z] [32MINFO[39M: 📥 [2025-11-24T06:57:48.040Z] GET /api/categories
+[2025-11-24T06:57:50.946Z] [32MINFO[39M: 📥 [2025-11-24T06:57:50.946Z] OPTIONS /api/businesses?categoryslug=rentals&subcategoryslug=clothes-rent
+[2025-11-24T06:57:50.947Z] [32MINFO[39M: 📥 [2025-11-24T06:57:50.947Z] OPTIONS /api/businesses?categoryslug=rentals&subcategoryslug=clothes-rent
+[2025-11-24T06:57:51.008Z] [32MINFO[39M: 📥 [2025-11-24T06:57:51.008Z] GET /api/businesses?categoryslug=rentals&subcategoryslug=clothes-rent
+[2025-11-24T06:57:51.009Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"rentals","subcategoryslug":"clothes-rent","page":1,"limit":10,"verified":1}
+[2025-11-24T06:57:51.017Z] [32MINFO[39M: 📥 [2025-11-24T06:57:51.017Z] GET /api/businesses?categoryslug=rentals&subcategoryslug=clothes-rent
+[2025-11-24T06:57:51.017Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"rentals","subcategoryslug":"clothes-rent","page":1,"limit":10,"verified":1}
+[2025-11-24T06:57:55.855Z] [32MINFO[39M: 📥 [2025-11-24T06:57:55.855Z] OPTIONS /api/categories
+[2025-11-24T06:57:55.856Z] [32MINFO[39M: 📥 [2025-11-24T06:57:55.856Z] OPTIONS /api/categories
+[2025-11-24T06:57:55.968Z] [32MINFO[39M: 📥 [2025-11-24T06:57:55.968Z] GET /api/categories
+[2025-11-24T06:57:56.034Z] [32MINFO[39M: 📥 [2025-11-24T06:57:56.034Z] GET /api/categories
+[2025-11-24T06:57:58.453Z] [32MINFO[39M: 📥 [2025-11-24T06:57:58.453Z] OPTIONS /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T06:57:58.454Z] [32MINFO[39M: 📥 [2025-11-24T06:57:58.454Z] OPTIONS /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T06:57:58.514Z] [32MINFO[39M: 📥 [2025-11-24T06:57:58.514Z] GET /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T06:57:58.515Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"restaurant","subcategoryslug":"restaurant","page":1,"limit":10,"verified":1}
+[2025-11-24T06:57:58.526Z] [32MINFO[39M: 📥 [2025-11-24T06:57:58.526Z] GET /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T06:57:58.526Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"restaurant","subcategoryslug":"restaurant","page":1,"limit":10,"verified":1}
+[2025-11-24T07:02:16.778Z] [32MINFO[39M: 📥 [2025-11-24T07:02:16.778Z] OPTIONS /api/categories
+[2025-11-24T07:02:16.779Z] [32MINFO[39M: 📥 [2025-11-24T07:02:16.779Z] OPTIONS /api/categories
+[2025-11-24T07:02:16.910Z] [32MINFO[39M: 📥 [2025-11-24T07:02:16.910Z] GET /api/categories
+[2025-11-24T07:02:17.326Z] [32MINFO[39M: 📥 [2025-11-24T07:02:17.326Z] GET /api/categories
+[2025-11-24T07:02:32.314Z] [32MINFO[39M: 📥 [2025-11-24T07:02:32.314Z] OPTIONS /api/businesses?categoryslug=foods&subcategoryslug=cafes
+[2025-11-24T07:02:32.315Z] [32MINFO[39M: 📥 [2025-11-24T07:02:32.315Z] OPTIONS /api/businesses?categoryslug=foods&subcategoryslug=cafes
+[2025-11-24T07:02:32.472Z] [32MINFO[39M: 📥 [2025-11-24T07:02:32.472Z] GET /api/businesses?categoryslug=foods&subcategoryslug=cafes
+[2025-11-24T07:02:32.472Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"foods","subcategoryslug":"cafes","page":1,"limit":10,"verified":1}
+[2025-11-24T07:02:32.483Z] [32MINFO[39M: 📥 [2025-11-24T07:02:32.483Z] GET /api/businesses?categoryslug=foods&subcategoryslug=cafes
+[2025-11-24T07:02:32.484Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"foods","subcategoryslug":"cafes","page":1,"limit":10,"verified":1}
+[2025-11-24T07:03:47.369Z] [32MINFO[39M: 📥 [2025-11-24T07:03:47.369Z] OPTIONS /api/categories
+[2025-11-24T07:03:47.370Z] [32MINFO[39M: 📥 [2025-11-24T07:03:47.370Z] OPTIONS /api/categories
+[2025-11-24T07:03:47.573Z] [32MINFO[39M: 📥 [2025-11-24T07:03:47.573Z] GET /api/categories
+[2025-11-24T07:03:47.775Z] [32MINFO[39M: 📥 [2025-11-24T07:03:47.775Z] GET /api/categories
+[2025-11-24T07:03:53.134Z] [32MINFO[39M: 📥 [2025-11-24T07:03:53.134Z] OPTIONS /api/businesses?categoryslug=babies&subcategoryslug=baby-sitting
+[2025-11-24T07:03:53.136Z] [32MINFO[39M: 📥 [2025-11-24T07:03:53.136Z] OPTIONS /api/businesses?categoryslug=babies&subcategoryslug=baby-sitting
+[2025-11-24T07:03:53.145Z] [32MINFO[39M: 📥 [2025-11-24T07:03:53.145Z] GET /api/businesses?categoryslug=babies&subcategoryslug=baby-sitting
+[2025-11-24T07:03:53.146Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"babies","subcategoryslug":"baby-sitting","page":1,"limit":10,"verified":1}
+[2025-11-24T07:03:53.154Z] [32MINFO[39M: 📥 [2025-11-24T07:03:53.154Z] GET /api/businesses?categoryslug=babies&subcategoryslug=baby-sitting
+[2025-11-24T07:03:53.155Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"babies","subcategoryslug":"baby-sitting","page":1,"limit":10,"verified":1}
+[2025-11-24T07:03:56.178Z] [32MINFO[39M: 📥 [2025-11-24T07:03:56.178Z] OPTIONS /api/categories
+[2025-11-24T07:03:56.179Z] [32MINFO[39M: 📥 [2025-11-24T07:03:56.179Z] OPTIONS /api/categories
+[2025-11-24T07:03:56.214Z] [32MINFO[39M: 📥 [2025-11-24T07:03:56.214Z] GET /api/categories
+[2025-11-24T07:03:56.438Z] [32MINFO[39M: 📥 [2025-11-24T07:03:56.438Z] GET /api/categories
+[2025-11-24T07:03:58.393Z] [32MINFO[39M: 📥 [2025-11-24T07:03:58.393Z] OPTIONS /api/businesses?categoryslug=clothing&subcategoryslug=mens-wear
+[2025-11-24T07:03:58.394Z] [32MINFO[39M: 📥 [2025-11-24T07:03:58.394Z] OPTIONS /api/businesses?categoryslug=clothing&subcategoryslug=mens-wear
+[2025-11-24T07:03:58.442Z] [32MINFO[39M: 📥 [2025-11-24T07:03:58.442Z] GET /api/businesses?categoryslug=clothing&subcategoryslug=mens-wear
+[2025-11-24T07:03:58.442Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"clothing","subcategoryslug":"mens-wear","page":1,"limit":10,"verified":1}
+[2025-11-24T07:03:58.462Z] [32MINFO[39M: 📥 [2025-11-24T07:03:58.462Z] GET /api/businesses?categoryslug=clothing&subcategoryslug=mens-wear
+[2025-11-24T07:03:58.462Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"clothing","subcategoryslug":"mens-wear","page":1,"limit":10,"verified":1}
+[2025-11-24T07:07:04.988Z] [32MINFO[39M: 📥 [2025-11-24T07:07:04.988Z] OPTIONS /api/count/webview
+[2025-11-24T07:07:04.989Z] [32MINFO[39M: 📥 [2025-11-24T07:07:04.989Z] OPTIONS /api/businesses?categoryslug=clothing&subcategoryslug=mens-wear
+[2025-11-24T07:07:04.989Z] [32MINFO[39M: 📥 [2025-11-24T07:07:04.989Z] OPTIONS /api/businesses?categoryslug=clothing&subcategoryslug=mens-wear
+[2025-11-24T07:07:04.990Z] [32MINFO[39M: 📥 [2025-11-24T07:07:04.990Z] OPTIONS /api/count/webview
+[2025-11-24T07:07:05.002Z] [32MINFO[39M: 📥 [2025-11-24T07:07:05.002Z] GET /api/count/webview
+[2025-11-24T07:07:05.004Z] [32MINFO[39M: 📥 [2025-11-24T07:07:05.004Z] GET /api/businesses?categoryslug=clothing&subcategoryslug=mens-wear
+[2025-11-24T07:07:05.004Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"clothing","subcategoryslug":"mens-wear","page":1,"limit":10,"verified":1}
+[2025-11-24T07:07:05.018Z] [32MINFO[39M: 📥 [2025-11-24T07:07:05.018Z] GET /api/count/webview
+[2025-11-24T07:07:05.019Z] [32MINFO[39M: 📥 [2025-11-24T07:07:05.019Z] GET /api/businesses?categoryslug=clothing&subcategoryslug=mens-wear
+[2025-11-24T07:07:05.019Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"clothing","subcategoryslug":"mens-wear","page":1,"limit":10,"verified":1}
+[2025-11-24T07:07:08.333Z] [32MINFO[39M: 📥 [2025-11-24T07:07:08.333Z] OPTIONS /api/categories
+[2025-11-24T07:07:08.334Z] [32MINFO[39M: 📥 [2025-11-24T07:07:08.334Z] OPTIONS /api/categories
+[2025-11-24T07:07:08.394Z] [32MINFO[39M: 📥 [2025-11-24T07:07:08.394Z] GET /api/categories
+[2025-11-24T07:07:08.651Z] [32MINFO[39M: 📥 [2025-11-24T07:07:08.651Z] GET /api/categories
+[2025-11-24T07:07:10.495Z] [32MINFO[39M: 📥 [2025-11-24T07:07:10.495Z] OPTIONS /api/businesses?categoryslug=babies&subcategoryslug=baby-sitting
+[2025-11-24T07:07:10.496Z] [32MINFO[39M: 📥 [2025-11-24T07:07:10.496Z] OPTIONS /api/businesses?categoryslug=babies&subcategoryslug=baby-sitting
+[2025-11-24T07:07:10.541Z] [32MINFO[39M: 📥 [2025-11-24T07:07:10.541Z] GET /api/businesses?categoryslug=babies&subcategoryslug=baby-sitting
+[2025-11-24T07:07:10.541Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"babies","subcategoryslug":"baby-sitting","page":1,"limit":10,"verified":1}
+[2025-11-24T07:07:10.762Z] [32MINFO[39M: 📥 [2025-11-24T07:07:10.762Z] GET /api/businesses?categoryslug=babies&subcategoryslug=baby-sitting
+[2025-11-24T07:07:10.763Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"babies","subcategoryslug":"baby-sitting","page":1,"limit":10,"verified":1}
+[2025-11-24T07:07:19.983Z] [32MINFO[39M: 📥 [2025-11-24T07:07:19.983Z] OPTIONS /api/categories
+[2025-11-24T07:07:19.984Z] [32MINFO[39M: 📥 [2025-11-24T07:07:19.984Z] OPTIONS /api/categories
+[2025-11-24T07:07:20.000Z] [32MINFO[39M: 📥 [2025-11-24T07:07:20.000Z] GET /api/categories
+[2025-11-24T07:07:20.134Z] [32MINFO[39M: 📥 [2025-11-24T07:07:20.134Z] GET /api/categories
+[2025-11-24T07:07:22.396Z] [32MINFO[39M: 📥 [2025-11-24T07:07:22.396Z] OPTIONS /api/businesses?categoryslug=clothing&subcategoryslug=mens-wear
+[2025-11-24T07:07:22.397Z] [32MINFO[39M: 📥 [2025-11-24T07:07:22.397Z] OPTIONS /api/businesses?categoryslug=clothing&subcategoryslug=mens-wear
+[2025-11-24T07:07:22.489Z] [32MINFO[39M: 📥 [2025-11-24T07:07:22.489Z] GET /api/businesses?categoryslug=clothing&subcategoryslug=mens-wear
+[2025-11-24T07:07:22.490Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"clothing","subcategoryslug":"mens-wear","page":1,"limit":10,"verified":1}
+[2025-11-24T07:07:22.674Z] [32MINFO[39M: 📥 [2025-11-24T07:07:22.674Z] GET /api/businesses?categoryslug=clothing&subcategoryslug=mens-wear
+[2025-11-24T07:07:22.675Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"clothing","subcategoryslug":"mens-wear","page":1,"limit":10,"verified":1}
+[2025-11-24T07:07:25.196Z] [32MINFO[39M: 📥 [2025-11-24T07:07:25.196Z] OPTIONS /api/categories
+[2025-11-24T07:07:25.197Z] [32MINFO[39M: 📥 [2025-11-24T07:07:25.197Z] OPTIONS /api/categories
+[2025-11-24T07:07:25.274Z] [32MINFO[39M: 📥 [2025-11-24T07:07:25.274Z] GET /api/categories
+[2025-11-24T07:07:25.476Z] [32MINFO[39M: 📥 [2025-11-24T07:07:25.476Z] GET /api/categories
+[2025-11-24T07:11:13.634Z] [32MINFO[39M: 📥 [2025-11-24T07:11:13.634Z] OPTIONS /api/businesses?categoryslug=fashion-accessories&subcategoryslug=watch-watch-repair-shops
+[2025-11-24T07:11:13.635Z] [32MINFO[39M: 📥 [2025-11-24T07:11:13.635Z] OPTIONS /api/businesses?categoryslug=fashion-accessories&subcategoryslug=watch-watch-repair-shops
+[2025-11-24T07:11:13.694Z] [32MINFO[39M: 📥 [2025-11-24T07:11:13.694Z] GET /api/businesses?categoryslug=fashion-accessories&subcategoryslug=watch-watch-repair-shops
+[2025-11-24T07:11:13.695Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"fashion-accessories","subcategoryslug":"watch-watch-repair-shops","page":1,"limit":10,"verified":1}
+[2025-11-24T07:11:13.798Z] [32MINFO[39M: 📥 [2025-11-24T07:11:13.798Z] GET /api/businesses?categoryslug=fashion-accessories&subcategoryslug=watch-watch-repair-shops
+[2025-11-24T07:11:13.799Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"fashion-accessories","subcategoryslug":"watch-watch-repair-shops","page":1,"limit":10,"verified":1}
+[2025-11-24T07:11:22.045Z] [32MINFO[39M: 📥 [2025-11-24T07:11:22.045Z] OPTIONS /api/count/webview
+[2025-11-24T07:11:22.046Z] [32MINFO[39M: 📥 [2025-11-24T07:11:22.046Z] OPTIONS /api/categories
+[2025-11-24T07:11:22.047Z] [32MINFO[39M: 📥 [2025-11-24T07:11:22.047Z] OPTIONS /api/count/webview
+[2025-11-24T07:11:22.047Z] [32MINFO[39M: 📥 [2025-11-24T07:11:22.047Z] OPTIONS /api/categories
+[2025-11-24T07:11:22.150Z] [32MINFO[39M: 📥 [2025-11-24T07:11:22.150Z] GET /api/count/webview
+[2025-11-24T07:11:22.151Z] [32MINFO[39M: 📥 [2025-11-24T07:11:22.151Z] GET /api/categories
+[2025-11-24T07:11:22.162Z] [32MINFO[39M: 📥 [2025-11-24T07:11:22.162Z] GET /api/categories
+[2025-11-24T07:11:22.410Z] [32MINFO[39M: 📥 [2025-11-24T07:11:22.410Z] GET /api/count/webview
+[2025-11-24T07:11:23.699Z] [32MINFO[39M: 📥 [2025-11-24T07:11:23.699Z] GET /api/categories
+[2025-11-24T07:11:23.700Z] [32MINFO[39M: 📥 [2025-11-24T07:11:23.700Z] GET /api/count/webview
+[2025-11-24T07:11:23.765Z] [32MINFO[39M: 📥 [2025-11-24T07:11:23.765Z] GET /api/categories
+[2025-11-24T07:11:23.766Z] [32MINFO[39M: 📥 [2025-11-24T07:11:23.766Z] GET /api/count/webview
+[2025-11-24T07:11:27.285Z] [32MINFO[39M: 📥 [2025-11-24T07:11:27.285Z] OPTIONS /api/businesses?categoryslug=fashion-accessories&subcategoryslug=watch-watch-repair-shops
+[2025-11-24T07:11:27.286Z] [32MINFO[39M: 📥 [2025-11-24T07:11:27.286Z] OPTIONS /api/businesses?categoryslug=fashion-accessories&subcategoryslug=watch-watch-repair-shops
+[2025-11-24T07:11:27.368Z] [32MINFO[39M: 📥 [2025-11-24T07:11:27.368Z] GET /api/businesses?categoryslug=fashion-accessories&subcategoryslug=watch-watch-repair-shops
+[2025-11-24T07:11:27.369Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"fashion-accessories","subcategoryslug":"watch-watch-repair-shops","page":1,"limit":10,"verified":1}
+[2025-11-24T07:11:27.379Z] [32MINFO[39M: 📥 [2025-11-24T07:11:27.379Z] GET /api/businesses?categoryslug=fashion-accessories&subcategoryslug=watch-watch-repair-shops
+[2025-11-24T07:11:27.379Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"fashion-accessories","subcategoryslug":"watch-watch-repair-shops","page":1,"limit":10,"verified":1}
+[2025-11-24T07:11:42.273Z] [32MINFO[39M: 📥 [2025-11-24T07:11:42.273Z] OPTIONS /api/categories
+[2025-11-24T07:11:42.274Z] [32MINFO[39M: 📥 [2025-11-24T07:11:42.274Z] OPTIONS /api/count/webview
+[2025-11-24T07:11:42.275Z] [32MINFO[39M: 📥 [2025-11-24T07:11:42.275Z] OPTIONS /api/count/webview
+[2025-11-24T07:11:42.275Z] [32MINFO[39M: 📥 [2025-11-24T07:11:42.275Z] OPTIONS /api/categories
+[2025-11-24T07:11:42.296Z] [32MINFO[39M: 📥 [2025-11-24T07:11:42.295Z] GET /api/categories
+[2025-11-24T07:11:42.297Z] [32MINFO[39M: 📥 [2025-11-24T07:11:42.297Z] GET /api/count/webview
+[2025-11-24T07:11:42.308Z] [32MINFO[39M: 📥 [2025-11-24T07:11:42.308Z] GET /api/count/webview
+[2025-11-24T07:11:42.309Z] [32MINFO[39M: 📥 [2025-11-24T07:11:42.309Z] GET /api/categories
+[2025-11-24T07:11:53.938Z] [32MINFO[39M: 📥 [2025-11-24T07:11:53.938Z] GET /api/count/webview
+[2025-11-24T07:11:53.939Z] [32MINFO[39M: 📥 [2025-11-24T07:11:53.939Z] GET /api/categories
+[2025-11-24T07:11:53.945Z] [32MINFO[39M: 📥 [2025-11-24T07:11:53.945Z] GET /api/count/webview
+[2025-11-24T07:11:53.955Z] [32MINFO[39M: 📥 [2025-11-24T07:11:53.955Z] GET /api/categories
+[2025-11-24T07:12:06.595Z] [32MINFO[39M: 📥 [2025-11-24T07:12:06.595Z] OPTIONS /api/otp/send
+[2025-11-24T07:12:06.767Z] [32MINFO[39M: 📥 [2025-11-24T07:12:06.767Z] POST /api/otp/send
+[2025-11-24T07:12:06.768Z] [32MINFO[39M: Received from frontend: [object Object]
+[2025-11-24T07:12:06.769Z] [32MINFO[39M: Generated OTP for 7738771193: 391886
+[2025-11-24T07:12:24.926Z] [32MINFO[39M: 📥 [2025-11-24T07:12:24.926Z] OPTIONS /api/otp/verify
+[2025-11-24T07:12:25.067Z] [32MINFO[39M: 📥 [2025-11-24T07:12:25.067Z] POST /api/otp/verify
+[2025-11-24T07:12:25.068Z] [32MINFO[39M: Received in verifyOTP: [object Object]
+[2025-11-24T07:12:25.836Z] [32MINFO[39M: 📥 [2025-11-24T07:12:25.836Z] OPTIONS /api/categories
+[2025-11-24T07:12:25.838Z] [32MINFO[39M: 📥 [2025-11-24T07:12:25.837Z] OPTIONS /api/categories
+[2025-11-24T07:12:25.991Z] [32MINFO[39M: 📥 [2025-11-24T07:12:25.991Z] GET /api/categories
+[2025-11-24T07:12:26.263Z] [32MINFO[39M: 📥 [2025-11-24T07:12:26.263Z] GET /api/categories
+[2025-11-24T07:12:43.822Z] [32MINFO[39M: 📥 [2025-11-24T07:12:43.822Z] OPTIONS /api/count/webview
+[2025-11-24T07:12:43.823Z] [32MINFO[39M: 📥 [2025-11-24T07:12:43.823Z] OPTIONS /api/count/webview
+[2025-11-24T07:12:43.824Z] [32MINFO[39M: 📥 [2025-11-24T07:12:43.824Z] OPTIONS /api/categories
+[2025-11-24T07:12:43.824Z] [32MINFO[39M: 📥 [2025-11-24T07:12:43.824Z] OPTIONS /api/categories
+[2025-11-24T07:12:44.079Z] [32MINFO[39M: 📥 [2025-11-24T07:12:44.079Z] GET /api/count/webview
+[2025-11-24T07:12:44.108Z] [32MINFO[39M: 📥 [2025-11-24T07:12:44.108Z] GET /api/categories
+[2025-11-24T07:12:44.120Z] [32MINFO[39M: 📥 [2025-11-24T07:12:44.120Z] GET /api/count/webview
+[2025-11-24T07:12:44.130Z] [32MINFO[39M: 📥 [2025-11-24T07:12:44.130Z] GET /api/categories
+[2025-11-24T07:12:47.729Z] [32MINFO[39M: 📥 [2025-11-24T07:12:47.729Z] OPTIONS /api/businesses/user
+[2025-11-24T07:12:47.730Z] [32MINFO[39M: 📥 [2025-11-24T07:12:47.730Z] OPTIONS /api/businesses/user
+[2025-11-24T07:12:47.783Z] [32MINFO[39M: 📥 [2025-11-24T07:12:47.783Z] GET /api/businesses/user
+[2025-11-24T07:12:47.788Z] [32MINFO[39M: 9
+[2025-11-24T07:12:47.788Z] [32MINFO[39M: Fetching businesses for userId: 9
+[2025-11-24T07:12:47.790Z] [32MINFO[39M: [object Object]
+[2025-11-24T07:12:47.792Z] [32MINFO[39M: Image rows: 
+[2025-11-24T07:12:47.792Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-24T07:12:47.809Z] [32MINFO[39M: 📥 [2025-11-24T07:12:47.809Z] GET /api/businesses/user
+[2025-11-24T07:12:47.812Z] [32MINFO[39M: 9
+[2025-11-24T07:12:47.812Z] [32MINFO[39M: Fetching businesses for userId: 9
+[2025-11-24T07:12:47.813Z] [32MINFO[39M: [object Object]
+[2025-11-24T07:12:47.814Z] [32MINFO[39M: Image rows: 
+[2025-11-24T07:12:47.814Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-24T07:12:55.114Z] [32MINFO[39M: 📥 [2025-11-24T07:12:55.114Z] OPTIONS /api/categories
+[2025-11-24T07:12:55.115Z] [32MINFO[39M: 📥 [2025-11-24T07:12:55.115Z] OPTIONS /api/categories
+[2025-11-24T07:12:55.423Z] [32MINFO[39M: 📥 [2025-11-24T07:12:55.423Z] GET /api/categories
+[2025-11-24T07:12:55.578Z] [32MINFO[39M: 📥 [2025-11-24T07:12:55.578Z] GET /api/categories
+[2025-11-24T07:16:30.197Z] [32MINFO[39M: 📥 [2025-11-24T07:16:30.197Z] OPTIONS /api/businesses
+[2025-11-24T07:16:30.226Z] [32MINFO[39M: 📥 [2025-11-24T07:16:30.226Z] POST /api/businesses
+[2025-11-24T07:16:30.229Z] [32MINFO[39M: 9
+[2025-11-24T07:16:30.230Z] [32MINFO[39M: Creating business...
+[2025-11-24T07:16:30.236Z] [31MERROR[39M: BUSINESS create error: Error: Column count doesn't match value count at row 1
+[2025-11-24T07:28:57.922Z] [32MINFO[39M: 📥 [2025-11-24T07:28:57.922Z] OPTIONS /api/categories
+[2025-11-24T07:28:57.924Z] [32MINFO[39M: 📥 [2025-11-24T07:28:57.924Z] OPTIONS /api/categories
+[2025-11-24T07:28:57.947Z] [32MINFO[39M: 📥 [2025-11-24T07:28:57.947Z] GET /api/categories
+[2025-11-24T07:28:58.254Z] [32MINFO[39M: 📥 [2025-11-24T07:28:58.254Z] GET /api/categories
+[2025-11-24T07:29:42.435Z] [32MINFO[39M:  Server running on port  http://localhost:5009
+[2025-11-24T07:29:42.459Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-24T07:29:58.111Z] [32MINFO[39M: 📥 [2025-11-24T07:29:58.111Z] OPTIONS /api/businesses
+[2025-11-24T07:29:58.133Z] [32MINFO[39M: 📥 [2025-11-24T07:29:58.133Z] POST /api/businesses
+[2025-11-24T07:29:58.152Z] [32MINFO[39M: 9
+[2025-11-24T07:29:58.153Z] [32MINFO[39M: Creating business...
+[2025-11-24T07:29:58.160Z] [31MERROR[39M: BUSINESS create error: Error: Column count doesn't match value count at row 1
+[2025-11-24T07:33:30.338Z] [32MINFO[39M:  Server running on port  http://localhost:5009
+[2025-11-24T07:33:30.355Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-24T07:35:22.525Z] [32MINFO[39M:  Server running on port  http://localhost:5009
+[2025-11-24T07:35:22.547Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-24T07:35:25.244Z] [32MINFO[39M: 📥 [2025-11-24T07:35:25.244Z] OPTIONS /api/businesses
+[2025-11-24T07:35:25.439Z] [32MINFO[39M: 📥 [2025-11-24T07:35:25.439Z] POST /api/businesses
+[2025-11-24T07:35:25.473Z] [32MINFO[39M: 9
+[2025-11-24T07:35:25.475Z] [32MINFO[39M: Creating business...
+[2025-11-24T07:35:25.487Z] [31MERROR[39M: BUSINESS create error: Error: Column count doesn't match value count at row 1
+[2025-11-24T07:35:31.518Z] [32MINFO[39M: 📥 [2025-11-24T07:35:31.518Z] OPTIONS /api/count/webview
+[2025-11-24T07:35:31.681Z] [32MINFO[39M: 📥 [2025-11-24T07:35:31.680Z] OPTIONS /api/categories
+[2025-11-24T07:35:31.682Z] [32MINFO[39M: 📥 [2025-11-24T07:35:31.682Z] OPTIONS /api/categories
+[2025-11-24T07:35:31.683Z] [32MINFO[39M: 📥 [2025-11-24T07:35:31.683Z] OPTIONS /api/count/webview
+[2025-11-24T07:35:31.858Z] [32MINFO[39M: 📥 [2025-11-24T07:35:31.858Z] GET /api/categories
+[2025-11-24T07:35:31.860Z] [32MINFO[39M: 📥 [2025-11-24T07:35:31.860Z] GET /api/count/webview
+[2025-11-24T07:35:32.176Z] [32MINFO[39M: 📥 [2025-11-24T07:35:32.176Z] GET /api/count/webview
+[2025-11-24T07:35:32.177Z] [32MINFO[39M: 📥 [2025-11-24T07:35:32.177Z] GET /api/categories
+[2025-11-24T07:37:32.112Z] [32MINFO[39M: 📥 [2025-11-24T07:37:32.112Z] OPTIONS /api/businesses
+[2025-11-24T07:37:32.307Z] [32MINFO[39M: 📥 [2025-11-24T07:37:32.307Z] POST /api/businesses
+[2025-11-24T07:37:32.311Z] [32MINFO[39M: 9
+[2025-11-24T07:37:32.311Z] [32MINFO[39M: Creating business...
+[2025-11-24T07:37:32.314Z] [31MERROR[39M: BUSINESS create error: Error: Column count doesn't match value count at row 1
+[2025-11-24T07:40:36.838Z] [32MINFO[39M:  Server running on port  http://localhost:5009
+[2025-11-24T07:40:36.851Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-24T07:40:40.212Z] [32MINFO[39M: 📥 [2025-11-24T07:40:40.212Z] OPTIONS /api/businesses
+[2025-11-24T07:40:40.231Z] [32MINFO[39M: 📥 [2025-11-24T07:40:40.231Z] POST /api/businesses
+[2025-11-24T07:40:40.247Z] [32MINFO[39M: 9
+[2025-11-24T07:40:40.248Z] [32MINFO[39M: Creating business...
+[2025-11-24T07:40:40.254Z] [31MERROR[39M: BUSINESS create error: Error: Column count doesn't match value count at row 1
+[2025-11-24T07:41:45.463Z] [32MINFO[39M: 📥 [2025-11-24T07:41:45.463Z] OPTIONS /api/count/webview
+[2025-11-24T07:41:45.464Z] [32MINFO[39M: 📥 [2025-11-24T07:41:45.464Z] OPTIONS /api/categories
+[2025-11-24T07:41:45.466Z] [32MINFO[39M: 📥 [2025-11-24T07:41:45.466Z] OPTIONS /api/count/webview
+[2025-11-24T07:41:45.467Z] [32MINFO[39M: 📥 [2025-11-24T07:41:45.467Z] OPTIONS /api/categories
+[2025-11-24T07:41:45.472Z] [32MINFO[39M: 📥 [2025-11-24T07:41:45.472Z] GET /api/count/webview
+[2025-11-24T07:41:45.510Z] [32MINFO[39M: 📥 [2025-11-24T07:41:45.510Z] GET /api/count/webview
+[2025-11-24T07:41:45.512Z] [32MINFO[39M: 📥 [2025-11-24T07:41:45.512Z] GET /api/categories
+[2025-11-24T07:41:45.540Z] [32MINFO[39M: 📥 [2025-11-24T07:41:45.540Z] GET /api/categories
+[2025-11-24T07:43:43.653Z] [32MINFO[39M: 📥 [2025-11-24T07:43:43.653Z] OPTIONS /api/businesses
+[2025-11-24T07:43:44.477Z] [32MINFO[39M: 📥 [2025-11-24T07:43:44.477Z] POST /api/businesses
+[2025-11-24T07:43:44.482Z] [32MINFO[39M: 4
+[2025-11-24T07:43:44.482Z] [32MINFO[39M: Creating business...
+[2025-11-24T07:43:44.486Z] [31MERROR[39M: BUSINESS create error: Error: Column count doesn't match value count at row 1
+[2025-11-24T07:53:55.176Z] [32MINFO[39M: 📥 [2025-11-24T07:53:55.176Z] OPTIONS /api/businesses
+[2025-11-24T07:53:55.377Z] [32MINFO[39M: 📥 [2025-11-24T07:53:55.377Z] POST /api/businesses
+[2025-11-24T07:53:55.381Z] [32MINFO[39M: 4
+[2025-11-24T07:53:55.382Z] [32MINFO[39M: Creating business...
+[2025-11-24T07:53:55.385Z] [31MERROR[39M: BUSINESS create error: Error: Column count doesn't match value count at row 1
+[2025-11-24T07:56:32.716Z] [32MINFO[39M: 📥 [2025-11-24T07:56:32.716Z] OPTIONS /api/categories
+[2025-11-24T07:56:32.720Z] [32MINFO[39M: 📥 [2025-11-24T07:56:32.720Z] OPTIONS /api/categories
+[2025-11-24T07:56:32.722Z] [32MINFO[39M: 📥 [2025-11-24T07:56:32.722Z] OPTIONS /api/count/webview
+[2025-11-24T07:56:32.725Z] [32MINFO[39M: 📥 [2025-11-24T07:56:32.725Z] OPTIONS /api/count/webview
+[2025-11-24T07:56:32.735Z] [32MINFO[39M: 📥 [2025-11-24T07:56:32.735Z] GET /api/categories
+[2025-11-24T07:56:32.747Z] [32MINFO[39M: 📥 [2025-11-24T07:56:32.747Z] GET /api/count/webview
+[2025-11-24T07:56:32.774Z] [32MINFO[39M: 📥 [2025-11-24T07:56:32.774Z] GET /api/count/webview
+[2025-11-24T07:56:32.776Z] [32MINFO[39M: 📥 [2025-11-24T07:56:32.776Z] GET /api/categories
+[2025-11-24T07:56:33.905Z] [32MINFO[39M: 📥 [2025-11-24T07:56:33.905Z] OPTIONS /api/categories
+[2025-11-24T07:56:33.906Z] [32MINFO[39M: 📥 [2025-11-24T07:56:33.906Z] OPTIONS /api/categories
+[2025-11-24T07:56:33.907Z] [32MINFO[39M: 📥 [2025-11-24T07:56:33.907Z] OPTIONS /api/count/webview
+[2025-11-24T07:56:33.908Z] [32MINFO[39M: 📥 [2025-11-24T07:56:33.908Z] OPTIONS /api/count/webview
+[2025-11-24T07:56:33.916Z] [32MINFO[39M: 📥 [2025-11-24T07:56:33.916Z] GET /api/count/webview
+[2025-11-24T07:56:33.917Z] [32MINFO[39M: 📥 [2025-11-24T07:56:33.917Z] GET /api/categories
+[2025-11-24T07:56:33.925Z] [32MINFO[39M: 📥 [2025-11-24T07:56:33.925Z] GET /api/count/webview
+[2025-11-24T07:56:33.926Z] [32MINFO[39M: 📥 [2025-11-24T07:56:33.926Z] GET /api/categories
+[2025-11-24T08:41:59.590Z] [32MINFO[39M: 📥 [2025-11-24T08:41:59.585Z] OPTIONS /api/count/webview
+[2025-11-24T08:41:59.634Z] [32MINFO[39M: 📥 [2025-11-24T08:41:59.634Z] OPTIONS /api/count/webview
+[2025-11-24T08:41:59.635Z] [32MINFO[39M: 📥 [2025-11-24T08:41:59.635Z] OPTIONS /api/categories
+[2025-11-24T08:41:59.636Z] [32MINFO[39M: 📥 [2025-11-24T08:41:59.636Z] OPTIONS /api/categories
+[2025-11-24T08:41:59.686Z] [32MINFO[39M: 📥 [2025-11-24T08:41:59.686Z] GET /api/count/webview
+[2025-11-24T08:41:59.700Z] [32MINFO[39M: 📥 [2025-11-24T08:41:59.700Z] GET /api/categories
+[2025-11-24T08:41:59.778Z] [32MINFO[39M: 📥 [2025-11-24T08:41:59.778Z] GET /api/count/webview
+[2025-11-24T08:41:59.779Z] [32MINFO[39M: 📥 [2025-11-24T08:41:59.779Z] GET /api/categories
+[2025-11-24T08:45:50.381Z] [32MINFO[39M: 📥 [2025-11-24T08:45:50.381Z] OPTIONS /api/categories
+[2025-11-24T08:45:50.390Z] [32MINFO[39M: 📥 [2025-11-24T08:45:50.390Z] GET /api/categories
+[2025-11-24T08:51:29.732Z] [32MINFO[39M:  Server running on port  http://localhost:5009
+[2025-11-24T08:51:29.759Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-24T09:20:44.871Z] [32MINFO[39M: 📥 [2025-11-24T09:20:44.871Z] OPTIONS /api/businesses?categoryslug=admin&subcategoryslug=contact
+[2025-11-24T09:20:44.879Z] [32MINFO[39M: 📥 [2025-11-24T09:20:44.879Z] OPTIONS /api/count/webview
+[2025-11-24T09:20:44.881Z] [32MINFO[39M: 📥 [2025-11-24T09:20:44.881Z] OPTIONS /api/count/webview
+[2025-11-24T09:20:44.883Z] [32MINFO[39M: 📥 [2025-11-24T09:20:44.883Z] OPTIONS /api/businesses?categoryslug=admin&subcategoryslug=contact
+[2025-11-24T09:20:51.289Z] [32MINFO[39M: 📥 [2025-11-24T09:20:51.289Z] OPTIONS /api/count/webview
+[2025-11-24T09:20:51.292Z] [32MINFO[39M: 📥 [2025-11-24T09:20:51.292Z] OPTIONS /api/businesses?categoryslug=admin&subcategoryslug=contact
+[2025-11-24T09:20:51.293Z] [32MINFO[39M: 📥 [2025-11-24T09:20:51.293Z] OPTIONS /api/businesses?categoryslug=admin&subcategoryslug=contact
+[2025-11-24T09:20:51.294Z] [32MINFO[39M: 📥 [2025-11-24T09:20:51.294Z] OPTIONS /api/count/webview
+[2025-11-24T09:21:08.126Z] [32MINFO[39M: 📥 [2025-11-24T09:21:08.126Z] OPTIONS /api/count/webview
+[2025-11-24T09:21:08.133Z] [32MINFO[39M: 📥 [2025-11-24T09:21:08.133Z] OPTIONS /api/businesses?categoryslug=admin&subcategoryslug=contact
+[2025-11-24T09:21:08.140Z] [32MINFO[39M: 📥 [2025-11-24T09:21:08.140Z] GET /api/count/webview
+[2025-11-24T09:21:08.149Z] [32MINFO[39M: 📥 [2025-11-24T09:21:08.149Z] OPTIONS /api/count/webview
+[2025-11-24T09:21:08.152Z] [32MINFO[39M: 📥 [2025-11-24T09:21:08.152Z] OPTIONS /api/businesses?categoryslug=admin&subcategoryslug=contact
+[2025-11-24T09:21:08.154Z] [32MINFO[39M: 📥 [2025-11-24T09:21:08.154Z] GET /api/businesses?categoryslug=admin&subcategoryslug=contact
+[2025-11-24T09:21:08.156Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"admin","subcategoryslug":"contact","page":1,"limit":10,"verified":1}
+[2025-11-24T09:21:08.176Z] [32MINFO[39M: 📥 [2025-11-24T09:21:08.175Z] GET /api/count/webview
+[2025-11-24T09:21:08.187Z] [32MINFO[39M: 📥 [2025-11-24T09:21:08.187Z] GET /api/businesses?categoryslug=admin&subcategoryslug=contact
+[2025-11-24T09:21:08.188Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"admin","subcategoryslug":"contact","page":1,"limit":10,"verified":1}
+[2025-11-24T09:21:13.778Z] [32MINFO[39M: 📥 [2025-11-24T09:21:13.778Z] OPTIONS /api/businesses?categoryslug=admin&subcategoryslug=contact
+[2025-11-24T09:21:13.779Z] [32MINFO[39M: 📥 [2025-11-24T09:21:13.779Z] OPTIONS /api/count/webview
+[2025-11-24T09:21:13.780Z] [32MINFO[39M: 📥 [2025-11-24T09:21:13.780Z] OPTIONS /api/businesses?categoryslug=admin&subcategoryslug=contact
+[2025-11-24T09:21:13.781Z] [32MINFO[39M: 📥 [2025-11-24T09:21:13.781Z] OPTIONS /api/count/webview
+[2025-11-24T09:21:13.785Z] [32MINFO[39M: 📥 [2025-11-24T09:21:13.785Z] GET /api/businesses?categoryslug=admin&subcategoryslug=contact
+[2025-11-24T09:21:13.786Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"admin","subcategoryslug":"contact","page":1,"limit":10,"verified":1}
+[2025-11-24T09:21:13.787Z] [32MINFO[39M: 📥 [2025-11-24T09:21:13.787Z] GET /api/count/webview
+[2025-11-24T09:21:13.798Z] [32MINFO[39M: 📥 [2025-11-24T09:21:13.798Z] GET /api/count/webview
+[2025-11-24T09:21:13.801Z] [32MINFO[39M: 📥 [2025-11-24T09:21:13.801Z] GET /api/businesses?categoryslug=admin&subcategoryslug=contact
+[2025-11-24T09:21:13.801Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"admin","subcategoryslug":"contact","page":1,"limit":10,"verified":1}
+[2025-11-24T09:21:35.585Z] [32MINFO[39M: 📥 [2025-11-24T09:21:35.585Z] OPTIONS /api/contact
+[2025-11-24T09:21:35.587Z] [32MINFO[39M: 📥 [2025-11-24T09:21:35.587Z] OPTIONS /api/contact
+[2025-11-24T09:21:35.592Z] [32MINFO[39M: 📥 [2025-11-24T09:21:35.592Z] GET /api/contact
+[2025-11-24T09:21:35.597Z] [32MINFO[39M: 📥 [2025-11-24T09:21:35.597Z] GET /api/contact
+[2025-11-24T09:23:24.464Z] [32MINFO[39M: 📥 [2025-11-24T09:23:24.464Z] OPTIONS /api/count/webview
+[2025-11-24T09:23:24.466Z] [32MINFO[39M: 📥 [2025-11-24T09:23:24.466Z] OPTIONS /api/count/webview
+[2025-11-24T09:23:24.484Z] [32MINFO[39M: 📥 [2025-11-24T09:23:24.484Z] GET /api/count/webview
+[2025-11-24T09:23:24.494Z] [32MINFO[39M: 📥 [2025-11-24T09:23:24.494Z] GET /api/count/webview
+[2025-11-24T09:25:16.597Z] [32MINFO[39M: 📥 [2025-11-24T09:25:16.597Z] OPTIONS /api/contact
+[2025-11-24T09:25:16.969Z] [32MINFO[39M: 📥 [2025-11-24T09:25:16.969Z] POST /api/contact
+[2025-11-24T09:26:28.755Z] [32MINFO[39M:  Server running on port  http://localhost:5009
+[2025-11-24T09:26:28.770Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-24T09:26:33.721Z] [32MINFO[39M: 📥 [2025-11-24T09:26:33.721Z] OPTIONS /api/contact
+[2025-11-24T09:26:33.740Z] [32MINFO[39M: 📥 [2025-11-24T09:26:33.740Z] POST /api/contact
+[2025-11-24T09:27:10.415Z] [32MINFO[39M: 📥 [2025-11-24T09:27:10.415Z] OPTIONS /api/contact
+[2025-11-24T09:27:10.417Z] [32MINFO[39M: 📥 [2025-11-24T09:27:10.417Z] OPTIONS /api/contact
+[2025-11-24T09:27:10.423Z] [32MINFO[39M: 📥 [2025-11-24T09:27:10.423Z] GET /api/contact
+[2025-11-24T09:27:10.442Z] [32MINFO[39M: 4
+[2025-11-24T09:27:10.452Z] [32MINFO[39M: 📥 [2025-11-24T09:27:10.452Z] GET /api/contact
+[2025-11-24T09:27:10.457Z] [32MINFO[39M: 4
+[2025-11-24T09:27:11.497Z] [32MINFO[39M: 📥 [2025-11-24T09:27:11.497Z] OPTIONS /api/contact/contact
+[2025-11-24T09:27:11.651Z] [32MINFO[39M: 📥 [2025-11-24T09:27:11.651Z] POST /api/contact/contact
+[2025-11-24T09:27:35.256Z] [32MINFO[39M: 📥 [2025-11-24T09:27:35.256Z] OPTIONS /api/count/webview
+[2025-11-24T09:27:35.257Z] [32MINFO[39M: 📥 [2025-11-24T09:27:35.257Z] OPTIONS /api/count/webview
+[2025-11-24T09:27:35.265Z] [32MINFO[39M: 📥 [2025-11-24T09:27:35.265Z] GET /api/count/webview
+[2025-11-24T09:27:35.521Z] [32MINFO[39M: 📥 [2025-11-24T09:27:35.521Z] GET /api/count/webview
+[2025-11-24T09:28:00.648Z] [32MINFO[39M: 📥 [2025-11-24T09:28:00.648Z] OPTIONS /api/contact/contact
+[2025-11-24T09:28:00.674Z] [32MINFO[39M: 📥 [2025-11-24T09:28:00.674Z] POST /api/contact/contact
+[2025-11-24T09:29:04.368Z] [32MINFO[39M: 📥 [2025-11-24T09:29:04.368Z] OPTIONS /api/contact
+[2025-11-24T09:29:04.369Z] [32MINFO[39M: 📥 [2025-11-24T09:29:04.369Z] OPTIONS /api/contact
+[2025-11-24T09:29:04.574Z] [32MINFO[39M: 📥 [2025-11-24T09:29:04.574Z] GET /api/contact
+[2025-11-24T09:29:04.578Z] [32MINFO[39M: 4
+[2025-11-24T09:29:04.710Z] [32MINFO[39M: 📥 [2025-11-24T09:29:04.710Z] GET /api/contact
+[2025-11-24T09:29:04.713Z] [32MINFO[39M: 4
+[2025-11-24T09:29:09.615Z] [32MINFO[39M: 📥 [2025-11-24T09:29:09.615Z] OPTIONS /api/contact
+[2025-11-24T09:29:09.622Z] [32MINFO[39M: 📥 [2025-11-24T09:29:09.622Z] OPTIONS /api/contact
+[2025-11-24T09:29:09.624Z] [32MINFO[39M: 📥 [2025-11-24T09:29:09.624Z] GET /api/contact
+[2025-11-24T09:29:09.626Z] [32MINFO[39M: 4
+[2025-11-24T09:29:09.634Z] [32MINFO[39M: 📥 [2025-11-24T09:29:09.634Z] GET /api/contact
+[2025-11-24T09:29:09.637Z] [32MINFO[39M: 4
+[2025-11-24T09:29:14.242Z] [32MINFO[39M: 📥 [2025-11-24T09:29:14.241Z] GET /api/contact
+[2025-11-24T09:29:14.244Z] [32MINFO[39M: 4
+[2025-11-24T09:29:14.340Z] [32MINFO[39M: 📥 [2025-11-24T09:29:14.340Z] GET /api/contact
+[2025-11-24T09:29:14.344Z] [32MINFO[39M: 4
+[2025-11-24T09:30:13.720Z] [32MINFO[39M: 📥 [2025-11-24T09:30:13.720Z] OPTIONS /api/contact
+[2025-11-24T09:30:13.722Z] [32MINFO[39M: 📥 [2025-11-24T09:30:13.722Z] OPTIONS /api/contact
+[2025-11-24T09:30:13.762Z] [32MINFO[39M: 📥 [2025-11-24T09:30:13.762Z] GET /api/contact
+[2025-11-24T09:30:13.765Z] [32MINFO[39M: 4
+[2025-11-24T09:30:13.893Z] [32MINFO[39M: 📥 [2025-11-24T09:30:13.892Z] GET /api/contact
+[2025-11-24T09:30:13.895Z] [32MINFO[39M: 4
+[2025-11-24T09:30:46.662Z] [32MINFO[39M: 📥 [2025-11-24T09:30:46.662Z] OPTIONS /api/contact
+[2025-11-24T09:30:46.663Z] [32MINFO[39M: 📥 [2025-11-24T09:30:46.663Z] OPTIONS /api/contact
+[2025-11-24T09:30:46.778Z] [32MINFO[39M: 📥 [2025-11-24T09:30:46.778Z] GET /api/contact
+[2025-11-24T09:30:46.781Z] [32MINFO[39M: 4
+[2025-11-24T09:30:46.956Z] [32MINFO[39M: 📥 [2025-11-24T09:30:46.956Z] GET /api/contact
+[2025-11-24T09:30:46.959Z] [32MINFO[39M: 4
+[2025-11-24T09:30:51.847Z] [32MINFO[39M: 📥 [2025-11-24T09:30:51.847Z] OPTIONS /api/contact
+[2025-11-24T09:30:51.852Z] [32MINFO[39M: 📥 [2025-11-24T09:30:51.852Z] OPTIONS /api/contact
+[2025-11-24T09:30:51.861Z] [32MINFO[39M: 📥 [2025-11-24T09:30:51.861Z] GET /api/contact
+[2025-11-24T09:30:51.869Z] [32MINFO[39M: 4
+[2025-11-24T09:30:51.881Z] [32MINFO[39M: 📥 [2025-11-24T09:30:51.881Z] GET /api/contact
+[2025-11-24T09:30:51.889Z] [32MINFO[39M: 4
+[2025-11-24T09:30:56.471Z] [32MINFO[39M: 📥 [2025-11-24T09:30:56.471Z] GET /api/contact
+[2025-11-24T09:30:56.474Z] [32MINFO[39M: 4
+[2025-11-24T09:30:56.532Z] [32MINFO[39M: 📥 [2025-11-24T09:30:56.532Z] GET /api/contact
+[2025-11-24T09:30:56.535Z] [32MINFO[39M: 4
+[2025-11-24T09:31:05.208Z] [32MINFO[39M: 📥 [2025-11-24T09:31:05.208Z] OPTIONS /api/contact
+[2025-11-24T09:31:05.209Z] [32MINFO[39M: 📥 [2025-11-24T09:31:05.209Z] OPTIONS /api/contact
+[2025-11-24T09:31:05.220Z] [32MINFO[39M: 📥 [2025-11-24T09:31:05.220Z] GET /api/contact
+[2025-11-24T09:31:05.230Z] [32MINFO[39M: 4
+[2025-11-24T09:31:05.240Z] [32MINFO[39M: 📥 [2025-11-24T09:31:05.240Z] GET /api/contact
+[2025-11-24T09:31:05.245Z] [32MINFO[39M: 4
+[2025-11-24T09:31:10.749Z] [32MINFO[39M: 📥 [2025-11-24T09:31:10.749Z] OPTIONS /api/contact
+[2025-11-24T09:31:10.750Z] [32MINFO[39M: 📥 [2025-11-24T09:31:10.750Z] OPTIONS /api/contact
+[2025-11-24T09:31:10.760Z] [32MINFO[39M: 📥 [2025-11-24T09:31:10.760Z] GET /api/contact
+[2025-11-24T09:31:10.763Z] [32MINFO[39M: 4
+[2025-11-24T09:31:10.852Z] [32MINFO[39M: 📥 [2025-11-24T09:31:10.852Z] GET /api/contact
+[2025-11-24T09:31:10.855Z] [32MINFO[39M: 4
+[2025-11-24T09:31:19.177Z] [32MINFO[39M: 📥 [2025-11-24T09:31:19.177Z] OPTIONS /api/contact
+[2025-11-24T09:31:19.181Z] [32MINFO[39M: 📥 [2025-11-24T09:31:19.181Z] OPTIONS /api/contact
+[2025-11-24T09:31:19.187Z] [32MINFO[39M: 📥 [2025-11-24T09:31:19.187Z] GET /api/contact
+[2025-11-24T09:31:19.191Z] [32MINFO[39M: 4
+[2025-11-24T09:31:19.200Z] [32MINFO[39M: 📥 [2025-11-24T09:31:19.200Z] GET /api/contact
+[2025-11-24T09:31:19.204Z] [32MINFO[39M: 4
+[2025-11-24T09:31:26.495Z] [32MINFO[39M: 📥 [2025-11-24T09:31:26.495Z] OPTIONS /api/contact
+[2025-11-24T09:31:26.496Z] [32MINFO[39M: 📥 [2025-11-24T09:31:26.496Z] OPTIONS /api/contact
+[2025-11-24T09:31:26.506Z] [32MINFO[39M: 📥 [2025-11-24T09:31:26.506Z] GET /api/contact
+[2025-11-24T09:31:26.509Z] [32MINFO[39M: 4
+[2025-11-24T09:31:26.519Z] [32MINFO[39M: 📥 [2025-11-24T09:31:26.519Z] GET /api/contact
+[2025-11-24T09:31:26.523Z] [32MINFO[39M: 4
+[2025-11-24T09:31:45.101Z] [32MINFO[39M: 📥 [2025-11-24T09:31:45.101Z] OPTIONS /api/count/webview
+[2025-11-24T09:31:45.102Z] [32MINFO[39M: 📥 [2025-11-24T09:31:45.102Z] OPTIONS /api/count/webview
+[2025-11-24T09:31:45.113Z] [32MINFO[39M: 📥 [2025-11-24T09:31:45.113Z] GET /api/count/webview
+[2025-11-24T09:31:45.122Z] [32MINFO[39M: 📥 [2025-11-24T09:31:45.122Z] GET /api/count/webview
+[2025-11-24T09:33:17.080Z] [32MINFO[39M: 📥 [2025-11-24T09:33:17.080Z] OPTIONS /api/contact
+[2025-11-24T09:33:17.081Z] [32MINFO[39M: 📥 [2025-11-24T09:33:17.081Z] OPTIONS /api/contact
+[2025-11-24T09:33:17.088Z] [32MINFO[39M: 📥 [2025-11-24T09:33:17.088Z] GET /api/contact
+[2025-11-24T09:33:17.092Z] [32MINFO[39M: 4
+[2025-11-24T09:33:17.107Z] [32MINFO[39M: 📥 [2025-11-24T09:33:17.107Z] GET /api/contact
+[2025-11-24T09:33:17.110Z] [32MINFO[39M: 4
+[2025-11-24T09:33:44.674Z] [32MINFO[39M: 📥 [2025-11-24T09:33:44.674Z] OPTIONS /api/count/webview
+[2025-11-24T09:33:44.675Z] [32MINFO[39M: 📥 [2025-11-24T09:33:44.675Z] OPTIONS /api/count/webview
+[2025-11-24T09:33:44.683Z] [32MINFO[39M: 📥 [2025-11-24T09:33:44.683Z] GET /api/count/webview
+[2025-11-24T09:33:44.765Z] [32MINFO[39M: 📥 [2025-11-24T09:33:44.765Z] GET /api/count/webview
+[2025-11-24T09:33:54.532Z] [32MINFO[39M: 📥 [2025-11-24T09:33:54.532Z] OPTIONS /api/contact
+[2025-11-24T09:33:54.533Z] [32MINFO[39M: 📥 [2025-11-24T09:33:54.533Z] OPTIONS /api/contact
+[2025-11-24T09:33:54.545Z] [32MINFO[39M: 📥 [2025-11-24T09:33:54.545Z] GET /api/contact
+[2025-11-24T09:33:54.548Z] [32MINFO[39M: 4
+[2025-11-24T09:33:54.559Z] [32MINFO[39M: 📥 [2025-11-24T09:33:54.559Z] GET /api/contact
+[2025-11-24T09:33:54.562Z] [32MINFO[39M: 4
+[2025-11-24T09:33:59.524Z] [32MINFO[39M: 📥 [2025-11-24T09:33:59.524Z] GET /api/contact
+[2025-11-24T09:33:59.528Z] [32MINFO[39M: 4
+[2025-11-24T09:33:59.614Z] [32MINFO[39M: 📥 [2025-11-24T09:33:59.614Z] GET /api/contact
+[2025-11-24T09:33:59.617Z] [32MINFO[39M: 4
+[2025-11-24T09:34:28.804Z] [32MINFO[39M: 📥 [2025-11-24T09:34:28.804Z] OPTIONS /api/contact
+[2025-11-24T09:34:28.805Z] [32MINFO[39M: 📥 [2025-11-24T09:34:28.805Z] OPTIONS /api/contact
+[2025-11-24T09:34:28.814Z] [32MINFO[39M: 📥 [2025-11-24T09:34:28.814Z] GET /api/contact
+[2025-11-24T09:34:28.816Z] [32MINFO[39M: 4
+[2025-11-24T09:34:28.827Z] [32MINFO[39M: 📥 [2025-11-24T09:34:28.827Z] GET /api/contact
+[2025-11-24T09:34:28.830Z] [32MINFO[39M: 4
+[2025-11-24T09:34:31.027Z] [32MINFO[39M: 📥 [2025-11-24T09:34:31.027Z] GET /api/contact
+[2025-11-24T09:34:31.029Z] [32MINFO[39M: 4
+[2025-11-24T09:34:31.037Z] [32MINFO[39M: 📥 [2025-11-24T09:34:31.037Z] GET /api/contact
+[2025-11-24T09:34:31.039Z] [32MINFO[39M: 4
+[2025-11-24T09:34:35.685Z] [32MINFO[39M: 📥 [2025-11-24T09:34:35.685Z] OPTIONS /api/contact
+[2025-11-24T09:34:35.781Z] [32MINFO[39M: 📥 [2025-11-24T09:34:35.781Z] OPTIONS /api/contact
+[2025-11-24T09:34:35.783Z] [32MINFO[39M: 📥 [2025-11-24T09:34:35.782Z] GET /api/contact
+[2025-11-24T09:34:35.787Z] [32MINFO[39M: 4
+[2025-11-24T09:34:35.798Z] [32MINFO[39M: 📥 [2025-11-24T09:34:35.798Z] GET /api/contact
+[2025-11-24T09:34:35.801Z] [32MINFO[39M: 4
+[2025-11-24T09:34:38.834Z] [32MINFO[39M: 📥 [2025-11-24T09:34:38.834Z] GET /api/contact
+[2025-11-24T09:34:38.837Z] [32MINFO[39M: 4
+[2025-11-24T09:34:38.845Z] [32MINFO[39M: 📥 [2025-11-24T09:34:38.845Z] GET /api/contact
+[2025-11-24T09:34:38.850Z] [32MINFO[39M: 4
+[2025-11-24T09:34:43.203Z] [32MINFO[39M: 📥 [2025-11-24T09:34:43.203Z] OPTIONS /api/contact
+[2025-11-24T09:34:43.336Z] [32MINFO[39M: 📥 [2025-11-24T09:34:43.336Z] OPTIONS /api/contact
+[2025-11-24T09:34:43.338Z] [32MINFO[39M: 📥 [2025-11-24T09:34:43.338Z] GET /api/contact
+[2025-11-24T09:34:43.340Z] [32MINFO[39M: 4
+[2025-11-24T09:34:43.349Z] [32MINFO[39M: 📥 [2025-11-24T09:34:43.349Z] GET /api/contact
+[2025-11-24T09:34:43.352Z] [32MINFO[39M: 4
+[2025-11-24T09:34:46.202Z] [32MINFO[39M: 📥 [2025-11-24T09:34:46.202Z] GET /api/contact
+[2025-11-24T09:34:46.205Z] [32MINFO[39M: 4
+[2025-11-24T09:34:46.213Z] [32MINFO[39M: 📥 [2025-11-24T09:34:46.213Z] GET /api/contact
+[2025-11-24T09:34:46.216Z] [32MINFO[39M: 4
+[2025-11-24T09:34:52.381Z] [32MINFO[39M: 📥 [2025-11-24T09:34:52.381Z] OPTIONS /api/contact
+[2025-11-24T09:34:52.382Z] [32MINFO[39M: 📥 [2025-11-24T09:34:52.382Z] OPTIONS /api/contact
+[2025-11-24T09:34:52.391Z] [32MINFO[39M: 📥 [2025-11-24T09:34:52.391Z] GET /api/contact
+[2025-11-24T09:34:52.394Z] [32MINFO[39M: 4
+[2025-11-24T09:34:52.402Z] [32MINFO[39M: 📥 [2025-11-24T09:34:52.401Z] GET /api/contact
+[2025-11-24T09:34:52.405Z] [32MINFO[39M: 4
+[2025-11-24T09:34:56.966Z] [32MINFO[39M: 📥 [2025-11-24T09:34:56.966Z] GET /api/contact
+[2025-11-24T09:34:56.968Z] [32MINFO[39M: 4
+[2025-11-24T09:34:56.976Z] [32MINFO[39M: 📥 [2025-11-24T09:34:56.976Z] GET /api/contact
+[2025-11-24T09:34:56.978Z] [32MINFO[39M: 4
+[2025-11-24T09:35:01.431Z] [32MINFO[39M: 📥 [2025-11-24T09:35:01.431Z] OPTIONS /api/contact
+[2025-11-24T09:35:01.521Z] [32MINFO[39M: 📥 [2025-11-24T09:35:01.521Z] OPTIONS /api/contact
+[2025-11-24T09:35:01.522Z] [32MINFO[39M: 📥 [2025-11-24T09:35:01.522Z] GET /api/contact
+[2025-11-24T09:35:01.531Z] [32MINFO[39M: 4
+[2025-11-24T09:35:01.558Z] [32MINFO[39M: 📥 [2025-11-24T09:35:01.557Z] GET /api/contact
+[2025-11-24T09:35:01.575Z] [32MINFO[39M: 4
+[2025-11-24T09:35:05.262Z] [32MINFO[39M: 📥 [2025-11-24T09:35:05.262Z] GET /api/contact
+[2025-11-24T09:35:05.267Z] [32MINFO[39M: 4
+[2025-11-24T09:35:05.278Z] [32MINFO[39M: 📥 [2025-11-24T09:35:05.278Z] GET /api/contact
+[2025-11-24T09:35:05.281Z] [32MINFO[39M: 4
+[2025-11-24T09:35:19.033Z] [32MINFO[39M: 📥 [2025-11-24T09:35:19.033Z] OPTIONS /api/contact
+[2025-11-24T09:35:19.034Z] [32MINFO[39M: 📥 [2025-11-24T09:35:19.034Z] OPTIONS /api/contact
+[2025-11-24T09:35:19.045Z] [32MINFO[39M: 📥 [2025-11-24T09:35:19.045Z] GET /api/contact
+[2025-11-24T09:35:19.048Z] [32MINFO[39M: 4
+[2025-11-24T09:35:19.056Z] [32MINFO[39M: 📥 [2025-11-24T09:35:19.056Z] GET /api/contact
+[2025-11-24T09:35:19.058Z] [32MINFO[39M: 4
+[2025-11-24T09:35:43.269Z] [32MINFO[39M: 📥 [2025-11-24T09:35:43.269Z] OPTIONS /api/contact/contact
+[2025-11-24T09:35:43.280Z] [32MINFO[39M: 📥 [2025-11-24T09:35:43.280Z] POST /api/contact/contact
+[2025-11-24T09:35:43.404Z] [32MINFO[39M: 📥 [2025-11-24T09:35:43.404Z] POST /api/contact/contact
+[2025-11-24T09:36:24.868Z] [32MINFO[39M: 📥 [2025-11-24T09:36:24.868Z] OPTIONS /api/count/webview
+[2025-11-24T09:36:24.869Z] [32MINFO[39M: 📥 [2025-11-24T09:36:24.869Z] OPTIONS /api/categories
+[2025-11-24T09:36:24.869Z] [32MINFO[39M: 📥 [2025-11-24T09:36:24.869Z] OPTIONS /api/count/webview
+[2025-11-24T09:36:24.870Z] [32MINFO[39M: 📥 [2025-11-24T09:36:24.870Z] OPTIONS /api/categories
+[2025-11-24T09:36:24.881Z] [32MINFO[39M: 📥 [2025-11-24T09:36:24.881Z] GET /api/count/webview
+[2025-11-24T09:36:24.882Z] [32MINFO[39M: 📥 [2025-11-24T09:36:24.882Z] GET /api/categories
+[2025-11-24T09:36:24.900Z] [32MINFO[39M: 📥 [2025-11-24T09:36:24.900Z] GET /api/count/webview
+[2025-11-24T09:36:24.907Z] [32MINFO[39M: 📥 [2025-11-24T09:36:24.907Z] GET /api/categories
+[2025-11-24T09:36:30.795Z] [32MINFO[39M: 📥 [2025-11-24T09:36:30.795Z] OPTIONS /api/contact/contact
+[2025-11-24T09:36:30.805Z] [32MINFO[39M: 📥 [2025-11-24T09:36:30.805Z] POST /api/contact/contact
+[2025-11-24T09:36:54.186Z] [32MINFO[39M:  Server running on port  http://localhost:5009
+[2025-11-24T09:36:54.199Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-24T09:37:09.868Z] [32MINFO[39M: 📥 [2025-11-24T09:37:09.868Z] OPTIONS /api/contact/contact
+[2025-11-24T09:37:09.981Z] [32MINFO[39M: 📥 [2025-11-24T09:37:09.981Z] POST /api/contact/contact
+[2025-11-24T09:37:09.992Z] [31MERROR[39M: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+[2025-11-24T09:41:02.154Z] [32MINFO[39M: 📥 [2025-11-24T09:41:02.154Z] OPTIONS /api/contact
+[2025-11-24T09:41:02.162Z] [32MINFO[39M: 📥 [2025-11-24T09:41:02.162Z] OPTIONS /api/contact
+[2025-11-24T09:41:02.173Z] [32MINFO[39M: 📥 [2025-11-24T09:41:02.173Z] GET /api/contact
+[2025-11-24T09:41:02.195Z] [32MINFO[39M: 4
+[2025-11-24T09:41:02.217Z] [32MINFO[39M: 📥 [2025-11-24T09:41:02.217Z] GET /api/contact
+[2025-11-24T09:41:02.226Z] [32MINFO[39M: 4
+[2025-11-24T09:41:04.414Z] [32MINFO[39M: 📥 [2025-11-24T09:41:04.414Z] GET /api/contact
+[2025-11-24T09:41:04.417Z] [32MINFO[39M: 4
+[2025-11-24T09:41:04.517Z] [32MINFO[39M: 📥 [2025-11-24T09:41:04.517Z] GET /api/contact
+[2025-11-24T09:41:04.520Z] [32MINFO[39M: 4
+[2025-11-24T09:41:20.361Z] [32MINFO[39M: 📥 [2025-11-24T09:41:20.361Z] OPTIONS /api/contact
+[2025-11-24T09:41:20.363Z] [32MINFO[39M: 📥 [2025-11-24T09:41:20.363Z] OPTIONS /api/contact
+[2025-11-24T09:41:20.377Z] [32MINFO[39M: 📥 [2025-11-24T09:41:20.377Z] GET /api/contact
+[2025-11-24T09:41:20.380Z] [32MINFO[39M: 4
+[2025-11-24T09:41:20.405Z] [32MINFO[39M: 📥 [2025-11-24T09:41:20.405Z] GET /api/contact
+[2025-11-24T09:41:20.411Z] [32MINFO[39M: 4
+[2025-11-24T09:41:35.712Z] [32MINFO[39M: 📥 [2025-11-24T09:41:35.712Z] OPTIONS /api/contact
+[2025-11-24T09:41:35.713Z] [32MINFO[39M: 📥 [2025-11-24T09:41:35.713Z] OPTIONS /api/contact
+[2025-11-24T09:41:35.717Z] [32MINFO[39M: 📥 [2025-11-24T09:41:35.717Z] GET /api/contact
+[2025-11-24T09:41:35.720Z] [32MINFO[39M: 4
+[2025-11-24T09:41:35.726Z] [32MINFO[39M: 📥 [2025-11-24T09:41:35.726Z] GET /api/contact
+[2025-11-24T09:41:35.729Z] [32MINFO[39M: 4
+[2025-11-24T09:41:39.487Z] [32MINFO[39M: 📥 [2025-11-24T09:41:39.487Z] GET /api/contact
+[2025-11-24T09:41:39.490Z] [32MINFO[39M: 4
+[2025-11-24T09:41:39.498Z] [32MINFO[39M: 📥 [2025-11-24T09:41:39.498Z] GET /api/contact
+[2025-11-24T09:41:39.501Z] [32MINFO[39M: 4
+[2025-11-24T09:41:57.068Z] [32MINFO[39M: 📥 [2025-11-24T09:41:57.068Z] OPTIONS /api/contact
+[2025-11-24T09:41:57.070Z] [32MINFO[39M: 📥 [2025-11-24T09:41:57.069Z] OPTIONS /api/contact
+[2025-11-24T09:41:57.079Z] [32MINFO[39M: 📥 [2025-11-24T09:41:57.079Z] GET /api/contact
+[2025-11-24T09:41:57.082Z] [32MINFO[39M: 4
+[2025-11-24T09:41:57.097Z] [32MINFO[39M: 📥 [2025-11-24T09:41:57.097Z] GET /api/contact
+[2025-11-24T09:41:57.099Z] [32MINFO[39M: 4
+[2025-11-24T09:42:03.185Z] [32MINFO[39M: 📥 [2025-11-24T09:42:03.185Z] OPTIONS /api/contact
+[2025-11-24T09:42:03.186Z] [32MINFO[39M: 📥 [2025-11-24T09:42:03.186Z] OPTIONS /api/contact
+[2025-11-24T09:42:03.194Z] [32MINFO[39M: 📥 [2025-11-24T09:42:03.194Z] GET /api/contact
+[2025-11-24T09:42:03.221Z] [32MINFO[39M: 4
+[2025-11-24T09:42:03.241Z] [32MINFO[39M: 📥 [2025-11-24T09:42:03.241Z] GET /api/contact
+[2025-11-24T09:42:03.254Z] [32MINFO[39M: 4
+[2025-11-24T09:42:06.447Z] [32MINFO[39M: 📥 [2025-11-24T09:42:06.447Z] GET /api/contact
+[2025-11-24T09:42:06.450Z] [32MINFO[39M: 4
+[2025-11-24T09:42:06.457Z] [32MINFO[39M: 📥 [2025-11-24T09:42:06.457Z] GET /api/contact
+[2025-11-24T09:42:06.460Z] [32MINFO[39M: 4
+[2025-11-24T09:42:11.168Z] [32MINFO[39M: 📥 [2025-11-24T09:42:11.168Z] OPTIONS /api/contact
+[2025-11-24T09:42:11.174Z] [32MINFO[39M: 📥 [2025-11-24T09:42:11.174Z] OPTIONS /api/contact
+[2025-11-24T09:42:11.176Z] [32MINFO[39M: 📥 [2025-11-24T09:42:11.176Z] GET /api/contact
+[2025-11-24T09:42:11.180Z] [32MINFO[39M: 4
+[2025-11-24T09:42:11.189Z] [32MINFO[39M: 📥 [2025-11-24T09:42:11.189Z] GET /api/contact
+[2025-11-24T09:42:11.192Z] [32MINFO[39M: 4
+[2025-11-24T09:42:13.901Z] [32MINFO[39M: 📥 [2025-11-24T09:42:13.901Z] GET /api/contact
+[2025-11-24T09:42:13.904Z] [32MINFO[39M: 4
+[2025-11-24T09:42:14.057Z] [32MINFO[39M: 📥 [2025-11-24T09:42:14.057Z] GET /api/contact
+[2025-11-24T09:42:14.060Z] [32MINFO[39M: 4
+[2025-11-24T09:42:18.892Z] [32MINFO[39M: 📥 [2025-11-24T09:42:18.892Z] OPTIONS /api/contact
+[2025-11-24T09:42:18.903Z] [32MINFO[39M: 📥 [2025-11-24T09:42:18.903Z] OPTIONS /api/contact
+[2025-11-24T09:42:18.905Z] [32MINFO[39M: 📥 [2025-11-24T09:42:18.905Z] GET /api/contact
+[2025-11-24T09:42:18.913Z] [32MINFO[39M: 4
+[2025-11-24T09:42:18.930Z] [32MINFO[39M: 📥 [2025-11-24T09:42:18.930Z] GET /api/contact
+[2025-11-24T09:42:18.936Z] [32MINFO[39M: 4
+[2025-11-24T09:42:22.109Z] [32MINFO[39M: 📥 [2025-11-24T09:42:22.109Z] GET /api/contact
+[2025-11-24T09:42:22.112Z] [32MINFO[39M: 4
+[2025-11-24T09:42:22.187Z] [32MINFO[39M: 📥 [2025-11-24T09:42:22.187Z] GET /api/contact
+[2025-11-24T09:42:22.193Z] [32MINFO[39M: 4
+[2025-11-24T09:42:28.355Z] [32MINFO[39M: 📥 [2025-11-24T09:42:28.355Z] OPTIONS /api/contact
+[2025-11-24T09:42:28.359Z] [32MINFO[39M: 📥 [2025-11-24T09:42:28.359Z] OPTIONS /api/contact
+[2025-11-24T09:42:28.369Z] [32MINFO[39M: 📥 [2025-11-24T09:42:28.369Z] GET /api/contact
+[2025-11-24T09:42:28.379Z] [32MINFO[39M: 4
+[2025-11-24T09:42:28.396Z] [32MINFO[39M: 📥 [2025-11-24T09:42:28.396Z] GET /api/contact
+[2025-11-24T09:42:28.402Z] [32MINFO[39M: 4
+[2025-11-24T09:42:30.575Z] [32MINFO[39M: 📥 [2025-11-24T09:42:30.575Z] GET /api/contact
+[2025-11-24T09:42:30.580Z] [32MINFO[39M: 4
+[2025-11-24T09:42:30.698Z] [32MINFO[39M: 📥 [2025-11-24T09:42:30.698Z] GET /api/contact
+[2025-11-24T09:42:30.702Z] [32MINFO[39M: 4
+[2025-11-24T09:43:04.995Z] [32MINFO[39M: 📥 [2025-11-24T09:43:04.995Z] OPTIONS /api/contact/contact
+[2025-11-24T09:43:05.002Z] [32MINFO[39M: 📥 [2025-11-24T09:43:05.002Z] POST /api/contact/contact
+[2025-11-24T09:43:05.003Z] [31MERROR[39M: Error: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+[2025-11-24T09:45:21.190Z] [32MINFO[39M: 📥 [2025-11-24T09:45:21.190Z] OPTIONS /api/contact
+[2025-11-24T09:45:21.192Z] [32MINFO[39M: 📥 [2025-11-24T09:45:21.192Z] OPTIONS /api/contact
+[2025-11-24T09:45:21.201Z] [32MINFO[39M: 📥 [2025-11-24T09:45:21.201Z] GET /api/contact
+[2025-11-24T09:45:21.203Z] [32MINFO[39M: 4
+[2025-11-24T09:45:21.213Z] [32MINFO[39M: 📥 [2025-11-24T09:45:21.213Z] GET /api/contact
+[2025-11-24T09:45:21.216Z] [32MINFO[39M: 4
+[2025-11-24T09:45:41.827Z] [32MINFO[39M: 📥 [2025-11-24T09:45:41.827Z] OPTIONS /api/contact
+[2025-11-24T09:45:41.829Z] [32MINFO[39M: 📥 [2025-11-24T09:45:41.829Z] OPTIONS /api/contact
+[2025-11-24T09:45:41.838Z] [32MINFO[39M: 📥 [2025-11-24T09:45:41.838Z] GET /api/contact
+[2025-11-24T09:45:41.840Z] [32MINFO[39M: 4
+[2025-11-24T09:45:41.849Z] [32MINFO[39M: 📥 [2025-11-24T09:45:41.849Z] GET /api/contact
+[2025-11-24T09:45:41.854Z] [32MINFO[39M: 4
+[2025-11-24T09:45:44.691Z] [32MINFO[39M: 📥 [2025-11-24T09:45:44.691Z] GET /api/contact
+[2025-11-24T09:45:44.694Z] [32MINFO[39M: 4
+[2025-11-24T09:45:44.750Z] [32MINFO[39M: 📥 [2025-11-24T09:45:44.750Z] GET /api/contact
+[2025-11-24T09:45:44.752Z] [32MINFO[39M: 4
+[2025-11-24T09:45:47.761Z] [32MINFO[39M: 📥 [2025-11-24T09:45:47.761Z] OPTIONS /api/contact
+[2025-11-24T09:45:47.827Z] [32MINFO[39M: 📥 [2025-11-24T09:45:47.827Z] OPTIONS /api/contact
+[2025-11-24T09:45:47.828Z] [32MINFO[39M: 📥 [2025-11-24T09:45:47.828Z] GET /api/contact
+[2025-11-24T09:45:47.831Z] [32MINFO[39M: 4
+[2025-11-24T09:45:48.036Z] [32MINFO[39M: 📥 [2025-11-24T09:45:48.036Z] GET /api/contact
+[2025-11-24T09:45:48.039Z] [32MINFO[39M: 4
+[2025-11-24T09:45:51.656Z] [32MINFO[39M: 📥 [2025-11-24T09:45:51.656Z] OPTIONS /api/contact/contact
+[2025-11-24T09:45:51.748Z] [32MINFO[39M: 📥 [2025-11-24T09:45:51.748Z] POST /api/contact/contact
+[2025-11-24T09:47:08.736Z] [32MINFO[39M: 📥 [2025-11-24T09:47:08.736Z] OPTIONS /api/count/webview
+[2025-11-24T09:47:08.737Z] [32MINFO[39M: 📥 [2025-11-24T09:47:08.737Z] OPTIONS /api/count/webview
+[2025-11-24T09:47:08.749Z] [32MINFO[39M: 📥 [2025-11-24T09:47:08.749Z] GET /api/count/webview
+[2025-11-24T09:47:08.801Z] [32MINFO[39M: 📥 [2025-11-24T09:47:08.801Z] GET /api/count/webview
+[2025-11-24T09:47:22.213Z] [32MINFO[39M: 📥 [2025-11-24T09:47:22.213Z] OPTIONS /api/count/webview
+[2025-11-24T09:47:22.214Z] [32MINFO[39M: 📥 [2025-11-24T09:47:22.214Z] OPTIONS /api/categories
+[2025-11-24T09:47:22.215Z] [32MINFO[39M: 📥 [2025-11-24T09:47:22.215Z] OPTIONS /api/categories
+[2025-11-24T09:47:22.215Z] [32MINFO[39M: 📥 [2025-11-24T09:47:22.215Z] OPTIONS /api/count/webview
+[2025-11-24T09:47:30.348Z] [32MINFO[39M: 📥 [2025-11-24T09:47:30.348Z] OPTIONS /api/contact
+[2025-11-24T09:47:30.350Z] [32MINFO[39M: 📥 [2025-11-24T09:47:30.350Z] OPTIONS /api/contact
+[2025-11-24T09:47:30.381Z] [32MINFO[39M: 📥 [2025-11-24T09:47:30.381Z] GET /api/contact
+[2025-11-24T09:47:30.384Z] [32MINFO[39M: 4
+[2025-11-24T09:47:30.393Z] [32MINFO[39M: 📥 [2025-11-24T09:47:30.393Z] GET /api/contact
+[2025-11-24T09:47:30.396Z] [32MINFO[39M: 4
+[2025-11-24T09:47:42.560Z] [32MINFO[39M: 📥 [2025-11-24T09:47:42.560Z] OPTIONS /api/contact
+[2025-11-24T09:47:42.563Z] [32MINFO[39M: 📥 [2025-11-24T09:47:42.563Z] OPTIONS /api/contact
+[2025-11-24T09:47:42.569Z] [32MINFO[39M: 📥 [2025-11-24T09:47:42.569Z] GET /api/contact
+[2025-11-24T09:47:42.571Z] [32MINFO[39M: 4
+[2025-11-24T09:47:42.593Z] [32MINFO[39M: 📥 [2025-11-24T09:47:42.593Z] GET /api/contact
+[2025-11-24T09:47:42.596Z] [32MINFO[39M: 4
+[2025-11-24T09:47:55.918Z] [32MINFO[39M: 📥 [2025-11-24T09:47:55.918Z] OPTIONS /api/contact
+[2025-11-24T09:47:55.919Z] [32MINFO[39M: 📥 [2025-11-24T09:47:55.919Z] OPTIONS /api/contact
+[2025-11-24T09:47:55.928Z] [32MINFO[39M: 📥 [2025-11-24T09:47:55.928Z] GET /api/contact
+[2025-11-24T09:47:55.931Z] [32MINFO[39M: 4
+[2025-11-24T09:47:55.941Z] [32MINFO[39M: 📥 [2025-11-24T09:47:55.941Z] GET /api/contact
+[2025-11-24T09:47:55.943Z] [32MINFO[39M: 4
+[2025-11-24T09:48:09.833Z] [32MINFO[39M: 📥 [2025-11-24T09:48:09.833Z] OPTIONS /api/contact
+[2025-11-24T09:48:09.834Z] [32MINFO[39M: 📥 [2025-11-24T09:48:09.834Z] OPTIONS /api/contact
+[2025-11-24T09:48:10.286Z] [32MINFO[39M: 📥 [2025-11-24T09:48:10.286Z] GET /api/contact
+[2025-11-24T09:48:10.290Z] [32MINFO[39M: 4
+[2025-11-24T09:48:10.427Z] [32MINFO[39M: 📥 [2025-11-24T09:48:10.427Z] GET /api/contact
+[2025-11-24T09:48:10.430Z] [32MINFO[39M: 4
+[2025-11-24T09:50:08.116Z] [32MINFO[39M: 📥 [2025-11-24T09:50:08.116Z] OPTIONS /api/contact
+[2025-11-24T09:50:08.120Z] [32MINFO[39M: 📥 [2025-11-24T09:50:08.120Z] OPTIONS /api/contact
+[2025-11-24T09:50:08.125Z] [32MINFO[39M: 📥 [2025-11-24T09:50:08.125Z] GET /api/contact
+[2025-11-24T09:50:08.135Z] [32MINFO[39M: 4
+[2025-11-24T09:50:08.164Z] [32MINFO[39M: 📥 [2025-11-24T09:50:08.164Z] GET /api/contact
+[2025-11-24T09:50:08.167Z] [32MINFO[39M: 4
+[2025-11-24T09:50:15.110Z] [32MINFO[39M: 📥 [2025-11-24T09:50:15.110Z] OPTIONS /api/contact
+[2025-11-24T09:50:15.111Z] [32MINFO[39M: 📥 [2025-11-24T09:50:15.111Z] OPTIONS /api/contact
+[2025-11-24T09:50:15.137Z] [32MINFO[39M: 📥 [2025-11-24T09:50:15.137Z] GET /api/contact
+[2025-11-24T09:50:15.141Z] [32MINFO[39M: 4
+[2025-11-24T09:50:15.155Z] [32MINFO[39M: 📥 [2025-11-24T09:50:15.155Z] GET /api/contact
+[2025-11-24T09:50:15.158Z] [32MINFO[39M: 4
+[2025-11-24T09:51:01.346Z] [32MINFO[39M: 📥 [2025-11-24T09:51:01.346Z] OPTIONS /api/contact
+[2025-11-24T09:51:01.347Z] [32MINFO[39M: 📥 [2025-11-24T09:51:01.347Z] OPTIONS /api/contact
+[2025-11-24T09:51:01.718Z] [32MINFO[39M: 📥 [2025-11-24T09:51:01.718Z] GET /api/contact
+[2025-11-24T09:51:01.722Z] [32MINFO[39M: 4
+[2025-11-24T09:51:01.751Z] [32MINFO[39M: 📥 [2025-11-24T09:51:01.751Z] GET /api/contact
+[2025-11-24T09:51:01.756Z] [32MINFO[39M: 4
+[2025-11-24T09:51:34.743Z] [32MINFO[39M: 📥 [2025-11-24T09:51:34.743Z] OPTIONS /api/contact
+[2025-11-24T09:51:34.744Z] [32MINFO[39M: 📥 [2025-11-24T09:51:34.744Z] OPTIONS /api/contact
+[2025-11-24T09:51:34.753Z] [32MINFO[39M: 📥 [2025-11-24T09:51:34.753Z] GET /api/contact
+[2025-11-24T09:51:34.756Z] [32MINFO[39M: 4
+[2025-11-24T09:51:34.768Z] [32MINFO[39M: 📥 [2025-11-24T09:51:34.768Z] GET /api/contact
+[2025-11-24T09:51:34.771Z] [32MINFO[39M: 4
+[2025-11-24T09:52:17.060Z] [32MINFO[39M: 📥 [2025-11-24T09:52:17.060Z] OPTIONS /api/contact
+[2025-11-24T09:52:17.061Z] [32MINFO[39M: 📥 [2025-11-24T09:52:17.061Z] OPTIONS /api/contact
+[2025-11-24T09:52:17.074Z] [32MINFO[39M: 📥 [2025-11-24T09:52:17.074Z] GET /api/contact
+[2025-11-24T09:52:17.078Z] [32MINFO[39M: 4
+[2025-11-24T09:52:17.092Z] [32MINFO[39M: 📥 [2025-11-24T09:52:17.092Z] GET /api/contact
+[2025-11-24T09:52:17.095Z] [32MINFO[39M: 4
+[2025-11-24T09:53:57.008Z] [32MINFO[39M: 📥 [2025-11-24T09:53:57.008Z] OPTIONS /api/contact
+[2025-11-24T09:53:57.009Z] [32MINFO[39M: 📥 [2025-11-24T09:53:57.009Z] OPTIONS /api/contact
+[2025-11-24T09:53:57.022Z] [32MINFO[39M: 📥 [2025-11-24T09:53:57.022Z] GET /api/contact
+[2025-11-24T09:53:57.025Z] [32MINFO[39M: 4
+[2025-11-24T09:53:57.035Z] [32MINFO[39M: 📥 [2025-11-24T09:53:57.035Z] GET /api/contact
+[2025-11-24T09:53:57.038Z] [32MINFO[39M: 4
+[2025-11-24T09:56:52.622Z] [32MINFO[39M: 📥 [2025-11-24T09:56:52.622Z] OPTIONS /api/contact
+[2025-11-24T09:56:52.623Z] [32MINFO[39M: 📥 [2025-11-24T09:56:52.623Z] OPTIONS /api/contact
+[2025-11-24T09:56:52.836Z] [32MINFO[39M: 📥 [2025-11-24T09:56:52.836Z] GET /api/contact
+[2025-11-24T09:56:52.838Z] [32MINFO[39M: 4
+[2025-11-24T09:56:53.041Z] [32MINFO[39M: 📥 [2025-11-24T09:56:53.041Z] GET /api/contact
+[2025-11-24T09:56:53.044Z] [32MINFO[39M: 4
+[2025-11-24T09:57:07.072Z] [32MINFO[39M: 📥 [2025-11-24T09:57:07.072Z] OPTIONS /api/contact
+[2025-11-24T09:57:07.073Z] [32MINFO[39M: 📥 [2025-11-24T09:57:07.073Z] OPTIONS /api/contact
+[2025-11-24T09:57:07.082Z] [32MINFO[39M: 📥 [2025-11-24T09:57:07.082Z] GET /api/contact
+[2025-11-24T09:57:07.084Z] [32MINFO[39M: 4
+[2025-11-24T09:57:07.097Z] [32MINFO[39M: 📥 [2025-11-24T09:57:07.097Z] GET /api/contact
+[2025-11-24T09:57:07.099Z] [32MINFO[39M: 4
+[2025-11-24T09:57:36.410Z] [32MINFO[39M: 📥 [2025-11-24T09:57:36.410Z] OPTIONS /api/contact
+[2025-11-24T09:57:36.414Z] [32MINFO[39M: 📥 [2025-11-24T09:57:36.414Z] OPTIONS /api/contact
+[2025-11-24T09:57:36.421Z] [32MINFO[39M: 📥 [2025-11-24T09:57:36.421Z] GET /api/contact
+[2025-11-24T09:57:36.423Z] [32MINFO[39M: 4
+[2025-11-24T09:57:36.435Z] [32MINFO[39M: 📥 [2025-11-24T09:57:36.435Z] GET /api/contact
+[2025-11-24T09:57:36.439Z] [32MINFO[39M: 4
+[2025-11-24T09:58:28.346Z] [32MINFO[39M: 📥 [2025-11-24T09:58:28.346Z] OPTIONS /api/contact/contact
+[2025-11-24T09:58:28.352Z] [32MINFO[39M: 📥 [2025-11-24T09:58:28.352Z] POST /api/contact/contact
+[2025-11-24T09:58:45.164Z] [32MINFO[39M: 📥 [2025-11-24T09:58:45.164Z] OPTIONS /api/contact
+[2025-11-24T09:58:45.165Z] [32MINFO[39M: 📥 [2025-11-24T09:58:45.165Z] OPTIONS /api/contact
+[2025-11-24T09:58:45.173Z] [32MINFO[39M: 📥 [2025-11-24T09:58:45.173Z] GET /api/contact
+[2025-11-24T09:58:45.176Z] [32MINFO[39M: 4
+[2025-11-24T09:58:45.190Z] [32MINFO[39M: 📥 [2025-11-24T09:58:45.190Z] GET /api/contact
+[2025-11-24T09:58:45.193Z] [32MINFO[39M: 4
+[2025-11-24T10:00:09.562Z] [32MINFO[39M: 📥 [2025-11-24T10:00:09.562Z] OPTIONS /api/contact
+[2025-11-24T10:00:09.585Z] [32MINFO[39M: 📥 [2025-11-24T10:00:09.585Z] OPTIONS /api/contact
+[2025-11-24T10:00:09.859Z] [32MINFO[39M: 📥 [2025-11-24T10:00:09.859Z] GET /api/contact
+[2025-11-24T10:00:09.873Z] [32MINFO[39M: 4
+[2025-11-24T10:00:09.960Z] [32MINFO[39M: 📥 [2025-11-24T10:00:09.960Z] GET /api/contact
+[2025-11-24T10:00:09.965Z] [32MINFO[39M: 4
+[2025-11-24T10:00:26.197Z] [32MINFO[39M: 📥 [2025-11-24T10:00:26.197Z] OPTIONS /api/contact
+[2025-11-24T10:00:26.199Z] [32MINFO[39M: 📥 [2025-11-24T10:00:26.199Z] OPTIONS /api/contact
+[2025-11-24T10:00:26.425Z] [32MINFO[39M: 📥 [2025-11-24T10:00:26.425Z] GET /api/contact
+[2025-11-24T10:00:26.430Z] [32MINFO[39M: 4
+[2025-11-24T10:00:26.445Z] [32MINFO[39M: 📥 [2025-11-24T10:00:26.445Z] GET /api/contact
+[2025-11-24T10:00:26.448Z] [32MINFO[39M: 4
+[2025-11-24T10:01:03.148Z] [32MINFO[39M: 📥 [2025-11-24T10:01:03.148Z] OPTIONS /api/contact
+[2025-11-24T10:01:03.165Z] [32MINFO[39M: 📥 [2025-11-24T10:01:03.165Z] OPTIONS /api/contact
+[2025-11-24T10:01:03.175Z] [32MINFO[39M: 📥 [2025-11-24T10:01:03.175Z] GET /api/contact
+[2025-11-24T10:01:03.202Z] [32MINFO[39M: 4
+[2025-11-24T10:01:03.222Z] [32MINFO[39M: 📥 [2025-11-24T10:01:03.222Z] GET /api/contact
+[2025-11-24T10:01:03.227Z] [32MINFO[39M: 4
+[2025-11-24T10:01:13.387Z] [32MINFO[39M: 📥 [2025-11-24T10:01:13.387Z] OPTIONS /api/contact
+[2025-11-24T10:01:13.388Z] [32MINFO[39M: 📥 [2025-11-24T10:01:13.388Z] OPTIONS /api/contact
+[2025-11-24T10:01:13.402Z] [32MINFO[39M: 📥 [2025-11-24T10:01:13.402Z] GET /api/contact
+[2025-11-24T10:01:13.405Z] [32MINFO[39M: 4
+[2025-11-24T10:01:13.417Z] [32MINFO[39M: 📥 [2025-11-24T10:01:13.417Z] GET /api/contact
+[2025-11-24T10:01:13.419Z] [32MINFO[39M: 4
+[2025-11-24T10:02:48.956Z] [32MINFO[39M: 📥 [2025-11-24T10:02:48.956Z] OPTIONS /api/contact
+[2025-11-24T10:02:48.958Z] [32MINFO[39M: 📥 [2025-11-24T10:02:48.958Z] OPTIONS /api/contact
+[2025-11-24T10:02:48.968Z] [32MINFO[39M: 📥 [2025-11-24T10:02:48.968Z] GET /api/contact
+[2025-11-24T10:02:48.971Z] [32MINFO[39M: 4
+[2025-11-24T10:02:48.979Z] [32MINFO[39M: 📥 [2025-11-24T10:02:48.979Z] GET /api/contact
+[2025-11-24T10:02:48.982Z] [32MINFO[39M: 4
+[2025-11-24T10:03:03.798Z] [32MINFO[39M: 📥 [2025-11-24T10:03:03.798Z] OPTIONS /api/contact
+[2025-11-24T10:03:03.800Z] [32MINFO[39M: 📥 [2025-11-24T10:03:03.800Z] OPTIONS /api/contact
+[2025-11-24T10:03:03.816Z] [32MINFO[39M: 📥 [2025-11-24T10:03:03.816Z] GET /api/contact
+[2025-11-24T10:03:03.820Z] [32MINFO[39M: 4
+[2025-11-24T10:03:03.858Z] [32MINFO[39M: 📥 [2025-11-24T10:03:03.858Z] GET /api/contact
+[2025-11-24T10:03:03.861Z] [32MINFO[39M: 4
+[2025-11-24T10:03:49.912Z] [32MINFO[39M: 📥 [2025-11-24T10:03:49.912Z] OPTIONS /api/contact
+[2025-11-24T10:03:49.913Z] [32MINFO[39M: 📥 [2025-11-24T10:03:49.913Z] OPTIONS /api/contact
+[2025-11-24T10:03:49.946Z] [32MINFO[39M: 📥 [2025-11-24T10:03:49.946Z] GET /api/contact
+[2025-11-24T10:03:49.949Z] [32MINFO[39M: 4
+[2025-11-24T10:03:49.976Z] [32MINFO[39M: 📥 [2025-11-24T10:03:49.976Z] GET /api/contact
+[2025-11-24T10:03:49.978Z] [32MINFO[39M: 4
+[2025-11-24T10:07:48.943Z] [32MINFO[39M: 📥 [2025-11-24T10:07:48.943Z] OPTIONS /api/contact
+[2025-11-24T10:07:48.944Z] [32MINFO[39M: 📥 [2025-11-24T10:07:48.944Z] OPTIONS /api/contact
+[2025-11-24T10:07:48.966Z] [32MINFO[39M: 📥 [2025-11-24T10:07:48.966Z] GET /api/contact
+[2025-11-24T10:07:48.969Z] [32MINFO[39M: 4
+[2025-11-24T10:07:48.994Z] [32MINFO[39M: 📥 [2025-11-24T10:07:48.994Z] GET /api/contact
+[2025-11-24T10:07:48.999Z] [32MINFO[39M: 4
+[2025-11-24T10:09:03.140Z] [32MINFO[39M: 📥 [2025-11-24T10:09:03.140Z] OPTIONS /api/contact
+[2025-11-24T10:09:03.201Z] [32MINFO[39M: 📥 [2025-11-24T10:09:03.201Z] OPTIONS /api/contact
+[2025-11-24T10:09:03.228Z] [32MINFO[39M: 📥 [2025-11-24T10:09:03.228Z] GET /api/contact
+[2025-11-24T10:09:03.247Z] [32MINFO[39M: 4
+[2025-11-24T10:09:05.174Z] [32MINFO[39M: 📥 [2025-11-24T10:09:05.174Z] GET /api/contact
+[2025-11-24T10:09:05.195Z] [32MINFO[39M: 4
+[2025-11-24T10:10:35.997Z] [32MINFO[39M: 📥 [2025-11-24T10:10:35.997Z] OPTIONS /api/contact
+[2025-11-24T10:10:35.999Z] [32MINFO[39M: 📥 [2025-11-24T10:10:35.999Z] OPTIONS /api/contact
+[2025-11-24T10:10:36.015Z] [32MINFO[39M: 📥 [2025-11-24T10:10:36.015Z] GET /api/contact
+[2025-11-24T10:10:36.017Z] [32MINFO[39M: 📥 [2025-11-24T10:10:36.017Z] GET /api/contact
+[2025-11-24T10:10:36.020Z] [32MINFO[39M: 4
+[2025-11-24T10:10:36.029Z] [32MINFO[39M: 4
+[2025-11-24T10:11:52.304Z] [32MINFO[39M: 📥 [2025-11-24T10:11:52.304Z] OPTIONS /api/contact
+[2025-11-24T10:11:52.306Z] [32MINFO[39M: 📥 [2025-11-24T10:11:52.306Z] OPTIONS /api/contact
+[2025-11-24T10:11:52.312Z] [32MINFO[39M: 📥 [2025-11-24T10:11:52.312Z] GET /api/contact
+[2025-11-24T10:11:52.316Z] [32MINFO[39M: 4
+[2025-11-24T10:11:52.332Z] [32MINFO[39M: 📥 [2025-11-24T10:11:52.332Z] GET /api/contact
+[2025-11-24T10:11:52.334Z] [32MINFO[39M: 4
+[2025-11-24T10:12:40.561Z] [32MINFO[39M: 📥 [2025-11-24T10:12:40.560Z] OPTIONS /api/contact
+[2025-11-24T10:12:40.562Z] [32MINFO[39M: 📥 [2025-11-24T10:12:40.562Z] OPTIONS /api/contact
+[2025-11-24T10:12:40.579Z] [32MINFO[39M: 📥 [2025-11-24T10:12:40.579Z] GET /api/contact
+[2025-11-24T10:12:40.583Z] [32MINFO[39M: 4
+[2025-11-24T10:12:40.591Z] [32MINFO[39M: 📥 [2025-11-24T10:12:40.591Z] GET /api/contact
+[2025-11-24T10:12:40.593Z] [32MINFO[39M: 4
+[2025-11-24T10:19:28.187Z] [32MINFO[39M: 📥 [2025-11-24T10:19:28.187Z] OPTIONS /api/contact
+[2025-11-24T10:19:28.192Z] [32MINFO[39M: 📥 [2025-11-24T10:19:28.192Z] OPTIONS /api/contact
+[2025-11-24T10:19:46.839Z] [32MINFO[39M: 📥 [2025-11-24T10:19:46.839Z] OPTIONS /api/contact
+[2025-11-24T10:19:46.840Z] [32MINFO[39M: 📥 [2025-11-24T10:19:46.840Z] OPTIONS /api/contact
+[2025-11-24T10:19:46.883Z] [32MINFO[39M: 📥 [2025-11-24T10:19:46.883Z] GET /api/contact
+[2025-11-24T10:19:46.886Z] [32MINFO[39M: 4
+[2025-11-24T10:19:46.897Z] [32MINFO[39M: 📥 [2025-11-24T10:19:46.897Z] GET /api/contact
+[2025-11-24T10:19:46.900Z] [32MINFO[39M: 4
+[2025-11-24T10:20:15.236Z] [32MINFO[39M: 📥 [2025-11-24T10:20:15.235Z] OPTIONS /api/contact
+[2025-11-24T10:20:15.237Z] [32MINFO[39M: 📥 [2025-11-24T10:20:15.237Z] OPTIONS /api/contact
+[2025-11-24T10:20:15.246Z] [32MINFO[39M: 📥 [2025-11-24T10:20:15.246Z] GET /api/contact
+[2025-11-24T10:20:15.249Z] [32MINFO[39M: 4
+[2025-11-24T10:20:15.264Z] [32MINFO[39M: 📥 [2025-11-24T10:20:15.264Z] GET /api/contact
+[2025-11-24T10:20:15.267Z] [32MINFO[39M: 4
+[2025-11-24T10:20:27.165Z] [32MINFO[39M: 📥 [2025-11-24T10:20:27.165Z] OPTIONS /api/contact
+[2025-11-24T10:20:27.166Z] [32MINFO[39M: 📥 [2025-11-24T10:20:27.166Z] OPTIONS /api/contact
+[2025-11-24T10:20:27.178Z] [32MINFO[39M: 📥 [2025-11-24T10:20:27.178Z] GET /api/contact
+[2025-11-24T10:20:27.181Z] [32MINFO[39M: 4
+[2025-11-24T10:20:27.230Z] [32MINFO[39M: 📥 [2025-11-24T10:20:27.230Z] GET /api/contact
+[2025-11-24T10:20:27.233Z] [32MINFO[39M: 4
+[2025-11-24T10:20:54.309Z] [32MINFO[39M: 📥 [2025-11-24T10:20:54.308Z] OPTIONS /api/contact
+[2025-11-24T10:20:54.309Z] [32MINFO[39M: 📥 [2025-11-24T10:20:54.309Z] OPTIONS /api/contact
+[2025-11-24T10:20:54.334Z] [32MINFO[39M: 📥 [2025-11-24T10:20:54.334Z] GET /api/contact
+[2025-11-24T10:20:54.337Z] [32MINFO[39M: 4
+[2025-11-24T10:20:54.364Z] [32MINFO[39M: 📥 [2025-11-24T10:20:54.364Z] GET /api/contact
+[2025-11-24T10:20:54.366Z] [32MINFO[39M: 4
+[2025-11-24T10:21:03.759Z] [32MINFO[39M: 📥 [2025-11-24T10:21:03.759Z] OPTIONS /api/contact
+[2025-11-24T10:21:03.761Z] [32MINFO[39M: 📥 [2025-11-24T10:21:03.761Z] OPTIONS /api/contact
+[2025-11-24T10:21:03.776Z] [32MINFO[39M: 📥 [2025-11-24T10:21:03.776Z] GET /api/contact
+[2025-11-24T10:21:03.782Z] [32MINFO[39M: 4
+[2025-11-24T10:21:03.817Z] [32MINFO[39M: 📥 [2025-11-24T10:21:03.817Z] GET /api/contact
+[2025-11-24T10:21:03.831Z] [32MINFO[39M: 4
+[2025-11-24T10:21:28.700Z] [32MINFO[39M: 📥 [2025-11-24T10:21:28.700Z] OPTIONS /api/contact
+[2025-11-24T10:21:28.709Z] [32MINFO[39M: 📥 [2025-11-24T10:21:28.709Z] GET /api/contact
+[2025-11-24T10:21:28.712Z] [32MINFO[39M: 4
+[2025-11-24T10:21:29.584Z] [32MINFO[39M: 📥 [2025-11-24T10:21:29.584Z] GET /api/contact
+[2025-11-24T10:21:29.587Z] [32MINFO[39M: 4
+[2025-11-24T10:21:30.870Z] [32MINFO[39M: 📥 [2025-11-24T10:21:30.870Z] GET /api/contact
+[2025-11-24T10:21:30.873Z] [32MINFO[39M: 4
+[2025-11-24T10:22:23.318Z] [32MINFO[39M: 📥 [2025-11-24T10:22:23.318Z] OPTIONS /api/contact
+[2025-11-24T10:22:23.325Z] [32MINFO[39M: 📥 [2025-11-24T10:22:23.325Z] GET /api/contact
+[2025-11-24T10:22:23.328Z] [32MINFO[39M: 4
+[2025-11-24T10:22:26.129Z] [32MINFO[39M: 📥 [2025-11-24T10:22:26.129Z] GET /api/contact
+[2025-11-24T10:22:26.133Z] [32MINFO[39M: 4
+[2025-11-24T10:22:26.144Z] [32MINFO[39M: 📥 [2025-11-24T10:22:26.144Z] GET /api/contact
+[2025-11-24T10:22:26.147Z] [32MINFO[39M: 4
+[2025-11-24T10:22:36.278Z] [32MINFO[39M: 📥 [2025-11-24T10:22:36.278Z] OPTIONS /api/contact
+[2025-11-24T10:22:36.284Z] [32MINFO[39M: 📥 [2025-11-24T10:22:36.284Z] GET /api/contact
+[2025-11-24T10:22:36.287Z] [32MINFO[39M: 4
+[2025-11-24T10:22:46.551Z] [32MINFO[39M: 📥 [2025-11-24T10:22:46.551Z] OPTIONS /api/contact
+[2025-11-24T10:22:46.560Z] [32MINFO[39M: 📥 [2025-11-24T10:22:46.560Z] GET /api/contact
+[2025-11-24T10:22:46.563Z] [32MINFO[39M: 4
+[2025-11-24T10:22:55.781Z] [32MINFO[39M: 📥 [2025-11-24T10:22:55.781Z] OPTIONS /api/contact
+[2025-11-24T10:22:55.785Z] [32MINFO[39M: 📥 [2025-11-24T10:22:55.785Z] OPTIONS /api/contact
+[2025-11-24T10:22:55.788Z] [32MINFO[39M: 📥 [2025-11-24T10:22:55.788Z] GET /api/contact
+[2025-11-24T10:22:55.791Z] [32MINFO[39M: 4
+[2025-11-24T10:22:55.800Z] [32MINFO[39M: 📥 [2025-11-24T10:22:55.800Z] GET /api/contact
+[2025-11-24T10:22:55.802Z] [32MINFO[39M: 4
+[2025-11-24T10:23:06.439Z] [32MINFO[39M: 📥 [2025-11-24T10:23:06.439Z] OPTIONS /api/contact
+[2025-11-24T10:23:06.454Z] [32MINFO[39M: 📥 [2025-11-24T10:23:06.454Z] GET /api/contact
+[2025-11-24T10:23:06.458Z] [32MINFO[39M: 4
+[2025-11-24T10:23:16.280Z] [32MINFO[39M: 📥 [2025-11-24T10:23:16.279Z] OPTIONS /api/contact
+[2025-11-24T10:23:16.287Z] [32MINFO[39M: 📥 [2025-11-24T10:23:16.287Z] GET /api/contact
+[2025-11-24T10:23:16.294Z] [32MINFO[39M: 4
+[2025-11-24T10:23:26.521Z] [32MINFO[39M: 📥 [2025-11-24T10:23:26.521Z] OPTIONS /api/contact
+[2025-11-24T10:23:26.538Z] [32MINFO[39M: 📥 [2025-11-24T10:23:26.538Z] GET /api/contact
+[2025-11-24T10:23:26.541Z] [32MINFO[39M: 4
+[2025-11-24T10:23:36.293Z] [32MINFO[39M: 📥 [2025-11-24T10:23:36.293Z] OPTIONS /api/contact
+[2025-11-24T10:23:36.304Z] [32MINFO[39M: 📥 [2025-11-24T10:23:36.304Z] GET /api/contact
+[2025-11-24T10:23:36.307Z] [32MINFO[39M: 4
+[2025-11-24T10:23:46.361Z] [32MINFO[39M: 📥 [2025-11-24T10:23:46.361Z] OPTIONS /api/contact
+[2025-11-24T10:23:46.367Z] [32MINFO[39M: 📥 [2025-11-24T10:23:46.367Z] GET /api/contact
+[2025-11-24T10:23:46.370Z] [32MINFO[39M: 4
+[2025-11-24T10:23:56.437Z] [32MINFO[39M: 📥 [2025-11-24T10:23:56.437Z] OPTIONS /api/contact
+[2025-11-24T10:23:56.875Z] [32MINFO[39M: 📥 [2025-11-24T10:23:56.875Z] GET /api/contact
+[2025-11-24T10:23:56.878Z] [32MINFO[39M: 4
+[2025-11-24T10:24:06.278Z] [32MINFO[39M: 📥 [2025-11-24T10:24:06.278Z] OPTIONS /api/contact
+[2025-11-24T10:24:06.286Z] [32MINFO[39M: 📥 [2025-11-24T10:24:06.286Z] GET /api/contact
+[2025-11-24T10:24:06.288Z] [32MINFO[39M: 4
+[2025-11-24T10:24:23.327Z] [32MINFO[39M: 📥 [2025-11-24T10:24:23.327Z] OPTIONS /api/contact
+[2025-11-24T10:24:23.336Z] [32MINFO[39M: 📥 [2025-11-24T10:24:23.336Z] GET /api/contact
+[2025-11-24T10:24:23.339Z] [32MINFO[39M: 4
+[2025-11-24T10:25:24.052Z] [32MINFO[39M: 📥 [2025-11-24T10:25:24.052Z] OPTIONS /api/contact
+[2025-11-24T10:25:24.238Z] [32MINFO[39M: 📥 [2025-11-24T10:25:24.238Z] GET /api/contact
+[2025-11-24T10:25:24.241Z] [32MINFO[39M: 4
+[2025-11-24T10:26:23.287Z] [32MINFO[39M: 📥 [2025-11-24T10:26:23.287Z] OPTIONS /api/contact
+[2025-11-24T10:26:23.299Z] [32MINFO[39M: 📥 [2025-11-24T10:26:23.299Z] GET /api/contact
+[2025-11-24T10:26:23.302Z] [32MINFO[39M: 4
+[2025-11-24T10:27:23.288Z] [32MINFO[39M: 📥 [2025-11-24T10:27:23.288Z] OPTIONS /api/contact
+[2025-11-24T10:27:23.300Z] [32MINFO[39M: 📥 [2025-11-24T10:27:23.300Z] GET /api/contact
+[2025-11-24T10:27:23.304Z] [32MINFO[39M: 4
+[2025-11-24T10:28:23.307Z] [32MINFO[39M: 📥 [2025-11-24T10:28:23.307Z] OPTIONS /api/contact
+[2025-11-24T10:28:23.621Z] [32MINFO[39M: 📥 [2025-11-24T10:28:23.621Z] GET /api/contact
+[2025-11-24T10:28:23.624Z] [32MINFO[39M: 4
+[2025-11-24T10:29:23.287Z] [32MINFO[39M: 📥 [2025-11-24T10:29:23.287Z] OPTIONS /api/contact
+[2025-11-24T10:29:23.298Z] [32MINFO[39M: 📥 [2025-11-24T10:29:23.298Z] GET /api/contact
+[2025-11-24T10:29:23.301Z] [32MINFO[39M: 4
+[2025-11-24T10:30:23.540Z] [32MINFO[39M: 📥 [2025-11-24T10:30:23.540Z] OPTIONS /api/contact
+[2025-11-24T10:30:23.547Z] [32MINFO[39M: 📥 [2025-11-24T10:30:23.547Z] GET /api/contact
+[2025-11-24T10:30:23.551Z] [32MINFO[39M: 4
+[2025-11-24T10:31:23.318Z] [32MINFO[39M: 📥 [2025-11-24T10:31:23.318Z] OPTIONS /api/contact
+[2025-11-24T10:31:23.323Z] [32MINFO[39M: 📥 [2025-11-24T10:31:23.323Z] GET /api/contact
+[2025-11-24T10:31:23.327Z] [32MINFO[39M: 4
+[2025-11-24T10:32:23.455Z] [32MINFO[39M: 📥 [2025-11-24T10:32:23.455Z] OPTIONS /api/contact
+[2025-11-24T10:32:23.460Z] [32MINFO[39M: 📥 [2025-11-24T10:32:23.460Z] GET /api/contact
+[2025-11-24T10:32:23.464Z] [32MINFO[39M: 4
+[2025-11-24T10:32:47.118Z] [32MINFO[39M: 📥 [2025-11-24T10:32:47.118Z] OPTIONS /api/contact
+[2025-11-24T10:32:47.124Z] [32MINFO[39M: 📥 [2025-11-24T10:32:47.124Z] GET /api/contact
+[2025-11-24T10:32:47.128Z] [32MINFO[39M: 4
+[2025-11-24T10:32:51.856Z] [32MINFO[39M: 📥 [2025-11-24T10:32:51.856Z] OPTIONS /api/enquiries/all
+[2025-11-24T10:32:51.863Z] [32MINFO[39M: 📥 [2025-11-24T10:32:51.863Z] OPTIONS /api/enquiries/all
+[2025-11-24T10:32:51.864Z] [32MINFO[39M: 📥 [2025-11-24T10:32:51.864Z] GET /api/enquiries/all
+[2025-11-24T10:32:51.867Z] [32MINFO[39M: 4
+[2025-11-24T10:32:51.890Z] [32MINFO[39M: 📥 [2025-11-24T10:32:51.890Z] GET /api/enquiries/all
+[2025-11-24T10:32:51.893Z] [32MINFO[39M: 4
+[2025-11-24T10:33:05.529Z] [32MINFO[39M: 📥 [2025-11-24T10:33:05.529Z] OPTIONS /api/count/webview
+[2025-11-24T10:33:05.532Z] [32MINFO[39M: 📥 [2025-11-24T10:33:05.532Z] OPTIONS /api/categories
+[2025-11-24T10:33:05.539Z] [32MINFO[39M: 📥 [2025-11-24T10:33:05.539Z] OPTIONS /api/count/webview
+[2025-11-24T10:33:05.540Z] [32MINFO[39M: 📥 [2025-11-24T10:33:05.540Z] OPTIONS /api/categories
+[2025-11-24T10:33:05.548Z] [32MINFO[39M: 📥 [2025-11-24T10:33:05.548Z] GET /api/count/webview
+[2025-11-24T10:33:05.549Z] [32MINFO[39M: 📥 [2025-11-24T10:33:05.549Z] GET /api/categories
+[2025-11-24T10:33:05.588Z] [32MINFO[39M: 📥 [2025-11-24T10:33:05.588Z] GET /api/count/webview
+[2025-11-24T10:33:05.596Z] [32MINFO[39M: 📥 [2025-11-24T10:33:05.596Z] GET /api/categories
+[2025-11-24T10:33:09.831Z] [32MINFO[39M: 📥 [2025-11-24T10:33:09.831Z] OPTIONS /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T10:33:09.834Z] [32MINFO[39M: 📥 [2025-11-24T10:33:09.834Z] OPTIONS /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T10:33:09.848Z] [32MINFO[39M: 📥 [2025-11-24T10:33:09.848Z] GET /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T10:33:09.851Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"restaurant","subcategoryslug":"restaurant","page":1,"limit":10,"verified":1}
+[2025-11-24T10:33:09.879Z] [32MINFO[39M: 📥 [2025-11-24T10:33:09.879Z] GET /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T10:33:09.879Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"restaurant","subcategoryslug":"restaurant","page":1,"limit":10,"verified":1}
+[2025-11-24T10:33:13.461Z] [32MINFO[39M: 📥 [2025-11-24T10:33:13.461Z] OPTIONS /api/count/webview
+[2025-11-24T10:33:13.463Z] [32MINFO[39M: 📥 [2025-11-24T10:33:13.463Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T10:33:13.487Z] [32MINFO[39M: 📥 [2025-11-24T10:33:13.487Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T10:33:13.488Z] [32MINFO[39M: 📥 [2025-11-24T10:33:13.488Z] OPTIONS /api/count/webview
+[2025-11-24T10:33:13.490Z] [32MINFO[39M: 📥 [2025-11-24T10:33:13.490Z] GET /api/count/webview
+[2025-11-24T10:33:13.492Z] [32MINFO[39M: 📥 [2025-11-24T10:33:13.492Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T10:33:13.498Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T10:33:13.648Z] [32MINFO[39M: 📥 [2025-11-24T10:33:13.648Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T10:33:13.648Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T10:33:13.649Z] [32MINFO[39M: 📥 [2025-11-24T10:33:13.649Z] GET /api/count/webview
+[2025-11-24T10:33:13.683Z] [32MINFO[39M: 📥 [2025-11-24T10:33:13.683Z] OPTIONS /api/businesses/50/view
+[2025-11-24T10:33:13.704Z] [32MINFO[39M: 📥 [2025-11-24T10:33:13.704Z] PUT /api/businesses/50/view
+[2025-11-24T10:33:13.714Z] [32MINFO[39M: viewCount 1
+[2025-11-24T10:33:25.368Z] [32MINFO[39M: 📥 [2025-11-24T10:33:25.368Z] OPTIONS /api/enquiries/prachi-ok
+[2025-11-24T10:33:25.891Z] [32MINFO[39M: 📥 [2025-11-24T10:33:25.891Z] POST /api/enquiries/prachi-ok
+[2025-11-24T10:34:12.651Z] [32MINFO[39M: 📥 [2025-11-24T10:34:12.651Z] OPTIONS /api/enquiries/all
+[2025-11-24T10:34:12.653Z] [32MINFO[39M: 📥 [2025-11-24T10:34:12.653Z] OPTIONS /api/enquiries/all
+[2025-11-24T10:34:12.659Z] [32MINFO[39M: 📥 [2025-11-24T10:34:12.659Z] GET /api/enquiries/all
+[2025-11-24T10:34:12.665Z] [32MINFO[39M: 4
+[2025-11-24T10:34:12.678Z] [32MINFO[39M: 📥 [2025-11-24T10:34:12.678Z] GET /api/enquiries/all
+[2025-11-24T10:34:12.683Z] [32MINFO[39M: 4
+[2025-11-24T10:34:16.944Z] [32MINFO[39M: 📥 [2025-11-24T10:34:16.944Z] OPTIONS /api/enquiries/enquiries/prachi-ok
+[2025-11-24T10:34:17.307Z] [32MINFO[39M: 📥 [2025-11-24T10:34:17.307Z] POST /api/enquiries/enquiries/prachi-ok
+[2025-11-24T10:34:34.427Z] [32MINFO[39M: 📥 [2025-11-24T10:34:34.427Z] OPTIONS /api/enquiries/all
+[2025-11-24T10:34:34.429Z] [32MINFO[39M: 📥 [2025-11-24T10:34:34.429Z] OPTIONS /api/enquiries/all
+[2025-11-24T10:34:34.651Z] [32MINFO[39M: 📥 [2025-11-24T10:34:34.651Z] GET /api/enquiries/all
+[2025-11-24T10:34:34.654Z] [32MINFO[39M: 4
+[2025-11-24T10:34:34.724Z] [32MINFO[39M: 📥 [2025-11-24T10:34:34.724Z] GET /api/enquiries/all
+[2025-11-24T10:34:34.727Z] [32MINFO[39M: 4
+[2025-11-24T10:34:36.602Z] [32MINFO[39M: 📥 [2025-11-24T10:34:36.602Z] OPTIONS /api/contact/contact
+[2025-11-24T10:34:36.603Z] [32MINFO[39M: 📥 [2025-11-24T10:34:36.603Z] OPTIONS /api/contact/contact
+[2025-11-24T10:34:36.616Z] [32MINFO[39M: 📥 [2025-11-24T10:34:36.616Z] GET /api/contact/contact
+[2025-11-24T10:34:36.628Z] [32MINFO[39M: 📥 [2025-11-24T10:34:36.628Z] GET /api/contact/contact
+[2025-11-24T10:34:38.657Z] [32MINFO[39M: 📥 [2025-11-24T10:34:38.657Z] GET /api/contact/contact
+[2025-11-24T10:34:38.663Z] [32MINFO[39M: 📥 [2025-11-24T10:34:38.663Z] GET /api/contact/contact
+[2025-11-24T10:34:49.408Z] [32MINFO[39M: 📥 [2025-11-24T10:34:49.408Z] OPTIONS /api/contact/contact
+[2025-11-24T10:34:49.416Z] [32MINFO[39M: 📥 [2025-11-24T10:34:49.416Z] GET /api/contact/contact
+[2025-11-24T10:34:49.884Z] [32MINFO[39M: 📥 [2025-11-24T10:34:49.884Z] OPTIONS /api/contact
+[2025-11-24T10:34:49.893Z] [32MINFO[39M: 📥 [2025-11-24T10:34:49.893Z] OPTIONS /api/contact
+[2025-11-24T10:34:49.911Z] [32MINFO[39M: 📥 [2025-11-24T10:34:49.911Z] GET /api/contact
+[2025-11-24T10:34:49.913Z] [32MINFO[39M: 4
+[2025-11-24T10:34:49.923Z] [32MINFO[39M: 📥 [2025-11-24T10:34:49.923Z] GET /api/contact
+[2025-11-24T10:34:49.926Z] [32MINFO[39M: 4
+[2025-11-24T10:34:49.936Z] [32MINFO[39M: 📥 [2025-11-24T10:34:49.936Z] GET /api/contact
+[2025-11-24T10:34:49.938Z] [32MINFO[39M: 4
+[2025-11-24T10:34:49.948Z] [32MINFO[39M: 📥 [2025-11-24T10:34:49.948Z] GET /api/contact
+[2025-11-24T10:34:49.952Z] [32MINFO[39M: 4
+[2025-11-24T10:34:58.402Z] [32MINFO[39M: 📥 [2025-11-24T10:34:58.402Z] OPTIONS /api/enquiries/all
+[2025-11-24T10:34:58.403Z] [32MINFO[39M: 📥 [2025-11-24T10:34:58.403Z] OPTIONS /api/enquiries/all
+[2025-11-24T10:34:58.408Z] [32MINFO[39M: 📥 [2025-11-24T10:34:58.408Z] GET /api/enquiries/all
+[2025-11-24T10:34:58.411Z] [32MINFO[39M: 4
+[2025-11-24T10:34:58.419Z] [32MINFO[39M: 📥 [2025-11-24T10:34:58.419Z] GET /api/enquiries/all
+[2025-11-24T10:34:58.422Z] [32MINFO[39M: 4
+[2025-11-24T10:35:01.555Z] [32MINFO[39M: 📥 [2025-11-24T10:35:01.555Z] OPTIONS /api/enquiries/enquiries/prachi-ok
+[2025-11-24T10:35:01.769Z] [32MINFO[39M: 📥 [2025-11-24T10:35:01.769Z] POST /api/enquiries/enquiries/prachi-ok
+[2025-11-24T10:36:39.161Z] [32MINFO[39M: 📥 [2025-11-24T10:36:39.161Z] OPTIONS /api/count/webview
+[2025-11-24T10:36:39.162Z] [32MINFO[39M: 📥 [2025-11-24T10:36:39.162Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T10:36:39.163Z] [32MINFO[39M: 📥 [2025-11-24T10:36:39.163Z] OPTIONS /api/count/webview
+[2025-11-24T10:36:39.164Z] [32MINFO[39M: 📥 [2025-11-24T10:36:39.164Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T10:36:39.181Z] [32MINFO[39M: 📥 [2025-11-24T10:36:39.181Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T10:36:39.184Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T10:36:39.185Z] [32MINFO[39M: 📥 [2025-11-24T10:36:39.185Z] GET /api/count/webview
+[2025-11-24T10:36:39.198Z] [32MINFO[39M: 📥 [2025-11-24T10:36:39.198Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T10:36:39.199Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T10:36:39.199Z] [32MINFO[39M: 📥 [2025-11-24T10:36:39.199Z] GET /api/count/webview
+[2025-11-24T10:36:39.271Z] [32MINFO[39M: 📥 [2025-11-24T10:36:39.271Z] OPTIONS /api/businesses/50/view
+[2025-11-24T10:36:39.277Z] [32MINFO[39M: 📥 [2025-11-24T10:36:39.277Z] PUT /api/businesses/50/view
+[2025-11-24T10:36:39.288Z] [32MINFO[39M: viewCount 2
+[2025-11-24T10:36:46.710Z] [32MINFO[39M: 📥 [2025-11-24T10:36:46.710Z] OPTIONS /api/enquiries/enquiries/enquiries/prachi-ok
+[2025-11-24T10:36:46.729Z] [32MINFO[39M: 📥 [2025-11-24T10:36:46.729Z] POST /api/enquiries/enquiries/enquiries/prachi-ok
+[2025-11-24T10:37:23.493Z] [32MINFO[39M: 📥 [2025-11-24T10:37:23.493Z] OPTIONS /api/enquiries/enquiries
+[2025-11-24T10:37:23.502Z] [32MINFO[39M: 📥 [2025-11-24T10:37:23.502Z] POST /api/enquiries/enquiries
+[2025-11-24T10:37:33.163Z] [32MINFO[39M: 📥 [2025-11-24T10:37:33.163Z] OPTIONS /api/count/webview
+[2025-11-24T10:37:33.170Z] [32MINFO[39M: 📥 [2025-11-24T10:37:33.170Z] OPTIONS /api/count/webview
+[2025-11-24T10:37:33.174Z] [32MINFO[39M: 📥 [2025-11-24T10:37:33.174Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T10:37:33.175Z] [32MINFO[39M: 📥 [2025-11-24T10:37:33.175Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T10:37:33.182Z] [32MINFO[39M: 📥 [2025-11-24T10:37:33.182Z] GET /api/count/webview
+[2025-11-24T10:37:33.191Z] [32MINFO[39M: 📥 [2025-11-24T10:37:33.191Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T10:37:33.191Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T10:37:33.201Z] [32MINFO[39M: 📥 [2025-11-24T10:37:33.201Z] GET /api/count/webview
+[2025-11-24T10:37:33.210Z] [32MINFO[39M: 📥 [2025-11-24T10:37:33.210Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T10:37:33.211Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T10:37:33.313Z] [32MINFO[39M: 📥 [2025-11-24T10:37:33.313Z] OPTIONS /api/businesses/50/view
+[2025-11-24T10:37:33.321Z] [32MINFO[39M: 📥 [2025-11-24T10:37:33.321Z] PUT /api/businesses/50/view
+[2025-11-24T10:37:33.328Z] [32MINFO[39M: viewCount 3
+[2025-11-24T10:37:40.162Z] [32MINFO[39M: 📥 [2025-11-24T10:37:40.162Z] OPTIONS /api/enquiries/enquiries
+[2025-11-24T10:37:40.176Z] [32MINFO[39M: 📥 [2025-11-24T10:37:40.176Z] POST /api/enquiries/enquiries
+[2025-11-24T10:39:38.479Z] [32MINFO[39M: 📥 [2025-11-24T10:39:38.479Z] OPTIONS /api/enquiries/enquiries/prachi-ok
+[2025-11-24T10:39:38.569Z] [32MINFO[39M: 📥 [2025-11-24T10:39:38.569Z] POST /api/enquiries/enquiries/prachi-ok
+[2025-11-24T10:40:48.335Z] [32MINFO[39M: 📥 [2025-11-24T10:40:48.335Z] OPTIONS /api/count/webview
+[2025-11-24T10:40:48.336Z] [32MINFO[39M: 📥 [2025-11-24T10:40:48.336Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T10:40:48.337Z] [32MINFO[39M: 📥 [2025-11-24T10:40:48.337Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T10:40:48.337Z] [32MINFO[39M: 📥 [2025-11-24T10:40:48.337Z] OPTIONS /api/count/webview
+[2025-11-24T10:40:48.346Z] [32MINFO[39M: 📥 [2025-11-24T10:40:48.346Z] GET /api/count/webview
+[2025-11-24T10:40:48.349Z] [32MINFO[39M: 📥 [2025-11-24T10:40:48.349Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T10:40:48.350Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T10:40:48.353Z] [32MINFO[39M: 📥 [2025-11-24T10:40:48.353Z] GET /api/count/webview
+[2025-11-24T10:40:48.358Z] [32MINFO[39M: 📥 [2025-11-24T10:40:48.358Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T10:40:48.359Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T10:40:48.462Z] [32MINFO[39M: 📥 [2025-11-24T10:40:48.462Z] OPTIONS /api/businesses/50/view
+[2025-11-24T10:40:48.470Z] [32MINFO[39M: 📥 [2025-11-24T10:40:48.470Z] PUT /api/businesses/50/view
+[2025-11-24T10:40:48.476Z] [32MINFO[39M: viewCount 4
+[2025-11-24T10:40:56.383Z] [32MINFO[39M: 📥 [2025-11-24T10:40:56.383Z] OPTIONS /api/enquiries/enquiries
+[2025-11-24T10:40:56.392Z] [32MINFO[39M: 📥 [2025-11-24T10:40:56.392Z] POST /api/enquiries/enquiries
+[2025-11-24T10:41:19.965Z] [32MINFO[39M: 📥 [2025-11-24T10:41:19.965Z] OPTIONS /api/enquiries/all
+[2025-11-24T10:41:19.966Z] [32MINFO[39M: 📥 [2025-11-24T10:41:19.966Z] OPTIONS /api/enquiries/all
+[2025-11-24T10:41:19.971Z] [32MINFO[39M: 📥 [2025-11-24T10:41:19.971Z] GET /api/enquiries/all
+[2025-11-24T10:41:19.974Z] [32MINFO[39M: 4
+[2025-11-24T10:41:19.984Z] [32MINFO[39M: 📥 [2025-11-24T10:41:19.984Z] GET /api/enquiries/all
+[2025-11-24T10:41:19.987Z] [32MINFO[39M: 4
+[2025-11-24T10:41:31.295Z] [32MINFO[39M: 📥 [2025-11-24T10:41:31.295Z] OPTIONS /api/enquiries
+[2025-11-24T10:41:31.302Z] [32MINFO[39M: 📥 [2025-11-24T10:41:31.302Z] POST /api/enquiries
+[2025-11-24T10:41:31.304Z] [32MINFO[39M: 4
+[2025-11-24T10:41:31.305Z] [32MINFO[39M: 4  zxcvbnm
+[2025-11-24T10:41:52.903Z] [32MINFO[39M:  Server running on port  http://localhost:5009
+[2025-11-24T10:41:52.932Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-24T10:41:55.369Z] [32MINFO[39M: 📥 [2025-11-24T10:41:55.369Z] OPTIONS /api/enquiries
+[2025-11-24T10:41:56.011Z] [32MINFO[39M: 📥 [2025-11-24T10:41:56.011Z] POST /api/enquiries
+[2025-11-24T10:41:56.047Z] [32MINFO[39M: 4
+[2025-11-24T10:41:56.048Z] [32MINFO[39M: 4  zxcvbnm
+[2025-11-24T10:41:56.053Z] [31MERROR[39M: Submit Enquiry Error: Error: Column 'business_id' cannot be null
+[2025-11-24T10:43:14.032Z] [32MINFO[39M: 📥 [2025-11-24T10:43:14.032Z] OPTIONS /api/enquiries
+[2025-11-24T10:43:14.041Z] [32MINFO[39M: 📥 [2025-11-24T10:43:14.041Z] POST /api/enquiries
+[2025-11-24T10:43:14.045Z] [32MINFO[39M: 4
+[2025-11-24T10:43:14.046Z] [32MINFO[39M: 4  zxcvbnm
+[2025-11-24T10:43:14.048Z] [31MERROR[39M: Submit Enquiry Error: Error: Column 'business_id' cannot be null
+[2025-11-24T10:44:10.205Z] [32MINFO[39M: 📥 [2025-11-24T10:44:10.205Z] OPTIONS /api/enquiries
+[2025-11-24T10:44:10.220Z] [32MINFO[39M: 📥 [2025-11-24T10:44:10.220Z] POST /api/enquiries
+[2025-11-24T10:44:10.226Z] [32MINFO[39M: 4
+[2025-11-24T10:44:10.226Z] [32MINFO[39M: 4  zxcvbnm
+[2025-11-24T10:44:10.227Z] [31MERROR[39M: Submit Enquiry Error: Error: Column 'business_id' cannot be null
+[2025-11-24T10:44:56.171Z] [32MINFO[39M: 📥 [2025-11-24T10:44:56.171Z] OPTIONS /api/enquiries
+[2025-11-24T10:44:56.179Z] [32MINFO[39M: 📥 [2025-11-24T10:44:56.179Z] POST /api/enquiries
+[2025-11-24T10:44:56.183Z] [32MINFO[39M: 4
+[2025-11-24T10:44:56.183Z] [32MINFO[39M: 4  zxcvbnm
+[2025-11-24T10:44:56.184Z] [31MERROR[39M: Submit Enquiry Error: Error: Column 'business_id' cannot be null
+[2025-11-24T10:45:27.033Z] [32MINFO[39M: 📥 [2025-11-24T10:45:27.033Z] OPTIONS /api/enquiries
+[2025-11-24T10:45:27.043Z] [32MINFO[39M: 📥 [2025-11-24T10:45:27.043Z] POST /api/enquiries
+[2025-11-24T10:45:27.046Z] [32MINFO[39M: 4
+[2025-11-24T10:45:27.046Z] [32MINFO[39M: 4  zxcvbnm
+[2025-11-24T10:45:27.047Z] [31MERROR[39M: Submit Enquiry Error: Error: Column 'business_id' cannot be null
+[2025-11-24T10:47:10.580Z] [32MINFO[39M: 📥 [2025-11-24T10:47:10.580Z] OPTIONS /api/count/webview
+[2025-11-24T10:47:10.581Z] [32MINFO[39M: 📥 [2025-11-24T10:47:10.581Z] OPTIONS /api/count/webview
+[2025-11-24T10:47:10.583Z] [32MINFO[39M: 📥 [2025-11-24T10:47:10.583Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T10:47:10.584Z] [32MINFO[39M: 📥 [2025-11-24T10:47:10.584Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T10:47:10.587Z] [32MINFO[39M: 📥 [2025-11-24T10:47:10.587Z] GET /api/count/webview
+[2025-11-24T10:47:10.590Z] [32MINFO[39M: 📥 [2025-11-24T10:47:10.590Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T10:47:10.591Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T10:47:10.601Z] [32MINFO[39M: 📥 [2025-11-24T10:47:10.601Z] GET /api/count/webview
+[2025-11-24T10:47:10.621Z] [32MINFO[39M: 📥 [2025-11-24T10:47:10.621Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T10:47:10.622Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T10:47:10.669Z] [32MINFO[39M: 📥 [2025-11-24T10:47:10.669Z] OPTIONS /api/businesses/50/view
+[2025-11-24T10:47:10.675Z] [32MINFO[39M: 📥 [2025-11-24T10:47:10.675Z] PUT /api/businesses/50/view
+[2025-11-24T10:47:10.695Z] [32MINFO[39M: viewCount 5
+[2025-11-24T10:47:12.097Z] [32MINFO[39M: 📥 [2025-11-24T10:47:12.097Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T10:47:12.099Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T10:47:12.099Z] [32MINFO[39M: 📥 [2025-11-24T10:47:12.099Z] GET /api/count/webview
+[2025-11-24T10:47:12.113Z] [32MINFO[39M: 📥 [2025-11-24T10:47:12.113Z] GET /api/count/webview
+[2025-11-24T10:47:12.114Z] [32MINFO[39M: 📥 [2025-11-24T10:47:12.114Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T10:47:12.114Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T10:47:12.298Z] [32MINFO[39M: 📥 [2025-11-24T10:47:12.298Z] PUT /api/businesses/50/view
+[2025-11-24T10:47:12.305Z] [32MINFO[39M: viewCount 6
+[2025-11-24T10:47:22.838Z] [32MINFO[39M: 📥 [2025-11-24T10:47:22.838Z] OPTIONS /api/enquiries/prachi-ok
+[2025-11-24T10:47:22.848Z] [32MINFO[39M: 📥 [2025-11-24T10:47:22.848Z] POST /api/enquiries/prachi-ok
+[2025-11-24T11:57:46.222Z] [32MINFO[39M: 📥 [2025-11-24T11:57:46.214Z] OPTIONS /api/enquiries/prachi-ok
+[2025-11-24T11:57:46.418Z] [32MINFO[39M: 📥 [2025-11-24T11:57:46.418Z] POST /api/enquiries/prachi-ok
+[2025-11-24T11:58:16.191Z] [32MINFO[39M: 📥 [2025-11-24T11:58:16.190Z] OPTIONS /api/count/webview
+[2025-11-24T11:58:16.194Z] [32MINFO[39M: 📥 [2025-11-24T11:58:16.194Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T11:58:16.198Z] [32MINFO[39M: 📥 [2025-11-24T11:58:16.198Z] OPTIONS /api/count/webview
+[2025-11-24T11:58:16.204Z] [32MINFO[39M: 📥 [2025-11-24T11:58:16.204Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T11:58:16.208Z] [32MINFO[39M: 📥 [2025-11-24T11:58:16.208Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T11:58:16.265Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T11:58:16.296Z] [32MINFO[39M: 📥 [2025-11-24T11:58:16.296Z] GET /api/count/webview
+[2025-11-24T11:58:16.339Z] [32MINFO[39M: 📥 [2025-11-24T11:58:16.339Z] GET /api/count/webview
+[2025-11-24T11:58:16.349Z] [32MINFO[39M: 📥 [2025-11-24T11:58:16.349Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T11:58:16.352Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T11:58:16.390Z] [32MINFO[39M: 📥 [2025-11-24T11:58:16.390Z] OPTIONS /api/businesses/50/view
+[2025-11-24T11:58:16.402Z] [32MINFO[39M: 📥 [2025-11-24T11:58:16.402Z] PUT /api/businesses/50/view
+[2025-11-24T11:58:16.421Z] [32MINFO[39M: viewCount 7
+[2025-11-24T11:58:28.208Z] [32MINFO[39M: 📥 [2025-11-24T11:58:28.208Z] OPTIONS /api/enquiries/enquiries/prachi-ok
+[2025-11-24T11:58:28.217Z] [32MINFO[39M: 📥 [2025-11-24T11:58:28.217Z] POST /api/enquiries/enquiries/prachi-ok
+[2025-11-24T11:58:49.242Z] [32MINFO[39M: 📥 [2025-11-24T11:58:49.242Z] OPTIONS /api/enquiries/prachi-ok
+[2025-11-24T11:58:49.438Z] [32MINFO[39M: 📥 [2025-11-24T11:58:49.438Z] POST /api/enquiries/prachi-ok
+[2025-11-24T12:01:12.279Z] [32MINFO[39M: 📥 [2025-11-24T12:01:12.279Z] OPTIONS /api/enquiries/prachi-ok
+[2025-11-24T12:01:12.289Z] [32MINFO[39M: 📥 [2025-11-24T12:01:12.289Z] POST /api/enquiries/prachi-ok
+[2025-11-24T12:04:30.355Z] [32MINFO[39M:  Server running on port  http://localhost:5009
+[2025-11-24T12:04:30.381Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-24T12:04:33.298Z] [32MINFO[39M: 📥 [2025-11-24T12:04:33.298Z] OPTIONS /api/count/webview
+[2025-11-24T12:04:33.310Z] [32MINFO[39M: 📥 [2025-11-24T12:04:33.310Z] OPTIONS /api/count/webview
+[2025-11-24T12:04:33.312Z] [32MINFO[39M: 📥 [2025-11-24T12:04:33.312Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T12:04:33.314Z] [32MINFO[39M: 📥 [2025-11-24T12:04:33.314Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T12:04:33.315Z] [32MINFO[39M: 📥 [2025-11-24T12:04:33.315Z] GET /api/count/webview
+[2025-11-24T12:04:33.321Z] [32MINFO[39M: 📥 [2025-11-24T12:04:33.321Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T12:04:33.322Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T12:04:33.421Z] [32MINFO[39M: 📥 [2025-11-24T12:04:33.421Z] GET /api/count/webview
+[2025-11-24T12:04:33.423Z] [32MINFO[39M: 📥 [2025-11-24T12:04:33.423Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T12:04:33.424Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T12:04:33.564Z] [32MINFO[39M: 📥 [2025-11-24T12:04:33.564Z] OPTIONS /api/businesses/50/view
+[2025-11-24T12:04:33.616Z] [32MINFO[39M: 📥 [2025-11-24T12:04:33.616Z] PUT /api/businesses/50/view
+[2025-11-24T12:04:33.629Z] [32MINFO[39M: viewCount 8
+[2025-11-24T12:04:42.171Z] [32MINFO[39M: 📥 [2025-11-24T12:04:42.171Z] OPTIONS /api/enquiries/prachi-ok
+[2025-11-24T12:04:42.190Z] [32MINFO[39M: 📥 [2025-11-24T12:04:42.190Z] POST /api/enquiries/prachi-ok
+[2025-11-24T12:10:35.923Z] [32MINFO[39M:  Server running on port  http://localhost:5009
+[2025-11-24T12:10:35.939Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-24T12:10:40.401Z] [32MINFO[39M: 📥 [2025-11-24T12:10:40.401Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T12:10:40.406Z] [32MINFO[39M: 📥 [2025-11-24T12:10:40.406Z] OPTIONS /api/count/webview
+[2025-11-24T12:10:40.408Z] [32MINFO[39M: 📥 [2025-11-24T12:10:40.408Z] OPTIONS /api/count/webview
+[2025-11-24T12:10:40.409Z] [32MINFO[39M: 📥 [2025-11-24T12:10:40.409Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T12:10:40.420Z] [32MINFO[39M: 📥 [2025-11-24T12:10:40.420Z] GET /api/count/webview
+[2025-11-24T12:10:40.423Z] [32MINFO[39M: 📥 [2025-11-24T12:10:40.423Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T12:10:40.425Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T12:10:40.455Z] [32MINFO[39M: 📥 [2025-11-24T12:10:40.455Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T12:10:40.456Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T12:10:40.457Z] [32MINFO[39M: 📥 [2025-11-24T12:10:40.457Z] GET /api/count/webview
+[2025-11-24T12:10:40.525Z] [32MINFO[39M: 📥 [2025-11-24T12:10:40.525Z] OPTIONS /api/businesses/50/view
+[2025-11-24T12:10:40.573Z] [32MINFO[39M: 📥 [2025-11-24T12:10:40.573Z] PUT /api/businesses/50/view
+[2025-11-24T12:10:40.583Z] [32MINFO[39M: viewCount 9
+[2025-11-24T12:10:47.612Z] [32MINFO[39M: 📥 [2025-11-24T12:10:47.612Z] OPTIONS /api/enquiries/prachi-ok
+[2025-11-24T12:10:47.627Z] [32MINFO[39M: 📥 [2025-11-24T12:10:47.627Z] POST /api/enquiries/prachi-ok
+[2025-11-24T12:14:10.316Z] [32MINFO[39M: 📥 [2025-11-24T12:14:10.316Z] OPTIONS /api/enquiries/prachi-ok
+[2025-11-24T12:14:10.327Z] [32MINFO[39M: 📥 [2025-11-24T12:14:10.327Z] POST /api/enquiries/prachi-ok
+[2025-11-24T12:15:33.092Z] [32MINFO[39M: 📥 [2025-11-24T12:15:33.092Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T12:15:33.094Z] [32MINFO[39M: 📥 [2025-11-24T12:15:33.094Z] OPTIONS /api/count/webview
+[2025-11-24T12:15:33.096Z] [32MINFO[39M: 📥 [2025-11-24T12:15:33.096Z] OPTIONS /api/count/webview
+[2025-11-24T12:15:33.099Z] [32MINFO[39M: 📥 [2025-11-24T12:15:33.099Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T12:15:33.103Z] [32MINFO[39M: 📥 [2025-11-24T12:15:33.103Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T12:15:33.104Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T12:15:33.105Z] [32MINFO[39M: 📥 [2025-11-24T12:15:33.105Z] GET /api/count/webview
+[2025-11-24T12:15:33.126Z] [32MINFO[39M: 📥 [2025-11-24T12:15:33.126Z] GET /api/count/webview
+[2025-11-24T12:15:33.127Z] [32MINFO[39M: 📥 [2025-11-24T12:15:33.127Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T12:15:33.128Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T12:15:33.289Z] [32MINFO[39M: 📥 [2025-11-24T12:15:33.289Z] OPTIONS /api/businesses/50/view
+[2025-11-24T12:15:33.299Z] [32MINFO[39M: 📥 [2025-11-24T12:15:33.299Z] PUT /api/businesses/50/view
+[2025-11-24T12:15:33.306Z] [32MINFO[39M: viewCount 10
+[2025-11-24T12:15:55.753Z] [32MINFO[39M: 📥 [2025-11-24T12:15:55.753Z] OPTIONS /api/enquiries
+[2025-11-24T12:15:55.761Z] [32MINFO[39M: 📥 [2025-11-24T12:15:55.761Z] POST /api/enquiries
+[2025-11-24T12:15:55.773Z] [32MINFO[39M: 4
+[2025-11-24T12:15:55.780Z] [31MERROR[39M: Submit Enquiry Error: Error: Incorrect integer value: 'prachi-ok' for column 'business_id' at row 1
+[2025-11-24T12:17:24.784Z] [32MINFO[39M: 📥 [2025-11-24T12:17:24.784Z] OPTIONS /api/enquiries
+[2025-11-24T12:17:24.792Z] [32MINFO[39M: 📥 [2025-11-24T12:17:24.792Z] POST /api/enquiries
+[2025-11-24T12:17:24.796Z] [32MINFO[39M: 4
+[2025-11-24T12:17:24.797Z] [31MERROR[39M: Submit Enquiry Error: Error: Incorrect integer value: 'prachi-ok' for column 'business_id' at row 1
+[2025-11-24T12:17:34.236Z] [32MINFO[39M:  Server running on port  http://localhost:5009
+[2025-11-24T12:17:34.252Z] [32MINFO[39M: MySQL Database Connected
+[2025-11-24T12:17:37.042Z] [32MINFO[39M: 📥 [2025-11-24T12:17:37.042Z] OPTIONS /api/enquiries
+[2025-11-24T12:17:37.091Z] [32MINFO[39M: 📥 [2025-11-24T12:17:37.091Z] POST /api/enquiries
+[2025-11-24T12:17:37.111Z] [32MINFO[39M: 4
+[2025-11-24T12:17:37.112Z] [32MINFO[39M: 4 prachi-ok asd
+[2025-11-24T12:17:37.120Z] [31MERROR[39M: Submit Enquiry Error: Error: Incorrect integer value: 'prachi-ok' for column 'business_id' at row 1
+[2025-11-24T12:22:00.813Z] [32MINFO[39M: 📥 [2025-11-24T12:22:00.813Z] OPTIONS /api/enquiries
+[2025-11-24T12:22:00.833Z] [32MINFO[39M: 📥 [2025-11-24T12:22:00.832Z] POST /api/enquiries
+[2025-11-24T12:22:00.839Z] [32MINFO[39M: 4
+[2025-11-24T12:22:00.839Z] [32MINFO[39M: 4 50 asd
+[2025-11-24T12:22:14.196Z] [32MINFO[39M: 📥 [2025-11-24T12:22:14.196Z] OPTIONS /api/enquiries/all
+[2025-11-24T12:22:14.197Z] [32MINFO[39M: 📥 [2025-11-24T12:22:14.197Z] OPTIONS /api/enquiries/all
+[2025-11-24T12:22:14.203Z] [32MINFO[39M: 📥 [2025-11-24T12:22:14.203Z] GET /api/enquiries/all
+[2025-11-24T12:22:14.206Z] [32MINFO[39M: 4
+[2025-11-24T12:22:14.225Z] [32MINFO[39M: 📥 [2025-11-24T12:22:14.225Z] GET /api/enquiries/all
+[2025-11-24T12:22:14.229Z] [32MINFO[39M: 4
+[2025-11-24T12:23:32.383Z] [32MINFO[39M: 📥 [2025-11-24T12:23:32.383Z] OPTIONS /api/count/webview
+[2025-11-24T12:23:32.401Z] [32MINFO[39M: 📥 [2025-11-24T12:23:32.401Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T12:23:32.402Z] [32MINFO[39M: 📥 [2025-11-24T12:23:32.402Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T12:23:32.403Z] [32MINFO[39M: 📥 [2025-11-24T12:23:32.403Z] OPTIONS /api/count/webview
+[2025-11-24T12:23:32.420Z] [32MINFO[39M: 📥 [2025-11-24T12:23:32.420Z] GET /api/count/webview
+[2025-11-24T12:23:32.422Z] [32MINFO[39M: 📥 [2025-11-24T12:23:32.422Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T12:23:32.423Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T12:23:32.450Z] [32MINFO[39M: 📥 [2025-11-24T12:23:32.450Z] GET /api/count/webview
+[2025-11-24T12:23:32.464Z] [32MINFO[39M: 📥 [2025-11-24T12:23:32.464Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T12:23:32.465Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T12:23:32.560Z] [32MINFO[39M: 📥 [2025-11-24T12:23:32.560Z] OPTIONS /api/businesses/50/view
+[2025-11-24T12:23:32.586Z] [32MINFO[39M: 📥 [2025-11-24T12:23:32.586Z] PUT /api/businesses/50/view
+[2025-11-24T12:23:32.597Z] [32MINFO[39M: viewCount 11
+[2025-11-24T12:23:42.316Z] [32MINFO[39M: 📥 [2025-11-24T12:23:42.316Z] OPTIONS /api/enquiries
+[2025-11-24T12:23:42.330Z] [32MINFO[39M: 📥 [2025-11-24T12:23:42.330Z] POST /api/enquiries
+[2025-11-24T12:23:42.333Z] [32MINFO[39M: 4
+[2025-11-24T12:23:42.333Z] [32MINFO[39M: 4 50 okayyyyy
+[2025-11-24T12:25:22.204Z] [32MINFO[39M: 📥 [2025-11-24T12:25:22.204Z] OPTIONS /api/count/webview
+[2025-11-24T12:25:22.213Z] [32MINFO[39M: 📥 [2025-11-24T12:25:22.213Z] OPTIONS /api/count/webview
+[2025-11-24T12:25:22.214Z] [32MINFO[39M: 📥 [2025-11-24T12:25:22.214Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T12:25:22.215Z] [32MINFO[39M: 📥 [2025-11-24T12:25:22.215Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T12:25:22.223Z] [32MINFO[39M: 📥 [2025-11-24T12:25:22.223Z] GET /api/count/webview
+[2025-11-24T12:25:22.240Z] [32MINFO[39M: 📥 [2025-11-24T12:25:22.240Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T12:25:22.241Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T12:25:22.245Z] [32MINFO[39M: 📥 [2025-11-24T12:25:22.245Z] GET /api/count/webview
+[2025-11-24T12:25:22.252Z] [32MINFO[39M: 📥 [2025-11-24T12:25:22.252Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T12:25:22.254Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T12:25:22.356Z] [32MINFO[39M: 📥 [2025-11-24T12:25:22.356Z] OPTIONS /api/businesses/50/view
+[2025-11-24T12:25:22.365Z] [32MINFO[39M: 📥 [2025-11-24T12:25:22.365Z] PUT /api/businesses/50/view
+[2025-11-24T12:25:22.374Z] [32MINFO[39M: viewCount 12
+[2025-11-24T12:25:30.592Z] [32MINFO[39M: 📥 [2025-11-24T12:25:30.592Z] OPTIONS /api/enquiries
+[2025-11-24T12:25:30.601Z] [32MINFO[39M: 📥 [2025-11-24T12:25:30.601Z] POST /api/enquiries
+[2025-11-24T12:25:30.606Z] [32MINFO[39M: 4
+[2025-11-24T12:25:30.606Z] [32MINFO[39M: 4 50 zxcb
+[2025-11-24T12:25:46.953Z] [32MINFO[39M: 📥 [2025-11-24T12:25:46.953Z] OPTIONS /api/count/webview
+[2025-11-24T12:25:46.960Z] [32MINFO[39M: 📥 [2025-11-24T12:25:46.960Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T12:25:46.961Z] [32MINFO[39M: 📥 [2025-11-24T12:25:46.961Z] OPTIONS /api/businesses/s/prachi-ok
+[2025-11-24T12:25:46.964Z] [32MINFO[39M: 📥 [2025-11-24T12:25:46.964Z] OPTIONS /api/count/webview
+[2025-11-24T12:25:46.965Z] [32MINFO[39M: 📥 [2025-11-24T12:25:46.965Z] GET /api/count/webview
+[2025-11-24T12:25:46.976Z] [32MINFO[39M: 📥 [2025-11-24T12:25:46.976Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T12:25:46.977Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T12:25:46.981Z] [32MINFO[39M: 📥 [2025-11-24T12:25:46.981Z] GET /api/count/webview
+[2025-11-24T12:25:46.985Z] [32MINFO[39M: 📥 [2025-11-24T12:25:46.985Z] GET /api/businesses/s/prachi-ok
+[2025-11-24T12:25:46.986Z] [32MINFO[39M: Received request for business with slug: prachi-ok
+[2025-11-24T12:25:47.098Z] [32MINFO[39M: 📥 [2025-11-24T12:25:47.098Z] OPTIONS /api/businesses/50/view
+[2025-11-24T12:25:47.133Z] [32MINFO[39M: 📥 [2025-11-24T12:25:47.133Z] PUT /api/businesses/50/view
+[2025-11-24T12:25:47.139Z] [32MINFO[39M: viewCount 13
+[2025-11-24T12:25:55.474Z] [32MINFO[39M: 📥 [2025-11-24T12:25:55.474Z] OPTIONS /api/enquiries
+[2025-11-24T12:25:55.483Z] [32MINFO[39M: 📥 [2025-11-24T12:25:55.483Z] POST /api/enquiries
+[2025-11-24T12:25:55.487Z] [32MINFO[39M: 4
+[2025-11-24T12:25:55.487Z] [32MINFO[39M: 4 50 cdtyy
+[2025-11-24T12:28:28.595Z] [32MINFO[39M: 📥 [2025-11-24T12:28:28.595Z] OPTIONS /api/count/webview
+[2025-11-24T12:28:28.596Z] [32MINFO[39M: 📥 [2025-11-24T12:28:28.596Z] OPTIONS /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T12:28:28.597Z] [32MINFO[39M: 📥 [2025-11-24T12:28:28.597Z] OPTIONS /api/count/webview
+[2025-11-24T12:28:28.606Z] [32MINFO[39M: 📥 [2025-11-24T12:28:28.606Z] OPTIONS /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T12:28:46.382Z] [32MINFO[39M: 📥 [2025-11-24T12:28:46.382Z] OPTIONS /api/count/webview
+[2025-11-24T12:28:46.388Z] [32MINFO[39M: 📥 [2025-11-24T12:28:46.388Z] OPTIONS /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T12:28:46.390Z] [32MINFO[39M: 📥 [2025-11-24T12:28:46.390Z] OPTIONS /api/count/webview
+[2025-11-24T12:28:46.391Z] [32MINFO[39M: 📥 [2025-11-24T12:28:46.391Z] OPTIONS /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T12:28:51.619Z] [32MINFO[39M: 📥 [2025-11-24T12:28:51.618Z] GET /api/categories
+[2025-11-24T12:28:51.704Z] [32MINFO[39M: 📥 [2025-11-24T12:28:51.704Z] GET /api/categories
+[2025-11-24T12:28:56.044Z] [32MINFO[39M: 📥 [2025-11-24T12:28:56.044Z] OPTIONS /api/otp/send
+[2025-11-24T12:28:56.056Z] [32MINFO[39M: 📥 [2025-11-24T12:28:56.056Z] POST /api/otp/send
+[2025-11-24T12:28:56.057Z] [32MINFO[39M: Received from frontend: [object Object]
+[2025-11-24T12:28:56.057Z] [32MINFO[39M: Generated OTP for 8451060827: 855035
+[2025-11-24T12:29:02.507Z] [32MINFO[39M: 📥 [2025-11-24T12:29:02.507Z] OPTIONS /api/otp/verify
+[2025-11-24T12:29:02.708Z] [32MINFO[39M: 📥 [2025-11-24T12:29:02.708Z] POST /api/otp/verify
+[2025-11-24T12:29:02.709Z] [32MINFO[39M: Received in verifyOTP: [object Object]
+[2025-11-24T12:29:11.754Z] [32MINFO[39M: 📥 [2025-11-24T12:29:11.754Z] OPTIONS /api/count/webview
+[2025-11-24T12:29:11.755Z] [32MINFO[39M: 📥 [2025-11-24T12:29:11.755Z] OPTIONS /api/categories
+[2025-11-24T12:29:11.755Z] [32MINFO[39M: 📥 [2025-11-24T12:29:11.755Z] OPTIONS /api/count/webview
+[2025-11-24T12:29:11.756Z] [32MINFO[39M: 📥 [2025-11-24T12:29:11.756Z] OPTIONS /api/categories
+[2025-11-24T12:29:11.771Z] [32MINFO[39M: 📥 [2025-11-24T12:29:11.771Z] GET /api/categories
+[2025-11-24T12:29:11.773Z] [32MINFO[39M: 📥 [2025-11-24T12:29:11.773Z] GET /api/count/webview
+[2025-11-24T12:29:11.786Z] [32MINFO[39M: 📥 [2025-11-24T12:29:11.786Z] GET /api/categories
+[2025-11-24T12:29:11.797Z] [32MINFO[39M: 📥 [2025-11-24T12:29:11.797Z] GET /api/count/webview
+[2025-11-24T12:29:14.552Z] [32MINFO[39M: 📥 [2025-11-24T12:29:14.552Z] OPTIONS /api/businesses/user
+[2025-11-24T12:29:14.554Z] [32MINFO[39M: 📥 [2025-11-24T12:29:14.554Z] OPTIONS /api/businesses/user
+[2025-11-24T12:29:14.568Z] [32MINFO[39M: 📥 [2025-11-24T12:29:14.567Z] GET /api/businesses/user
+[2025-11-24T12:29:14.571Z] [32MINFO[39M: 4
+[2025-11-24T12:29:14.571Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-24T12:29:14.574Z] [32MINFO[39M: [object Object]
+[2025-11-24T12:29:14.575Z] [32MINFO[39M: Image rows: 
+[2025-11-24T12:29:14.575Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-24T12:29:14.585Z] [32MINFO[39M: 📥 [2025-11-24T12:29:14.585Z] GET /api/businesses/user
+[2025-11-24T12:29:14.588Z] [32MINFO[39M: 4
+[2025-11-24T12:29:14.588Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-24T12:29:14.590Z] [32MINFO[39M: [object Object]
+[2025-11-24T12:29:14.591Z] [32MINFO[39M: Image rows: 
+[2025-11-24T12:29:14.591Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-24T12:30:50.012Z] [32MINFO[39M: 📥 [2025-11-24T12:30:50.012Z] OPTIONS /api/businesses/user
+[2025-11-24T12:30:50.014Z] [32MINFO[39M: 📥 [2025-11-24T12:30:50.014Z] OPTIONS /api/count/webview
+[2025-11-24T12:30:50.014Z] [32MINFO[39M: 📥 [2025-11-24T12:30:50.014Z] OPTIONS /api/count/webview
+[2025-11-24T12:30:50.015Z] [32MINFO[39M: 📥 [2025-11-24T12:30:50.015Z] OPTIONS /api/businesses/user
+[2025-11-24T12:30:50.168Z] [32MINFO[39M: 📥 [2025-11-24T12:30:50.168Z] GET /api/count/webview
+[2025-11-24T12:30:50.169Z] [32MINFO[39M: 📥 [2025-11-24T12:30:50.169Z] GET /api/businesses/user
+[2025-11-24T12:30:50.172Z] [32MINFO[39M: 4
+[2025-11-24T12:30:50.172Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-24T12:30:50.174Z] [32MINFO[39M: [object Object]
+[2025-11-24T12:30:50.176Z] [32MINFO[39M: Image rows: 
+[2025-11-24T12:30:50.176Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-24T12:30:50.178Z] [32MINFO[39M: 📥 [2025-11-24T12:30:50.178Z] GET /api/count/webview
+[2025-11-24T12:30:50.181Z] [32MINFO[39M: 📥 [2025-11-24T12:30:50.181Z] GET /api/businesses/user
+[2025-11-24T12:30:50.185Z] [32MINFO[39M: 4
+[2025-11-24T12:30:50.185Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-24T12:30:50.188Z] [32MINFO[39M: [object Object]
+[2025-11-24T12:30:50.193Z] [32MINFO[39M: Image rows: 
+[2025-11-24T12:30:50.193Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-24T12:31:15.050Z] [32MINFO[39M: 📥 [2025-11-24T12:31:15.050Z] OPTIONS /api/count/webview
+[2025-11-24T12:31:15.052Z] [32MINFO[39M: 📥 [2025-11-24T12:31:15.052Z] OPTIONS /api/businesses/user
+[2025-11-24T12:31:15.054Z] [32MINFO[39M: 📥 [2025-11-24T12:31:15.054Z] OPTIONS /api/count/webview
+[2025-11-24T12:31:15.055Z] [32MINFO[39M: 📥 [2025-11-24T12:31:15.055Z] OPTIONS /api/businesses/user
+[2025-11-24T12:31:15.060Z] [32MINFO[39M: 📥 [2025-11-24T12:31:15.059Z] GET /api/count/webview
+[2025-11-24T12:31:15.063Z] [32MINFO[39M: 📥 [2025-11-24T12:31:15.063Z] GET /api/businesses/user
+[2025-11-24T12:31:15.065Z] [32MINFO[39M: 4
+[2025-11-24T12:31:15.066Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-24T12:31:15.070Z] [32MINFO[39M: [object Object]
+[2025-11-24T12:31:15.071Z] [32MINFO[39M: Image rows: 
+[2025-11-24T12:31:15.072Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-24T12:31:15.075Z] [32MINFO[39M: 📥 [2025-11-24T12:31:15.075Z] GET /api/count/webview
+[2025-11-24T12:31:15.096Z] [32MINFO[39M: 📥 [2025-11-24T12:31:15.096Z] GET /api/businesses/user
+[2025-11-24T12:31:15.099Z] [32MINFO[39M: 4
+[2025-11-24T12:31:15.099Z] [32MINFO[39M: Fetching businesses for userId: 4
+[2025-11-24T12:31:15.101Z] [32MINFO[39M: [object Object]
+[2025-11-24T12:31:15.102Z] [32MINFO[39M: Image rows: 
+[2025-11-24T12:31:15.102Z] [32MINFO[39M: Final business payload: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2025-11-24T12:32:01.578Z] [32MINFO[39M: 📥 [2025-11-24T12:32:01.578Z] OPTIONS /api/categories
+[2025-11-24T12:32:01.580Z] [32MINFO[39M: 📥 [2025-11-24T12:32:01.580Z] OPTIONS /api/count/webview
+[2025-11-24T12:32:01.583Z] [32MINFO[39M: 📥 [2025-11-24T12:32:01.583Z] OPTIONS /api/count/webview
+[2025-11-24T12:32:01.588Z] [32MINFO[39M: 📥 [2025-11-24T12:32:01.588Z] OPTIONS /api/categories
+[2025-11-24T12:32:01.612Z] [32MINFO[39M: 📥 [2025-11-24T12:32:01.612Z] GET /api/categories
+[2025-11-24T12:32:01.617Z] [32MINFO[39M: 📥 [2025-11-24T12:32:01.617Z] GET /api/count/webview
+[2025-11-24T12:32:01.847Z] [32MINFO[39M: 📥 [2025-11-24T12:32:01.846Z] GET /api/count/webview
+[2025-11-24T12:32:01.848Z] [32MINFO[39M: 📥 [2025-11-24T12:32:01.848Z] GET /api/categories
+[2025-11-24T13:01:13.489Z] [32MINFO[39M: 📥 [2025-11-24T13:01:13.489Z] OPTIONS /api/count/webview
+[2025-11-24T13:01:13.491Z] [32MINFO[39M: 📥 [2025-11-24T13:01:13.491Z] OPTIONS /api/categories
+[2025-11-24T13:01:13.491Z] [32MINFO[39M: 📥 [2025-11-24T13:01:13.491Z] OPTIONS /api/count/webview
+[2025-11-24T13:01:13.492Z] [32MINFO[39M: 📥 [2025-11-24T13:01:13.492Z] OPTIONS /api/categories
+[2025-11-24T13:01:13.501Z] [32MINFO[39M: 📥 [2025-11-24T13:01:13.500Z] GET /api/count/webview
+[2025-11-24T13:01:13.504Z] [32MINFO[39M: 📥 [2025-11-24T13:01:13.504Z] GET /api/categories
+[2025-11-24T13:01:13.517Z] [32MINFO[39M: 📥 [2025-11-24T13:01:13.517Z] GET /api/count/webview
+[2025-11-24T13:01:13.518Z] [32MINFO[39M: 📥 [2025-11-24T13:01:13.518Z] GET /api/categories
+[2025-11-24T13:01:16.373Z] [32MINFO[39M: 📥 [2025-11-24T13:01:16.373Z] OPTIONS /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T13:01:16.375Z] [32MINFO[39M: 📥 [2025-11-24T13:01:16.375Z] OPTIONS /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T13:01:16.440Z] [32MINFO[39M: 📥 [2025-11-24T13:01:16.440Z] GET /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T13:01:16.441Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"restaurant","subcategoryslug":"restaurant","page":1,"limit":10,"verified":1}
+[2025-11-24T13:01:16.459Z] [32MINFO[39M: 📥 [2025-11-24T13:01:16.459Z] GET /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T13:01:16.460Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"restaurant","subcategoryslug":"restaurant","page":1,"limit":10,"verified":1}
+[2025-11-24T13:01:21.090Z] [32MINFO[39M: 📥 [2025-11-24T13:01:21.090Z] OPTIONS /api/count/webview
+[2025-11-24T13:01:21.091Z] [32MINFO[39M: 📥 [2025-11-24T13:01:21.091Z] OPTIONS /api/businesses/s/test-prachi-near-park
+[2025-11-24T13:01:21.187Z] [32MINFO[39M: 📥 [2025-11-24T13:01:21.187Z] OPTIONS /api/count/webview
+[2025-11-24T13:01:21.188Z] [32MINFO[39M: 📥 [2025-11-24T13:01:21.188Z] OPTIONS /api/businesses/s/test-prachi-near-park
+[2025-11-24T13:01:21.189Z] [32MINFO[39M: 📥 [2025-11-24T13:01:21.189Z] GET /api/count/webview
+[2025-11-24T13:01:21.191Z] [32MINFO[39M: 📥 [2025-11-24T13:01:21.191Z] GET /api/businesses/s/test-prachi-near-park
+[2025-11-24T13:01:21.191Z] [32MINFO[39M: Received request for business with slug: test-prachi-near-park
+[2025-11-24T13:01:21.202Z] [32MINFO[39M: 📥 [2025-11-24T13:01:21.202Z] GET /api/count/webview
+[2025-11-24T13:01:21.281Z] [32MINFO[39M: 📥 [2025-11-24T13:01:21.281Z] OPTIONS /api/businesses/36/view
+[2025-11-24T13:01:21.375Z] [32MINFO[39M: 📥 [2025-11-24T13:01:21.375Z] PUT /api/businesses/36/view
+[2025-11-24T13:01:21.387Z] [32MINFO[39M: viewCount 2
+[2025-11-24T13:01:25.391Z] [32MINFO[39M: 📥 [2025-11-24T13:01:25.391Z] GET /api/businesses/s/test-prachi-near-park
+[2025-11-24T13:01:25.392Z] [32MINFO[39M: Received request for business with slug: test-prachi-near-park
+[2025-11-24T13:01:29.599Z] [32MINFO[39M: 📥 [2025-11-24T13:01:29.599Z] OPTIONS /api/enquiries
+[2025-11-24T13:01:29.608Z] [32MINFO[39M: 📥 [2025-11-24T13:01:29.608Z] POST /api/enquiries
+[2025-11-24T13:01:29.612Z] [32MINFO[39M: 4
+[2025-11-24T13:01:29.612Z] [32MINFO[39M: 4 36 vcvfgu
+[2025-11-24T13:02:03.817Z] [32MINFO[39M: 📥 [2025-11-24T13:02:03.817Z] OPTIONS /api/count/webview
+[2025-11-24T13:02:03.818Z] [32MINFO[39M: 📥 [2025-11-24T13:02:03.818Z] OPTIONS /api/businesses/s/test-prachi-near-park
+[2025-11-24T13:02:03.819Z] [32MINFO[39M: 📥 [2025-11-24T13:02:03.819Z] OPTIONS /api/count/webview
+[2025-11-24T13:02:03.820Z] [32MINFO[39M: 📥 [2025-11-24T13:02:03.820Z] OPTIONS /api/businesses/s/test-prachi-near-park
+[2025-11-24T13:02:03.828Z] [32MINFO[39M: 📥 [2025-11-24T13:02:03.828Z] GET /api/count/webview
+[2025-11-24T13:02:03.835Z] [32MINFO[39M: 📥 [2025-11-24T13:02:03.835Z] GET /api/businesses/s/test-prachi-near-park
+[2025-11-24T13:02:03.837Z] [32MINFO[39M: Received request for business with slug: test-prachi-near-park
+[2025-11-24T13:02:03.838Z] [32MINFO[39M: 📥 [2025-11-24T13:02:03.838Z] GET /api/count/webview
+[2025-11-24T13:02:03.860Z] [32MINFO[39M: 📥 [2025-11-24T13:02:03.860Z] GET /api/businesses/s/test-prachi-near-park
+[2025-11-24T13:02:03.861Z] [32MINFO[39M: Received request for business with slug: test-prachi-near-park
+[2025-11-24T13:02:04.027Z] [32MINFO[39M: 📥 [2025-11-24T13:02:04.027Z] OPTIONS /api/businesses/36/view
+[2025-11-24T13:02:04.034Z] [32MINFO[39M: 📥 [2025-11-24T13:02:04.034Z] PUT /api/businesses/36/view
+[2025-11-24T13:02:04.043Z] [32MINFO[39M: viewCount 3
+[2025-11-24T13:04:34.119Z] [32MINFO[39M: 📥 [2025-11-24T13:04:34.119Z] OPTIONS /api/enquiries
+[2025-11-24T13:04:34.133Z] [32MINFO[39M: 📥 [2025-11-24T13:04:34.133Z] POST /api/enquiries
+[2025-11-24T13:04:34.136Z] [32MINFO[39M: 4
+[2025-11-24T13:04:34.136Z] [32MINFO[39M: 4 36 xsfgr
+[2025-11-24T13:07:05.467Z] [32MINFO[39M: 📥 [2025-11-24T13:07:05.467Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:07:05.470Z] [32MINFO[39M: 📥 [2025-11-24T13:07:05.470Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:07:05.533Z] [32MINFO[39M: 📥 [2025-11-24T13:07:05.533Z] GET /api/enquiries/all
+[2025-11-24T13:07:05.536Z] [32MINFO[39M: 4
+[2025-11-24T13:07:05.574Z] [32MINFO[39M: 📥 [2025-11-24T13:07:05.574Z] GET /api/enquiries/all
+[2025-11-24T13:07:05.578Z] [32MINFO[39M: 4
+[2025-11-24T13:09:34.164Z] [32MINFO[39M: 📥 [2025-11-24T13:09:34.164Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:09:34.164Z] [32MINFO[39M: 📥 [2025-11-24T13:09:34.164Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:09:34.178Z] [32MINFO[39M: 📥 [2025-11-24T13:09:34.178Z] GET /api/enquiries/all
+[2025-11-24T13:09:34.181Z] [32MINFO[39M: 4
+[2025-11-24T13:09:34.196Z] [32MINFO[39M: 📥 [2025-11-24T13:09:34.196Z] GET /api/enquiries/all
+[2025-11-24T13:09:34.200Z] [32MINFO[39M: 4
+[2025-11-24T13:10:50.229Z] [32MINFO[39M: 📥 [2025-11-24T13:10:50.229Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:10:50.230Z] [32MINFO[39M: 📥 [2025-11-24T13:10:50.230Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:10:50.243Z] [32MINFO[39M: 📥 [2025-11-24T13:10:50.243Z] GET /api/enquiries/all
+[2025-11-24T13:10:50.246Z] [32MINFO[39M: 4
+[2025-11-24T13:10:50.257Z] [32MINFO[39M: 📥 [2025-11-24T13:10:50.257Z] GET /api/enquiries/all
+[2025-11-24T13:10:50.260Z] [32MINFO[39M: 4
+[2025-11-24T13:10:51.395Z] [32MINFO[39M: 📥 [2025-11-24T13:10:51.395Z] GET /api/enquiries/all
+[2025-11-24T13:10:51.398Z] [32MINFO[39M: 4
+[2025-11-24T13:10:51.468Z] [32MINFO[39M: 📥 [2025-11-24T13:10:51.468Z] GET /api/enquiries/all
+[2025-11-24T13:10:51.471Z] [32MINFO[39M: 4
+[2025-11-24T13:11:06.275Z] [32MINFO[39M: 📥 [2025-11-24T13:11:06.275Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:11:06.276Z] [32MINFO[39M: 📥 [2025-11-24T13:11:06.276Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:11:06.293Z] [32MINFO[39M: 📥 [2025-11-24T13:11:06.293Z] GET /api/enquiries/all
+[2025-11-24T13:11:06.296Z] [32MINFO[39M: 4
+[2025-11-24T13:11:06.309Z] [32MINFO[39M: 📥 [2025-11-24T13:11:06.309Z] GET /api/enquiries/all
+[2025-11-24T13:11:06.311Z] [32MINFO[39M: 4
+[2025-11-24T13:11:29.198Z] [32MINFO[39M: 📥 [2025-11-24T13:11:29.198Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:11:29.199Z] [32MINFO[39M: 📥 [2025-11-24T13:11:29.199Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:11:29.210Z] [32MINFO[39M: 📥 [2025-11-24T13:11:29.210Z] GET /api/enquiries/all
+[2025-11-24T13:11:29.212Z] [32MINFO[39M: 4
+[2025-11-24T13:11:29.223Z] [32MINFO[39M: 📥 [2025-11-24T13:11:29.223Z] GET /api/enquiries/all
+[2025-11-24T13:11:29.226Z] [32MINFO[39M: 4
+[2025-11-24T13:11:30.346Z] [32MINFO[39M: 📥 [2025-11-24T13:11:30.346Z] GET /api/enquiries/all
+[2025-11-24T13:11:30.349Z] [32MINFO[39M: 4
+[2025-11-24T13:11:30.427Z] [32MINFO[39M: 📥 [2025-11-24T13:11:30.427Z] GET /api/enquiries/all
+[2025-11-24T13:11:30.430Z] [32MINFO[39M: 4
+[2025-11-24T13:25:16.653Z] [32MINFO[39M: 📥 [2025-11-24T13:25:16.653Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:25:16.655Z] [32MINFO[39M: 📥 [2025-11-24T13:25:16.655Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:25:16.661Z] [32MINFO[39M: 📥 [2025-11-24T13:25:16.661Z] GET /api/enquiries/all
+[2025-11-24T13:25:16.665Z] [32MINFO[39M: 4
+[2025-11-24T13:25:16.675Z] [32MINFO[39M: 📥 [2025-11-24T13:25:16.675Z] GET /api/enquiries/all
+[2025-11-24T13:25:16.678Z] [32MINFO[39M: 4
+[2025-11-24T13:25:45.982Z] [32MINFO[39M: 📥 [2025-11-24T13:25:45.982Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:25:45.990Z] [32MINFO[39M: 📥 [2025-11-24T13:25:45.990Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:25:46.001Z] [32MINFO[39M: 📥 [2025-11-24T13:25:46.001Z] GET /api/enquiries/all
+[2025-11-24T13:25:46.005Z] [32MINFO[39M: 4
+[2025-11-24T13:25:46.021Z] [32MINFO[39M: 📥 [2025-11-24T13:25:46.021Z] GET /api/enquiries/all
+[2025-11-24T13:25:46.024Z] [32MINFO[39M: 4
+[2025-11-24T13:25:56.648Z] [32MINFO[39M: 📥 [2025-11-24T13:25:56.648Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:25:56.651Z] [32MINFO[39M: 📥 [2025-11-24T13:25:56.651Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:25:56.654Z] [32MINFO[39M: 📥 [2025-11-24T13:25:56.654Z] GET /api/enquiries/all
+[2025-11-24T13:25:56.658Z] [32MINFO[39M: 4
+[2025-11-24T13:25:56.671Z] [32MINFO[39M: 📥 [2025-11-24T13:25:56.671Z] GET /api/enquiries/all
+[2025-11-24T13:25:56.673Z] [32MINFO[39M: 4
+[2025-11-24T13:27:46.869Z] [32MINFO[39M: 📥 [2025-11-24T13:27:46.868Z] OPTIONS /api/enquiries/toggle-viewed/undefined
+[2025-11-24T13:27:46.881Z] [32MINFO[39M: 📥 [2025-11-24T13:27:46.881Z] POST /api/enquiries/toggle-viewed/undefined
+[2025-11-24T13:32:54.867Z] [32MINFO[39M: 📥 [2025-11-24T13:32:54.866Z] OPTIONS /api/contact
+[2025-11-24T13:32:54.868Z] [32MINFO[39M: 📥 [2025-11-24T13:32:54.868Z] OPTIONS /api/contact
+[2025-11-24T13:32:54.876Z] [32MINFO[39M: 📥 [2025-11-24T13:32:54.876Z] GET /api/contact
+[2025-11-24T13:32:54.880Z] [32MINFO[39M: 4
+[2025-11-24T13:32:54.897Z] [32MINFO[39M: 📥 [2025-11-24T13:32:54.897Z] GET /api/contact
+[2025-11-24T13:32:54.900Z] [32MINFO[39M: 4
+[2025-11-24T13:33:05.877Z] [32MINFO[39M: 📥 [2025-11-24T13:33:05.877Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-24T13:33:05.879Z] [32MINFO[39M: 📥 [2025-11-24T13:33:05.879Z] OPTIONS /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-24T13:33:05.890Z] [32MINFO[39M: 📥 [2025-11-24T13:33:05.890Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-24T13:33:05.891Z] [32MINFO[39M: Fetching businesses with params: {"page":1,"limit":10,"verified":0}
+[2025-11-24T13:33:05.902Z] [32MINFO[39M: 📥 [2025-11-24T13:33:05.902Z] GET /api/businesses?isVerified=false&page=1&limit=10
+[2025-11-24T13:33:05.903Z] [32MINFO[39M: Fetching businesses with params: {"page":1,"limit":10,"verified":0}
+[2025-11-24T13:34:48.455Z] [32MINFO[39M: 📥 [2025-11-24T13:34:48.455Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:34:48.456Z] [32MINFO[39M: 📥 [2025-11-24T13:34:48.456Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:34:48.465Z] [32MINFO[39M: 📥 [2025-11-24T13:34:48.465Z] GET /api/enquiries/all
+[2025-11-24T13:34:48.468Z] [32MINFO[39M: 4
+[2025-11-24T13:34:48.497Z] [32MINFO[39M: 📥 [2025-11-24T13:34:48.497Z] GET /api/enquiries/all
+[2025-11-24T13:34:48.500Z] [32MINFO[39M: 4
+[2025-11-24T13:35:29.622Z] [32MINFO[39M: 📥 [2025-11-24T13:35:29.622Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:35:29.623Z] [32MINFO[39M: 📥 [2025-11-24T13:35:29.623Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:35:29.634Z] [32MINFO[39M: 📥 [2025-11-24T13:35:29.634Z] GET /api/enquiries/all
+[2025-11-24T13:35:29.638Z] [32MINFO[39M: 4
+[2025-11-24T13:35:29.646Z] [32MINFO[39M: 📥 [2025-11-24T13:35:29.646Z] GET /api/enquiries/all
+[2025-11-24T13:35:29.649Z] [32MINFO[39M: 4
+[2025-11-24T13:38:00.798Z] [32MINFO[39M: 📥 [2025-11-24T13:38:00.798Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:38:00.801Z] [32MINFO[39M: 📥 [2025-11-24T13:38:00.801Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:38:02.305Z] [32MINFO[39M: 📥 [2025-11-24T13:38:02.305Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:38:02.306Z] [32MINFO[39M: 📥 [2025-11-24T13:38:02.306Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:38:02.315Z] [32MINFO[39M: 📥 [2025-11-24T13:38:02.315Z] GET /api/enquiries/all
+[2025-11-24T13:38:02.329Z] [32MINFO[39M: 4
+[2025-11-24T13:38:02.377Z] [32MINFO[39M: 📥 [2025-11-24T13:38:02.377Z] GET /api/enquiries/all
+[2025-11-24T13:38:02.382Z] [32MINFO[39M: 4
+[2025-11-24T13:38:40.261Z] [32MINFO[39M: 📥 [2025-11-24T13:38:40.261Z] OPTIONS /api/contact
+[2025-11-24T13:38:40.333Z] [32MINFO[39M: 📥 [2025-11-24T13:38:40.333Z] OPTIONS /api/contact
+[2025-11-24T13:38:40.342Z] [32MINFO[39M: 📥 [2025-11-24T13:38:40.342Z] GET /api/contact
+[2025-11-24T13:38:40.344Z] [32MINFO[39M: 4
+[2025-11-24T13:38:40.357Z] [32MINFO[39M: 📥 [2025-11-24T13:38:40.357Z] GET /api/contact
+[2025-11-24T13:38:40.360Z] [32MINFO[39M: 4
+[2025-11-24T13:38:50.412Z] [32MINFO[39M: 📥 [2025-11-24T13:38:50.412Z] OPTIONS /api/contact
+[2025-11-24T13:38:50.427Z] [32MINFO[39M: 📥 [2025-11-24T13:38:50.427Z] GET /api/contact
+[2025-11-24T13:38:50.429Z] [32MINFO[39M: 4
+[2025-11-24T13:39:00.430Z] [32MINFO[39M: 📥 [2025-11-24T13:39:00.430Z] OPTIONS /api/contact
+[2025-11-24T13:39:00.622Z] [32MINFO[39M: 📥 [2025-11-24T13:39:00.622Z] GET /api/contact
+[2025-11-24T13:39:00.637Z] [32MINFO[39M: 4
+[2025-11-24T13:39:07.325Z] [32MINFO[39M: 📥 [2025-11-24T13:39:07.325Z] OPTIONS /api/contact
+[2025-11-24T13:39:07.326Z] [32MINFO[39M: 📥 [2025-11-24T13:39:07.326Z] OPTIONS /api/contact
+[2025-11-24T13:39:07.335Z] [32MINFO[39M: 📥 [2025-11-24T13:39:07.335Z] GET /api/contact
+[2025-11-24T13:39:07.338Z] [32MINFO[39M: 4
+[2025-11-24T13:39:07.360Z] [32MINFO[39M: 📥 [2025-11-24T13:39:07.360Z] GET /api/contact
+[2025-11-24T13:39:07.364Z] [32MINFO[39M: 4
+[2025-11-24T13:39:07.632Z] [32MINFO[39M: 📥 [2025-11-24T13:39:07.632Z] GET /
+[2025-11-24T13:39:15.704Z] [32MINFO[39M: 📥 [2025-11-24T13:39:15.704Z] OPTIONS /api/contact
+[2025-11-24T13:39:15.705Z] [32MINFO[39M: 📥 [2025-11-24T13:39:15.705Z] OPTIONS /api/contact
+[2025-11-24T13:39:15.732Z] [32MINFO[39M: 📥 [2025-11-24T13:39:15.732Z] GET /api/contact
+[2025-11-24T13:39:15.735Z] [32MINFO[39M: 4
+[2025-11-24T13:39:15.747Z] [32MINFO[39M: 📥 [2025-11-24T13:39:15.747Z] GET /api/contact
+[2025-11-24T13:39:15.750Z] [32MINFO[39M: 4
+[2025-11-24T13:39:26.420Z] [32MINFO[39M: 📥 [2025-11-24T13:39:26.420Z] OPTIONS /api/contact
+[2025-11-24T13:39:26.430Z] [32MINFO[39M: 📥 [2025-11-24T13:39:26.430Z] GET /api/contact
+[2025-11-24T13:39:26.433Z] [32MINFO[39M: 4
+[2025-11-24T13:39:36.487Z] [32MINFO[39M: 📥 [2025-11-24T13:39:36.487Z] OPTIONS /api/contact
+[2025-11-24T13:39:36.500Z] [32MINFO[39M: 📥 [2025-11-24T13:39:36.500Z] GET /api/contact
+[2025-11-24T13:39:36.503Z] [32MINFO[39M: 4
+[2025-11-24T13:39:46.440Z] [32MINFO[39M: 📥 [2025-11-24T13:39:46.440Z] OPTIONS /api/contact
+[2025-11-24T13:39:46.448Z] [32MINFO[39M: 📥 [2025-11-24T13:39:46.448Z] GET /api/contact
+[2025-11-24T13:39:46.450Z] [32MINFO[39M: 4
+[2025-11-24T13:39:56.438Z] [32MINFO[39M: 📥 [2025-11-24T13:39:56.438Z] OPTIONS /api/contact
+[2025-11-24T13:39:56.446Z] [32MINFO[39M: 📥 [2025-11-24T13:39:56.446Z] GET /api/contact
+[2025-11-24T13:39:56.449Z] [32MINFO[39M: 4
+[2025-11-24T13:40:06.425Z] [32MINFO[39M: 📥 [2025-11-24T13:40:06.425Z] OPTIONS /api/contact
+[2025-11-24T13:40:06.437Z] [32MINFO[39M: 📥 [2025-11-24T13:40:06.437Z] GET /api/contact
+[2025-11-24T13:40:06.440Z] [32MINFO[39M: 4
+[2025-11-24T13:40:16.681Z] [32MINFO[39M: 📥 [2025-11-24T13:40:16.680Z] OPTIONS /api/contact
+[2025-11-24T13:40:16.696Z] [32MINFO[39M: 📥 [2025-11-24T13:40:16.696Z] GET /api/contact
+[2025-11-24T13:40:16.700Z] [32MINFO[39M: 4
+[2025-11-24T13:40:26.426Z] [32MINFO[39M: 📥 [2025-11-24T13:40:26.426Z] OPTIONS /api/contact
+[2025-11-24T13:40:26.459Z] [32MINFO[39M: 📥 [2025-11-24T13:40:26.459Z] GET /api/contact
+[2025-11-24T13:40:26.462Z] [32MINFO[39M: 4
+[2025-11-24T13:40:34.599Z] [32MINFO[39M: 📥 [2025-11-24T13:40:34.599Z] OPTIONS /api/contact
+[2025-11-24T13:40:34.601Z] [32MINFO[39M: 📥 [2025-11-24T13:40:34.601Z] OPTIONS /api/contact
+[2025-11-24T13:40:34.617Z] [32MINFO[39M: 📥 [2025-11-24T13:40:34.617Z] GET /api/contact
+[2025-11-24T13:40:34.620Z] [32MINFO[39M: 4
+[2025-11-24T13:40:34.631Z] [32MINFO[39M: 📥 [2025-11-24T13:40:34.631Z] GET /api/contact
+[2025-11-24T13:40:34.633Z] [32MINFO[39M: 4
+[2025-11-24T13:40:45.423Z] [32MINFO[39M: 📥 [2025-11-24T13:40:45.423Z] OPTIONS /api/contact
+[2025-11-24T13:40:45.431Z] [32MINFO[39M: 📥 [2025-11-24T13:40:45.431Z] GET /api/contact
+[2025-11-24T13:40:45.434Z] [32MINFO[39M: 4
+[2025-11-24T13:40:55.430Z] [32MINFO[39M: 📥 [2025-11-24T13:40:55.430Z] OPTIONS /api/contact
+[2025-11-24T13:40:55.443Z] [32MINFO[39M: 📥 [2025-11-24T13:40:55.443Z] GET /api/contact
+[2025-11-24T13:40:55.446Z] [32MINFO[39M: 4
+[2025-11-24T13:41:05.695Z] [32MINFO[39M: 📥 [2025-11-24T13:41:05.695Z] OPTIONS /api/contact
+[2025-11-24T13:41:05.707Z] [32MINFO[39M: 📥 [2025-11-24T13:41:05.707Z] GET /api/contact
+[2025-11-24T13:41:05.710Z] [32MINFO[39M: 4
+[2025-11-24T13:41:15.425Z] [32MINFO[39M: 📥 [2025-11-24T13:41:15.425Z] OPTIONS /api/contact
+[2025-11-24T13:41:15.437Z] [32MINFO[39M: 📥 [2025-11-24T13:41:15.437Z] GET /api/contact
+[2025-11-24T13:41:15.439Z] [32MINFO[39M: 4
+[2025-11-24T13:41:25.688Z] [32MINFO[39M: 📥 [2025-11-24T13:41:25.688Z] OPTIONS /api/contact
+[2025-11-24T13:41:25.695Z] [32MINFO[39M: 📥 [2025-11-24T13:41:25.695Z] GET /api/contact
+[2025-11-24T13:41:25.698Z] [32MINFO[39M: 4
+[2025-11-24T13:41:35.435Z] [32MINFO[39M: 📥 [2025-11-24T13:41:35.435Z] OPTIONS /api/contact
+[2025-11-24T13:41:35.444Z] [32MINFO[39M: 📥 [2025-11-24T13:41:35.444Z] GET /api/contact
+[2025-11-24T13:41:35.450Z] [32MINFO[39M: 4
+[2025-11-24T13:41:45.446Z] [32MINFO[39M: 📥 [2025-11-24T13:41:45.446Z] OPTIONS /api/contact
+[2025-11-24T13:41:45.455Z] [32MINFO[39M: 📥 [2025-11-24T13:41:45.455Z] GET /api/contact
+[2025-11-24T13:41:45.459Z] [32MINFO[39M: 4
+[2025-11-24T13:42:23.445Z] [32MINFO[39M: 📥 [2025-11-24T13:42:23.445Z] OPTIONS /api/contact
+[2025-11-24T13:42:23.455Z] [32MINFO[39M: 📥 [2025-11-24T13:42:23.455Z] GET /api/contact
+[2025-11-24T13:42:23.458Z] [32MINFO[39M: 4
+[2025-11-24T13:42:32.336Z] [32MINFO[39M: 📥 [2025-11-24T13:42:32.336Z] OPTIONS /api/contact
+[2025-11-24T13:42:32.354Z] [32MINFO[39M: 📥 [2025-11-24T13:42:32.354Z] GET /api/contact
+[2025-11-24T13:42:32.357Z] [32MINFO[39M: 4
+[2025-11-24T13:42:34.579Z] [32MINFO[39M: 📥 [2025-11-24T13:42:34.578Z] GET /api/contact
+[2025-11-24T13:42:34.582Z] [32MINFO[39M: 4
+[2025-11-24T13:42:36.232Z] [32MINFO[39M: 📥 [2025-11-24T13:42:36.232Z] GET /api/contact
+[2025-11-24T13:42:36.236Z] [32MINFO[39M: 4
+[2025-11-24T13:42:36.298Z] [32MINFO[39M: 📥 [2025-11-24T13:42:36.298Z] GET /api/contact
+[2025-11-24T13:42:36.301Z] [32MINFO[39M: 4
+[2025-11-24T13:42:46.443Z] [32MINFO[39M: 📥 [2025-11-24T13:42:46.443Z] OPTIONS /api/contact
+[2025-11-24T13:42:46.461Z] [32MINFO[39M: 📥 [2025-11-24T13:42:46.461Z] GET /api/contact
+[2025-11-24T13:42:46.464Z] [32MINFO[39M: 4
+[2025-11-24T13:42:54.654Z] [32MINFO[39M: 📥 [2025-11-24T13:42:54.654Z] OPTIONS /api/contact
+[2025-11-24T13:42:54.655Z] [32MINFO[39M: 📥 [2025-11-24T13:42:54.655Z] OPTIONS /api/contact
+[2025-11-24T13:42:54.665Z] [32MINFO[39M: 📥 [2025-11-24T13:42:54.665Z] GET /api/contact
+[2025-11-24T13:42:54.667Z] [32MINFO[39M: 4
+[2025-11-24T13:42:54.678Z] [32MINFO[39M: 📥 [2025-11-24T13:42:54.678Z] GET /api/contact
+[2025-11-24T13:42:54.681Z] [32MINFO[39M: 4
+[2025-11-24T13:43:02.945Z] [32MINFO[39M: 📥 [2025-11-24T13:43:02.945Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:43:02.946Z] [32MINFO[39M: 📥 [2025-11-24T13:43:02.946Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:43:02.954Z] [32MINFO[39M: 📥 [2025-11-24T13:43:02.953Z] GET /api/enquiries/all
+[2025-11-24T13:43:02.957Z] [32MINFO[39M: 4
+[2025-11-24T13:43:02.977Z] [32MINFO[39M: 📥 [2025-11-24T13:43:02.977Z] GET /api/enquiries/all
+[2025-11-24T13:43:02.980Z] [32MINFO[39M: 4
+[2025-11-24T13:43:41.809Z] [32MINFO[39M: 📥 [2025-11-24T13:43:41.808Z] OPTIONS /api/contact
+[2025-11-24T13:43:41.810Z] [32MINFO[39M: 📥 [2025-11-24T13:43:41.810Z] OPTIONS /api/contact
+[2025-11-24T13:43:41.988Z] [32MINFO[39M: 📥 [2025-11-24T13:43:41.988Z] GET /api/contact
+[2025-11-24T13:43:41.990Z] [32MINFO[39M: 4
+[2025-11-24T13:43:42.168Z] [32MINFO[39M: 📥 [2025-11-24T13:43:42.168Z] GET /api/contact
+[2025-11-24T13:43:42.171Z] [32MINFO[39M: 4
+[2025-11-24T13:43:52.499Z] [32MINFO[39M: 📥 [2025-11-24T13:43:52.499Z] OPTIONS /api/contact
+[2025-11-24T13:43:52.514Z] [32MINFO[39M: 📥 [2025-11-24T13:43:52.514Z] GET /api/contact
+[2025-11-24T13:43:52.517Z] [32MINFO[39M: 4
+[2025-11-24T13:44:02.445Z] [32MINFO[39M: 📥 [2025-11-24T13:44:02.445Z] OPTIONS /api/contact
+[2025-11-24T13:44:02.455Z] [32MINFO[39M: 📥 [2025-11-24T13:44:02.455Z] GET /api/contact
+[2025-11-24T13:44:02.459Z] [32MINFO[39M: 4
+[2025-11-24T13:44:12.526Z] [32MINFO[39M: 📥 [2025-11-24T13:44:12.526Z] OPTIONS /api/contact
+[2025-11-24T13:44:12.536Z] [32MINFO[39M: 📥 [2025-11-24T13:44:12.536Z] GET /api/contact
+[2025-11-24T13:44:12.540Z] [32MINFO[39M: 4
+[2025-11-24T13:44:22.440Z] [32MINFO[39M: 📥 [2025-11-24T13:44:22.440Z] OPTIONS /api/contact
+[2025-11-24T13:44:22.449Z] [32MINFO[39M: 📥 [2025-11-24T13:44:22.449Z] GET /api/contact
+[2025-11-24T13:44:22.452Z] [32MINFO[39M: 4
+[2025-11-24T13:44:32.446Z] [32MINFO[39M: 📥 [2025-11-24T13:44:32.446Z] OPTIONS /api/contact
+[2025-11-24T13:44:32.455Z] [32MINFO[39M: 📥 [2025-11-24T13:44:32.455Z] GET /api/contact
+[2025-11-24T13:44:32.459Z] [32MINFO[39M: 4
+[2025-11-24T13:44:42.457Z] [32MINFO[39M: 📥 [2025-11-24T13:44:42.457Z] OPTIONS /api/contact
+[2025-11-24T13:44:42.466Z] [32MINFO[39M: 📥 [2025-11-24T13:44:42.466Z] GET /api/contact
+[2025-11-24T13:44:42.468Z] [32MINFO[39M: 4
+[2025-11-24T13:44:52.445Z] [32MINFO[39M: 📥 [2025-11-24T13:44:52.445Z] OPTIONS /api/contact
+[2025-11-24T13:44:52.454Z] [32MINFO[39M: 📥 [2025-11-24T13:44:52.454Z] GET /api/contact
+[2025-11-24T13:44:52.457Z] [32MINFO[39M: 4
+[2025-11-24T13:45:23.446Z] [32MINFO[39M: 📥 [2025-11-24T13:45:23.446Z] OPTIONS /api/contact
+[2025-11-24T13:45:23.457Z] [32MINFO[39M: 📥 [2025-11-24T13:45:23.457Z] GET /api/contact
+[2025-11-24T13:45:23.459Z] [32MINFO[39M: 4
+[2025-11-24T13:46:11.641Z] [32MINFO[39M: 📥 [2025-11-24T13:46:11.641Z] OPTIONS /api/contact
+[2025-11-24T13:46:11.769Z] [32MINFO[39M: 📥 [2025-11-24T13:46:11.769Z] GET /api/contact
+[2025-11-24T13:46:11.772Z] [32MINFO[39M: 4
+[2025-11-24T13:46:14.401Z] [32MINFO[39M: 📥 [2025-11-24T13:46:14.401Z] GET /api/contact
+[2025-11-24T13:46:14.404Z] [32MINFO[39M: 4
+[2025-11-24T13:46:14.469Z] [32MINFO[39M: 📥 [2025-11-24T13:46:14.469Z] GET /api/contact
+[2025-11-24T13:46:14.472Z] [32MINFO[39M: 4
+[2025-11-24T13:47:08.492Z] [32MINFO[39M: 📥 [2025-11-24T13:47:08.492Z] OPTIONS /api/contact
+[2025-11-24T13:47:08.493Z] [32MINFO[39M: 📥 [2025-11-24T13:47:08.493Z] OPTIONS /api/contact
+[2025-11-24T13:47:08.507Z] [32MINFO[39M: 📥 [2025-11-24T13:47:08.507Z] GET /api/contact
+[2025-11-24T13:47:08.512Z] [32MINFO[39M: 4
+[2025-11-24T13:47:08.522Z] [32MINFO[39M: 📥 [2025-11-24T13:47:08.522Z] GET /api/contact
+[2025-11-24T13:47:08.525Z] [32MINFO[39M: 4
+[2025-11-24T13:47:19.585Z] [32MINFO[39M: 📥 [2025-11-24T13:47:19.585Z] OPTIONS /api/contact
+[2025-11-24T13:47:19.601Z] [32MINFO[39M: 📥 [2025-11-24T13:47:19.601Z] GET /api/contact
+[2025-11-24T13:47:19.604Z] [32MINFO[39M: 4
+[2025-11-24T13:47:30.421Z] [32MINFO[39M: 📥 [2025-11-24T13:47:30.421Z] OPTIONS /api/contact
+[2025-11-24T13:47:30.422Z] [32MINFO[39M: 📥 [2025-11-24T13:47:30.422Z] OPTIONS /api/contact
+[2025-11-24T13:47:30.432Z] [32MINFO[39M: 📥 [2025-11-24T13:47:30.432Z] OPTIONS /api/contact
+[2025-11-24T13:47:30.433Z] [32MINFO[39M: 📥 [2025-11-24T13:47:30.433Z] GET /api/contact
+[2025-11-24T13:47:30.435Z] [32MINFO[39M: 4
+[2025-11-24T13:47:30.446Z] [32MINFO[39M: 📥 [2025-11-24T13:47:30.446Z] GET /api/contact
+[2025-11-24T13:47:30.448Z] [32MINFO[39M: 4
+[2025-11-24T13:47:40.451Z] [32MINFO[39M: 📥 [2025-11-24T13:47:40.451Z] OPTIONS /api/contact
+[2025-11-24T13:47:40.463Z] [32MINFO[39M: 📥 [2025-11-24T13:47:40.463Z] GET /api/contact
+[2025-11-24T13:47:40.466Z] [32MINFO[39M: 4
+[2025-11-24T13:47:50.440Z] [32MINFO[39M: 📥 [2025-11-24T13:47:50.440Z] OPTIONS /api/contact
+[2025-11-24T13:47:50.450Z] [32MINFO[39M: 📥 [2025-11-24T13:47:50.450Z] GET /api/contact
+[2025-11-24T13:47:50.452Z] [32MINFO[39M: 4
+[2025-11-24T13:48:00.443Z] [32MINFO[39M: 📥 [2025-11-24T13:48:00.443Z] OPTIONS /api/contact
+[2025-11-24T13:48:00.457Z] [32MINFO[39M: 📥 [2025-11-24T13:48:00.457Z] GET /api/contact
+[2025-11-24T13:48:00.463Z] [32MINFO[39M: 4
+[2025-11-24T13:48:10.470Z] [32MINFO[39M: 📥 [2025-11-24T13:48:10.470Z] OPTIONS /api/contact
+[2025-11-24T13:48:10.481Z] [32MINFO[39M: 📥 [2025-11-24T13:48:10.481Z] GET /api/contact
+[2025-11-24T13:48:10.485Z] [32MINFO[39M: 4
+[2025-11-24T13:48:20.456Z] [32MINFO[39M: 📥 [2025-11-24T13:48:20.456Z] OPTIONS /api/contact
+[2025-11-24T13:48:20.599Z] [32MINFO[39M: 📥 [2025-11-24T13:48:20.599Z] GET /api/contact
+[2025-11-24T13:48:20.603Z] [32MINFO[39M: 4
+[2025-11-24T13:48:29.720Z] [32MINFO[39M: 📥 [2025-11-24T13:48:29.719Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:48:29.721Z] [32MINFO[39M: 📥 [2025-11-24T13:48:29.721Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:48:29.900Z] [32MINFO[39M: 📥 [2025-11-24T13:48:29.900Z] GET /api/enquiries/all
+[2025-11-24T13:48:29.904Z] [32MINFO[39M: 4
+[2025-11-24T13:48:30.002Z] [32MINFO[39M: 📥 [2025-11-24T13:48:30.002Z] GET /api/enquiries/all
+[2025-11-24T13:48:30.006Z] [32MINFO[39M: 4
+[2025-11-24T13:49:17.524Z] [32MINFO[39M: 📥 [2025-11-24T13:49:17.524Z] OPTIONS /api/contact
+[2025-11-24T13:49:17.628Z] [32MINFO[39M: 📥 [2025-11-24T13:49:17.628Z] OPTIONS /api/contact
+[2025-11-24T13:49:17.630Z] [32MINFO[39M: 📥 [2025-11-24T13:49:17.630Z] GET /api/contact
+[2025-11-24T13:49:17.633Z] [32MINFO[39M: 4
+[2025-11-24T13:49:17.644Z] [32MINFO[39M: 📥 [2025-11-24T13:49:17.644Z] GET /api/contact
+[2025-11-24T13:49:17.647Z] [32MINFO[39M: 4
+[2025-11-24T13:49:29.115Z] [32MINFO[39M: 📥 [2025-11-24T13:49:29.115Z] OPTIONS /api/businesses/admin/pending?businesses=true
+[2025-11-24T13:49:29.117Z] [32MINFO[39M: 📥 [2025-11-24T13:49:29.117Z] OPTIONS /api/businesses/admin/pending?businesses=true
+[2025-11-24T13:49:29.126Z] [32MINFO[39M: 📥 [2025-11-24T13:49:29.126Z] GET /api/businesses/admin/pending?businesses=true
+[2025-11-24T13:49:29.130Z] [32MINFO[39M: 4
+[2025-11-24T13:49:29.132Z] [32MINFO[39M: 4
+[2025-11-24T13:49:29.160Z] [32MINFO[39M: Fetched pending updates: 2
+[2025-11-24T13:49:29.232Z] [32MINFO[39M: 📥 [2025-11-24T13:49:29.232Z] GET /api/businesses/admin/pending?businesses=true
+[2025-11-24T13:49:29.236Z] [32MINFO[39M: 4
+[2025-11-24T13:49:29.239Z] [32MINFO[39M: 4
+[2025-11-24T13:49:29.244Z] [32MINFO[39M: Fetched pending updates: 2
+[2025-11-24T13:49:31.575Z] [32MINFO[39M: 📥 [2025-11-24T13:49:31.575Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:49:31.576Z] [32MINFO[39M: 📥 [2025-11-24T13:49:31.576Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:49:31.755Z] [32MINFO[39M: 📥 [2025-11-24T13:49:31.755Z] GET /api/enquiries/all
+[2025-11-24T13:49:31.758Z] [32MINFO[39M: 4
+[2025-11-24T13:49:31.877Z] [32MINFO[39M: 📥 [2025-11-24T13:49:31.877Z] GET /api/enquiries/all
+[2025-11-24T13:49:31.880Z] [32MINFO[39M: 4
+[2025-11-24T13:49:34.980Z] [32MINFO[39M: 📥 [2025-11-24T13:49:34.980Z] OPTIONS /api/contact
+[2025-11-24T13:49:34.982Z] [32MINFO[39M: 📥 [2025-11-24T13:49:34.982Z] OPTIONS /api/contact
+[2025-11-24T13:49:34.990Z] [32MINFO[39M: 📥 [2025-11-24T13:49:34.990Z] GET /api/contact
+[2025-11-24T13:49:34.993Z] [32MINFO[39M: 4
+[2025-11-24T13:49:35.009Z] [32MINFO[39M: 📥 [2025-11-24T13:49:35.009Z] GET /api/contact
+[2025-11-24T13:49:35.011Z] [32MINFO[39M: 4
+[2025-11-24T13:49:39.965Z] [32MINFO[39M: 📥 [2025-11-24T13:49:39.965Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:49:39.966Z] [32MINFO[39M: 📥 [2025-11-24T13:49:39.966Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:49:40.059Z] [32MINFO[39M: 📥 [2025-11-24T13:49:40.059Z] GET /api/enquiries/all
+[2025-11-24T13:49:40.064Z] [32MINFO[39M: 4
+[2025-11-24T13:49:40.078Z] [32MINFO[39M: 📥 [2025-11-24T13:49:40.078Z] GET /api/enquiries/all
+[2025-11-24T13:49:40.080Z] [32MINFO[39M: 4
+[2025-11-24T13:51:09.042Z] [32MINFO[39M: 📥 [2025-11-24T13:51:09.042Z] OPTIONS /api/count/webview
+[2025-11-24T13:51:09.047Z] [32MINFO[39M: 📥 [2025-11-24T13:51:09.047Z] OPTIONS /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T13:51:09.048Z] [32MINFO[39M: 📥 [2025-11-24T13:51:09.048Z] OPTIONS /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T13:51:09.052Z] [32MINFO[39M: 📥 [2025-11-24T13:51:09.051Z] OPTIONS /api/count/webview
+[2025-11-24T13:51:09.056Z] [32MINFO[39M: 📥 [2025-11-24T13:51:09.056Z] GET /api/count/webview
+[2025-11-24T13:51:09.063Z] [32MINFO[39M: 📥 [2025-11-24T13:51:09.063Z] GET /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T13:51:09.063Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"restaurant","subcategoryslug":"restaurant","page":1,"limit":10,"verified":1}
+[2025-11-24T13:51:09.074Z] [32MINFO[39M: 📥 [2025-11-24T13:51:09.074Z] GET /api/count/webview
+[2025-11-24T13:51:09.085Z] [32MINFO[39M: 📥 [2025-11-24T13:51:09.085Z] GET /api/businesses?categoryslug=restaurant&subcategoryslug=restaurant
+[2025-11-24T13:51:09.088Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"restaurant","subcategoryslug":"restaurant","page":1,"limit":10,"verified":1}
+[2025-11-24T13:54:57.608Z] [32MINFO[39M: 📥 [2025-11-24T13:54:57.608Z] OPTIONS /api/users?page=1&limit=10&search=
+[2025-11-24T13:54:57.610Z] [32MINFO[39M: 📥 [2025-11-24T13:54:57.610Z] OPTIONS /api/users?page=1&limit=10&search=
+[2025-11-24T13:54:57.685Z] [32MINFO[39M: 📥 [2025-11-24T13:54:57.685Z] GET /api/users?page=1&limit=10&search=
+[2025-11-24T13:54:57.688Z] [32MINFO[39M: 4
+[2025-11-24T13:54:57.690Z] [32MINFO[39M: Controller: getAllUsers called
+[2025-11-24T13:54:57.690Z] [32MINFO[39M: Final Query: SELECT * FROM users WHERE 1=1 LIMIT 10 OFFSET 0
+[2025-11-24T13:54:57.690Z] [32MINFO[39M: Query Params: 
+[2025-11-24T13:54:57.899Z] [32MINFO[39M: 📥 [2025-11-24T13:54:57.899Z] GET /api/users?page=1&limit=10&search=
+[2025-11-24T13:54:57.902Z] [32MINFO[39M: 4
+[2025-11-24T13:54:57.902Z] [32MINFO[39M: Controller: getAllUsers called
+[2025-11-24T13:54:57.902Z] [32MINFO[39M: Final Query: SELECT * FROM users WHERE 1=1 LIMIT 10 OFFSET 0
+[2025-11-24T13:54:57.902Z] [32MINFO[39M: Query Params: 
+[2025-11-24T13:58:11.771Z] [32MINFO[39M: 📥 [2025-11-24T13:58:11.771Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:58:11.772Z] [32MINFO[39M: 📥 [2025-11-24T13:58:11.772Z] OPTIONS /api/enquiries/all
+[2025-11-24T13:58:11.782Z] [32MINFO[39M: 📥 [2025-11-24T13:58:11.782Z] GET /api/enquiries/all
+[2025-11-24T13:58:11.785Z] [32MINFO[39M: 4
+[2025-11-24T13:58:11.831Z] [32MINFO[39M: 📥 [2025-11-24T13:58:11.831Z] GET /api/enquiries/all
+[2025-11-24T13:58:11.833Z] [32MINFO[39M: 4
+[2025-11-24T13:58:59.911Z] [32MINFO[39M: 📥 [2025-11-24T13:58:59.910Z] OPTIONS /api/categories
+[2025-11-24T13:58:59.911Z] [32MINFO[39M: 📥 [2025-11-24T13:58:59.911Z] OPTIONS /api/categories
+[2025-11-24T13:58:59.920Z] [32MINFO[39M: 📥 [2025-11-24T13:58:59.920Z] GET /api/categories
+[2025-11-24T13:58:59.982Z] [32MINFO[39M: 📥 [2025-11-24T13:58:59.982Z] GET /api/categories
+[2025-11-24T13:59:02.380Z] [32MINFO[39M: 📥 [2025-11-24T13:59:02.380Z] OPTIONS /api/businesses?categoryslug=babies&subcategoryslug=baby-sitting
+[2025-11-24T13:59:02.381Z] [32MINFO[39M: 📥 [2025-11-24T13:59:02.381Z] OPTIONS /api/businesses?categoryslug=babies&subcategoryslug=baby-sitting
+[2025-11-24T13:59:02.400Z] [32MINFO[39M: 📥 [2025-11-24T13:59:02.400Z] GET /api/businesses?categoryslug=babies&subcategoryslug=baby-sitting
+[2025-11-24T13:59:02.401Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"babies","subcategoryslug":"baby-sitting","page":1,"limit":10,"verified":1}
+[2025-11-24T13:59:02.429Z] [32MINFO[39M: 📥 [2025-11-24T13:59:02.429Z] GET /api/businesses?categoryslug=babies&subcategoryslug=baby-sitting
+[2025-11-24T13:59:02.430Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"babies","subcategoryslug":"baby-sitting","page":1,"limit":10,"verified":1}
+[2025-11-24T13:59:05.022Z] [32MINFO[39M: 📥 [2025-11-24T13:59:05.022Z] OPTIONS /api/categories
+[2025-11-24T13:59:05.023Z] [32MINFO[39M: 📥 [2025-11-24T13:59:05.023Z] OPTIONS /api/categories
+[2025-11-24T13:59:05.097Z] [32MINFO[39M: 📥 [2025-11-24T13:59:05.097Z] GET /api/categories
+[2025-11-24T13:59:05.115Z] [32MINFO[39M: 📥 [2025-11-24T13:59:05.115Z] GET /api/categories
+[2025-11-24T13:59:07.628Z] [32MINFO[39M: 📥 [2025-11-24T13:59:07.628Z] OPTIONS /api/businesses?categoryslug=clothing&subcategoryslug=mens-wear
+[2025-11-24T13:59:07.636Z] [32MINFO[39M: 📥 [2025-11-24T13:59:07.635Z] OPTIONS /api/businesses?categoryslug=clothing&subcategoryslug=mens-wear
+[2025-11-24T13:59:07.863Z] [32MINFO[39M: 📥 [2025-11-24T13:59:07.863Z] GET /api/businesses?categoryslug=clothing&subcategoryslug=mens-wear
+[2025-11-24T13:59:07.864Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"clothing","subcategoryslug":"mens-wear","page":1,"limit":10,"verified":1}
+[2025-11-24T13:59:07.924Z] [32MINFO[39M: 📥 [2025-11-24T13:59:07.924Z] GET /api/businesses?categoryslug=clothing&subcategoryslug=mens-wear
+[2025-11-24T13:59:07.925Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"clothing","subcategoryslug":"mens-wear","page":1,"limit":10,"verified":1}
+[2025-11-24T13:59:09.713Z] [32MINFO[39M: 📥 [2025-11-24T13:59:09.713Z] GET /api/categories
+[2025-11-24T13:59:09.724Z] [32MINFO[39M: 📥 [2025-11-24T13:59:09.724Z] GET /api/categories
+[2025-11-24T13:59:11.827Z] [32MINFO[39M: 📥 [2025-11-24T13:59:11.827Z] OPTIONS /api/businesses?categoryslug=foods&subcategoryslug=cafes
+[2025-11-24T13:59:11.828Z] [32MINFO[39M: 📥 [2025-11-24T13:59:11.828Z] OPTIONS /api/businesses?categoryslug=foods&subcategoryslug=cafes
+[2025-11-24T13:59:11.960Z] [32MINFO[39M: 📥 [2025-11-24T13:59:11.960Z] GET /api/businesses?categoryslug=foods&subcategoryslug=cafes
+[2025-11-24T13:59:11.961Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"foods","subcategoryslug":"cafes","page":1,"limit":10,"verified":1}
+[2025-11-24T13:59:11.972Z] [32MINFO[39M: 📥 [2025-11-24T13:59:11.972Z] GET /api/businesses?categoryslug=foods&subcategoryslug=cafes
+[2025-11-24T13:59:11.973Z] [32MINFO[39M: Fetching businesses with params: {"categoryslug":"foods","subcategoryslug":"cafes","page":1,"limit":10,"verified":1}
+[2025-11-24T13:59:15.060Z] [32MINFO[39M: 📥 [2025-11-24T13:59:15.060Z] OPTIONS /api/count/webview
+[2025-11-24T13:59:15.061Z] [32MINFO[39M: 📥 [2025-11-24T13:59:15.061Z] OPTIONS /api/businesses/s/social-beans-juinagar-1
+[2025-11-24T13:59:15.235Z] [32MINFO[39M: 📥 [2025-11-24T13:59:15.235Z] OPTIONS /api/count/webview
+[2025-11-24T13:59:15.235Z] [32MINFO[39M: 📥 [2025-11-24T13:59:15.235Z] OPTIONS /api/businesses/s/social-beans-juinagar-1
+[2025-11-24T13:59:15.237Z] [32MINFO[39M: 📥 [2025-11-24T13:59:15.237Z] GET /api/businesses/s/social-beans-juinagar-1
+[2025-11-24T13:59:15.237Z] [32MINFO[39M: Received request for business with slug: social-beans-juinagar-1
+[2025-11-24T13:59:15.238Z] [32MINFO[39M: 📥 [2025-11-24T13:59:15.238Z] GET /api/count/webview
+[2025-11-24T13:59:15.246Z] [32MINFO[39M: 📥 [2025-11-24T13:59:15.246Z] GET /api/businesses/s/social-beans-juinagar-1
+[2025-11-24T13:59:15.246Z] [32MINFO[39M: Received request for business with slug: social-beans-juinagar-1
+[2025-11-24T13:59:15.252Z] [32MINFO[39M: 📥 [2025-11-24T13:59:15.252Z] GET /api/count/webview
+[2025-11-24T13:59:15.304Z] [32MINFO[39M: 📥 [2025-11-24T13:59:15.303Z] OPTIONS /api/businesses/33/view
+[2025-11-24T13:59:15.450Z] [32MINFO[39M: 📥 [2025-11-24T13:59:15.450Z] PUT /api/businesses/33/view
+[2025-11-24T13:59:15.462Z] [32MINFO[39M: viewCount 1
+[2025-11-24T14:01:21.086Z] [32MINFO[39M: 📥 [2025-11-24T14:01:21.086Z] OPTIONS /api/enquiries
+[2025-11-24T14:01:21.092Z] [32MINFO[39M: 📥 [2025-11-24T14:01:21.092Z] POST /api/enquiries
+[2025-11-24T14:01:21.095Z] [32MINFO[39M: 4
+[2025-11-24T14:01:21.095Z] [32MINFO[39M: 4 33  Navi Mumbai Local Search (Majhi Navi Mumbai) is Navi Mumbai’s dedicated local discovery platform. Our mission is to connect users with the best businesses, services, and solutions available exclusively in Navi Mumbai. Whether you're looking for a service provider, a local store, a restaurant, or any essential service, we make discovery simple, fast, and reliable.
+[2025-11-24T14:01:27.377Z] [32MINFO[39M: 📥 [2025-11-24T14:01:27.377Z] OPTIONS /api/enquiries/all
+[2025-11-24T14:01:27.378Z] [32MINFO[39M: 📥 [2025-11-24T14:01:27.378Z] OPTIONS /api/enquiries/all
+[2025-11-24T14:01:27.387Z] [32MINFO[39M: 📥 [2025-11-24T14:01:27.387Z] GET /api/enquiries/all
+[2025-11-24T14:01:27.390Z] [32MINFO[39M: 4
+[2025-11-24T14:01:27.400Z] [32MINFO[39M: 📥 [2025-11-24T14:01:27.400Z] GET /api/enquiries/all
+[2025-11-24T14:01:27.403Z] [32MINFO[39M: 4

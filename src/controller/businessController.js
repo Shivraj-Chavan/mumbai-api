@@ -1,6 +1,7 @@
 import slugify from "slugify";
 import pool from "../config/db.js";
 import { isAdminOrSubadmin } from "../utils/checkAdmin.js";
+import { logAdminAction } from "../utils/logAdminAction.js";
 
 // Generate unique slug
 export const getUniqueSlug = async (name, area, excludeId = null) => {
@@ -31,12 +32,10 @@ export const createBusiness = async (req, res) => {
   console.log("Creating business...");
 
   try {
-    const userId = req.user.id; 
-    const user = req.user; 
-    if (!user) return res.status(401).json({ message: "Unauthorized" });
-    console.log(user);
-    console.log(userId);
-    
+    const user = req.user;
+    if (!user) return res.status(401).json({ msg: "Unauthorized" });
+
+    const userId = user.id;
     const {
       owner_id: providedOwnerId,
       name,
@@ -45,7 +44,6 @@ export const createBusiness = async (req, res) => {
       pin_code,
       address,
       landmark,
-      sector,
       area,
       phone,
       wp_number,
@@ -56,72 +54,94 @@ export const createBusiness = async (req, res) => {
       latitude,
       longitude,
     } = req.body;
-    const owner_id = providedOwnerId || userId;
-    const slug = await getUniqueSlug(name, area);
 
-    // Validate required fields
+    const owner_id = providedOwnerId || userId;
+
+    // Required Validations
     if (!name) return res.status(400).json({ msg: "Business name is required" });
     if (!category_id) return res.status(400).json({ msg: "Category is required" });
     if (!area) return res.status(400).json({ msg: "Area is required" });
 
+    const slug = await getUniqueSlug(name, area);
 
-    // Ensure latitude and longitude are numbers or null
-    // const latValue = latitude ? parseFloat(latitude) : null;
-    // const lngValue = longitude ? parseFloat(longitude) : null;
+    // Parse timing JSON
+    let timingClean = {};
+    try {
+      timingClean = typeof timing === "string" ? JSON.parse(timing) : timing;
+    } catch {
+      timingClean = {};
+    }
+
+    const timingString = JSON.stringify(timingClean);
+
+    // Validate latitude & longitude
     const latValue = latitude && !isNaN(parseFloat(latitude)) ? parseFloat(latitude) : null;
     const lngValue = longitude && !isNaN(parseFloat(longitude)) ? parseFloat(longitude) : null;
 
-   console.log( { latitude: latValue, longitude: lngValue,});
+    // Insert business
+    const query = `
+      INSERT INTO businesses (
+        owner_id, name, category_id, subcategory_id,
+        pin_code, address, landmark, area,
+        phone, wp_number, email, description, website,
+        timing, slug, latitude, longitude
+      )
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `;
 
     const values = [
       owner_id ?? null,
       name ?? null,
-      category_id ?? null, 
+      category_id ?? null,
       subcategory_id ?? null,
       pin_code ?? null,
       address ?? null,
       landmark ?? null,
-      sector ?? null,
+      // sector ?? null,
       area ?? null,
       phone ?? null,
       wp_number ?? null,
       email ?? null,
       description ?? null,
       website ?? null,
-      JSON.stringify(timing ?? []),
+      timingString,
       slug,
       latValue,
-      lngValue,
+      lngValue
     ];
 
-    console.log("Final Data to Insert into DB:", values);
-
-    const query = `
-      INSERT INTO businesses (
-        owner_id, name, category_id, subcategory_id, 
-        pin_code, address, landmark, sector, area, 
-        phone, wp_number, email, description, website, timing, slug, latitude, longitude
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`;
-
     const [result] = await pool.query(query, values);
-    const newBusinessId = result.insertId;
+    const business_id = result.insertId;
 
-    // Log admin action only if sub-admin
-    // if (user.role === "sub-admin") {
-    //   await pool.query(
-    //     `INSERT INTO admin_actions (admin_id, action, target_type, target_id, created_at)
-    //      VALUES (?, ?, ?, ?, ?)`,
-    //     [user.id, "Created business", "Business", newBusinessId, new Date()]
-    //   );
-    //   console.log("Admin action logged for sub-admin");
-    // }
+    console.log("Business created:", business_id);
+    
+    // STORE PHOTOS IN DATABASE
+    if (req.files && req.files.length > 0) {
+      const imgQuery = `
+        INSERT INTO business_images (business_id, image_url, created_at)
+        VALUES (?, ?, NOW())
+      `;
 
-    res.status(201).json({ msg: "Business created successfully", id: newBusinessId });
+      for (const file of req.files) {
+        const imageUrl = `/uploads/business_photos/${file.filename}`;
+        await pool.query(imgQuery, [business_id, imageUrl]);
+      }
+    }
+
+    const adminId = req.admin?.id || req.user?.id; 
+    await logAdminAction(adminId, "ADDED_BUSINESS", "business", business_id);
+
+    return res.status(201).json({
+      msg: "Business created successfully",
+      business_id
+    });
+
   } catch (error) {
     console.error("BUSINESS create error:", error);
-    res.status(500).json({ msg: "Server error", error: error.message });
+    return res.status(500).json({ msg: "Server error", error: error.message });
   }
 };
+
 
 // admin clicks Verify on your Unverified list.
 export const verifyBusiness = async (req, res) => {
@@ -150,48 +170,168 @@ export const verifyBusiness = async (req, res) => {
 
 
 // get business Controller
+// export const getBusinesses = async (req, res) => {
+//   try {
+
+//     let {
+//       categoryslug,
+//       subcategoryslug,
+//       name,
+//       location,
+//       isVerified=1,
+//       page = 1,
+//       limit = 10,
+//     } = req.query;
+//     console.log('Raw query params:', JSON.stringify({ categoryslug, subcategoryslug, name, location, page, limit, isVerified }));
+
+
+//     page = Math.max(1, parseInt(page));
+//     limit = Math.max(1, parseInt(limit));
+//     const offset = (page - 1) * limit;
+
+//     let query = `
+//       SELECT b.*, 
+//              c.name AS category_name, 
+//              s.name AS subcategory_name 
+//       FROM businesses b
+//       LEFT JOIN categories c ON b.category_id = c.id
+//       LEFT JOIN subcategories s ON b.subcategory_id = s.id
+//       WHERE 1=1
+//     `;
+//     const values = [];
+
+//     if (isVerified !== undefined) {
+//       query += ` AND b.is_verified = ?`;
+//       // values.push(isVerified === "true");
+//       values.push(isVerified === "true");
+
+//     }
+    
+//     if (categoryslug) {
+//       query += ` AND b.category_id IN (SELECT id FROM categories WHERE slug = ?)`;
+//       values.push(categoryslug);
+//     }
+
+//     if (subcategoryslug) {
+//       query += ` AND b.subcategory_id IN (SELECT id FROM subcategories WHERE slug = ?)`;
+//       values.push(subcategoryslug);
+//     }
+
+//     if (name) {
+//       query += ` AND b.name LIKE ?`;
+//       values.push(`%${name}%`);
+//     }
+
+//     if (location) {
+//       query += ` AND (b.address LIKE ? OR b.city LIKE ? OR b.area LIKE ?)`;
+//       values.push(`%${location}%`, `%${location}%`, `%${location}%`);
+//     }
+
+//     query += ` ORDER BY b.created_at DESC LIMIT ? OFFSET ?`;
+//     values.push(limit, offset);
+
+//     const [rows] = await pool.query(query, values);
+
+//     let countQuery = `
+//       SELECT COUNT(*) AS total
+//       FROM businesses b
+//       LEFT JOIN categories c ON b.category_id = c.id
+//       LEFT JOIN subcategories s ON b.subcategory_id = s.id
+//       WHERE 1=1
+//     `;
+//     const countValues = [];
+
+//     if (isVerified !== undefined) {
+//       countQuery += ` AND b.is_Verified = ?`;
+//       countValues.push(isVerified === "true");
+//     }
+
+//     if (categoryslug) {
+//       countQuery += ` AND b.category_id IN (SELECT id FROM categories WHERE slug = ?)`;
+//       countValues.push(categoryslug);
+//     }
+
+//     if (subcategoryslug) {
+//       countQuery += ` AND b.subcategory_id IN (SELECT id FROM subcategories WHERE slug = ?)`;
+//       countValues.push(subcategoryslug);
+//     }
+
+//     if (name) {
+//       countQuery += ` AND b.name LIKE ?`;
+//       countValues.push(`%${name}%`);
+//     }
+
+//     if (location) {
+//       countQuery += ` AND (b.address LIKE ? OR b.city LIKE ? OR b.area LIKE ?)`;
+//       countValues.push(`%${location}%`, `%${location}%`, `%${location}%`);
+//     }
+
+//     const [[countResult]] = await pool.query(countQuery, countValues);
+//     const total = countResult.total;
+
+//     return res.status(200).json({
+//       success: true,
+//       total,
+//       page,
+//       limit,
+//       totalPages: Math.ceil(total / limit),
+//       data: rows,
+//     });
+
+//   } catch (error) {
+//     console.error("Error fetching businesses:", error);
+//     res.status(500).json({
+//       success: false,
+//       message: "Internal Server Error",
+//       error: error.message,
+//     });
+//   }
+// };
+
 export const getBusinesses = async (req, res) => {
   try {
-
+    // Destructure query params with defaults
     let {
       categoryslug,
       subcategoryslug,
       name,
       location,
-      isVerified=1,
+      isVerified = "1",
       page = 1,
       limit = 10,
     } = req.query;
-    console.log('Raw query:', { categoryslug, subcategoryslug, name, location, page, limit, isVerified });
 
+    // Make sure page & limit are numbers
     page = Math.max(1, parseInt(page));
     limit = Math.max(1, parseInt(limit));
     const offset = (page - 1) * limit;
 
+    // Parse isVerified into 0 or 1
+    const verified = isVerified === "true" || isVerified === "1" ? 1 : 0;
+
+    console.log("Fetching businesses with params:", JSON.stringify({
+      categoryslug, subcategoryslug, name, location, page, limit, verified
+    }));
+
+    // Main query
     let query = `
-      SELECT b.*, 
-             c.name AS category_name, 
-             s.name AS subcategory_name 
+      SELECT b.*,
+             c.name AS category_name,
+             s.name AS subcategory_name
       FROM businesses b
       LEFT JOIN categories c ON b.category_id = c.id
       LEFT JOIN subcategories s ON b.subcategory_id = s.id
-      WHERE 1=1
+      WHERE b.is_verified = ?
     `;
-    const values = [];
+    const values = [verified];
 
-    if (isVerified !== undefined) {
-      query += ` AND b.is_verified = ?`;
-      // values.push(isVerified === "true");
-      values.push(isVerified === "true");
-
-    }
-    
+    // Optional filters
     if (categoryslug) {
       query += ` AND b.category_id IN (SELECT id FROM categories WHERE slug = ?)`;
       values.push(categoryslug);
     }
 
-    if (subcategoryslug) {
+    if (subcategoryslug && subcategoryslug !== "undefined") {
       query += ` AND b.subcategory_id IN (SELECT id FROM subcategories WHERE slug = ?)`;
       values.push(subcategoryslug);
     }
@@ -211,26 +351,22 @@ export const getBusinesses = async (req, res) => {
 
     const [rows] = await pool.query(query, values);
 
+    // Count query for pagination
     let countQuery = `
       SELECT COUNT(*) AS total
       FROM businesses b
       LEFT JOIN categories c ON b.category_id = c.id
       LEFT JOIN subcategories s ON b.subcategory_id = s.id
-      WHERE 1=1
+      WHERE b.is_verified = ?
     `;
-    const countValues = [];
-
-    if (isVerified !== undefined) {
-      countQuery += ` AND b.is_Verified = ?`;
-      countValues.push(isVerified === "true");
-    }
+    const countValues = [verified];
 
     if (categoryslug) {
       countQuery += ` AND b.category_id IN (SELECT id FROM categories WHERE slug = ?)`;
       countValues.push(categoryslug);
     }
 
-    if (subcategoryslug) {
+    if (subcategoryslug && subcategoryslug !== "undefined") {
       countQuery += ` AND b.subcategory_id IN (SELECT id FROM subcategories WHERE slug = ?)`;
       countValues.push(subcategoryslug);
     }
@@ -266,6 +402,7 @@ export const getBusinesses = async (req, res) => {
     });
   }
 };
+
 
 
 export const getBusinessByUserId = async (req, res) => {
@@ -378,7 +515,6 @@ export const updateBusiness = async (req, res) => {
       pin_code = null,
       address = null,
       landmark = null,
-      sector = null,
       area = null,
       phone = null,
       wp_number = null,
@@ -403,8 +539,10 @@ export const updateBusiness = async (req, res) => {
       return isNaN(num) ? null : num;
     };
 
-    const latValue = parseNumber(latitude);
-    const lngValue = parseNumber(longitude);
+    // const latValue = parseNumber(latitude);
+    // const lngValue = parseNumber(longitude);
+    const latValue = latitude?.lat ?? null;
+    const lngValue = latitude?.lng ?? null;
 
     console.log("Latitude:", latValue, "Longitude:", lngValue);
 
@@ -415,7 +553,32 @@ export const updateBusiness = async (req, res) => {
   if (isAdminOrSubadmin(user)) {
       console.log(` ${role} is updating the business directly...`);
   // }
-     
+
+//   const cleanTiming = timing && typeof timing === "object" ? timing : {};
+// const timingString = JSON.stringify(cleanTiming);
+
+let cleanTiming = {};
+if (timing) {
+  if (typeof timing === "string") {
+    try {
+      cleanTiming = JSON.parse(timing);
+    } catch (err) {
+      console.warn("Failed to parse timing string, using empty object", err);
+      cleanTiming = {};
+    }
+  } else if (typeof timing === "object") {
+    cleanTiming = timing;
+  }
+}
+
+const timingString = JSON.stringify(cleanTiming);
+if (timingString.length > 65000) {
+  return res.status(400).json({ msg: "Timing data too large" });
+}
+// const timingString = JSON.stringify(cleanTiming);
+console.log("Timing JSON:", timingString);
+console.log("Timing length:", timingString.length);
+
       const [result] = await pool.execute(
         `UPDATE businesses SET 
           owner_id = ?, 
@@ -425,7 +588,6 @@ export const updateBusiness = async (req, res) => {
           pin_code = ?, 
           address = ?, 
           landmark = ?, 
-          sector = ?, 
           area = ?, 
           phone = ?, 
           wp_number = ?, 
@@ -446,14 +608,14 @@ export const updateBusiness = async (req, res) => {
           pin_code,
           address,
           landmark,
-          sector,
           area,
           phone,
           wp_number,
           email,
           description,
           website,   
-          typeof timing === "string" ? timing : JSON.stringify(timing),
+          // typeof timing === "string" ? timing : JSON.stringify(timing),
+          timingString,
           slug,
           is_verified,
           latValue,          
@@ -463,9 +625,18 @@ export const updateBusiness = async (req, res) => {
       );
       console.log("Update result:", result);
 
+      // if (result.affectedRows === 0) {
+      //   return res.status(404).json({ msg: "Business not found or nothing to update" });
+      // }
+
       if (result.affectedRows === 0) {
-        return res.status(404).json({ msg: "Business not found or nothing to update" });
-      }
+  // maybe check if row exists
+  const [exists] = await pool.execute(`SELECT id FROM businesses WHERE id = ?`, [id]);
+  if (exists.length === 0) {
+    return res.status(404).json({ msg: "Business not found" });
+  }
+}
+
 
       // Log subadmin action
       if (user.role === "sub-admin") {
@@ -498,11 +669,14 @@ export const updateBusiness = async (req, res) => {
         return res.status(409).json({ msg: "An update request is already pending for this business" });
       }
 
+      const cleanTiming = timing && typeof timing === "object" ? timing : {};
+const timingString = JSON.stringify(cleanTiming);
+
       await pool.execute(
         `INSERT INTO update_businesses (
           id, owner_id, name, category_id, subcategory_id, pin_code, address,
-          landmark, sector, area, phone, wp_number, email, description, website, timing, slug, latitude, longitude, is_verified
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?, ?, ?, ?, ?, ?,?)`,
+          landmark, area, phone, wp_number, email, description, website, timing, slug, latitude, longitude, is_verified
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?, ?, ?, ?, ?, ?)`,
         [
           id,
           userId,
@@ -512,14 +686,14 @@ export const updateBusiness = async (req, res) => {
           pin_code,
           address,
           landmark,
-          sector,
           area,
           phone,
           wp_number,
           email,
           description,
           website,
-          JSON.stringify(timing),
+          // JSON.stringify(timing),
+          timingString,
           slug,
           latValue,
           lngValue,
@@ -617,8 +791,19 @@ export const getPendingUpdates = async (req, res) => {
     const [[countResult]] = await pool.query(`SELECT COUNT(*) AS total FROM update_businesses`);
     const total = countResult.total;
     const totalPages = Math.ceil(total / limit);
-  try {
-    const [updates] = await pool.query(`SELECT * FROM update_businesses LIMIT ? OFFSET ?`, [limit, offset]);
+      try {
+        // const [updates] = await pool.query(`SELECT * FROM update_businesses LIMIT ? OFFSET ?`, [limit, offset]);
+        const [updates] = await pool.query(
+      `SELECT ub.*, 
+              c.slug AS categorySlug,
+              sc.slug AS subcategorySlug
+      FROM update_businesses ub
+      LEFT JOIN categories c ON ub.category_id = c.id
+      LEFT JOIN subcategories sc ON ub.subcategory_id = sc.id
+      LIMIT ? OFFSET ?`,
+      [limit, offset]
+    );
+
     const [images] = await pool.query(`SELECT * FROM update_business_images`);
 
     const imagesByBusinessId = {};
@@ -649,9 +834,14 @@ export const getPendingUpdates = async (req, res) => {
 export const approveUpdate = async (req, res) => {
   const id = req.params.id;
   const user = req.user;
+   const adminId = req.user?.id;
 
   try {
-    const [[pending]] = await pool.query(`SELECT * FROM update_businesses WHERE id = ?`, [id]);
+    // const [[pending]] = await pool.query(`SELECT * FROM update_businesses WHERE id = ?`, [id]);
+    const [[pending]] = await pool.query(
+  `SELECT * FROM update_businesses WHERE business_id = ? ORDER BY created_at DESC LIMIT 1`,
+  [id]
+);
     console.log("Fetched pending update:", pending);
     const [images] = await pool.query(`SELECT * FROM update_business_images WHERE id = ?`, [id]);
     console.log("Fetched pending images:", images);
@@ -667,7 +857,7 @@ export const approveUpdate = async (req, res) => {
      
     // Update the original business in businesses with the new data.
     await pool.query(
-      `UPDATE businesses SET  name=?, description=?, timing=?, website=?, phone=?, wp_number=?, address=?, area=?, landmark=?, sector=?, pin_code=?, category_id=?, subcategory_id=?, email=?, slug=?, owner_id=?, latitude=?, longitude=? 
+      `UPDATE businesses SET  name=?, description=?, timing=?, website=?, phone=?, wp_number=?, address=?, area=?, landmark=?, pin_code=?, category_id=?, subcategory_id=?, email=?, slug=?, owner_id=?, latitude=?, longitude=? ,is_verified=?
         WHERE id=?`,
       [
         pending.name,
@@ -679,7 +869,6 @@ export const approveUpdate = async (req, res) => {
         pending.address,
         pending.area,
         pending.landmark,
-        pending.sector,
         pending.pin_code,
         pending.category_id,
         pending.subcategory_id,
@@ -723,25 +912,24 @@ export const approveUpdate = async (req, res) => {
     await pool.query(`DELETE FROM update_business_images WHERE business_id = ?`, [id]);
     
     // Log action
-    // const actionText = user?.role === "sub-admin" ? "Subadmin approved business update" : "Admin approved business update";
+    const actionText = user?.role === "sub-admin" ? "Subadmin approved business update" : "Admin approved business update";
     if (user.role === 'sub-admin') {
     await pool.query(
       `INSERT INTO admin_actions (admin_id, action, target_type, target_id, created_at)
        VALUES (?, ?, ?, ?, NOW())`,
-      [user.id, "Subadmin approved business update", "Business", id]
+      [user.id, "Approved business update", "Business", id]
     );
   };
 
-    // Send Business Registration SMS
-    const recipientPhone = pending.phone || pending.wp_number;
-    if (recipientPhone) {
-      try {
-        const smsResponse = await sendSms("businessConfirmation", recipientPhone, {});
-        console.log("SMS Response:", JSON.stringify(smsResponse, null, 2));
-      } catch (err) {
-        console.error("Failed to send BusinessRegistration SMS:", err.message);
-      }
-    }
+  // Log action with admin_id only
+    // const actionText = req.user.role === "sub-admin" ? "Subadmin approved business update" : "Admin approved business update";
+    // await logAdminAction(adminId, actionText, "Business", id);
+//     await logAdminAction(
+//   req.user.id,
+//   "Approved business",
+//   "business",
+//   businessId
+// );
 
     res.json({ msg: "Business update approved" });
   } catch (err) {
@@ -753,8 +941,12 @@ export const approveUpdate = async (req, res) => {
 // Admin rejects update
 export const rejectUpdate = async (req, res) => {
   try {
+     console.log("Req.user in rejectUpdate:", req.user);
     const businessId = req.params.id;
-    console.log("Admin rejecting update for business:", businessId);
+    
+    const adminId = req.user?.id;
+    if (!adminId) return res.status(401).json({ msg: "Unauthorized" });
+    console.log("Admin rejecting update for business:", businessId , "adminId:", adminId);
 
     // 1. Fetch images linked to this business update
     const [images] = await pool.query(
@@ -782,14 +974,405 @@ export const rejectUpdate = async (req, res) => {
     await pool.query("DELETE FROM update_businesses WHERE id = ?", [businessId]);
 
     // log action
-    await pool.query(
-      "INSERT INTO admin_actions (admin_id, action, target_type, target_id, created_at) VALUES (?, ?, ?, ?, ?)",
-      [req.user.id, "Rejected business update", "Business", businessId]
-    );
+    // await pool.query(
+    //   "INSERT INTO admin_actions (admin_id, action, target_type, target_id, created_at) VALUES (?, ?, ?, ?, NOW())",
+    //   [req.user.id, "Rejected business update", "Business", businessId]
+    // );
+    await logAdminAction(req.admin.id, "REJECTED_BUSINESS", "business", businessId);
+
 
     res.json({ msg: "Update rejected and all images removed" });
   } catch (err) {
     console.error("Reject update failed:", err);
     res.status(500).json({ error: "Rejection failed", details: err.message });
+  }
+};
+
+
+// Increment businesss counts
+export const incrementBusinessViewCount = async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    // Insert a new view
+    await pool.query('INSERT INTO business_views (business_id) VALUES (?)', [id]);
+
+    // Get total views for this business
+    const [rows] = await pool.query(
+      'SELECT COUNT(*) AS viewCount FROM business_views WHERE business_id = ?',
+      [id]
+    );
+
+    const viewCount = rows[0]?.viewCount || 0;
+    console.log('viewCount',viewCount)
+
+    res.json({ business_id: id, viewCount });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: 'Server error' });
+  }
+};
+
+
+// get business
+export const getBusinessImages = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const [images] = await pool.query(
+      "SELECT id, image_url FROM business_images WHERE business_id = ?",
+      [id]
+    );
+
+    res.status(200).json({ images });
+  } catch (err) {
+    console.error("Error fetching images:", err);
+    res.status(500).json({ msg: "Server error", error: err.message });
+  }
+};
+
+
+// upload img for business
+export const uploadPhotosForBusiness = async (req, res) => {
+  console.log("Request Params:", req.params);
+  try {
+    const { businessId } = req.params;
+    console.log('businessid',businessId);
+    
+    const files = req.files;
+
+    if (!files || files.length === 0) {
+      console.warn("No files received in request");
+      return res.status(400).json({ msg: "No files uploaded" });
+    }
+    console.log(`Received ${files.length} files for business ID: ${businessId}`);
+
+    console.log("Checking payment plan for business:", businessId);
+    const [planResult] = await pool.query(
+      `SELECT plan FROM payments WHERE business_id = ? AND status = 'completed' ORDER BY id DESC LIMIT 1`,
+      [businessId]
+    );
+    console.log("Payment plan query result:", planResult);
+
+    const selectedPlan = planResult?.[0]?.plan?.toLowerCase() || 'free';
+    console.log(`Plan for business ${businessId}: ${selectedPlan}`);
+
+    // Define image limits by plan
+    const planLimits = {
+      free: 2,
+      silver: 5,
+      gold: 10,
+      platinum: 20,
+    };
+
+    const maxImages = planLimits[selectedPlan] || 2;
+    console.log(`Image limit for '${selectedPlan}' plan: ${maxImages}`);
+
+    // Check how many already uploaded
+    const [existingImages] = await pool.query(
+      `SELECT COUNT(*) AS count FROM business_images WHERE business_id = ?`,
+      [businessId]
+    );
+    console.log("Existing images query result:", existingImages);
+
+    const currentCount = existingImages[0]?.count || 0;
+    const newTotal = currentCount + files.length;
+
+    console.log(`Existing images: ${currentCount}, New uploads: ${files.length}, Total: ${newTotal}, Allowed: ${maxImages}`);
+
+    if (newTotal > maxImages) {
+      console.warn(`Upload exceeds limit! Allowed: ${maxImages}, Current: ${currentCount}`);
+      return res.status(400).json({
+        msg: `You can upload a maximum of ${maxImages} photos for the ${selectedPlan} plan. You already have ${currentCount}.`,
+      });
+    }
+
+    // File size validation
+    for (const file of files) {
+      console.log(`Checking size for: ${file.originalname}, Size: ${file.size} bytes`);
+      if (file.size > 5 * 1024 * 1024) {
+        return res.status(400).json({
+          msg: `File "${file.originalname}" exceeds 5MB limit.`,
+        });
+      }
+    }
+
+    const savedImageUrls = [];
+
+    for (let file of files) {
+      const imageUrl = `/uploads/${file.filename}`;
+      console.log(`Inserting image: ${imageUrl}`);
+
+      await pool.query(
+        "INSERT INTO business_images (business_id, image_url, created_at) VALUES (?, ?, NOW())",
+        [businessId, imageUrl]
+      );
+
+      savedImageUrls.push(imageUrl);
+    }
+    console.log(`Successfully saved ${savedImageUrls.length} images for business ${businessId}`);
+    res.status(201).json({
+      msg: "Photos uploaded successfully",
+      images: savedImageUrls,
+    });
+  } catch (err) {
+    console.error("Upload error:", err);
+    res.status(500).json({ msg: "Server error", error: err.message });
+  }
+};
+
+
+// Delete images
+// const __filename = fileURLToPath("");
+// const __dirname = path.dirname(__filename);
+
+// export const deleteImages = async (req, res) => {
+//   try {
+//     const businessId = req.params.id;
+//     const { photoUrl } = req.body;
+
+
+//     if (!photoUrl) {
+//       return res.status(400).json({ error: "photoUrl is required" });
+//     }
+
+//     const parts = photoUrl.split("/");
+//     const fileName = parts[parts.length - 1];
+//     const dbPath = `/uploads/${fileName}`;
+//     const filePath = path.join(__dirname, "../../uploads/business_photos", fileName);
+
+//     await pool.query(
+//       "DELETE FROM business_images WHERE image_url = ? AND business_id = ?",
+//       [dbPath, businessId]
+//     );
+
+//     try {
+//       await fs.access(filePath);
+//       await fs.unlink(filePath);
+//     } catch (err) {}
+
+//     res.json({ message: "Photo deleted successfully" });
+//   } catch (err) {
+//     console.error("Server Error:", err);
+//     res.status(500).json({ error: "Server error", details: err.message });
+//   }
+// };
+
+
+
+// Owner submits business edit
+export const submitBusinessUpdate = async (req, res) => {
+  const businessId = req.params.id;
+  const data = req.body;
+  const user = req.user;
+  
+  try {
+    if (user.role === 'admin' || user.role === 'sub-admin') {
+      return res.status(403).json({ msg: "Admins/Sub-admins must update directly" });
+    }
+
+        // Parse and validate latitude/longitude
+        const latValue = data.latitude ? parseFloat(data.latitude) : null;
+        const lngValue = data.longitude ? parseFloat(data.longitude) : null;
+    
+    await pool.query(
+      `REPLACE INTO update_businesses  (id, owner_id, name, description, timing, website, address, area, landmark, pin_code, phone, wp_number, category_id, subcategory_id, email, latitude, longitude, slug,is_verified)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,?, ?,?)`,
+      [
+        businessId,
+        data.owner_id,
+        data.name,
+        data.description,
+        data.timing,
+        data.website,
+        data.address,
+        data.area,
+        data.landmark,
+        data.pin_code,
+        data.phone,
+        data.wp_number,
+        data.category_id,
+        data.subcategory_id,
+        data.email ?? null,
+        // 0, 
+        latValue,
+        lngValue,
+        data.slug ?? null,
+        data.is_verified
+      ]
+    ); 
+    
+    // await pool.query("DELETE FROM update_business_images WHERE business_id = ?", [businessId]);
+    console.log("Old update images deleted for business:", businessId);
+
+    // Send Business Registration SMS
+    const recipientPhone = phone || wp_number;
+    if (recipientPhone) {
+      try {
+        const smsResponse = await sendSms("businessConfirmation", recipientPhone, {});
+        console.log("SMS Response:", JSON.stringify(smsResponse, null, 2));
+      } catch (err) {
+        console.error("Failed to send BusinessRegistration SMS:", err.message);
+      }
+    }
+
+    res.json({ msg: "Update submitted for review" });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ msg: "Failed to submit update" });
+  }
+};
+
+
+// Owner uploads photos for update
+export const uploadUpdatePhotos = async (req, res) => {
+  const businessId = req.params.id;
+  console.log('businessid',businessId)
+
+  try {
+    if (!req.files || req.files.length === 0) {
+      return res.status(400).json({ msg: "No files uploaded" });
+    }
+
+    // if (req.files.length > 2) {
+    //   return res.status(400).json({ msg: "Max 2 images allowed" });
+    // }
+
+     // STEP 1: Fetch selected plan
+     const [planResult] = await pool.query(
+      `SELECT plan FROM payments WHERE business_id = ? AND status = 'completed' ORDER BY id DESC LIMIT 1`,
+      [businessId]
+    );
+
+    const selectedPlan = planResult?.[0]?.plan || "free";
+    console.log(`Plan for business ${businessId}: ${selectedPlan}`);
+
+    // STEP 2: Define limits
+    const planLimits = {
+      free: 2,
+      silver: 5,
+      gold: 10,
+      platinum: 20,
+    };
+
+    const maxImages = planLimits[selectedPlan.toLowerCase()] || 2;
+    console.log(`Max images allowed for '${selectedPlan}' plan: ${maxImages}`);
+
+
+    // STEP 3: Validate
+    if (req.files.length > maxImages) {
+      console.warn(`Upload exceeds max limit (${maxImages}). Rejected.`);
+      return res.status(400).json({
+        msg: `Max ${maxImages} images allowed for ${selectedPlan} plan`,
+      });
+    }
+
+    for (const file of req.files) {
+      if (file.size > 5 * 1024 * 1024) {
+        return res.status(400).json({ msg: `File ${file.originalname} exceeds 5MB limit` });
+      }
+    }
+
+     // Prepare image paths
+     const photoData = req.files.map((file) => [businessId, `/uploads/${file.filename}`]);
+
+     // Store image paths
+     await pool.query(
+       `INSERT INTO update_business_images (business_id, image_url) VALUES ?`, [photoData]
+     );
+ 
+     console.log("Images saved to update_business_images");
+     res.json({ msg: "Images uploaded for review" });
+
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ msg: "Image upload failed" });
+  }
+};
+
+
+// subadmin tracking
+export const getAdminActions = async (req, res) => {
+  try {
+    const {
+      page = 1,
+      limit = 10,
+      search = "",
+      startDate = "",
+      endDate = "",
+    } = req.query;
+
+    const offset = (page - 1) * limit;
+
+    // Base WHERE
+    let whereClauses = ["1=1"];
+    const params = [];
+
+    if (search) {
+      whereClauses.push(`(
+        aa.action LIKE ? OR
+        aa.target_type LIKE ? OR
+        aa.target_id LIKE ? OR
+        u.name LIKE ?
+      )`);
+      const searchValue = `%${search}%`;
+      params.push(searchValue, searchValue, searchValue, searchValue);
+    }
+
+    if (startDate && endDate) {
+      whereClauses.push(`aa.created_at BETWEEN ? AND ?`);
+      params.push(startDate, endDate);
+    }
+
+    const whereSQL = whereClauses.join(" AND ");
+
+    // Fetch actions
+    // const [actions] = await pool.query(
+    //   `
+    //   SELECT 
+    //     aa.id,
+    //     aa.admin_id,
+    //     u.name AS admin_name,
+    //     aa.action,
+    //     aa.target_type,
+    //     aa.target_id,
+    //     aa.created_at
+    //   FROM admin_actions aa
+    //   LEFT JOIN users u ON u.id = aa.admin_id
+    //   WHERE ${whereSQL}
+    //   ORDER BY aa.created_at DESC
+    //   LIMIT ? OFFSET ?
+    //   `,
+    //   [...params, parseInt(limit), parseInt(offset)]
+    // );
+
+    const [actions] = await pool.query(
+  `SELECT id, admin_id, action, target_type, target_id, created_at
+   FROM admin_actions
+   ORDER BY created_at DESC
+   LIMIT ? OFFSET ?`,
+  [parseInt(limit), parseInt(offset)]
+);
+
+
+    // Count total
+    const [countResult] = await pool.query(
+      `SELECT COUNT(*) AS total
+       FROM admin_actions aa
+       LEFT JOIN users u ON u.id = aa.admin_id
+       WHERE ${whereSQL}`,
+      params
+    );
+
+    const totalPages = Math.ceil(countResult[0].total / limit);
+
+    res.json({
+      actions,
+      totalPages,
+      totalCount: countResult[0].total,
+    });
+  } catch (err) {
+    console.error("Error fetching admin actions:", err);
+    res.status(500).json({ message: "Error fetching admin actions", error: err.message });
   }
 };

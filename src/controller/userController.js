@@ -1,4 +1,5 @@
 import pool from "../config/db.js";
+import { logAdminAction } from "../utils/logAdminAction.js";
 
 export const getAllUsers = async (req, res) => {
   console.log("Controller: getAllUsers called");
@@ -119,6 +120,9 @@ export const createUser = async (req, res) => {
       "INSERT INTO users (name, phone, email) VALUES (?, ?, ?)",
       [name || null, phone, email || null]
     );
+
+    await logAdminAction(req.admin.id, "ADDED_USER", "user", userId);
+
     return res.status(201).json({ message: "User created successfully" });
   } catch (error) {
     console.error("createUser error:", error);
