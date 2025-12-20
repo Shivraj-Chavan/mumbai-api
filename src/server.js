@@ -7,16 +7,24 @@ import path from 'path';
 import router from "./routes/index.js";
 import cors from "cors";
 import bodyParser from "body-parser";
+import fs from "fs";
+
+dotenv.config();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
-dotenv.config();
 app.use(express.json());
-console.log = (...args) => logger.info(args.join(' '));
-console.info = (...args) => logger.info(args.join(' '));
-console.warn = (...args) => logger.warn(args.join(' '));
-console.error = (...args) => logger.error(args.join(' '));
-// app.use(bodyParser.json());
-app.use("/uploads", express.static("uploads"));
+// console.log = (...args) =>
+//   logger.info(args.map(a => typeof a === 'object' ? JSON.stringify(a, null, 2) : a).join(' '));
+
+// console.info = console.log;
+// console.warn = (...args) => logger.warn(args.join(' '));
+// console.error = (...args) => logger.error(args.join(' '));
+
+// app.use("/uploads", express.static("uploads"));
+app.use("/uploads", express.static(path.join(process.cwd(), "uploads")));
 
 app.use((req, res, next) => {
   console.log(`📥 [${new Date().toISOString()}] ${req.method} ${req.originalUrl}`);
@@ -46,8 +54,12 @@ app.get("/uploads/:imageName", (req, res) => {
 
   const imageName = req.params.imageName;
   const imagePath = path.join(__dirname, "uploads/business_photos", imageName);
+  console.log("Full image path:", imagePath);
 
+  const exists = fs.existsSync(imagePath);
   if (fs.existsSync(imagePath)) {
+    console.log("File exists?", exists);
+
     const ext = path.extname(imageName).toLowerCase();
 
     switch (ext) {
@@ -65,6 +77,7 @@ app.get("/uploads/:imageName", (req, res) => {
         res.setHeader("Content-Type", "application/octet-stream");
     }
 
+    console.log(" Sending file...");
     return res.sendFile(imagePath);
   } else {
     console.log("❌ Image not found:", imagePath);
@@ -73,8 +86,6 @@ app.get("/uploads/:imageName", (req, res) => {
 });
 
 securityMiddlewares(app);
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 app.use("/api", router);
 

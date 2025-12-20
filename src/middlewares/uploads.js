@@ -50,7 +50,7 @@ export const upload = {
 
         try {
           for (const file of req.files || []) {
-            const type = await fileTypeFromFile(file.path); // ✅ FIXED
+            const type = await fileTypeFromFile(file.path); 
 
             if (!type || !allowedMime.includes(type.mime)) {
               fs.unlinkSync(file.path);

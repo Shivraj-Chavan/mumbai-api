@@ -29,10 +29,9 @@ export const dynamicPlanBasedUpload = async (req, res, next) => {
       // Call multer middleware
       multerMiddleware(req, res, (err) => {
         if (err) {
-          // multer error (too many files, file size, invalid files, etc.)
           return res.status(400).json({ msg: err.message });
         }
-        next(); // multer done, pass control to controller
+        next(); 
       });
     } catch (err) {
       console.error("Error fetching plan:", err);

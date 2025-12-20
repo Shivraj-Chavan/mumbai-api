@@ -25,7 +25,10 @@ export const getAllUsers = async (req, res) => {
       params.push(Number(is_blocked));
     }
 
-    // Inject LIMIT and OFFSET directly as numbers
+    // Sort AFTER filters
+    baseQuery += " ORDER BY created_at DESC";
+
+    // Pagination
     baseQuery += ` LIMIT ${limit} OFFSET ${offset}`;
 
     console.log("Final Query:", baseQuery);
@@ -33,13 +36,22 @@ export const getAllUsers = async (req, res) => {
 
     const [rows] = await pool.execute(baseQuery, params);
 
-    // Optional: get total count for pagination
+    // Count Query (NO ORDER BY here)
     let countQuery = "SELECT COUNT(*) as total FROM users WHERE 1=1";
     const countParams = [];
-    if (search) countQuery += " AND (name LIKE ? OR phone LIKE ?)" && countParams.push(`%${search}%`, `%${search}%`);
-    if (typeof is_blocked !== "undefined") countQuery += " AND is_blocked = ?" && countParams.push(Number(is_blocked));
+
+    if (search) {
+      countQuery += " AND (name LIKE ? OR phone LIKE ?)";
+      countParams.push(`%${search}%`, `%${search}%`);
+    }
+
+    if (typeof is_blocked !== "undefined") {
+      countQuery += " AND is_blocked = ?";
+      countParams.push(Number(is_blocked));
+    }
 
     const [countResult] = await pool.execute(countQuery, countParams);
+
     const total = countResult[0]?.total || 0;
     const totalPages = Math.ceil(total / limit);
 
@@ -52,12 +64,12 @@ export const getAllUsers = async (req, res) => {
         limit,
       },
     });
+
   } catch (error) {
     console.error("getAllUsers error:", error);
     return res.status(500).json({ message: "Failed to get users" });
   }
 };
-
 
 
 export const getMyProfile = async (req, res) => {
@@ -78,26 +90,65 @@ export const getMyProfile = async (req, res) => {
   }
 };
 
+// export const updateUserProfile = async (req, res) => {
+//   const { id } = req.params;
+//   const { name, phone, profile_image } = req.body;
+//   console.log("Controller: updateUserProfile", id, { name, phone, profile_image });
+
+//   try {
+//     const [result] = await pool.execute(
+//       "UPDATE users SET name = ?, phone = ?, profile_image = ? WHERE id = ?",
+//       [name, phone, profile_image, id]
+//     );
+//     console.log("Update result:", result);
+//     if (result.affectedRows === 0) {
+//       return res.status(404).json({ message: "User not found" });
+//     }
+//     return res.json({ message: "Profile updated successfully" });
+//   } catch (error) {
+//     console.error("updateUserProfile error:", error);
+//     return res.status(500).json({ message: "Failed to update profile" });
+//   }
+// };
+
+
 export const updateUserProfile = async (req, res) => {
   const { id } = req.params;
-  const { name, phone, profile_image } = req.body;
-  console.log("Controller: updateUserProfile", id, { name, phone, profile_image });
+  const { name = null, phone = null, email = null, is_blocked = 0, profile_image = null } = req.body;
 
   try {
     const [result] = await pool.execute(
-      "UPDATE users SET name = ?, phone = ?, profile_image = ? WHERE id = ?",
-      [name, phone, profile_image, id]
+      "UPDATE users SET name = ?, phone = ?, email = ?, is_blocked = ?, profile_image = ? WHERE id = ?",
+      [
+        name ?? null,
+        phone ?? null,
+        email ?? null,
+        is_blocked ?? 0,       
+        profile_image ?? null,
+        id
+      ]
     );
-    console.log("Update result:", result);
+
+
     if (result.affectedRows === 0) {
       return res.status(404).json({ message: "User not found" });
     }
-    return res.json({ message: "Profile updated successfully" });
+
+    // Return updated user
+    const [updatedRows] = await pool.execute("SELECT * FROM users WHERE id = ?", [id]);
+
+     // Log admin action 
+    if (req.admin?.id) {
+      await logAdminAction(req.admin.id, "UPDATED_USER PROFILE", "user", id);
+    }
+
+    return res.json({ message: "Profile updated successfully", data: updatedRows[0] });
   } catch (error) {
     console.error("updateUserProfile error:", error);
     return res.status(500).json({ message: "Failed to update profile" });
   }
 };
+
 
 export const createUser = async (req, res) => {
   const { name, phone, email } = req.body;
@@ -116,16 +167,45 @@ export const createUser = async (req, res) => {
     if (existing.length > 0) {
       return res.status(409).json({ message: "Phone number already registered." });
     }
-    await pool.execute(
+   const [result] = await pool.execute(
       "INSERT INTO users (name, phone, email) VALUES (?, ?, ?)",
       [name || null, phone, email || null]
     );
 
-    await logAdminAction(req.admin.id, "ADDED_USER", "user", userId);
+    const userId = result.insertId;
+    if (req.admin?.id) {
+      await logAdminAction(req.admin.id, "ADDED_USER", "user", userId);
+    }
 
-    return res.status(201).json({ message: "User created successfully" });
+    return res.status(201).json({ message: "User created successfully", user: { id: userId, name, phone, email } });
   } catch (error) {
     console.error("createUser error:", error);
     return res.status(500).json({ message: "Internal server error" });
   }
 };
+
+
+// user profile 
+export const completeProfile = async (req, res) => {
+  try {
+    const userId = req.user.id;
+    const { name, email } = req.body;
+
+    const [result] = await pool.execute(
+      "UPDATE users SET name=?, email=? WHERE id=?",
+      [name, email, userId]
+    );
+
+    res.json({
+      msg: "Profile updated",
+      name,
+      email,
+      phone: req.user.phone,
+      role: req.user.role,
+      token: req.user.token
+    });
+  } catch (error) {
+    res.status(500).json({ msg: "Something went wrong" });
+  }
+};
+
