@@ -1,5 +1,5 @@
 import pool from "../config/db.js";
-import { upload } from "./upload.js";
+import { upload } from "./uploads.js";
 
 export const dynamicPlanBasedUpload = async (req, res, next) => {
     try {
@@ -22,7 +22,7 @@ export const dynamicPlanBasedUpload = async (req, res, next) => {
         platinum: 20,
       };
   
-      const maxCount = planLimits[selectedPlan.toLowerCase()] || 2;
+      const maxCount = planLimits[selectedPlan.toLowerCase()] || 5;
   
       const multerMiddleware = upload.array("photos", maxCount);
   

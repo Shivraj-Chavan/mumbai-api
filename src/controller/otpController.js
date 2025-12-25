@@ -36,7 +36,7 @@ export const sendOTP = async (req, res) => {
       [phone, otp, expiresAt, otp, expiresAt]
     );
 
-    return res.status(200).json({ msg: "OTP sent to your Phone Number" });
+    return res.status(200).json({ msg: "OTP sent to your Phone Number" ,otp});
   } catch (error) {
     console.error("Error sending OTP:", error);
     return res.status(500).json({ msg: "Something went wrong. Please try again.", error: error.message });

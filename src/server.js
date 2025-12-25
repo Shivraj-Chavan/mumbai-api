@@ -24,7 +24,7 @@ app.use(express.json());
 // console.error = (...args) => logger.error(args.join(' '));
 
 // app.use("/uploads", express.static("uploads"));
-app.use("/uploads", express.static(path.join(process.cwd(), "uploads")));
+// app.use("/uploads", express.static(path.join(process.cwd(), "uploads")));
 
 app.use((req, res, next) => {
   console.log(`📥 [${new Date().toISOString()}] ${req.method} ${req.originalUrl}`);
@@ -48,12 +48,12 @@ app.use((err, req, res, next) => {
   }
   next(err);
 });
-app.get("/uploads/:imageName", (req, res) => {
+app.get("/images/:imageName", (req, res) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Cross-Origin-Resource-Policy", "cross-origin");
 
   const imageName = req.params.imageName;
-  const imagePath = path.join(__dirname, "uploads/business_photos", imageName);
+  const imagePath = path.join(__dirname, "../uploads", imageName);
   console.log("Full image path:", imagePath);
 
   const exists = fs.existsSync(imagePath);

@@ -1,6 +1,0 @@
-[2025-10-29T06:09:11.937Z] [32MINFO[39M:  Server running on port  http://localhost:5004
-[2025-10-29T06:09:11.987Z] [32MINFO[39M: MySQL Database Connected
-[2025-10-29T06:09:47.399Z] [32MINFO[39M: 📥 [2025-10-29T06:09:47.399Z] GET /api/count/webview
-[2025-10-29T06:09:47.404Z] [32MINFO[39M: 📥 [2025-10-29T06:09:47.404Z] GET /api/categories
-[2025-10-29T06:09:47.431Z] [32MINFO[39M: 📥 [2025-10-29T06:09:47.431Z] GET /api/count/webview
-[2025-10-29T06:09:47.454Z] [32MINFO[39M: 📥 [2025-10-29T06:09:47.454Z] GET /api/categories

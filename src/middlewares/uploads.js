@@ -23,7 +23,7 @@ const fileFilter = (req, file, cb) => {
 };
 
 const storage = multer.diskStorage({
-  destination: (req, file, cb) => cb(null, uploadDir),
+  destination: (req, file, cb) => cb(null, "uploads/"),
   filename: (req, file, cb) => {
     const uniqueName =
       Date.now() +
@@ -54,7 +54,7 @@ export const upload = {
 
             if (!type || !allowedMime.includes(type.mime)) {
               fs.unlinkSync(file.path);
-              return res.status(400).json({ error: "🚫 Invalid or fake image file" });
+              return res.status(400).json({ error: " Invalid or fake image file" });
             }
           }
 

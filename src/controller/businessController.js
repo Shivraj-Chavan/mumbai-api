@@ -125,7 +125,7 @@ export const createBusiness = async (req, res) => {
       `;
 
       for (const file of req.files) {
-        const imageUrl = `/uploads/business_photos/${file.filename}`;
+        const imageUrl = file.filename;
         await pool.query(imgQuery, [business_id, imageUrl]);
       }
     }
@@ -518,9 +518,7 @@ export const getBusinessById = async (req, res) => {
     // Format images for frontend
     const formattedPhotos = photos.map((p) => ({
       id: p.id,
-      url: p.image_url.startsWith("http")
-        ? p.image_url
-        : `http://localhost:5009${p.image_url}`,
+      url: p.image_url,
       isNew: false
     }));
 
@@ -589,9 +587,6 @@ export const updateBusiness = async (req, res) => {
 
     console.log("Latitude:", latValue, "Longitude:", lngValue);
 
-
-     // Admin updates directly
-    // if (role === "admin") {
     
   if (isAdminOrSubadmin(user)) {
       console.log(` ${role} is updating the business directly...`);
@@ -672,6 +667,19 @@ console.log("Timing length:", timingString.length);
       //   return res.status(404).json({ msg: "Business not found or nothing to update" });
       // }
 
+      if (req.files && req.files.length > 0) {
+        const imgQuery = `
+          INSERT INTO business_images (business_id, image_url, created_at)
+          VALUES (?, ?, NOW())
+        `;
+      
+        for (const file of req.files) {
+          await pool.query(imgQuery, [id, file.filename]);
+        }
+      
+        console.log("Images added for business:", id);
+      }
+
       if (result.affectedRows === 0) {
   // maybe check if row exists
   const [exists] = await pool.execute(`SELECT id FROM businesses WHERE id = ?`, [id]);
@@ -706,11 +714,11 @@ console.log("Timing length:", timingString.length);
 
     } else {
       // Owner submit request for approval
-      const [existing] = await pool.execute(`SELECT id FROM update_businesses WHERE id = ? AND is_verified = 0`, [id]);
+      // const [existing] = await pool.execute(`SELECT id FROM update_businesses WHERE id = ? AND is_verified = 0`, [id]);
 
-      if (existing.length > 0) {
-        return res.status(409).json({ msg: "An update request is already pending for this business" });
-      }
+      // if (existing.length > 0) {
+      //   return res.status(409).json({ msg: "An update request is already pending for this business" });
+      // }
 
       const cleanTiming = timing && typeof timing === "object" ? timing : {};
 const timingString = JSON.stringify(cleanTiming);
@@ -744,7 +752,18 @@ const timingString = JSON.stringify(cleanTiming);
         ]
       );
       console.log("Owner update inserted into update_businesses table.");
-
+      if (req.files && req.files.length > 0) {
+        const imgQuery = `
+          INSERT INTO update_business_images (business_id, image_url, created_at)
+          VALUES (?, ?, NOW())
+        `;
+      
+        for (const file of req.files) {
+          await pool.query(imgQuery, [id, file.filename]);
+        }
+      
+        console.log("Images added for business:", id);
+      }
       // Send Business Registration SMS
     // const recipientPhone = phone || wp_number;
     // if (recipientPhone) {
@@ -1017,10 +1036,10 @@ export const approveUpdate = async (req, res) => {
     );
 
     if (images.length > 0) {
-      await pool.query(
-        "DELETE FROM business_images WHERE business_id = ?",
-        [businessId]
-      );
+      // await pool.query(
+      //   "DELETE FROM business_images WHERE business_id = ?",
+      //   [businessId]
+      // );
 
       const insertValues = images.map(img => [businessId, img.image_url]);
       await pool.query(
@@ -1266,79 +1285,86 @@ export const getBusinessImages = async (req, res) => {
 
 export const uploadPhotosForBusiness = async (req, res) => {
   console.log("Request Params:", req.params);
-
   try {
     const { businessId } = req.params;
-    console.log('businessId:', businessId);
-
-    if (req.files && Array.isArray(req.files)) {
-      console.log("FILES RECEIVED:");
-      req.files.forEach((file, index) => {
-        console.log(`File ${index + 1}:`, {
-          originalname: file.originalname,
-          mimetype: file.mimetype,
-          size: file.size,
-          filename: file.filename,
-        });
-      });
-    } else {
-      console.log("NO FILES RECEIVED");
-    }
-
+    console.log('businessid',businessId);
+    
     const files = req.files;
+
     if (!files || files.length === 0) {
       console.warn("No files received in request");
       return res.status(400).json({ msg: "No files uploaded" });
     }
-    // console.log("Uploaded photos:", photos.map(p => JSON.stringify(p)).join(", "));
+    console.log(`Received ${files.length} files for business ID: ${businessId}`);
 
-    // Check payment plan
+    console.log("Checking payment plan for business:", businessId);
     const [planResult] = await pool.query(
       `SELECT plan FROM payments WHERE business_id = ? AND status = 'completed' ORDER BY id DESC LIMIT 1`,
       [businessId]
     );
-    console.log("Payment plan result:", JSON.stringify(planResult));
+    console.log("Payment plan query result:", planResult);
 
     const selectedPlan = planResult?.[0]?.plan?.toLowerCase() || 'free';
     console.log(`Plan for business ${businessId}: ${selectedPlan}`);
 
-    const planLimits = { free: 2, silver: 5, gold: 10, platinum: 20 };
-    const maxImages = planLimits[selectedPlan] || 2;
+    // Define image limits by plan
+    const planLimits = {
+      free: 2,
+      silver: 5,
+      gold: 10,
+      platinum: 20,
+    };
 
-    // Count existing images
+    const maxImages = planLimits[selectedPlan] || 5;
+    console.log(`Image limit for '${selectedPlan}' plan: ${maxImages}`);
+
+    // Check how many already uploaded
     const [existingImages] = await pool.query(
       `SELECT COUNT(*) AS count FROM business_images WHERE business_id = ?`,
       [businessId]
     );
+    console.log("Existing images query result:", existingImages);
+
     const currentCount = existingImages[0]?.count || 0;
     const newTotal = currentCount + files.length;
 
+    console.log(`Existing images: ${currentCount}, New uploads: ${files.length}, Total: ${newTotal}, Allowed: ${maxImages}`);
+
     if (newTotal > maxImages) {
+      console.warn(`Upload exceeds limit! Allowed: ${maxImages}, Current: ${currentCount}`);
       return res.status(400).json({
-        msg: `You can upload a maximum of ${maxImages} photos for the ${selectedPlan} plan. You already have ${currentCount}.`
+        msg: `You can upload a maximum of ${maxImages} photos for the ${selectedPlan} plan. You already have ${currentCount}.`,
       });
     }
 
-    // File size check
+    // File size validation
     for (const file of files) {
+      console.log(`Checking size for: ${file.originalname}, Size: ${file.size} bytes`);
       if (file.size > 5 * 1024 * 1024) {
-        return res.status(400).json({ msg: `File "${file.originalname}" exceeds 5MB limit.` });
+        return res.status(400).json({
+          msg: `File "${file.originalname}" exceeds 5MB limit.`,
+        });
       }
     }
 
     const savedImageUrls = [];
-    for (const file of files) {
+
+    for (let file of files) {
       const imageUrl = `/uploads/${file.filename}`;
+      console.log(`Inserting image: ${imageUrl}`);
+
       await pool.query(
         "INSERT INTO business_images (business_id, image_url, created_at) VALUES (?, ?, NOW())",
         [businessId, imageUrl]
       );
+
       savedImageUrls.push(imageUrl);
     }
-
     console.log(`Successfully saved ${savedImageUrls.length} images for business ${businessId}`);
-    res.status(201).json({ msg: "Photos uploaded successfully", images: savedImageUrls });
-
+    res.status(201).json({
+      msg: "Photos uploaded successfully",
+      images: savedImageUrls,
+    });
   } catch (err) {
     console.error("Upload error:", err);
     res.status(500).json({ msg: "Server error", error: err.message });
@@ -1348,39 +1374,91 @@ export const uploadPhotosForBusiness = async (req, res) => {
 
 
 // Delete images
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
+
+// export const deleteImages = async (req, res) => {
+//   try {
+//     const businessId = req.params.id;
+//     const photoUrl = req.body?.photoUrl;
+//     console.log("REQ BODY:", req.body);
+
+
+//     if (!photoUrl) {
+//       return res.status(400).json({ error: "photoUrl is required" });
+//     }
+
+//     const parts = photoUrl.split("/");
+//     const fileName = parts[parts.length - 1];
+//     const dbPath = `/uploads/${fileName}`;
+//     const filePath = path.join(__dirname, "../../uploads/business_photos", fileName);
+
+//     await pool.query(
+//       "DELETE FROM business_images WHERE image_url = ? AND business_id = ?",
+//       [dbPath, businessId]
+//     );
+
+//     try {
+//       await fs.access(filePath);
+//       await fs.unlink(filePath);
+//     } catch (err) {}
+
+//     res.json({ message: "Photo deleted successfully" });
+//   } catch (err) {
+//     console.error("Server Error:", err);
+//     res.status(500).json({ error: "Server error", details: err.message });
+//   }
+// };
+
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export const deleteImages = async (req, res) => {
   try {
-    const businessId = req.params.id;
-    const photoUrl = req.body?.photoUrl;
-    console.log("REQ BODY:", req.body);
+    console.log('DELETE IMAGE', req.query.photoUrl)
+    console.log("DELETE IMAGE HIT");
+    console.log("PARAMS:", req.params);
+    console.log("QUERY:", req.query);
 
+    const businessId = req.params.id;
+    const photoUrl = req.query.photoUrl; 
 
     if (!photoUrl) {
       return res.status(400).json({ error: "photoUrl is required" });
     }
 
-    const parts = photoUrl.split("/");
-    const fileName = parts[parts.length - 1];
-    const dbPath = `/uploads/${fileName}`;
-    const filePath = path.join(__dirname, "../../uploads/business_photos", fileName);
-
-    await pool.query(
-      "DELETE FROM business_images WHERE image_url = ? AND business_id = ?",
-      [dbPath, businessId]
+    const fileName = path.basename(photoUrl);
+    const filePath = path.join(
+      __dirname,
+      "../../uploads/business_photos",
+      fileName
     );
 
-    try {
-      await fs.access(filePath);
-      await fs.unlink(filePath);
-    } catch (err) {}
+    const [result] = await pool.query(
+      "DELETE FROM business_images WHERE image_url = ? AND business_id = ?",
+      [photoUrl, businessId]
+    );
 
-    res.json({ message: "Photo deleted successfully" });
+    if (!result.affectedRows) {
+      return res.status(404).json({ error: "Image not found" });
+    }
+
+    //  Delete file (optional, non-fatal)
+    try {
+      await fs.unlink(filePath);
+      console.log("🗑 File deleted from disk");
+    } catch (fsErr) {
+      console.warn("File not found on disk:", fsErr.message);
+    }
+
+    return res.json({ message: "Photo deleted successfully" });
   } catch (err) {
-    console.error("Server Error:", err);
-    res.status(500).json({ error: "Server error", details: err.message });
+    console.error(" DELETE IMAGE CRASH:", err);
+    return res.status(500).json({
+      error: "Internal server error",
+      details: err.message,
+    });
   }
 };
 
@@ -1453,6 +1531,9 @@ export const submitBusinessUpdate = async (req, res) => {
 export const uploadUpdatePhotos = async (req, res) => {
   const businessId = req.params.id;
   console.log('businessId',businessId)
+  console.log("Content-Type:", req.headers["content-type"]);
+  console.log("FILES:", req.files);
+  console.log("BODY:", req.body);
 
   try {
     if (!req.files || req.files.length === 0) {
@@ -1480,7 +1561,7 @@ export const uploadUpdatePhotos = async (req, res) => {
       platinum: 20,
     };
 
-    const maxImages = planLimits[selectedPlan.toLowerCase()] || 2;
+    const maxImages = planLimits[selectedPlan.toLowerCase()] || 5;
     console.log(`Max images allowed for '${selectedPlan}' plan: ${maxImages}`);
 
 
