@@ -1,5 +1,5 @@
 import express from "express";
-import { createBusiness , getBusinesses, getBusinessByUserId, getBusinessById, updateBusiness, deleteBusiness, getBusinessBySlug, verifyBusiness, getPendingUpdates, approveUpdate, rejectUpdate, incrementBusinessViewCount, getBusinessImages, uploadPhotosForBusiness, submitBusinessUpdate, uploadUpdatePhotos, getAdminActions, deleteImages} from "../controller/businessController.js";
+import { createBusiness , getBusinesses, getBusinessByUserId, getBusinessById, updateBusiness, deleteBusiness, getBusinessBySlug, verifyBusiness, getPendingUpdates, approveUpdate, rejectUpdate, incrementBusinessViewCount, getBusinessImages, uploadPhotosForBusiness, submitBusinessUpdate, uploadUpdatePhotos, getAdminActions, deleteImages, globalSearchBusinesses} from "../controller/businessController.js";
 import { validateAdmin, validateUser } from "../middlewares/auth.js";
 import multer from "multer";
 import { upload } from "../middlewares/uploads.js";
@@ -11,7 +11,7 @@ router.post("/", validateUser, upload.array("photos", 5), createBusiness);
 router.get("/", getBusinesses);
 router.get("/user",validateUser, getBusinessByUserId);
 router.get("/:id",validateUser, getBusinessById);
-router.post("/:id",validateUser,upload.array("photos", 5), updateBusiness); 
+router.put("/:id",validateUser,upload.array("photos", 5), updateBusiness); 
 router.delete("/:id",validateUser,deleteBusiness);
 router.get("/s/:slug",getBusinessBySlug)
 router.put("/verify/:id", verifyBusiness);
@@ -21,8 +21,11 @@ router.post("/:businessId/photos",dynamicPlanBasedUpload, uploadPhotosForBusines
 router.delete('/:id/photos',deleteImages);
 
 
+// Search 
+// router.get("/search",globalSearchBusinesses)
+
  // owner submits edit
-router.put('/update/:id', validateUser, submitBusinessUpdate); //Owner submits business update
+router.put('/update/:id', validateUser,upload.array("photos", 5), submitBusinessUpdate); //Owner submits business update
 router.post('/update/:id/photos',validateUser,upload.array("photos", 5), uploadUpdatePhotos); // owner uploads photos
 
 

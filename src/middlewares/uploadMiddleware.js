@@ -16,22 +16,32 @@ export const dynamicPlanBasedUpload = async (req, res, next) => {
       const selectedPlan = planResult?.[0]?.plan || "free";
   
       const planLimits = {
-        free: 2,
-        silver: 5,
+        free: 5,
+        silver: 8,
         gold: 10,
         platinum: 20,
       };
   
       const maxCount = planLimits[selectedPlan.toLowerCase()] || 5;
   
-      const multerMiddleware = upload.array("photos", maxCount);
+      // const multerMiddleware = upload.array("photos", maxCount);
+      // const multerMiddleware = upload.single("image");
+      // const uploadMiddleware = upload.array("photos", maxCount);
   
       // Call multer middleware
-      multerMiddleware(req, res, (err) => {
+      // multerMiddleware(req, res, (err) => {
+      //   if (err) {
+      //     return res.status(400).json({ msg: err.message });
+      //   }
+      //   next(); 
+      // });
+      const uploadMiddleware = upload.array("photos", maxCount);
+      
+      uploadMiddleware(req, res, (err) => {
         if (err) {
-          return res.status(400).json({ msg: err.message });
+          return res.status(400).json({ message: err.message });
         }
-        next(); 
+        next();
       });
     } catch (err) {
       console.error("Error fetching plan:", err);

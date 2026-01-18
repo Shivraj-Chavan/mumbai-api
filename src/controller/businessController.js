@@ -33,6 +33,17 @@ export const getUniqueSlug = async (name, area, excludeId = null) => {
 export const createBusiness = async (req, res) => {
   console.log("Creating business...");
 
+  const rawServices = req.body.services;
+let services = [];
+
+try {
+  services = typeof rawServices === "string"
+    ? JSON.parse(rawServices)
+    : rawServices || [];
+} catch (err) {
+  services = [];
+}
+
   try {
     const user = req.user;
     if (!user) return res.status(401).json({ msg: "Unauthorized" });
@@ -111,11 +122,34 @@ export const createBusiness = async (req, res) => {
       latValue,
       lngValue
     ];
+    console.log("INSERT VALUES COUNT:", values.length);
 
     const [result] = await pool.query(query, values);
     const business_id = result.insertId;
 
     console.log("Business created:", business_id);
+
+    // LINK SERVICES TO BUSINESS
+if (services.length) {
+  for (const service of services) {
+
+    // Only link existing services (id present)
+    if (!service.id) continue;
+
+    try {
+      await pool.query(
+        `
+        INSERT IGNORE INTO business_services (business_id, service_id)
+        VALUES (?, ?)
+        `,
+        [business_id, service.id]
+      );
+    } catch (err) {
+      console.error("Failed linking service:", service.id, err.message);
+    }
+  }
+}
+
     
     // STORE PHOTOS IN DATABASE
     if (req.files && req.files.length > 0) {
@@ -125,7 +159,7 @@ export const createBusiness = async (req, res) => {
       `;
 
       for (const file of req.files) {
-        const imageUrl = file.filename;
+        const imageUrl = file.filename; 
         await pool.query(imgQuery, [business_id, imageUrl]);
       }
     }
@@ -290,9 +324,124 @@ export const verifyBusiness = async (req, res) => {
 //   }
 // };
 
+// export const getBusinesses = async (req, res) => {
+//   try {
+//     // Destructure query params with defaults
+//     let {
+//       categoryslug,
+//       subcategoryslug,
+//       name,
+//       location,
+//       isVerified = "1",
+//       page = 1,
+//       limit = 10,
+//     } = req.query;
+
+//     // Make sure page & limit are numbers
+//     page = Math.max(1, parseInt(page));
+//     limit = Math.max(1, parseInt(limit));
+//     const offset = (page - 1) * limit;
+
+//     // Parse isVerified into 0 or 1
+//     const verified = isVerified === "true" || isVerified === "1" ? 1 : 0;
+
+//     console.log("Fetching businesses with params:", JSON.stringify({
+//       categoryslug, subcategoryslug, name, location, page, limit, verified
+//     }));
+
+//     // Main query
+//     let query = `
+//       SELECT b.*,
+//              c.name AS category_name,
+//              s.name AS subcategory_name
+//       FROM businesses b
+//       LEFT JOIN categories c ON b.category_id = c.id
+//       LEFT JOIN subcategories s ON b.subcategory_id = s.id
+//       WHERE b.is_verified = ?
+//     `;
+//     const values = [verified];
+
+//     // Optional filters
+//     if (categoryslug) {
+//       query += ` AND b.category_id IN (SELECT id FROM categories WHERE slug = ?)`;
+//       values.push(categoryslug);
+//     }
+
+//     if (subcategoryslug && subcategoryslug !== "undefined") {
+//       query += ` AND b.subcategory_id IN (SELECT id FROM subcategories WHERE slug = ?)`;
+//       values.push(subcategoryslug);
+//     }
+
+//     if (name) {
+//       query += ` AND b.name LIKE ?`;
+//       values.push(`%${name}%`);
+//     }
+
+//     if (location) {
+//       query += ` AND (b.address LIKE ? OR b.city LIKE ? OR b.area LIKE ?)`;
+//       values.push(`%${location}%`, `%${location}%`, `%${location}%`);
+//     }
+
+//     query += ` ORDER BY b.created_at DESC LIMIT ? OFFSET ?`;
+//     values.push(limit, offset);
+
+//     const [rows] = await pool.query(query, values);
+
+//     // Count query for pagination
+//     let countQuery = `
+//       SELECT COUNT(*) AS total
+//       FROM businesses b
+//       LEFT JOIN categories c ON b.category_id = c.id
+//       LEFT JOIN subcategories s ON b.subcategory_id = s.id
+//       WHERE b.is_verified = ?
+//     `;
+//     const countValues = [verified];
+
+//     if (categoryslug) {
+//       countQuery += ` AND b.category_id IN (SELECT id FROM categories WHERE slug = ?)`;
+//       countValues.push(categoryslug);
+//     }
+
+//     if (subcategoryslug && subcategoryslug !== "undefined") {
+//       countQuery += ` AND b.subcategory_id IN (SELECT id FROM subcategories WHERE slug = ?)`;
+//       countValues.push(subcategoryslug);
+//     }
+
+//     if (name) {
+//       countQuery += ` AND b.name LIKE ?`;
+//       countValues.push(`%${name}%`);
+//     }
+
+//     if (location) {
+//       countQuery += ` AND (b.address LIKE ? OR b.city LIKE ? OR b.area LIKE ?)`;
+//       countValues.push(`%${location}%`, `%${location}%`, `%${location}%`);
+//     }
+
+//     const [[countResult]] = await pool.query(countQuery, countValues);
+//     const total = countResult.total;
+
+//     return res.status(200).json({
+//       success: true,
+//       total,
+//       page,
+//       limit,
+//       totalPages: Math.ceil(total / limit),
+//       data: rows,
+//     });
+
+//   } catch (error) {
+//     console.error("Error fetching businesses:", error);
+//     res.status(500).json({
+//       success: false,
+//       message: "Internal Server Error",
+//       error: error.message,
+//     });
+//   }
+// };
+
+
 export const getBusinesses = async (req, res) => {
   try {
-    // Destructure query params with defaults
     let {
       categoryslug,
       subcategoryslug,
@@ -303,31 +452,25 @@ export const getBusinesses = async (req, res) => {
       limit = 10,
     } = req.query;
 
-    // Make sure page & limit are numbers
     page = Math.max(1, parseInt(page));
     limit = Math.max(1, parseInt(limit));
     const offset = (page - 1) * limit;
-
-    // Parse isVerified into 0 or 1
     const verified = isVerified === "true" || isVerified === "1" ? 1 : 0;
 
-    console.log("Fetching businesses with params:", JSON.stringify({
-      categoryslug, subcategoryslug, name, location, page, limit, verified
-    }));
-
-    // Main query
+    // Main query with images
     let query = `
       SELECT b.*,
              c.name AS category_name,
-             s.name AS subcategory_name
+             s.name AS subcategory_name,
+             IFNULL(JSON_ARRAYAGG(bi.image_url), JSON_ARRAY()) AS images
       FROM businesses b
       LEFT JOIN categories c ON b.category_id = c.id
       LEFT JOIN subcategories s ON b.subcategory_id = s.id
+      LEFT JOIN business_images bi ON bi.business_id = b.id
       WHERE b.is_verified = ?
     `;
     const values = [verified];
 
-    // Optional filters
     if (categoryslug) {
       query += ` AND b.category_id IN (SELECT id FROM categories WHERE slug = ?)`;
       values.push(categoryslug);
@@ -348,12 +491,12 @@ export const getBusinesses = async (req, res) => {
       values.push(`%${location}%`, `%${location}%`, `%${location}%`);
     }
 
-    query += ` ORDER BY b.created_at DESC LIMIT ? OFFSET ?`;
+    query += ` GROUP BY b.id ORDER BY b.created_at DESC LIMIT ? OFFSET ?`;
     values.push(limit, offset);
 
     const [rows] = await pool.query(query, values);
 
-    // Count query for pagination
+    // Count query for pagination (unchanged)
     let countQuery = `
       SELECT COUNT(*) AS total
       FROM businesses b
@@ -362,26 +505,10 @@ export const getBusinesses = async (req, res) => {
       WHERE b.is_verified = ?
     `;
     const countValues = [verified];
-
-    if (categoryslug) {
-      countQuery += ` AND b.category_id IN (SELECT id FROM categories WHERE slug = ?)`;
-      countValues.push(categoryslug);
-    }
-
-    if (subcategoryslug && subcategoryslug !== "undefined") {
-      countQuery += ` AND b.subcategory_id IN (SELECT id FROM subcategories WHERE slug = ?)`;
-      countValues.push(subcategoryslug);
-    }
-
-    if (name) {
-      countQuery += ` AND b.name LIKE ?`;
-      countValues.push(`%${name}%`);
-    }
-
-    if (location) {
-      countQuery += ` AND (b.address LIKE ? OR b.city LIKE ? OR b.area LIKE ?)`;
-      countValues.push(`%${location}%`, `%${location}%`, `%${location}%`);
-    }
+    if (categoryslug) countQuery += ` AND b.category_id IN (SELECT id FROM categories WHERE slug = ?)`, countValues.push(categoryslug);
+    if (subcategoryslug && subcategoryslug !== "undefined") countQuery += ` AND b.subcategory_id IN (SELECT id FROM subcategories WHERE slug = ?)`, countValues.push(subcategoryslug);
+    if (name) countQuery += ` AND b.name LIKE ?`, countValues.push(`%${name}%`);
+    if (location) countQuery += ` AND (b.address LIKE ? OR b.city LIKE ? OR b.area LIKE ?)`, countValues.push(`%${location}%`, `%${location}%`, `%${location}%`);
 
     const [[countResult]] = await pool.query(countQuery, countValues);
     const total = countResult.total;
@@ -404,6 +531,7 @@ export const getBusinesses = async (req, res) => {
     });
   }
 };
+
 
 
 
@@ -1309,8 +1437,8 @@ export const uploadPhotosForBusiness = async (req, res) => {
 
     // Define image limits by plan
     const planLimits = {
-      free: 2,
-      silver: 5,
+      free: 5,
+      silver: 8,
       gold: 10,
       platinum: 20,
     };
@@ -1350,7 +1478,7 @@ export const uploadPhotosForBusiness = async (req, res) => {
     const savedImageUrls = [];
 
     for (let file of files) {
-      const imageUrl = `/uploads/${file.filename}`;
+      const imageUrl = `${file.filename}`;
       console.log(`Inserting image: ${imageUrl}`);
 
       await pool.query(
@@ -1422,7 +1550,8 @@ export const deleteImages = async (req, res) => {
     console.log("QUERY:", req.query);
 
     const businessId = req.params.id;
-    const photoUrl = req.query.photoUrl; 
+    // const photoUrl = req.query.photoUrl;
+    const photoUrl = req.query.photoUrl || req.body.photoUrl;
 
     if (!photoUrl) {
       return res.status(400).json({ error: "photoUrl is required" });
@@ -1555,8 +1684,8 @@ export const uploadUpdatePhotos = async (req, res) => {
 
     // STEP 2: Define limits
     const planLimits = {
-      free: 2,
-      silver: 5,
+      free: 5,
+      silver: 8,
       gold: 10,
       platinum: 20,
     };
@@ -1680,5 +1809,262 @@ export const getAdminActions = async (req, res) => {
   } catch (err) {
     console.error("Error fetching admin actions:", err);
     res.status(500).json({ message: "Error fetching admin actions", error: err.message });
+  }
+};
+
+
+export const globalSearchBusinesses = async (req, res) => {
+  try {
+    let { q = "", location = "", page = 1, limit = 10 } = req.query;
+    q = String(q || "").trim();
+    location = String(location || "").trim();
+    let nodeName = "";
+    if (!q) return res.status(400).json({ msg: "Search query is required" });
+
+    page = Number.isFinite(Number(page)) ? Math.max(1, parseInt(page, 10)) : 1;
+    limit = Number.isFinite(Number(limit)) ? Math.max(1, parseInt(limit, 10)) : 10;
+    limit = Math.min(limit, 50);
+    const offset = (page - 1) * limit;
+
+    // const nodePinCodes = {
+    //   "Airoli Node": ["400708", "400701"],
+    //   "Ghansoli Node": ["400701", "400706"],
+    //   "Kopar Khairane Node": ["400709", "400703"],
+    //   "Vashi – Sanpada – Turbhe": ["400703", "400705"],
+    //   "Nerul Node": ["400706", "400705"],
+    //   "Seawoods – CBD Belapur": ["400706", "400614"],
+    //   "Kharghar Node": ["410210", "410208"],
+    //   "Kamothe – Kalamboli": ["410209", "410218"],
+    //   "Taloja Node": ["410208", "410210"],
+    //   "Panvel Region": ["410206"],
+    //   "Ulwe Node": ["410206"],
+    //   "Dronagiri Node (JNPT belt)": ["400707"],
+    //   "Uran Town & Surrounding Villages": ["400702"]
+    // };
+
+    const tokens = Array.from(new Set(q.split(/\s+/).map(t => t.trim()).filter(Boolean)));
+    const tokenLikes = tokens.map(() => "%"+q+"%");
+    const nameLike = `%${q}%`;
+    const areaLike = `%${q}%`;
+
+    let matchedCategoryId = null;
+    let matchedSubcategoryId = null;
+    const categoryChecks = [q, ...tokens].slice(0, 6); 
+    for (const text of categoryChecks) {
+      const [catRows] = await pool.query(
+        "SELECT id FROM category WHERE name LIKE ? LIMIT 1", [`%${text}%`]
+      );
+      if (catRows.length) {
+        matchedCategoryId = catRows[0].id;
+        break;
+      }
+    }
+    for (const text of categoryChecks) {
+      const [subRows] = await pool.query(
+        "SELECT id FROM subcategory WHERE name LIKE ? LIMIT 1", [`%${text}%`]
+      );
+      if (subRows.length) {
+        matchedSubcategoryId = subRows[0].id;
+        break;
+      }
+    }
+
+    let locationCondition = "";
+    const locationValues = [];
+    if (location) {
+      if (nodePinCodes[location]) {
+        const pins = nodePinCodes[location];
+        const placeholders = pins.map(() => "?").join(",");
+        locationCondition = ` AND b.pin_code IN (${placeholders})`;
+        locationValues.push(...pins);
+      } else if (/^\d{5,6}$/.test(location)) {
+         // It's a pincode, check if it matches any node
+    for (const [node, pins] of Object.entries(nodePinCodes)) {
+      if (pins.includes(location)) {
+        nodeName = node; 
+        break;
+      }}
+        locationCondition = ` AND b.pin_code = ?`;
+        locationValues.push(location);
+      } else {
+        nodeName = location;
+        locationCondition = ` AND b.area LIKE ?`;
+        locationValues.push(`%${location}%`);
+      }
+    }
+
+    const whereBase = `b.is_verified = 1`;
+
+    const useFullText = q.replace(/\s+/g, "").length >= 3;
+
+    let selectRelevancePart = `
+      ((b.category_id = ?)*10) +
+      ((b.subcategory_id = ?)*9) +
+      ((b.name LIKE ?)*8) +
+      ((b.area LIKE ?)*4)
+    `;
+
+    let fromAndJoins = `
+      FROM businesses b
+      LEFT JOIN category c ON b.category_id = c.id
+      LEFT JOIN subcategory sc ON b.subcategory_id = sc.id
+    `;
+
+    let mainQuery;
+    let mainParams = [];
+    if (useFullText) {
+      selectRelevancePart += ` + (MATCH(b.description, b.name, b.area) AGAINST (? IN NATURAL LANGUAGE MODE))`;
+      mainQuery = `
+        SELECT b.*,
+          (SELECT image_url FROM business_images WHERE business_id = b.id LIMIT 1) AS image_url,
+          (${selectRelevancePart}) AS relevance
+        ${fromAndJoins}
+        WHERE ${whereBase}
+          AND MATCH(b.description, b.name, b.area) AGAINST (? IN NATURAL LANGUAGE MODE)
+          ${locationCondition}
+        ORDER BY relevance DESC, b.name ASC
+        LIMIT ? OFFSET ?
+      `;
+      mainParams = [
+        matchedCategoryId ?? 0,
+        matchedSubcategoryId ?? 0,
+        nameLike,
+        areaLike,
+        q, // fulltext score param
+        q, // fulltext WHERE param
+        ...locationValues,
+        limit,
+        offset
+      ];
+    } else {
+      const searchConditions = [
+        "b.name LIKE ?",
+        "b.description LIKE ?",
+        "c.name LIKE ?",
+        "sc.name LIKE ?",
+        "b.area LIKE ?"
+      ].join(" OR ");
+      mainQuery = `
+        SELECT b.*,
+          (SELECT image_url FROM business_images WHERE business_id = b.id LIMIT 1) AS image_url,
+          (${selectRelevancePart}) AS relevance
+        ${fromAndJoins}
+        WHERE ${whereBase}
+          AND (${searchConditions})
+          ${locationCondition}
+        ORDER BY relevance DESC, b.name ASC
+        LIMIT ? OFFSET ?
+      `;
+      mainParams = [
+        matchedCategoryId ?? 0,
+        matchedSubcategoryId ?? 0,
+        nameLike,
+        areaLike,
+        nameLike,
+        `%${q}%`,
+        `%${q}%`,
+        `%${q}%`,
+        areaLike,
+        ...locationValues,
+        limit,
+        offset
+      ];
+    }
+
+    let dataRows;
+    try {
+      const [rows] = await pool.query(mainQuery, mainParams);
+      dataRows = rows;
+    } catch (err) {
+      const searchConditions = [
+        "b.name LIKE ?",
+        "b.description LIKE ?",
+        "c.name LIKE ?",
+        "sc.name LIKE ?",
+        "b.area LIKE ?"
+      ].join(" OR ");
+      const fallbackQuery = `
+        SELECT b.*,
+          (SELECT image_url FROM business_images WHERE business_id = b.id LIMIT 1) AS image_url,
+          (
+            ((b.category_id = ?)*10) +
+            ((b.subcategory_id = ?)*9) +
+            ((b.name LIKE ?)*8) +
+            ((b.area LIKE ?)*4)
+          ) AS relevance
+        ${fromAndJoins}
+        WHERE ${whereBase}
+          AND (${searchConditions})
+          ${locationCondition}
+        ORDER BY relevance DESC, b.name ASC
+        LIMIT ? OFFSET ?
+      `;
+      const fallbackParams = [
+        matchedCategoryId ?? 0,
+        matchedSubcategoryId ?? 0,
+        nameLike,
+        areaLike,
+        nameLike,
+        `%${q}%`,
+        `%${q}%`,
+        `%${q}%`,
+        areaLike,
+        ...locationValues,
+        limit,
+        offset
+      ];
+      const [fallbackRows] = await pool.query(fallbackQuery, fallbackParams);
+      dataRows = fallbackRows;
+    }
+
+    let countQuery;
+    let countParams;
+    if (useFullText) {
+      countQuery = `
+        SELECT COUNT(*) AS total
+        ${fromAndJoins}
+        WHERE ${whereBase}
+          AND MATCH(b.description, b.name, b.area) AGAINST (? IN NATURAL LANGUAGE MODE)
+          ${locationCondition}
+      `;
+      countParams = [q, ...locationValues];
+    } else {
+      countQuery = `
+        SELECT COUNT(*) AS total
+        ${fromAndJoins}
+        WHERE ${whereBase}
+          AND (
+            b.name LIKE ? OR
+            b.description LIKE ? OR
+            c.name LIKE ? OR
+            sc.name LIKE ? OR
+            b.area LIKE ?
+          )
+          ${locationCondition}
+      `;
+      countParams = [
+        nameLike,
+        `%${q}%`,
+        `%${q}%`,
+        `%${q}%`,
+        areaLike,
+        ...locationValues
+      ];
+    }
+    const [[countResult]] = await pool.query(countQuery, countParams);
+    const total = Number(countResult?.total || 0);
+    const totalPages = Math.ceil(total / limit) || 0;
+
+    res.status(200).json({
+      page,
+      limit,
+      total,
+      totalPages,
+      data: dataRows,
+      nodeName,
+    });
+  } catch (error) {
+    console.error("Error in global search:", error);
+    res.status(500).json({ msg: "Server error", error: error.message });
   }
 };

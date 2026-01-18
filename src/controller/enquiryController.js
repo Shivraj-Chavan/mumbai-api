@@ -95,6 +95,8 @@ export const submitEnquiry = async (req, res) => {
 export const getAllEnquiriesForOwner = async (req, res) => {
   try {
     const ownerId = req.user?.id;
+    console.log("TOKEN USER:", req.user.id);
+
     if (!ownerId) return res.status(401).json({ msg: 'Unauthorized' });
 
     const query = `

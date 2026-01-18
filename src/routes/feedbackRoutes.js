@@ -6,9 +6,9 @@ const router = express.Router();
 
 router.get('/raised_reviews',validateAdmin, getRaisedReviews);
 router.get("/:business_id", getReviews);
-router.get('/',validateUser,getAllReviews)
+router.get('/',validateUser,getAllReviews);
 router.post("/",validateUser, createReview);
-router.delete("/reviews/:id",validateUser, deleteReview);
-router.delete('/:review_id',  adminDeleteReview);
+router.delete("/:id",validateUser, deleteReview);
+router.delete('/:review_id', validateAdmin, adminDeleteReview);
 
 export default router;

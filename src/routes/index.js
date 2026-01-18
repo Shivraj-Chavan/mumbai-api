@@ -7,7 +7,8 @@ import categoryRoutes from "./categoryRoutes.js";
 import feedbackRoutes from "./feedbackRoutes.js";
 import enquiryRoutes from "./enquiryRoutes.js";
 import contactRoutes from "./contactRoutes.js";
-
+import servicesRoutes from "./servicesRoutes.js";
+import dashboardRoutes from "./dashboardRoutes.js";
 
 const router = express.Router();
 
@@ -19,6 +20,7 @@ router.use("/categories", categoryRoutes);
 router.use("/feedback", feedbackRoutes);
 router.use("/enquiries", enquiryRoutes);
 router.use("/contact", contactRoutes);
-
+router.use("/services", servicesRoutes);
+router.use("/dashboard",dashboardRoutes)
 
 export default router;

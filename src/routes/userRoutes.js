@@ -10,5 +10,4 @@ router.put("/:id/profile", updateUserProfile);
 router.post("/", validateAdmin,createUser);
 router.put("/completeprofile", validateUser, completeProfile);
 
-
 export default router;

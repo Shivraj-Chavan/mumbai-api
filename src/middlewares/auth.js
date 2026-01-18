@@ -25,10 +25,12 @@ const decodeDataAndReturnUserData = async (req) => {
       [userId]
     );
     console.log(userId);
+
     if (!user) {
       throw new Error("User not found");
     }
-
+    
+    req.user = user;
     return user;
   } catch (error) {
     throw error;  
@@ -45,16 +47,22 @@ export const validateUser = async (req, res, next) => {
   }
 };
 
+
 export const validateAdmin = async (req, res, next) => {
   try {
-    let user = await decodeDataAndReturnUserData(req);
-    if (user?.role === 'admin' || user?.role === 'sub-admin') {
-      next();
-    } else {
-      return res.status(401).json({ msg: "Unauthorized access, admin privileges required" });
+    const user = await decodeDataAndReturnUserData(req);
+    req.user = user; 
+
+    if (user.role === "admin" || user.role === "sub-admin") {
+      return next();
     }
+
+    return res
+      .status(403)
+      .json({ msg: "Unauthorized access, admin privileges required" });
+
   } catch (error) {
-    console.error("Error validating token:", error);
-    return res.status(401).json({ msg: "Server error", error: error.message });
+    console.error("Admin auth error:", error.message);
+    res.status(401).json({ msg: error.message });
   }
-}
+};
