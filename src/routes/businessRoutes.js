@@ -28,7 +28,6 @@ router.delete('/:id/photos',deleteImages);
 router.put('/update/:id', validateUser,upload.array("photos", 5), submitBusinessUpdate); //Owner submits business update
 router.post('/update/:id/photos',validateUser,upload.array("photos", 5), uploadUpdatePhotos); // owner uploads photos
 
-
 // ADMIN routes
 router.get('/admin/pending', validateUser, validateAdmin, getPendingUpdates);
 router.put('/admin/approve/:id', validateUser, validateAdmin, approveUpdate);
