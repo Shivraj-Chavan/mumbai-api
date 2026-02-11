@@ -29,14 +29,46 @@ export const getAllContacts = async (req, res) => {
     const offset = (page - 1) * limit;
 
     // ✅ Get total count
-    const [countRows] = await pool.query(`SELECT COUNT(*) AS total FROM contact_us`);
+    const [countRows] = await pool.query(`SELECT COUNT(*) AS total FROM contact_us where viewed!=99`);
     const total = countRows[0].total;
     const totalPages = Math.ceil(total / limit);
 
     // ✅ Fetch contacts (unviewed first, then viewed, both sorted by date)
     const [rows] = await pool.query(
       `SELECT * 
-       FROM contact_us 
+       FROM contact_us where viewed!=99
+       ORDER BY viewed ASC, created_at DESC 
+       LIMIT ? OFFSET ?`,
+      [limit, offset]
+    );
+
+    // ✅ Send response
+    res.status(200).json({
+      contacts: rows,
+      total,
+      page,
+      totalPages,
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Server error" });
+  }
+};export const getAllLiveContacts = async (req, res) => {
+  try {
+    // ✅ Get pagination params
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+    const offset = (page - 1) * limit;
+
+    // ✅ Get total count
+    const [countRows] = await pool.query(`SELECT COUNT(*) AS total FROM contact_us where viewed=99`);
+    const total = countRows[0].total;
+    const totalPages = Math.ceil(total / limit);
+
+    // ✅ Fetch contacts (unviewed first, then viewed, both sorted by date)
+    const [rows] = await pool.query(
+      `SELECT * 
+       FROM contact_us where viewed=99
        ORDER BY viewed ASC, created_at DESC 
        LIMIT ? OFFSET ?`,
       [limit, offset]

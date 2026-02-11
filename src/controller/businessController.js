@@ -5,6 +5,42 @@ import { logAdminAction } from "../utils/logAdminAction.js";
 import { fileURLToPath } from 'url';
 import path from "path";
 
+export const getAllRegistrationInq = async (req, res) => {
+  try {
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+    const offset = (page - 1) * limit;
+
+    const [countRows] = await pool.query(
+      `SELECT COUNT(*) AS total FROM registrationInq`
+    );
+
+    const total = countRows[0].total;
+    const totalPages = Math.ceil(total / limit);
+
+
+    const [rows] = await pool.query(
+      `SELECT * 
+       FROM registrationInq 
+       ORDER BY createdAt DESC 
+       LIMIT ? OFFSET ?`,
+      [limit, offset]
+    );
+
+    res.status(200).json({
+      registrations: rows,
+      total,
+      page,
+      totalPages,
+    });
+
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Server error" });
+  }
+};
+
+
 // Generate unique slug
 export const getUniqueSlug = async (name, area, excludeId = null) => {
   let baseSlug = slugify(`${name}-${area}`, { lower: true, strict: true });

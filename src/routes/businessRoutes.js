@@ -1,11 +1,12 @@
 import express from "express";
-import { createBusiness , getBusinesses, getBusinessByUserId, getBusinessById, updateBusiness, deleteBusiness, getBusinessBySlug, verifyBusiness, getPendingUpdates, approveUpdate, rejectUpdate, incrementBusinessViewCount, getBusinessImages, uploadPhotosForBusiness, submitBusinessUpdate, uploadUpdatePhotos, getAdminActions, deleteImages, globalSearchBusinesses} from "../controller/businessController.js";
+import { createBusiness , getBusinesses, getBusinessByUserId, getBusinessById, updateBusiness, deleteBusiness, getBusinessBySlug, verifyBusiness, getPendingUpdates, approveUpdate, rejectUpdate, incrementBusinessViewCount, getBusinessImages, uploadPhotosForBusiness, submitBusinessUpdate, uploadUpdatePhotos, getAdminActions, deleteImages, globalSearchBusinesses, getAllRegistrationInq} from "../controller/businessController.js";
 import { validateAdmin, validateUser } from "../middlewares/auth.js";
 import multer from "multer";
 import { upload } from "../middlewares/uploads.js";
 import { dynamicPlanBasedUpload } from "../middlewares/uploadMiddleware.js";
 
 const router = express.Router();
+router.get("/regInq",validateAdmin,getAllRegistrationInq)
 
 router.post("/", validateUser, upload.array("photos", 5), createBusiness);
 router.get("/", getBusinesses);
@@ -19,7 +20,6 @@ router.put('/:id/view', incrementBusinessViewCount);
 router.get("/:id/photos", getBusinessImages); 
 router.post("/:businessId/photos",dynamicPlanBasedUpload, uploadPhotosForBusiness);
 router.delete('/:id/photos',deleteImages);
-
 
 // Search 
 // router.get("/search",globalSearchBusinesses)

@@ -21,6 +21,6 @@ router.use("/feedback", feedbackRoutes);
 router.use("/enquiries", enquiryRoutes);
 router.use("/contact", contactRoutes);
 router.use("/services", servicesRoutes);
-router.use("/dashboard",dashboardRoutes)
+router.use("/dashboard",dashboardRoutes);
 
 export default router;
