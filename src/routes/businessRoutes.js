@@ -20,6 +20,7 @@ router.put('/:id/view', incrementBusinessViewCount);
 router.get("/:id/photos", getBusinessImages); 
 router.post("/:businessId/photos",dynamicPlanBasedUpload, uploadPhotosForBusiness);
 router.delete('/:id/photos',deleteImages);
+router.get("/search",globalSearchBusinesses)
 
 // Search 
 // router.get("/search",globalSearchBusinesses)

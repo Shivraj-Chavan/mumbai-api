@@ -486,6 +486,7 @@ export const getBusinesses = async (req, res) => {
       isVerified = "1",
       page = 1,
       limit = 10,
+      search
     } = req.query;
 
     page = Math.max(1, parseInt(page));
@@ -526,7 +527,10 @@ export const getBusinesses = async (req, res) => {
       query += ` AND (b.address LIKE ? OR b.city LIKE ? OR b.area LIKE ?)`;
       values.push(`%${location}%`, `%${location}%`, `%${location}%`);
     }
-
+    if (search) {
+      query += ` AND (b.name LIKE ? OR b.phone LIKE ?)`;
+      values.push(`%${search}%`, `%${search}%`);
+    }
     query += ` GROUP BY b.id ORDER BY b.created_at DESC LIMIT ? OFFSET ?`;
     values.push(limit, offset);
 
@@ -545,7 +549,10 @@ export const getBusinesses = async (req, res) => {
     if (subcategoryslug && subcategoryslug !== "undefined") countQuery += ` AND b.subcategory_id IN (SELECT id FROM subcategories WHERE slug = ?)`, countValues.push(subcategoryslug);
     if (name) countQuery += ` AND b.name LIKE ?`, countValues.push(`%${name}%`);
     if (location) countQuery += ` AND (b.address LIKE ? OR b.city LIKE ? OR b.area LIKE ?)`, countValues.push(`%${location}%`, `%${location}%`, `%${location}%`);
-
+    if (search) {
+      countQuery += ` AND (b.name LIKE ? OR b.phone LIKE ?)`;
+      countValues.push(`%${search}%`, `%${search}%`);
+    }
     const [[countResult]] = await pool.query(countQuery, countValues);
     const total = countResult.total;
 
