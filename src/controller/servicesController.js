@@ -304,70 +304,72 @@ export const getAllServices = async (req, res) => {
   }
 };
 
-
 export const createServices = async (req, res) => {
   try {
     const { category_id, subcategory_id, services } = req.body;
 
     const rawRole = req.user?.role || "user";
     const userRole = String(rawRole).toLowerCase();
-
     const isAdmin = ["admin", "sub-admin"].includes(userRole);
-
     const status = isAdmin ? "active" : "inactive";
-
-    console.log("ROLE DEBUG =>", {
-      rawRole,
-      userRole,
-      isAdmin,
-      status
-    });
 
     if (!category_id || !subcategory_id || !Array.isArray(services)) {
       return res.status(400).json({ message: "Invalid payload" });
     }
 
-    if (!services.length) {
-      return res.status(400).json({ message: "No services provided" });
-    }
-
-    const values = services
+    const cleaned = services
       .map(s => String(s).trim())
-      .filter(Boolean)
-      .map(name => [category_id, subcategory_id, name, status]);
+      .filter(Boolean);
 
-    if (!values.length) {
+    if (!cleaned.length) {
       return res.status(400).json({ message: "Empty service names" });
     }
 
-    await pool.query(
-      `
-        INSERT INTO services (category_id, subcategory_id, name, status)
-        VALUES ?
-      `,
-      [values]
-    );
+    const insertedServices = [];
+
+    for (const name of cleaned) {
+      // ✅ Check if already exists
+      const [existing] = await pool.query(
+        `SELECT id FROM services WHERE name = ? AND subcategory_id = ? LIMIT 1`,
+        [name, subcategory_id]
+      );
+
+      if (existing.length) {
+        insertedServices.push({
+          id: existing[0].id,
+          name,
+          status: "existing"
+        });
+        continue;
+      }
+
+      // ✅ Insert new
+      const [result] = await pool.query(
+        `INSERT INTO services (category_id, subcategory_id, name, status)
+         VALUES (?, ?, ?, ?)`,
+        [category_id, subcategory_id, name, status]
+      );
+
+      insertedServices.push({
+        id: result.insertId,
+        name,
+        status
+      });
+    }
 
     return res.status(201).json({
       message: isAdmin
-        ? "Service added and activated successfully"
-        : "Service submitted for admin approval",
-      count: values.length,
-      status
+        ? "Services added successfully"
+        : "Services submitted for approval",
+      data: insertedServices
     });
 
   } catch (err) {
     console.error("Create Services Error:", err);
-
-    if (err.code === "ER_DUP_ENTRY") {
-      return res.status(409).json({
-        message: "One or more services already exist in this subcategory"
-      });
-    }
-
     return res.status(500).json({ message: "Server error" });
   }
 };
+
 
 
 export const updateServiceStatus = async (req, res) => {

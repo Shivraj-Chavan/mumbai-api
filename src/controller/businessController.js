@@ -494,18 +494,29 @@ export const getBusinesses = async (req, res) => {
     const offset = (page - 1) * limit;
     const verified = isVerified === "true" || isVerified === "1" ? 1 : 0;
 
-    // Main query with images
     let query = `
-      SELECT b.*,
-             c.name AS category_name,
-             s.name AS subcategory_name,
-             IFNULL(JSON_ARRAYAGG(bi.image_url), JSON_ARRAY()) AS images
-      FROM businesses b
-      LEFT JOIN categories c ON b.category_id = c.id
-      LEFT JOIN subcategories s ON b.subcategory_id = s.id
-      LEFT JOIN business_images bi ON bi.business_id = b.id
-      WHERE b.is_verified = ?
-    `;
+    SELECT 
+      b.*,
+      c.name AS category_name,
+      s.name AS subcategory_name,
+  
+      -- Images
+      GROUP_CONCAT(DISTINCT bi.image_url) AS images,
+  
+      -- Services
+      GROUP_CONCAT(DISTINCT sv.name) AS services
+  
+    FROM businesses b
+    LEFT JOIN categories c ON b.category_id = c.id
+    LEFT JOIN subcategories s ON b.subcategory_id = s.id
+    LEFT JOIN business_images bi ON bi.business_id = b.id
+    LEFT JOIN business_services bs ON bs.business_id = b.id
+    LEFT JOIN services sv ON sv.id = bs.service_id
+  
+    WHERE b.is_verified = ?
+  `;
+  
+
     const values = [verified];
 
     if (categoryslug) {
@@ -527,16 +538,18 @@ export const getBusinesses = async (req, res) => {
       query += ` AND (b.address LIKE ? OR b.city LIKE ? OR b.area LIKE ?)`;
       values.push(`%${location}%`, `%${location}%`, `%${location}%`);
     }
+
     if (search) {
       query += ` AND (b.name LIKE ? OR b.phone LIKE ?)`;
       values.push(`%${search}%`, `%${search}%`);
     }
+
     query += ` GROUP BY b.id ORDER BY b.created_at DESC LIMIT ? OFFSET ?`;
     values.push(limit, offset);
 
     const [rows] = await pool.query(query, values);
 
-    // Count query for pagination (unchanged)
+    // ✅ Count query (unchanged)
     let countQuery = `
       SELECT COUNT(*) AS total
       FROM businesses b
@@ -545,14 +558,32 @@ export const getBusinesses = async (req, res) => {
       WHERE b.is_verified = ?
     `;
     const countValues = [verified];
-    if (categoryslug) countQuery += ` AND b.category_id IN (SELECT id FROM categories WHERE slug = ?)`, countValues.push(categoryslug);
-    if (subcategoryslug && subcategoryslug !== "undefined") countQuery += ` AND b.subcategory_id IN (SELECT id FROM subcategories WHERE slug = ?)`, countValues.push(subcategoryslug);
-    if (name) countQuery += ` AND b.name LIKE ?`, countValues.push(`%${name}%`);
-    if (location) countQuery += ` AND (b.address LIKE ? OR b.city LIKE ? OR b.area LIKE ?)`, countValues.push(`%${location}%`, `%${location}%`, `%${location}%`);
+
+    if (categoryslug) {
+      countQuery += ` AND b.category_id IN (SELECT id FROM categories WHERE slug = ?)`;
+      countValues.push(categoryslug);
+    }
+
+    if (subcategoryslug && subcategoryslug !== "undefined") {
+      countQuery += ` AND b.subcategory_id IN (SELECT id FROM subcategories WHERE slug = ?)`;
+      countValues.push(subcategoryslug);
+    }
+
+    if (name) {
+      countQuery += ` AND b.name LIKE ?`;
+      countValues.push(`%${name}%`);
+    }
+
+    if (location) {
+      countQuery += ` AND (b.address LIKE ? OR b.city LIKE ? OR b.area LIKE ?)`;
+      countValues.push(`%${location}%`, `%${location}%`, `%${location}%`);
+    }
+
     if (search) {
       countQuery += ` AND (b.name LIKE ? OR b.phone LIKE ?)`;
       countValues.push(`%${search}%`, `%${search}%`);
     }
+
     const [[countResult]] = await pool.query(countQuery, countValues);
     const total = countResult.total;
 
