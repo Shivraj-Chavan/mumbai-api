@@ -625,15 +625,24 @@ export const getBusinessByUserId = async (req, res) => {
         COALESCE(pl.name, 'Free') AS current_plan,
         bp.plan_id,
         bp.start_date,
-        bp.end_date
+        bp.end_date,
+        pl.price,
+        pl.duration
       FROM businesses b
-      LEFT JOIN business_plans bp
-        ON bp.business_id = b.id
-      LEFT JOIN plans pl
-        ON pl.id = bp.plan_id
+      LEFT JOIN (
+          SELECT bp1.*
+          FROM business_plans bp1
+          INNER JOIN (
+              SELECT business_id, MAX(id) AS max_id
+              FROM business_plans
+              GROUP BY business_id
+          ) latest
+          ON bp1.id = latest.max_id
+      ) bp ON bp.business_id = b.id
+      LEFT JOIN plans pl ON pl.id = bp.plan_id
       WHERE b.owner_id = ?
     `, [userId]);
-
+    
     console.log({"businessRows":businessRows})
     if (businessRows.length === 0) {
       return res.status(404).json({ msg: "No businesses found for this user" });
