@@ -713,10 +713,22 @@ export const getBusinessById = async (req, res) => {
     const { id } = req.params;
 
     // Fetch business
-    const [[business]] = await pool.query(
-      "SELECT * FROM businesses WHERE id = ?",
-      [id]
-    );
+    const [[business]] = await pool.query(`
+      SELECT
+        b.*,
+        COALESCE(pl.name, 'Free') AS current_plan,
+        bp.plan_id,
+        bp.start_date,
+        bp.end_date,
+        bp.plan_price,
+        pl.duration
+      FROM businesses b
+      LEFT JOIN business_plans bp
+        ON bp.business_id = b.id
+      LEFT JOIN plans pl
+        ON pl.id = bp.plan_id
+      WHERE b.id = ?
+    `, [id]);
 
     if (!business) {
       return res.status(404).json({ msg: "Business not found" });
