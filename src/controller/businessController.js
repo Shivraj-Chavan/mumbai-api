@@ -619,22 +619,18 @@ export const getBusinessByUserId = async (req, res) => {
     //   "SELECT * FROM businesses WHERE owner_id = ?",
     //   [userId]
     // );
-
     const [businessRows] = await pool.query(`
       SELECT
         b.*,
-        COALESCE(
-          (
-            SELECT p.plan
-            FROM payments p
-            WHERE p.business_id = b.id
-            AND p.status = 'completed'
-            ORDER BY p.created_at DESC
-            LIMIT 1
-          ),
-          'Free'
-        ) AS current_plan
+        COALESCE(pl.plan_name, 'Free') AS current_plan,
+        bp.plan_id,
+        bp.start_date,
+        bp.end_date
       FROM businesses b
+      LEFT JOIN business_plans bp
+        ON bp.business_id = b.id
+      LEFT JOIN plans pl
+        ON pl.id = bp.plan_id
       WHERE b.owner_id = ?
     `, [userId]);
 
