@@ -176,14 +176,14 @@ export const verifyPayment = async (req, res) => {
         4: "Elite Plan",
       };
       
-      await pool.execute(
-        `
-        UPDATE businesses
-        SET current_plan = ?
-        WHERE id = ?
-        `,
-        [planMap[plan_id], business_id]
-      );
+      // await pool.execute(
+      //   `
+      //   UPDATE businesses
+      //   SET current_plan = ?
+      //   WHERE id = ?
+      //   `,
+      //   [planMap[plan_id], business_id]
+      // );
     }
 
     return res.json({
