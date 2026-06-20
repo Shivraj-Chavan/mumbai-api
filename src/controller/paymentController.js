@@ -168,22 +168,8 @@ export const verifyPayment = async (req, res) => {
           endDate.toISOString().slice(0, 10),
         ]
       );
-      
-      const planMap = {
-        1: "Free",
-        2: "Starter",
-        3: "Pro Plan",
-        4: "Elite Plan",
-      };
-      
-      // await pool.execute(
-      //   `
-      //   UPDATE businesses
-      //   SET current_plan = ?
-      //   WHERE id = ?
-      //   `,
-      //   [planMap[plan_id], business_id]
-      // );
+ 
+   
     }
 
     return res.json({
