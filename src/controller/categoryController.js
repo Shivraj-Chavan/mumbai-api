@@ -74,3 +74,85 @@ export const getCategories = async (req, res) => {
     res.status(500).json({ msg: "Server error", error: error.message });
   }
 };
+
+
+
+
+// GET ALL (with subcategories)
+export const getAllCategories = async (req, res) => {
+  try {
+    const [categories] = await pool.query(
+      "SELECT * FROM categories ORDER BY sequence ASC"
+    );
+
+    const [subs] = await pool.query(
+      "SELECT * FROM subcategories ORDER BY sequence ASC"
+    );
+
+    const result = categories.map((cat) => ({
+      ...cat,
+      status: cat.blocked ? "inactive" : "active",
+      subcategories: subs.filter((s) => s.category_id === cat.id),
+    }));
+
+    res.json(result);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
+
+// ADD CATEGORY
+export const addCategory = async (req, res) => {
+  try {
+    const { name, slug, sequence } = req.body;
+
+    if (!name || !slug) {
+      return res.status(400).json({ message: "Name & slug required" });
+    }
+
+    await pool.query(
+      `INSERT INTO categories (name, slug, sequence, blocked, created_at)
+       VALUES (?, ?, ?, 0, NOW())`,
+      [name, slug, sequence || 0]
+    );
+
+    res.json({ message: "Category added" });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
+
+// UPDATE CATEGORY
+export const updateCategory = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { name, slug, sequence, blocked } = req.body;
+
+    await pool.query(
+      `UPDATE categories 
+       SET name=?, slug=?, sequence=?, blocked=? 
+       WHERE id=?`,
+      [name, slug, sequence, blocked ?? 0, id]
+    );
+
+    res.json({ message: "Category updated" });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
+
+// DELETE CATEGORY (hard delete)
+export const deleteCategory = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    // delete subcategories first (safe if no FK cascade)
+    await pool.query("DELETE FROM subcategories WHERE category_id=?", [id]);
+
+    await pool.query("DELETE FROM categories WHERE id=?", [id]);
+
+    res.json({ message: "Category deleted" });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};

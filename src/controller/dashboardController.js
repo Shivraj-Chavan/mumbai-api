@@ -149,3 +149,59 @@ export const getAdminDashboard = async (req, res) => {
     });
   }
 };
+
+
+
+export const getAdminDashboardStats = async (req, res) => {
+  try {
+    const [todayBusinesses] = await db.query(`
+      SELECT COUNT(*) count
+      FROM businesses
+      WHERE DATE(created_at) = CURDATE()
+    `);
+
+    const [totalBusinesses] = await db.query(`
+      SELECT COUNT(*) count
+      FROM businesses
+    `);
+
+    const [todayUsers] = await db.query(`
+      SELECT COUNT(*) count
+      FROM users
+      WHERE DATE(created_at) = CURDATE()
+    `);
+
+    const [totalUsers] = await db.query(`
+      SELECT COUNT(*) count
+      FROM users
+    `);
+
+    const [contacts] = await db.query(`
+      SELECT COUNT(*) count
+      FROM contacts
+    `);
+
+    const [enquiries] = await db.query(`
+      SELECT COUNT(*) count
+      FROM enquiries
+    `);
+
+    res.json({
+      success: true,
+      stats: {
+        todayBusinesses: todayBusinesses[0].count,
+        totalBusinesses: totalBusinesses[0].count,
+        todayUsers: todayUsers[0].count,
+        totalUsers: totalUsers[0].count,
+        totalContacts: contacts[0].count,
+        totalEnquiries: enquiries[0].count,
+      },
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({
+      success: false,
+      message: "Failed to fetch stats",
+    });
+  }
+};
