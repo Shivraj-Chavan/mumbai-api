@@ -614,32 +614,24 @@ export const getBusinessByUserId = async (req, res) => {
     const userId = req.user.id;
     console.log("Fetching businesses for userId:", userId);
 
-    // Step 1: Get all businesses by user
-    // const [businessRows] = await pool.query(
-    //   "SELECT * FROM businesses WHERE owner_id = ?",
-    //   [userId]
-    // );
     const [businessRows] = await pool.query(`
       SELECT
         b.*,
-        COALESCE(pl.name, 'Free') AS current_plan,
+        (
+          SELECT p.plan
+          FROM payments p
+          WHERE p.business_id = b.id
+          AND p.status = 'completed'
+          ORDER BY p.created_at DESC
+          LIMIT 1
+        ) AS current_plan,
         bp.plan_id,
         bp.start_date,
         bp.end_date,
-        pl.price,
-        pl.duration
+        bp.plan_price
       FROM businesses b
-      LEFT JOIN (
-          SELECT bp1.*
-          FROM business_plans bp1
-          INNER JOIN (
-              SELECT business_id, MAX(id) AS max_id
-              FROM business_plans
-              GROUP BY business_id
-          ) latest
-          ON bp1.id = latest.max_id
-      ) bp ON bp.business_id = b.id
-      LEFT JOIN plans pl ON pl.id = bp.plan_id
+      LEFT JOIN business_plans bp
+        ON bp.business_id = b.id
       WHERE b.owner_id = ?
     `, [userId]);
     
