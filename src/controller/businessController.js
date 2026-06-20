@@ -622,7 +622,7 @@ export const getBusinessByUserId = async (req, res) => {
     const [businessRows] = await pool.query(`
       SELECT
         b.*,
-        COALESCE(pl.plan_name, 'Free') AS current_plan,
+        COALESCE(pl.name, 'Free') AS current_plan,
         bp.plan_id,
         bp.start_date,
         bp.end_date
