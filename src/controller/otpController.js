@@ -1,9 +1,44 @@
 import crypto from "crypto";
 import jwt from "jsonwebtoken";
 import pool from "../config/db.js";
+import axios from "axios";
 
-const sendOtpViaConsole = async (phone, otp) => {
-  return { success: true, message: "OTP sent (mock)" };
+// const sendOtpViaConsole = async (phone, otp) => {
+//   return { success: true, message: "OTP sent (mock)" };
+// };
+
+
+const sendOtpViaMSG91 = async (phone, otp) => {
+  const options = {
+    method: 'POST',
+    url: 'https://control.msg91.com/api/v5/flow',
+    headers: {
+      accept: 'application/json',
+      authkey: process.env.MSG91_AUTH_KEY,
+      'content-type': 'application/json'
+    },
+    data: {
+      template_id: process.env.MSG91_TEMPLATE_ID,
+      realTimeResponse: "1",
+      recipients: [
+        {
+          mobiles: `91${phone}`,
+          var: otp,
+        },
+      ],
+    },
+  };
+
+  try {
+    const { data } = await axios.request(options);
+    console.log(
+      "MSG91 Response:",
+      JSON.stringify(data, null, 2)
+    );    return data;
+  } catch (error) {
+    console.error("MSG91 Error:", error.response?.data || error.message);
+    throw new Error("Failed to send OTP via MSG91");
+  }
 };
 
 const normalizePhone = (phone) => phone.replace(/\D+/g, "").trim();
@@ -23,7 +58,7 @@ export const sendOTP = async (req, res) => {
     const otp = crypto.randomInt(100000, 999999).toString();
     console.log(`Generated OTP for ${phone}: ${otp}`);
 
-    await sendOtpViaConsole(phone, otp);
+    await sendOtpViaMSG91(phone, otp);
 
     const OTP_EXPIRY_MINUTES = 5;
     const expiresAt = new Date(Date.now() + OTP_EXPIRY_MINUTES * 60 * 1000);

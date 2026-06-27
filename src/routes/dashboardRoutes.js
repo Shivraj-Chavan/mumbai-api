@@ -4,6 +4,6 @@ import { getAdminDashboard, getAdminDashboardStats } from "../controller/dashboa
 const router = express.Router();
 
 router.get("/admin/dashboard", getAdminDashboard);
-router.get("/admin/count",getAdminDashboardStats)
+router.get("/admin/count",getAdminDashboardStats);
 
 export default router;

@@ -167,14 +167,21 @@ export const createUser = async (req, res) => {
     if (existing.length > 0) {
       return res.status(409).json({ message: "Phone number already registered." });
     }
-   const [result] = await pool.execute(
-      "INSERT INTO users (name, phone, email) VALUES (?, ?, ?)",
-      [name || null, phone, email || null]
+    const adminId = req.admin?.id || req.user?.id; 
+    const [result] = await pool.execute(
+      "INSERT INTO users (name, phone, email, created_by) VALUES (?, ?, ?, ?)",
+      [
+        name || null,
+        phone,
+        email || null,
+        adminId,
+      ]
     );
 
     const userId = result.insertId;
-    if (req.admin?.id) {
-      await logAdminAction(req.admin.id, "ADDED_USER", "user", userId);
+
+    if (adminId) {
+      await logAdminAction(adminId, "ADDED_USER", "user", userId);
     }
 
     return res.status(201).json({ message: "User created successfully", user: { id: userId, name, phone, email } });

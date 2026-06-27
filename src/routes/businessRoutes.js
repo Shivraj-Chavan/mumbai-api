@@ -1,5 +1,5 @@
 import express from "express";
-import { createBusiness , getBusinesses, getBusinessByUserId, getBusinessById, updateBusiness, deleteBusiness, getBusinessBySlug, verifyBusiness, getPendingUpdates, approveUpdate, rejectUpdate, incrementBusinessViewCount, getBusinessImages, uploadPhotosForBusiness, submitBusinessUpdate, uploadUpdatePhotos, getAdminActions, deleteImages, globalSearchBusinesses, getAllRegistrationInq, getBusinessPlansStatus} from "../controller/businessController.js";
+import { createBusiness , getBusinesses, getBusinessByUserId, getBusinessById, updateBusiness, deleteBusiness, getBusinessBySlug, verifyBusiness, getPendingUpdates, approveUpdate, rejectUpdate, incrementBusinessViewCount, getBusinessImages, uploadPhotosForBusiness, submitBusinessUpdate, uploadUpdatePhotos, getAdminActions, deleteImages, globalSearchBusinesses, getAllRegistrationInq, getBusinessPlansStatus, getAdminsList} from "../controller/businessController.js";
 import { validateAdmin, validateUser } from "../middlewares/auth.js";
 import multer from "multer";
 import { upload } from "../middlewares/uploads.js";
@@ -33,5 +33,5 @@ router.get('/admin/pending', validateUser, validateAdmin, getPendingUpdates);
 router.put('/admin/approve/:id', validateUser, validateAdmin, approveUpdate);
 router.delete('/admin/reject/:id', validateUser, validateAdmin, rejectUpdate);
 router.get("/admin/actions",validateAdmin, getAdminActions);
-
+router.get("/admin/admins-list",validateAdmin, getAdminsList);
 export default router;

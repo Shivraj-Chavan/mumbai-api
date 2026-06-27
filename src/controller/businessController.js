@@ -126,6 +126,7 @@ try {
     // Validate latitude & longitude
     const latValue = latitude && !isNaN(parseFloat(latitude)) ? parseFloat(latitude) : null;
     const lngValue = longitude && !isNaN(parseFloat(longitude)) ? parseFloat(longitude) : null;
+    const adminId = req.admin?.id || req.user?.id; 
 
     // Insert business
     const query = `
@@ -133,9 +134,9 @@ try {
         owner_id, name, category_id, subcategory_id,
         pin_code, address, landmark, area,
         phone, wp_number, email, description, website,
-        timing, slug, latitude, longitude
+        timing, slug, latitude, longitude,created_by
       )
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?)
     `;
 
     const values = [
@@ -156,7 +157,8 @@ try {
       timingString,
       slug,
       latValue,
-      lngValue
+      lngValue,
+      adminId
     ];
     console.log("INSERT VALUES COUNT:", values.length);
 
@@ -200,7 +202,6 @@ if (services.length) {
       }
     }
 
-    const adminId = req.admin?.id || req.user?.id; 
     await logAdminAction(adminId, "ADDED_BUSINESS", "business", business_id);
 
     return res.status(201).json({
@@ -1832,6 +1833,7 @@ export const getAdminActions = async (req, res) => {
       search = "",
       startDate = "",
       endDate = "",
+      adminId = "",
     } = req.query;
 
     const offset = (page - 1) * limit;
@@ -1849,6 +1851,12 @@ export const getAdminActions = async (req, res) => {
       )`);
       const searchValue = `%${search}%`;
       params.push(searchValue, searchValue, searchValue, searchValue);
+    }
+
+
+    if (adminId) {
+      whereClauses.push("aa.admin_id = ?");
+      params.push(adminId);
     }
 
     if (startDate && endDate) {
@@ -1879,12 +1887,24 @@ export const getAdminActions = async (req, res) => {
     // );
 
     const [actions] = await pool.query(
-  `SELECT id, admin_id, action, target_type, target_id, created_at
-   FROM admin_actions
-   ORDER BY created_at DESC
-   LIMIT ? OFFSET ?`,
-  [parseInt(limit), parseInt(offset)]
-);
+      `
+      SELECT
+        aa.id,
+        aa.admin_id,
+        u.name AS admin_name,
+        u.role,
+        aa.action,
+        aa.target_type,
+        aa.target_id,
+        aa.created_at
+      FROM admin_actions aa
+      LEFT JOIN users u ON u.id = aa.admin_id
+      WHERE ${whereSQL}
+      ORDER BY aa.created_at DESC
+      LIMIT ? OFFSET ?
+      `,
+      [...params,parseInt(limit), parseInt(offset)]
+    );
 
 
     // Count total
@@ -2294,7 +2314,26 @@ export const getBusinessPlansStatus = async (req, res) => {
   }
 };
 
+export const getAdminsList = async (req, res) => {
+  try {
+    const [admins] = await pool.query(`
+      SELECT id,name,role
+      FROM users
+      WHERE role IN ('admin','sub-admin')
+      ORDER BY name ASC
+    `);
 
+    res.json({
+      success: true,
+      admins,
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: error.message,
+    });
+  }
+};
 
 
 // export const globalSearchBusinesses = async (req, res) => {

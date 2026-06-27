@@ -149,59 +149,120 @@ export const getAdminDashboard = async (req, res) => {
     });
   }
 };
-
-
-
 export const getAdminDashboardStats = async (req, res) => {
   try {
-    const [todayBusinesses] = await db.query(`
-      SELECT COUNT(*) count
-      FROM businesses
-      WHERE DATE(created_at) = CURDATE()
-    `);
+    const { adminId } = req.query;
 
-    const [totalBusinesses] = await db.query(`
-      SELECT COUNT(*) count
-      FROM businesses
-    `);
+    // Specific Admin/Sub-Admin Stats
+    if (adminId) {
+      const [
+        [todayBusinesses],
+        [totalBusinesses],
+        [todayUsers],
+        [totalUsers],
+      ] = await Promise.all([
+        pool.query(
+          `
+          SELECT COUNT(*) AS count
+          FROM businesses
+          WHERE created_by = ?
+          AND DATE(created_at) = CURDATE()
+          `,
+          [adminId]
+        ),
 
-    const [todayUsers] = await db.query(`
-      SELECT COUNT(*) count
-      FROM users
-      WHERE DATE(created_at) = CURDATE()
-    `);
+        pool.query(
+          `
+          SELECT COUNT(*) AS count
+          FROM businesses
+          WHERE created_by = ?
+          `,
+          [adminId]
+        ),
 
-    const [totalUsers] = await db.query(`
-      SELECT COUNT(*) count
-      FROM users
-    `);
+        pool.query(
+          `
+          SELECT COUNT(*) AS count
+          FROM users
+          WHERE created_by = ?
+          AND DATE(created_at) = CURDATE()
+          `,
+          [adminId]
+        ),
 
-    const [contacts] = await db.query(`
-      SELECT COUNT(*) count
-      FROM contacts
-    `);
+        pool.query(
+          `
+          SELECT COUNT(*) AS count
+          FROM users
+          WHERE created_by = ?
+          `,
+          [adminId]
+        ),
+      ]);
 
-    const [enquiries] = await db.query(`
-      SELECT COUNT(*) count
-      FROM enquiries
-    `);
+      return res.json({
+        success: true,
+        stats: {
+          todayBusinesses: todayBusinesses[0]?.count || 0,
+          totalBusinesses: totalBusinesses[0]?.count || 0,
+          todayUsers: todayUsers[0]?.count || 0,
+          totalUsers: totalUsers[0]?.count || 0,
+        },
+      });
+    }
 
-    res.json({
+    // Global Admin Dashboard
+    const [
+      [todayBusinesses],
+      [totalBusinesses],
+      [todayUsers],
+      [totalUsers],
+      [enquiries],
+    ] = await Promise.all([
+      pool.query(`
+        SELECT COUNT(*) AS count
+        FROM businesses
+        WHERE DATE(created_at) = CURDATE()
+      `),
+
+      pool.query(`
+        SELECT COUNT(*) AS count
+        FROM businesses
+      `),
+
+      pool.query(`
+        SELECT COUNT(*) AS count
+        FROM users
+        WHERE DATE(created_at) = CURDATE()
+      `),
+
+      pool.query(`
+        SELECT COUNT(*) AS count
+        FROM users
+      `),
+
+      pool.query(`
+        SELECT COUNT(*) AS count
+        FROM enquiries
+      `),
+    ]);
+
+    return res.json({
       success: true,
       stats: {
-        todayBusinesses: todayBusinesses[0].count,
-        totalBusinesses: totalBusinesses[0].count,
-        todayUsers: todayUsers[0].count,
-        totalUsers: totalUsers[0].count,
-        totalContacts: contacts[0].count,
-        totalEnquiries: enquiries[0].count,
+        todayBusinesses: todayBusinesses[0]?.count || 0,
+        totalBusinesses: totalBusinesses[0]?.count || 0,
+        todayUsers: todayUsers[0]?.count || 0,
+        totalUsers: totalUsers[0]?.count || 0,
+        totalEnquiries: enquiries[0]?.count || 0,
       },
     });
   } catch (err) {
-    console.error(err);
+    console.error("Dashboard Stats Error:", err);
+
     res.status(500).json({
       success: false,
-      message: "Failed to fetch stats",
+      message: err.message,
     });
   }
 };
