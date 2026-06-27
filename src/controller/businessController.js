@@ -916,8 +916,11 @@ console.log("Timing length:", timingString.length);
 
 
       // Log subadmin action
-      if (user.role === "sub-admin") {
-      const actionText = is_verified ? "Verified business" : "Updated business";
+      if (user.role === "sub-admin" || user.role === "admin") {
+        const actionText = is_verified
+        ? "VERIFIED_BUSINESS"
+        : "UPDATED_BUSINESS";
+        
       console.log(`Logging Sub-admin Action: ${actionText}`);
       await logAdminAction(userId, actionText, "Business", id);
       };
@@ -1026,6 +1029,17 @@ export const deleteBusiness = async (req, res) => {
     if (result.affectedRows === 0) {
       return res.status(404).json({ msg: "Business not found" });
     }
+
+      const adminId= req.admin?.id || req.user?.id
+    if (adminId) {
+      await logAdminAction(
+        adminId,
+        "DELETED_BUSINESS",
+        "business",
+        id
+      );
+    }
+    
 
     res.status(200).json({ msg: "Business deleted successfully" });
   } catch (error) {
