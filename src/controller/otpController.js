@@ -23,7 +23,7 @@ const sendOtpViaMSG91 = async (phone, otp) => {
       recipients: [
         {
           mobiles: `91${phone}`,
-          var: otp,
+          numeric: otp,
         },
       ],
     },
