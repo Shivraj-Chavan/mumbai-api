@@ -2333,7 +2333,7 @@ export const getAdminsList = async (req, res) => {
     const [admins] = await pool.query(`
       SELECT id,name,role
       FROM users
-      WHERE role IN ('admin','sub-admin')
+      WHERE role IN ('sub-admin')
       ORDER BY name ASC
     `);
 
