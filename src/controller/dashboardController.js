@@ -118,6 +118,44 @@ export const getAdminDashboard = async (req, res) => {
       console.warn("No 'status' column in businesses table, skipping pendingBusiness count");
     }
 
+    const adminId = req?.admin?.id || req?.user?.id;
+    console.log({adminId})
+// Total users created by me
+const [[myUsers]] = await pool.query(
+  `SELECT COUNT(*) AS count
+   FROM users
+   WHERE created_by = ?`,
+  [adminId]
+);
+
+// Total businesses created by me
+const [[myBusinesses]] = await pool.query(
+  `SELECT COUNT(*) AS count
+   FROM businesses
+   WHERE created_by = ?`,
+  [adminId]
+);
+
+// Users created by me this month
+const [[myUsersThisMonth]] = await pool.query(
+  `SELECT COUNT(*) AS count
+   FROM users
+   WHERE created_by = ?
+   AND MONTH(created_at) = MONTH(CURDATE())
+   AND YEAR(created_at) = YEAR(CURDATE())`,
+  [adminId]
+);
+
+// Businesses created by me this month
+const [[myBusinessesThisMonth]] = await pool.query(
+  `SELECT COUNT(*) AS count
+   FROM businesses
+   WHERE created_by = ?
+   AND MONTH(created_at) = MONTH(CURDATE())
+   AND YEAR(created_at) = YEAR(CURDATE())`,
+  [adminId]
+);
+
     /* =======================
        RESPONSE
     ======================== */
@@ -138,7 +176,13 @@ export const getAdminDashboard = async (req, res) => {
         newUsers: newUsers.count,
         todayBusiness: todayBusiness.count,
         pendingBusiness: pendingBusiness.count
-      }
+      },
+      myStats: {
+        totalUsers: myUsers.count,
+        totalBusinesses: myBusinesses.count,
+        monthlyUsers: myUsersThisMonth.count,
+        monthlyBusinesses: myBusinessesThisMonth.count,
+      },
     });
 
   } catch (err) {
@@ -149,6 +193,8 @@ export const getAdminDashboard = async (req, res) => {
     });
   }
 };
+
+
 export const getAdminDashboardStats = async (req, res) => {
   try {
     const { adminId } = req.query;
