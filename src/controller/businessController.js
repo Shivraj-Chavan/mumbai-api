@@ -516,7 +516,6 @@ export const getBusinesses = async (req, res) => {
   
     WHERE b.is_verified = ?
   `;
-  
 
     const values = [verified];
 
@@ -543,6 +542,11 @@ export const getBusinesses = async (req, res) => {
     if (search) {
       query += ` AND (b.name LIKE ? OR b.phone LIKE ?)`;
       values.push(`%${search}%`, `%${search}%`);
+    }
+
+    if(req.user.role == "sub-admin"){
+      query += " AND created_by = ?";
+      values.push(req.user.id);
     }
 
     query += ` GROUP BY b.id ORDER BY b.created_at DESC LIMIT ? OFFSET ?`;
@@ -583,6 +587,11 @@ export const getBusinesses = async (req, res) => {
     if (search) {
       countQuery += ` AND (b.name LIKE ? OR b.phone LIKE ?)`;
       countValues.push(`%${search}%`, `%${search}%`);
+    }
+
+    if(req.user.role == "sub-admin"){
+      countQuery += " AND created_by = ?";
+      countValues.push(req.user.id);
     }
 
     const [[countResult]] = await pool.query(countQuery, countValues);

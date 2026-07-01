@@ -66,3 +66,36 @@ export const validateAdmin = async (req, res, next) => {
     res.status(401).json({ msg: error.message });
   }
 };
+
+
+export const optionalAuth = async (req, res, next) => {
+  try {
+    const authHeader = req.headers.authorization;
+
+    // No token
+    if (!authHeader || !authHeader.startsWith("Bearer ")) {
+      req.user = null;
+      return next();
+    }
+
+    const token = authHeader.split(" ")[1];
+
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+
+    const [[user]] = await pool.query(
+      `SELECT id, phone, role, name, email
+       FROM users
+       WHERE id = ?
+       LIMIT 1`,
+      [decoded.userId]
+    );
+
+    req.user = user || null;
+
+    return next();
+  } catch (error) {
+    // Invalid/Expired token
+    req.user = null;
+    return next();
+  }
+};

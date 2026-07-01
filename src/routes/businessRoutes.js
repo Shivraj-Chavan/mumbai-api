@@ -1,6 +1,6 @@
 import express from "express";
 import { createBusiness , getBusinesses, getBusinessByUserId, getBusinessById, updateBusiness, deleteBusiness, getBusinessBySlug, verifyBusiness, getPendingUpdates, approveUpdate, rejectUpdate, incrementBusinessViewCount, getBusinessImages, uploadPhotosForBusiness, submitBusinessUpdate, uploadUpdatePhotos, getAdminActions, deleteImages, globalSearchBusinesses, getAllRegistrationInq, getBusinessPlansStatus, getAdminsList} from "../controller/businessController.js";
-import { validateAdmin, validateUser } from "../middlewares/auth.js";
+import { optionalAuth, validateAdmin, validateUser } from "../middlewares/auth.js";
 import multer from "multer";
 import { upload } from "../middlewares/uploads.js";
 import { dynamicPlanBasedUpload } from "../middlewares/uploadMiddleware.js";
@@ -9,7 +9,7 @@ const router = express.Router();
 
 router.get("/regInq",validateAdmin,getAllRegistrationInq)
 router.post("/", validateUser, upload.array("photos", 5), createBusiness);
-router.get("/", getBusinesses);
+router.get("/", optionalAuth, getBusinesses);
 router.get('/payments', getBusinessPlansStatus);
 router.get("/user",validateUser, getBusinessByUserId);
 router.get("/:id",validateUser, getBusinessById);

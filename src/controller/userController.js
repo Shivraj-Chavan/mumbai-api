@@ -5,12 +5,12 @@ export const getAllUsers = async (req, res) => {
   console.log("Controller: getAllUsers called");
   try {
     let { page = 1, limit = 10, search = "", is_blocked } = req.query;
-
+    
     page = parseInt(page, 10);
     limit = parseInt(limit, 10);
     const offset = (page - 1) * limit;
 
-    let baseQuery = "SELECT * FROM users WHERE 1=1";
+    let baseQuery = "SELECT * FROM users WHERE role='user'";
     const params = [];
 
     // Search filter
@@ -25,6 +25,11 @@ export const getAllUsers = async (req, res) => {
       params.push(Number(is_blocked));
     }
 
+    if(req.user.role == "sub-admin"){
+      baseQuery += " AND created_by = ?";
+      params.push(req.user.id);
+    }
+
     // Sort AFTER filters
     baseQuery += " ORDER BY created_at DESC";
 
@@ -37,12 +42,17 @@ export const getAllUsers = async (req, res) => {
     const [rows] = await pool.execute(baseQuery, params);
 
     // Count Query (NO ORDER BY here)
-    let countQuery = "SELECT COUNT(*) as total FROM users WHERE 1=1";
+    let countQuery = "SELECT COUNT(*) as total FROM users WHERE role='user'";
     const countParams = [];
 
     if (search) {
       countQuery += " AND (name LIKE ? OR phone LIKE ?)";
       countParams.push(`%${search}%`, `%${search}%`);
+    }
+     
+    if(req.user.role == "sub-admin"){
+      countQuery += " AND created_by = ?";
+      countParams.push(req.user.id);
     }
 
     if (typeof is_blocked !== "undefined") {
