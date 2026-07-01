@@ -54,6 +54,17 @@ export const sendOTP = async (req, res) => {
     if (!/^\d{10}$/.test(phone)) {
       return res.status(400).json({ msg: "Invalid phone number" });
     }
+    const [[user]] = await pool.query(
+      `SELECT id, is_blocked FROM users WHERE phone = ?`,
+      [phone]
+    );
+
+    if (user?.is_blocked === 1) {
+      return res.status(403).json({
+        msg: "Your account has been blocked. Please contact support.",
+      });
+    }
+
 
     const otp = crypto.randomInt(100000, 999999).toString();
     console.log(`Generated OTP for ${phone}: ${otp}`);
@@ -71,7 +82,7 @@ export const sendOTP = async (req, res) => {
       [phone, otp, expiresAt, otp, expiresAt]
     );
 
-    return res.status(200).json({ msg: "OTP sent to your Phone Number" ,otp});
+    return res.status(200).json({ msg: "OTP sent to your Phone Number" });
   } catch (error) {
     console.error("Error sending OTP:", error);
     return res.status(500).json({ msg: "Something went wrong. Please try again.", error: error.message });

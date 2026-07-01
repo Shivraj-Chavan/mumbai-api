@@ -12,6 +12,7 @@ import dashboardRoutes from "./dashboardRoutes.js";
 import subCategoryRoutes from "./subcategoryRoutes.js";
 import paymentRoutes from "./paymentRoutes.js";
 import planRoutes from "./planRoutes.js";
+import subadminRoutes from "./subadminRoutes.js";
 
 const router = express.Router();
 
@@ -28,6 +29,6 @@ router.use("/services", servicesRoutes);
 router.use("/dashboard",dashboardRoutes);
 router.use("/payments", paymentRoutes);
 router.use("/plans", planRoutes);
-
+router.use("/subadmin",subadminRoutes)
 
 export default router;

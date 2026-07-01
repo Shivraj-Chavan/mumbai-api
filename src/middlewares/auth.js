@@ -21,7 +21,7 @@ const decodeDataAndReturnUserData = async (req) => {
 
     const { userId } = decoded;
     const [[user]] = await pool.query(
-      `SELECT id, phone, role, name, email FROM users WHERE id = ? LIMIT 1`,
+      `SELECT id, phone, role, name, email FROM users WHERE id = ?  AND is_blocked = 0 LIMIT 1`,
       [userId]
     );
     console.log(userId);
@@ -85,7 +85,7 @@ export const optionalAuth = async (req, res, next) => {
     const [[user]] = await pool.query(
       `SELECT id, phone, role, name, email
        FROM users
-       WHERE id = ?
+       WHERE id = ?  AND is_blocked = 0
        LIMIT 1`,
       [decoded.userId]
     );
